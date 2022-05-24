@@ -2,7 +2,7 @@
 
 ### Software Engineering - C#
 
-My solutions to SoftUni tasks during my software engineering education
+My solutions to SoftUni tasks during software engineering education
 
 * Programming Basics
 * Fundamentals
