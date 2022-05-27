@@ -32,8 +32,6 @@ namespace Snowballs
             }
             Console.WriteLine($"{bestSnow} : {bestTime} = {bestValue} ({bestQ})");
 
-            //unfinished
-
         }
     }
 }
