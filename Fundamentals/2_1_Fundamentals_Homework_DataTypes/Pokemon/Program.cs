@@ -26,7 +26,6 @@ namespace Pokemon
             Console.WriteLine(pokePower);
             Console.WriteLine(pokeTarget);
 
-            //unfinished
         }
     }
 }
