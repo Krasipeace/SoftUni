@@ -11,7 +11,7 @@ namespace Snowballs
             int bestSnow = 0;
             int bestTime = 0;
             int bestQ = 0;
-            double bestValue = double.MinValue;
+            double bestValue = 0;
 
             for (int i = 1; i <= snowballAmount; i++)
             {
@@ -22,7 +22,7 @@ namespace Snowballs
                 double snowTime = snowballSnow / snowballTime;
                 double snowballValue = Math.Pow(snowTime, snowballQuality);
 
-                if (snowballValue > bestValue)
+                if (snowballValue >= bestValue)
                 {
                     bestValue = snowballValue;
                     bestSnow = snowballSnow;
