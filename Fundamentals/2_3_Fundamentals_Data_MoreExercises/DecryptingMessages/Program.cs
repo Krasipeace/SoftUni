@@ -6,23 +6,30 @@ namespace DecryptingMessages
     {
         static void Main(string[] args)
         {
-            byte key = byte.Parse(Console.ReadLine());
-            byte inputLines = byte.Parse(Console.ReadLine());            
-            string word = string.Empty;
+            // key = +[x] ascii symbols; example if key = 4 and letter = A > decrypt letter = F
+
+            int key = int.Parse(Console.ReadLine());
+            byte inputLetters = byte.Parse(Console.ReadLine());            
+            char decryptedLetter = '0';
             string decryptedWord = string.Empty;
 
-            for (int i = 1; i <= inputLines; i++)
+            for (int i = 1; i <= inputLetters; i++)
             {
                 char letter = char.Parse(Console.ReadLine());
-                for (int j = 1; j <= inputLines; j++)
+
+                if (letter >= 65 && letter <= 90)
                 {
-
+                    decryptedLetter = (char)(letter + key);
                 }
-                word += letter;
+                else if (letter >= 97 && letter <= 122)
+                {
+                    decryptedLetter = (char)(letter + key);
+                }
+                decryptedWord += decryptedLetter.ToString();
             }
-            //Console.Write(word);
 
-            //unfinished
+            Console.Write(decryptedWord);
+
         }
     }
 }
