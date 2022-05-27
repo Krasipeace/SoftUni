@@ -12,7 +12,7 @@ namespace Snowballs
             int bestSnow = 0;
             int bestTime = 0;
             int bestQ = 0;
-            BigInteger bestValue = 0;
+            BigInteger bestValue = -9999999999;
 
             for (int i = 1; i <= snowballAmount; i++)
             {
@@ -20,8 +20,7 @@ namespace Snowballs
                 int snowballTime = int.Parse(Console.ReadLine());
                 int snowballQuality = int.Parse(Console.ReadLine());
 
-                double snowTime = snowballSnow / snowballTime;
-                BigInteger snowballValue = (int)Math.Pow(snowTime, snowballQuality);
+                BigInteger snowballValue = BigInteger.Pow(snowballSnow / snowballTime, snowballQuality);
 
                 if (snowballValue >= bestValue)
                 {
