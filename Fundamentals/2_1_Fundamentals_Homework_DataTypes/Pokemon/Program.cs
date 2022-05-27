@@ -8,9 +8,9 @@ namespace Pokemon
         {
             int pokePower = int.Parse(Console.ReadLine());
             int pokeDistance = int.Parse(Console.ReadLine());
-            byte pokeExhaustion = byte.Parse(Console.ReadLine());
+            int pokeExhaustion = int.Parse(Console.ReadLine());
 
-            byte pokeTarget = 0;            
+            int pokeTarget = 0;            
             double powerDivision = pokePower * 0.50;
 
             while (pokePower >= pokeDistance)
