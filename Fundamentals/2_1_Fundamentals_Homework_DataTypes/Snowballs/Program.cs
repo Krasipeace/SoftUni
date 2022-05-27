@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace Snowballs
 {
@@ -11,7 +12,7 @@ namespace Snowballs
             int bestSnow = 0;
             int bestTime = 0;
             int bestQ = 0;
-            double bestValue = 0;
+            BigInteger bestValue = 0;
 
             for (int i = 1; i <= snowballAmount; i++)
             {
@@ -20,7 +21,7 @@ namespace Snowballs
                 int snowballQuality = int.Parse(Console.ReadLine());
 
                 double snowTime = snowballSnow / snowballTime;
-                double snowballValue = Math.Pow(snowTime, snowballQuality);
+                BigInteger snowballValue = (int)Math.Pow(snowTime, snowballQuality);
 
                 if (snowballValue >= bestValue)
                 {
