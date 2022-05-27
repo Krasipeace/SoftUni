@@ -6,10 +6,10 @@ namespace BalancedBrackets
     {
         static void Main(string[] args)
         {
-            byte n = byte.Parse(Console.ReadLine());
+            byte inputLines = byte.Parse(Console.ReadLine());
             byte counterOpenBracket = 0;
             byte counterCloseBracket = 0;
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= inputLines; i++)
             {
                 string input = Console.ReadLine();
                 if (input == "(")
