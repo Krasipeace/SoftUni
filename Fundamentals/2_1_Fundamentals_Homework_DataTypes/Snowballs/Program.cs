@@ -18,8 +18,10 @@ namespace Snowballs
                 int snowballSnow = int.Parse(Console.ReadLine());
                 int snowballTime = int.Parse(Console.ReadLine());
                 int snowballQuality = int.Parse(Console.ReadLine());
-               
-                double snowballValue = Math.Pow(snowballSnow / snowballTime, snowballQuality);
+
+                double snowTime = snowballSnow / snowballTime;
+                double snowballValue = Math.Pow(snowTime, snowballQuality);
+
                 if (snowballValue > bestValue)
                 {
                     bestValue = snowballValue;
