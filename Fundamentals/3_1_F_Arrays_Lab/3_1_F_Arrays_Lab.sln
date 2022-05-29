@@ -5,11 +5,13 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.DayOfWeek", "01.DayOfWeek\01.DayOfWeek.csproj", "{F7364F88-6F8F-4F1F-BCA0-0DFA9F857418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.PrintNumbersinReverseOrder", "02.PrintNumbersinReverseOrder\02.PrintNumbersinReverseOrder.csproj", "{66C81F94-040F-4E50-8F06-9B2F2CD8CC9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.PrintNumbersinReverseOrder", "02.PrintNumbersinReverseOrder\02.PrintNumbersinReverseOrder.csproj", "{66C81F94-040F-4E50-8F06-9B2F2CD8CC9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.RoundingNumbers", "03.RoundingNumbers\03.RoundingNumbers.csproj", "{2D3E8A7A-448B-4DC1-8CC4-09F637CE5304}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.RoundingNumbers", "03.RoundingNumbers\03.RoundingNumbers.csproj", "{2D3E8A7A-448B-4DC1-8CC4-09F637CE5304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 ReverseArrayofStrings", "04 ReverseArrayofStrings\04 ReverseArrayofStrings.csproj", "{86739DAB-69A8-4E90-BDE6-A49D6721F11A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 ReverseArrayofStrings", "04 ReverseArrayofStrings\04 ReverseArrayofStrings.csproj", "{86739DAB-69A8-4E90-BDE6-A49D6721F11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 SumEvenNumbers", "SumEvenNumbers\05 SumEvenNumbers.csproj", "{B00CBA62-6E53-4C55-A238-2505255EE7A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{86739DAB-69A8-4E90-BDE6-A49D6721F11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86739DAB-69A8-4E90-BDE6-A49D6721F11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86739DAB-69A8-4E90-BDE6-A49D6721F11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00CBA62-6E53-4C55-A238-2505255EE7A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00CBA62-6E53-4C55-A238-2505255EE7A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00CBA62-6E53-4C55-A238-2505255EE7A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00CBA62-6E53-4C55-A238-2505255EE7A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
