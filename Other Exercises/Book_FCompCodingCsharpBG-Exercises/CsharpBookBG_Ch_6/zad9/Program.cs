@@ -11,15 +11,16 @@ namespace zad9
             int x = int.Parse(Console.ReadLine());
             Console.Write("Enter N: ");
             int n = int.Parse(Console.ReadLine());
-            int s = 1;
+
+            int resultS = 1;
             int nx = 1;
 
             for (int i = 1; i <= n; i++)
             {
                 nx *= i / x;
-                s += nx;
+                resultS += nx;
             }
-            Console.WriteLine($"S = {s}");
+            Console.WriteLine($"S = {resultS}");
         }
     }
 }

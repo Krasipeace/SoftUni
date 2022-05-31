@@ -27,6 +27,7 @@ namespace DivideOfFactoriels
             Console.WriteLine($"N! = {n} K! = {k}");
             int ndivk = n / k;
             Console.WriteLine($"N!/K! = {ndivk}");
+
             //Програма, която пресмята N!*K!/(N-K)! за дадени N и K (1<K<N).
             BigInteger nk = n - k; 
             for (BigInteger j = nk - 1; j > 0; j--)
