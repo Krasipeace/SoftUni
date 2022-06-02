@@ -15,7 +15,8 @@ namespace _2.CommonElements
             foreach (var element in commonElements)
             {
                 Console.Write($"{element} ");
-            }          
+            }  
+            
         }
     }
 }
