@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _1.EncryptSortandPrintArray
+namespace _4.FoldAndSum
 {
     internal class Program
     {

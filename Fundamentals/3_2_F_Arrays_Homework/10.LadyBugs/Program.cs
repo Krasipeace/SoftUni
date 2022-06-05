@@ -36,9 +36,9 @@ namespace _10.LadyBugs
                         ladBugsField[currentIndex] = 0;
                         isFirst = false;
                     }
-
                     string direction = commands[1];
                     int flightLenght = int.Parse(commands[2]);
+
                     if (direction == "left")
                     {
                         currentIndex -= flightLenght;
@@ -64,10 +64,8 @@ namespace _10.LadyBugs
                         }
                     }
                 }
-
                 commands = Console.ReadLine().Split();
             }
-
             Console.WriteLine(string.Join(" ", ladBugsField));
         }
     }
