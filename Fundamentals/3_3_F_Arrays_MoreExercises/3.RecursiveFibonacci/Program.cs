@@ -36,6 +36,8 @@ namespace _3.RecursiveFibonacci
             {                
                 Console.WriteLine(input);                
             }
+
+            //index checker
             //int counter = 0;
             //foreach  (int number in fiboArray)
             //{
