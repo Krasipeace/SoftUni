@@ -6,7 +6,7 @@ namespace _3.Calculations
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
