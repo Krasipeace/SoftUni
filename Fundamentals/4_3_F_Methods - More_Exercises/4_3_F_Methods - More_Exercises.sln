@@ -5,13 +5,17 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.DataTypes", "1.DataTypes\1.DataTypes.csproj", "{C3BBC23E-CDDD-4483-82E4-744B4342FEB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.CenterPoint", "2.CenterPoint\2.CenterPoint.csproj", "{15FF2554-D280-42DF-954F-DAE45ACD015E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.CenterPoint", "2.CenterPoint\2.CenterPoint.csproj", "{15FF2554-D280-42DF-954F-DAE45ACD015E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.LongerLine", "3.LongerLine\3.LongerLine.csproj", "{3D17875B-246A-45A8-986E-E8A079B30E89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.LongerLine", "3.LongerLine\3.LongerLine.csproj", "{3D17875B-246A-45A8-986E-E8A079B30E89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.TribonacciSequence", "4.TribonacciSequence\4.TribonacciSequence.csproj", "{EEED863A-9595-441F-B75B-766885C08104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.TribonacciSequence", "4.TribonacciSequence\4.TribonacciSequence.csproj", "{EEED863A-9595-441F-B75B-766885C08104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.MultiplicationSign", "5.MultiplicationSign\5.MultiplicationSign.csproj", "{4577BC6B-802E-4DF1-AB59-57CE15216B8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.MultiplicationSign", "5.MultiplicationSign\5.MultiplicationSign.csproj", "{4577BC6B-802E-4DF1-AB59-57CE15216B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1.TribonacciSequence", "4.1.TribonacciSequence\4.1.TribonacciSequence.csproj", "{63B90C37-9DEF-4650-B1E1-643DC5597918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.TribonacciSequence", "4.2.TribonacciSequence\4.2.TribonacciSequence.csproj", "{0EAB2D4F-9276-40D2-8504-357A28F7E573}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{4577BC6B-802E-4DF1-AB59-57CE15216B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4577BC6B-802E-4DF1-AB59-57CE15216B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4577BC6B-802E-4DF1-AB59-57CE15216B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B90C37-9DEF-4650-B1E1-643DC5597918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B90C37-9DEF-4650-B1E1-643DC5597918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B90C37-9DEF-4650-B1E1-643DC5597918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B90C37-9DEF-4650-B1E1-643DC5597918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAB2D4F-9276-40D2-8504-357A28F7E573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAB2D4F-9276-40D2-8504-357A28F7E573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAB2D4F-9276-40D2-8504-357A28F7E573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAB2D4F-9276-40D2-8504-357A28F7E573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
