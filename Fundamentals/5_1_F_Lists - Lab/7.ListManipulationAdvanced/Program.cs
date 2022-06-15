@@ -9,8 +9,7 @@ namespace _7.ListManipulationAdvanced
         static void Main(string[] args)
         {
             List<int> numbers = Console.ReadLine().Split().Select(int.Parse).ToList();
-
-            int filterCounter = 0;
+            bool isItChanged = false;
 
             while (true)
             {
@@ -25,6 +24,27 @@ namespace _7.ListManipulationAdvanced
 
                 switch (tokens[0])
                 {
+                    case "Add":
+                        int numberToAdd = int.Parse(tokens[1]);
+                        numbers.Add(numberToAdd);
+                        isItChanged = true;
+                        break;
+                    case "Remove":
+                        int numberToRemove = int.Parse(tokens[1]);
+                        numbers.Remove(numberToRemove);
+                        isItChanged = true;
+                        break;
+                    case "RemoveAt":
+                        int indexToRemove = int.Parse(tokens[1]);
+                        numbers.RemoveAt(indexToRemove);
+                        isItChanged = true;
+                        break;
+                    case "Insert":
+                        int numberToInsert = int.Parse(tokens[1]);
+                        int indexToInsert = int.Parse(tokens[2]);
+                        numbers.Insert(indexToInsert, numberToInsert);
+                        isItChanged = true;
+                        break;
                     case "Contains":
                         Contains(numbers);
                         break;
@@ -39,14 +59,10 @@ namespace _7.ListManipulationAdvanced
                         break;
                     case "Filter":
                         UseFilter(numbers);
-                        filterCounter++;
                         break;
                 }
             }
-            if (filterCounter > 0)
-            {
-                Console.WriteLine(string.Join(" ", numbers));
-            }
+
         }
 
         private static void UseFilter(List<int> numbers)

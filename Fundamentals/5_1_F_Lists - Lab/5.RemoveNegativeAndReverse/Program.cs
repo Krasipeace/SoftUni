@@ -10,7 +10,7 @@ namespace _5.RemoveNegativeAndReverse
         {
             List<int> numbers = Console.ReadLine().Split().Select(int.Parse).ToList();
             
-            numbers.RemoveAll(x => x < 0);
+            numbers.RemoveAll(number => number < 0);        //return number < 0
 
             if (numbers.Count == 0)
             {
