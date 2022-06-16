@@ -9,7 +9,7 @@ namespace _7.ListManipulationAdvanced
         static void Main(string[] args)
         {
             List<int> numbers = Console.ReadLine().Split().Select(int.Parse).ToList();
-            bool isItChanged = false;
+            bool isTheListChanged = false;
 
             while (true)
             {
@@ -21,32 +21,33 @@ namespace _7.ListManipulationAdvanced
                 }
 
                 string[] tokens = command.Split();
+                string action = tokens[0];
 
-                switch (tokens[0])
+                switch (action)
                 {
                     case "Add":
                         int numberToAdd = int.Parse(tokens[1]);
                         numbers.Add(numberToAdd);
-                        isItChanged = true;
+                        isTheListChanged = true;
                         break;
                     case "Remove":
                         int numberToRemove = int.Parse(tokens[1]);
                         numbers.Remove(numberToRemove);
-                        isItChanged = true;
+                        isTheListChanged = true;
                         break;
                     case "RemoveAt":
                         int indexToRemove = int.Parse(tokens[1]);
                         numbers.RemoveAt(indexToRemove);
-                        isItChanged = true;
+                        isTheListChanged = true;
                         break;
                     case "Insert":
                         int numberToInsert = int.Parse(tokens[1]);
                         int indexToInsert = int.Parse(tokens[2]);
                         numbers.Insert(indexToInsert, numberToInsert);
-                        isItChanged = true;
+                        isTheListChanged = true;
                         break;
                     case "Contains":
-                        Contains(numbers);
+                        IsItContaining(int.Parse(tokens[1]), numbers);
                         break;
                     case "PrintEven":
                         PrintEven(numbers);
@@ -58,70 +59,100 @@ namespace _7.ListManipulationAdvanced
                         PrintGetSum(numbers);
                         break;
                     case "Filter":
-                        UseFilter(numbers);
+                        UseFilter(tokens[1], int.Parse(tokens[2]), numbers);
                         break;
                 }
             }
 
+            if (isTheListChanged)
+            {
+                Console.WriteLine(string.Join(" ", numbers));
+            }
+
         }
 
-        private static void UseFilter(List<int> numbers)
-        {
-            string command = Console.ReadLine();
-            
-            switch (command)
+        private static void UseFilter(string filter, int numberToFilter, List<int> numbers)
+        {   
+            switch (filter)
             {
                 case "<":
-
-                    break;
-                case ">":
+                    foreach (int number in numbers)
+                    {
+                        if (number < numberToFilter)
+                        {
+                            Console.Write($"{number} ");
+                        }
+                    }
+                    Console.WriteLine();
                     break;
                 case "<=":
+                    foreach (int number in numbers)
+                    {
+                        if (number <= numberToFilter)
+                        {
+                            Console.Write($"{number} ");
+                        }
+                    }
+                    Console.WriteLine();
+                    break;
+                case ">":
+                    foreach (int number in numbers)
+                    {
+                        if (number > numberToFilter)
+                        {
+                            Console.Write($"{number} ");
+                        }
+                    }
+                    Console.WriteLine();
                     break;
                 case ">=":
+                    foreach (int number in numbers)
+                    {
+                        if (number >= numberToFilter)
+                        {
+                            Console.Write($"{number} ");
+                        }
+                    }
+                    Console.WriteLine();
                     break;
             }
 
         }
 
-        private static void PrintGetSum(List<int> numbers)
+        static void PrintGetSum(List<int> numbers)
         {
             int sum = 0;
             sum += numbers.Sum();
             Console.WriteLine(sum);
         }
 
-        private static void PrintOdd(List<int> numbers)
+        static void PrintOdd(List<int> numbers)
         {
-            for (int i = 0; i < numbers.Count; i++)
+            foreach (var number in numbers)
             {
-                if (i % 2 == 0)
+                if (number % 2 != 0)
                 {
-                    List<int> arrayPrintOdd = new List<int>();
-                    arrayPrintOdd.Add(numbers[i]);
-                    Console.Write(string.Join(" ", arrayPrintOdd));
+                    Console.Write($"{number} ");
                 }
-            }
+            };
+            Console.WriteLine();
         }
 
-        private static void PrintEven(List<int> numbers)
+        static void PrintEven(List<int> numbers)
         {
-            for (int i = 0; i < numbers.Count; i++)
+            foreach (var number in numbers)
             {
-                if (i % 2 != 0)
+                if (number % 2 == 0)
                 {
-                    List<int> arrayPrintEven = new List<int>();
-                    arrayPrintEven.Add(numbers[i]);
-                    Console.Write(string.Join(" ", arrayPrintEven));
+                    Console.Write($"{number} ");
                 }
-            }
+            };
+            Console.WriteLine();
         }
 
-        private static void Contains(List<int> numbers)
+        static void IsItContaining(int number, List<int> numbers)
         {
-            int numberToCheck = int.Parse(Console.ReadLine());
-            bool isContaining = numbers.Contains(numberToCheck);
-            if (isContaining)
+            if (numbers.Contains(number))
             {
                 Console.WriteLine("Yes");
             }
