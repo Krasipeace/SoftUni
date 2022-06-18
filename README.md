@@ -1,6 +1,6 @@
 # SoftUni 
 
-### Software Engineering - C#
+### Web Developer - C#
 
 My solutions to SoftUni tasks/problems during my software engineering education
 
