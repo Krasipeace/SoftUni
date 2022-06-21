@@ -7,4 +7,4 @@ My solutions to SoftUni tasks/problems during my software engineering education
 
 
 * Programming Basics - C#
-* Fundamentals - C#, HTML, CSS
+* Fundamentals - C#
