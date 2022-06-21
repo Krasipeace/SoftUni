@@ -1,0 +1,15 @@
+div {    
+    font-size: 24pt;
+    background: #EEE;
+    line-height: 1.5em;
+}
+ .lang{
+    border: 1px;
+    border-color: #AAA;
+    border-radius: 10px;
+    background: #CCC;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

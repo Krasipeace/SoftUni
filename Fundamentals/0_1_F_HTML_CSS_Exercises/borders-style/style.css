@@ -1,0 +1,21 @@
+div {
+    background-color: gray;
+    color: black;
+    text-align: center;   
+    vertical-align: middle;
+    font-size: 2em;
+    margin-top: 10px;
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+}
+ #green{
+    border: 3px solid green;   
+}
+ #red{
+    border: 3px solid red;    
+}
+ #blue{
+    border: 3px solid blue;    
+}
