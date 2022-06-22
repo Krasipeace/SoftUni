@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _3._Numbers
 {
-    internal class Program
+    internal class Program      //90/100 in Judge... unknown possible error test #8
     {
         static void Main(string[] args)
         {
