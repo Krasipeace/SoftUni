@@ -19,7 +19,7 @@ namespace _1._SoftUni_Reception
                 students -= answersPerHour;
                 counter++;
                 
-                if (counter % 4 ==0)
+                if (counter % 4 == 0)
                 {
                     counter++;
                 }
