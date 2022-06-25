@@ -71,18 +71,18 @@ namespace _3._Man_O_War //The pirates encounter a huge Man-O-War at sea.
 
             for (int i = 0; i < pirateShip.Count; i++)
             {
-                if (pirateShip[i] == 0)
+                if (pirateShip[i] <= 0)
                 {
                     isAnyShipDead = true;
-                    break;
+                    
                 }
             }
             for (int i = 0; i < manowarShip.Count; i++)
             {
-                if (manowarShip[i] == 0)
+                if (manowarShip[i] <= 0)
                 {
                     isAnyShipDead = true;
-                    break;
+                    
                 }
             }
 
