@@ -124,7 +124,7 @@ namespace _3._Man_O_War //The pirates encounter a huge Man-O-War at sea.
 
         private static void Defend(int startDeck, int endDeck, int damageDeck, List<int> pirateShip)
         {
-            if (startDeck < 0 || endDeck < 0 || startDeck > pirateShip.Count || endDeck > pirateShip.Count)
+            if (startDeck < 0 || endDeck > pirateShip.Count)
             {
                 return;
             }
