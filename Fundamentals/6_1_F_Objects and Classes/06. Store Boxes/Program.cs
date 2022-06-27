@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _06._Store_Boxes
 {
@@ -22,7 +23,17 @@ namespace _06._Store_Boxes
     {
         static void Main(string[] args)
         {
-            
+            List<Box> students = new List<Box>();
+            string command = Console.ReadLine();
+
+            while (command != "end")
+            {
+                string[] tokens = command.Split();
+                string serialNumber = tokens[0];
+                string itemName = tokens[1];
+                int boxQuantity = int.Parse(tokens[2]);
+                decimal itemPrice = decimal.Parse(tokens[3]);
+            }
         }
     }
 }
