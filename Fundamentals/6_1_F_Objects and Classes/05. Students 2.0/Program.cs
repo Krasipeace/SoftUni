@@ -27,7 +27,7 @@ namespace _05._Students_2._0
                 if (IsStudentExist(students, firstName, lastName))
                 {
 
-                    var student = GetStudent(students, firstName, lastName, age);
+                    Student student = GetStudent(students, firstName, lastName, age);
                 }
                 else
                 {
