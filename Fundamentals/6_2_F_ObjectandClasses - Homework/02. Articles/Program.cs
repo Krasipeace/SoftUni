@@ -6,16 +6,16 @@ namespace _02._Articles
 {
     internal class Article
     {
-        string Content { get; set; }
-        string Author { get; set; }
-        string Title { get; set; }
-
         public Article(string title, string content, string author)
         {
             Title = title;
             Content = content;
-            Author = author;         
+            Author = author;
         }
+        string Content { get; set; }
+        string Author { get; set; }
+        string Title { get; set; }
+
         public void EditContent(string editContent)
         {
             Content = editContent;
@@ -44,7 +44,7 @@ namespace _02._Articles
             for (int i = 0; i < command; i++)
             {
                 string[] tokens = Console.ReadLine().Split(": ", StringSplitOptions.RemoveEmptyEntries);
-                string action = tokens[0];               
+                string action = tokens[0];
 
                 switch (action)
                 {

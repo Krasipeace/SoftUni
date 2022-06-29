@@ -6,16 +6,15 @@ namespace _03._Articles_2._0
 {
     internal class Article
     {
-        string Content { get; set; }
-        string Author { get; set; }
-        string Title { get; set; }
-
         public Article(string title, string content, string author)
         {
             Title = title;
             Content = content;
             Author = author;
         }
+        string Content { get; set; }
+        string Author { get; set; }
+        string Title { get; set; }
 
         public override string ToString()
         {
@@ -23,7 +22,7 @@ namespace _03._Articles_2._0
         }
 
         static void Main(string[] args)
-        {           
+        {
             List<Article> articles = new List<Article>();
             int command = int.Parse(Console.ReadLine());
 
@@ -38,11 +37,14 @@ namespace _03._Articles_2._0
             string sorting = Console.ReadLine();
             switch (sorting)
             {
-                case "title": articles.OrderByDescending(big => big.Title).ToList();
+                case "title":
+                    articles.OrderByDescending(big => big.Title).ToList();
                     break;
-                case "content": articles.OrderByDescending(big => big.Content).ToList();
+                case "content":
+                    articles.OrderByDescending(big => big.Content).ToList();
                     break;
-                case "author": articles.OrderByDescending(big => big.Author).ToList();
+                case "author":
+                    articles.OrderByDescending(big => big.Author).ToList();
                     break;
             }
 

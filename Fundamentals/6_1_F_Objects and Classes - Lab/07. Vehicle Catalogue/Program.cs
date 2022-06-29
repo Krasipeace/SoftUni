@@ -18,13 +18,14 @@ namespace _07._Vehicle_Catalogue
     }
     class Catalog
     {
-        public List<Car> Cars { get; set; }
-        public List<Truck> Trucks { get; set; }
         public Catalog()
         {
             Cars = new List<Car>();
             Trucks = new List<Truck>();
         }
+        public List<Car> Cars { get; set; }
+        public List<Truck> Trucks { get; set; }
+
     }
     internal class Program
     {

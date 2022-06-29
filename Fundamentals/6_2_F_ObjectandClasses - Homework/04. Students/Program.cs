@@ -6,15 +6,15 @@ namespace _04._Students
 {
     internal class Student
     {
-        string FirstName { get; set; }
-        string LastName { get; set; }
-        double Grade { get; set; }
         public Student(string firstName, string lastName, double grade)
         {
             FirstName = firstName;
             LastName = lastName;
             Grade = grade;
         }
+        string FirstName { get; set; }
+        string LastName { get; set; }
+        double Grade { get; set; }
 
         static void Main(string[] args)
         {

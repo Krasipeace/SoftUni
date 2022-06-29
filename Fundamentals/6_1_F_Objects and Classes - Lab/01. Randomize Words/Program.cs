@@ -21,7 +21,7 @@ namespace _01._Randomize_Words
                 inputList[randomWord] = wordTwo;
                 inputList[i] = wordOne;
             }
-            Console.WriteLine(String.Join(Environment.NewLine, inputList));
+            Console.WriteLine(string.Join(Environment.NewLine, inputList));
         }
     }
 }
