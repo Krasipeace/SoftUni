@@ -21,12 +21,11 @@ namespace _05._Teamwork_Projects
             TeamInitialization(numberOfTeams, teams);
 
             var tokens = Console.ReadLine().Split("->").ToArray();
-
             tokens = MemberInitialization(teams, tokens);
 
-            var disbandTeam = teams.Where(s => s.Members.Count == 0);
             var validTeam = teams.Where(x => x.Members.Count > 0);
-
+            var disbandTeam = teams.Where(k => k.Members.Count == 0);
+            
             PrintValidTeams(validTeam);
 
             PrintDisbandedTeams(disbandTeam);
