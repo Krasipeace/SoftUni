@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Repeat Strings", "2. Rep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Substring", "3. Substring\3. Substring.csproj", "{7E0F98A8-95F8-4D39-B1BE-09206CAB98FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Text Filter", "4. Text Filter\4. Text Filter.csproj", "{C34311A9-710A-4783-B980-505CC224EB81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. DigitsLettersAndOther", "5. DigitsLettersAndOther\5. DigitsLettersAndOther.csproj", "{ABFC58A4-9573-452A-9948-40A4A1CC1E9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{7E0F98A8-95F8-4D39-B1BE-09206CAB98FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E0F98A8-95F8-4D39-B1BE-09206CAB98FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E0F98A8-95F8-4D39-B1BE-09206CAB98FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C34311A9-710A-4783-B980-505CC224EB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C34311A9-710A-4783-B980-505CC224EB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C34311A9-710A-4783-B980-505CC224EB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C34311A9-710A-4783-B980-505CC224EB81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFC58A4-9573-452A-9948-40A4A1CC1E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFC58A4-9573-452A-9948-40A4A1CC1E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFC58A4-9573-452A-9948-40A4A1CC1E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFC58A4-9573-452A-9948-40A4A1CC1E9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
