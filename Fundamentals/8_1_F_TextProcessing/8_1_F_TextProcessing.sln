@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Reverse String", "1. Reverse String\1. Reverse String.csproj", "{2C5083B0-D8A9-4912-A6A2-39718AD09E5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Reverse String", "1. Reverse String\1. Reverse String.csproj", "{2C5083B0-D8A9-4912-A6A2-39718AD09E5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Repeat Strings", "2. Repeat Strings\2. Repeat Strings.csproj", "{185C40FE-D57B-403B-BCF4-76BBB1585BD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Repeat Strings", "2. Repeat Strings\2. Repeat Strings.csproj", "{185C40FE-D57B-403B-BCF4-76BBB1585BD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Substring", "3. Substring\3. Substring.csproj", "{7E0F98A8-95F8-4D39-B1BE-09206CAB98FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Substring", "3. Substring\3. Substring.csproj", "{7E0F98A8-95F8-4D39-B1BE-09206CAB98FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
