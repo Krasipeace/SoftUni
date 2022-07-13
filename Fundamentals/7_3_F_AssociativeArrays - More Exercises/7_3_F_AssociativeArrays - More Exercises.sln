@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Ranking", "1. Ranking\1. Ranking.csproj", "{3C4B5E5E-E50C-48F7-98AF-C6699D9CD3FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Ranking", "1. Ranking\1. Ranking.csproj", "{3C4B5E5E-E50C-48F7-98AF-C6699D9CD3FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Judge", "2. Judge\2. Judge.csproj", "{932AD296-E6FB-40E3-843E-B593D6C21F92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. MOBA Challenger", "3. MOBA Challenger\3. MOBA Challenger.csproj", "{F7304E52-E974-4824-B74F-5718C7B37E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. MOBA Challenger", "3. MOBA Challenger\3. MOBA Challenger.csproj", "{F7304E52-E974-4824-B74F-5718C7B37E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Snowwhite", "4. Snowwhite\4. Snowwhite.csproj", "{922A9494-DEAB-4917-8F8A-49A32B66A710}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Snowwhite", "4. Snowwhite\4. Snowwhite.csproj", "{922A9494-DEAB-4917-8F8A-49A32B66A710}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Dragon Army", "5. Dragon Army\5. Dragon Army.csproj", "{67F5A716-4601-4D5C-BD7E-87C74EADF053}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. Dragon Army", "5. Dragon Army\5. Dragon Army.csproj", "{67F5A716-4601-4D5C-BD7E-87C74EADF053}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{3C4B5E5E-E50C-48F7-98AF-C6699D9CD3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C4B5E5E-E50C-48F7-98AF-C6699D9CD3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C4B5E5E-E50C-48F7-98AF-C6699D9CD3FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{932AD296-E6FB-40E3-843E-B593D6C21F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{932AD296-E6FB-40E3-843E-B593D6C21F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{932AD296-E6FB-40E3-843E-B593D6C21F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{932AD296-E6FB-40E3-843E-B593D6C21F92}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7304E52-E974-4824-B74F-5718C7B37E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7304E52-E974-4824-B74F-5718C7B37E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7304E52-E974-4824-B74F-5718C7B37E55}.Release|Any CPU.ActiveCfg = Release|Any CPU

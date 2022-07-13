@@ -77,19 +77,27 @@ namespace _5._Dragon_Army
                 double averageHealth = 0.0;
                 double averageArmor = 0.0;
 
-                foreach (var stats in type.Value)
-                {
-                    averageDamage += stats.Value[0];
-                    averageHealth += stats.Value[1];
-                    averageArmor += stats.Value[2];
-                    counter++;
-                }
-                Console.WriteLine($"{type.Key}::({averageDamage / counter:f2}/{averageHealth / counter:f2}/{averageArmor / counter:f2})");
+                PrintDragonTypeAverageStats(type, ref counter, ref averageDamage, ref averageHealth, ref averageArmor);
 
-                foreach (var dragon in type.Value.OrderBy(currDrag => currDrag.Key))
-                {
-                    Console.WriteLine($"-{dragon.Key} -> damage: {dragon.Value[0]}, health: {dragon.Value[1]}, armor: {dragon.Value[2]}");
-                }
+                PrintOrderByName(type);
+            }
+        }
+        private static void PrintDragonTypeAverageStats(KeyValuePair<string, Dictionary<string, int[]>> type, ref int counter, ref double averageDamage, ref double averageHealth, ref double averageArmor)
+        {
+            foreach (var stats in type.Value)
+            {
+                averageDamage += stats.Value[0];
+                averageHealth += stats.Value[1];
+                averageArmor += stats.Value[2];
+                counter++;
+            }
+            Console.WriteLine($"{type.Key}::({averageDamage / counter:f2}/{averageHealth / counter:f2}/{averageArmor / counter:f2})");
+        }
+        private static void PrintOrderByName(KeyValuePair<string, Dictionary<string, int[]>> type)
+        {
+            foreach (var dragon in type.Value.OrderBy(currDrag => currDrag.Key))
+            {
+                Console.WriteLine($"-{dragon.Key} -> damage: {dragon.Value[0]}, health: {dragon.Value[1]}, armor: {dragon.Value[2]}");
             }
         }
     }
