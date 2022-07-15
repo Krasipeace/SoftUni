@@ -15,11 +15,25 @@ namespace _2._Character_Multiplier
             int minEqualLength = (Math.Max(inputOne.Length, inputTwo.Length) - Math.Abs(inputOne.Length - inputTwo.Length));
             int sum = 0;
 
+            sum = ClaculateEqualLength(inputOne, inputTwo, minEqualLength, sum);
+
+            sum = ClaculateRemainingCharacters(inputOne, inputTwo, minEqualLength, sum);
+
+            Console.WriteLine(sum);
+        }
+
+        private static int ClaculateEqualLength(StringBuilder inputOne, StringBuilder inputTwo, int minEqualLength, int sum)
+        {
             for (int i = 0; i < minEqualLength; i++)
             {
                 sum += inputOne[i] * inputTwo[i];
             }
 
+            return sum;
+        }
+
+        private static int ClaculateRemainingCharacters(StringBuilder inputOne, StringBuilder inputTwo, int minEqualLength, int sum)
+        {
             if (inputOne.Length > inputTwo.Length)
             {
                 for (int i = minEqualLength; i < inputOne.Length; i++)
@@ -35,7 +49,7 @@ namespace _2._Character_Multiplier
                 }
             }
 
-            Console.WriteLine(sum);
+            return sum;
         }
     }
 }
