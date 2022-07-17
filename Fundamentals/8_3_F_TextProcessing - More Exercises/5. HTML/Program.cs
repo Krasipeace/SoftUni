@@ -14,7 +14,6 @@ namespace _5._HTML
 
             while (true)
             {
-
                 if (comment == "end of comments")
                 {
                     break;
