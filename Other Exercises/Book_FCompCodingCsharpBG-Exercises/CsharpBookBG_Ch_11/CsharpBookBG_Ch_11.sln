@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1", "Problem 1\Problem 1.csproj", "{7D346E1E-722E-45FE-93AD-87062EE4118B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 1", "Problem 1\Problem 1.csproj", "{7D346E1E-722E-45FE-93AD-87062EE4118B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2", "Problem 2\Problem 2.csproj", "{DBF9C730-52FB-4040-B4ED-CC5AA35A25C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2", "Problem 2\Problem 2.csproj", "{DBF9C730-52FB-4040-B4ED-CC5AA35A25C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3", "Problem 3\Problem 3.csproj", "{D4295701-E44F-4F2D-86F7-E12FD41D84DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3", "Problem 3\Problem 3.csproj", "{D4295701-E44F-4F2D-86F7-E12FD41D84DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 4", "Problem 4\Problem 4.csproj", "{3395E8AE-E9BE-489F-9445-29CA33D90A48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 4", "Problem 4\Problem 4.csproj", "{3395E8AE-E9BE-489F-9445-29CA33D90A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 5", "Problem 5\Problem 5.csproj", "{7ABA7225-F931-45A9-9693-9756FD60717C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 5", "Problem 5\Problem 5.csproj", "{7ABA7225-F931-45A9-9693-9756FD60717C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 6", "Problem 6\Problem 6.csproj", "{6BFF9050-DA9F-4345-8B3D-0A69C3003590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 6", "Problem 6\Problem 6.csproj", "{6BFF9050-DA9F-4345-8B3D-0A69C3003590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 7", "Problem 7\Problem 7.csproj", "{168FBD65-A715-4AA2-972B-2C7491DF696B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 7_8", "Problem 7\Problem 7_8.csproj", "{168FBD65-A715-4AA2-972B-2C7491DF696B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
