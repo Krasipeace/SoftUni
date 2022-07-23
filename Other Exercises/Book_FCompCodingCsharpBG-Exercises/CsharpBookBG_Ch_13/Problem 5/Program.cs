@@ -20,14 +20,14 @@ namespace Problem_5 //task 7
             }
 
             int specialLength = MAX_LENGHT - textLength; //ex. 5 >> ***** at the end 
-            StringBuilder sb = new StringBuilder(text);
+            StringBuilder addStars = new StringBuilder(text);
 
             for (int i = 0; i < specialLength; i++)
             {
-                sb.Append('*');
+                addStars.Append('*');
             }
 
-            Console.WriteLine($"New Text: {sb}");
+            Console.WriteLine($"New Text: {addStars}");
 
         }
     }
