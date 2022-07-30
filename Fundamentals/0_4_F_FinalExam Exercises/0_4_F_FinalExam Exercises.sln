@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Fancy Barcodes", "2. Fan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. The Pianist", "3. The Pianist\3. The Pianist.csproj", "{2DDE717D-C357-4BD5-9CCF-BE0A09C59E98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. The Imitation Game", "1. The Imitation Game\1. The Imitation Game.csproj", "{59FA2A16-D59E-49FA-B11C-3CA4743CA538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. The Imitation Game", "1. The Imitation Game\1. The Imitation Game.csproj", "{59FA2A16-D59E-49FA-B11C-3CA4743CA538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Ad Astra", "2. Ad Astra\2. Ad Astra.csproj", "{FAE1E02A-6B4A-42B2-A8C4-B95A2EC9DB8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Ad Astra", "2. Ad Astra\2. Ad Astra.csproj", "{FAE1E02A-6B4A-42B2-A8C4-B95A2EC9DB8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Mirror Worlds", "2. Mirror Worlds\2. Mirror Worlds.csproj", "{453B60CF-AC99-43C2-B8AD-D8F091FA4359}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FAE1E02A-6B4A-42B2-A8C4-B95A2EC9DB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAE1E02A-6B4A-42B2-A8C4-B95A2EC9DB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAE1E02A-6B4A-42B2-A8C4-B95A2EC9DB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453B60CF-AC99-43C2-B8AD-D8F091FA4359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453B60CF-AC99-43C2-B8AD-D8F091FA4359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453B60CF-AC99-43C2-B8AD-D8F091FA4359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453B60CF-AC99-43C2-B8AD-D8F091FA4359}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,7 +20,7 @@ namespace _2._Fancy_Barcodes
                 {
                     char[] digits = currentBarcode.Where(char.IsDigit).ToArray();
 
-                    string barcodeGroup = digits.Length == 0 ? "00" : string.Join("", digits); // [4, 6] => 46
+                    string barcodeGroup = digits.Length == 0 ? "00" : string.Join("", digits); 
 
                     Console.WriteLine($"Product group: {barcodeGroup}");
                 }
