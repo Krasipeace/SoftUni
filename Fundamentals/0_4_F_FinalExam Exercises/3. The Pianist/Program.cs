@@ -7,11 +7,11 @@ namespace _03The_Pianist
     {
         static void Main(string[] args)
         {
-            int numberOfLines = int.Parse(Console.ReadLine());
 
             var music = new Dictionary<string, KeyValuePair<string, string>>();
             var order = new List<string>();
 
+            int numberOfLines = int.Parse(Console.ReadLine());
             for (int i = 0; i < numberOfLines; i++)
             {
                 var musicInfo = Console.ReadLine().Split("|", StringSplitOptions.RemoveEmptyEntries);

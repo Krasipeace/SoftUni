@@ -23,11 +23,7 @@ namespace _3._Need_For_Speed_III_Objects
                 };
 
                 cars.Add(car);
-            }
-
-            const int MAX_FUEL = 75;
-            const int MAX_MILEAGE = 100000;
-            const int MIN_MILEAGE = 10000;
+            }           
 
             string command = Console.ReadLine();
             while (command != "Stop")
@@ -37,13 +33,13 @@ namespace _3._Need_For_Speed_III_Objects
                 switch(tokens[0])
                 {
                     case "Drive":
-                        Drive(tokens, cars, MAX_MILEAGE);          //Drive : {car} : {distance} : {fuel}
+                        Drive(tokens, cars);          //Drive : {car} : {distance} : {fuel}
                         break;
                     case "Refuel":
-                        Refuel(tokens, cars, MAX_FUEL);            //Refuel : {car} : {fuel}
+                        Refuel(tokens, cars);         //Refuel : {car} : {fuel}
                         break;
                     case "Revert":
-                        Revert(tokens, cars, MIN_MILEAGE);         //Revert : {car} : {kilometers}
+                        Revert(tokens, cars);         //Revert : {car} : {kilometers}
                         break;
                 }
                 command = Console.ReadLine();
@@ -55,8 +51,10 @@ namespace _3._Need_For_Speed_III_Objects
             }
         }
 
-        private static void Drive(string[] tokens, List<Car> cars, int MAX_MILEAGE)
+        private static void Drive(string[] tokens, List<Car> cars)
         {
+            const int MAX_MILEAGE = 100000;
+
             string name = tokens[1];
             int distance = int.Parse(tokens[2]);
             int fuel = int.Parse(tokens[3]);
@@ -82,8 +80,10 @@ namespace _3._Need_For_Speed_III_Objects
 
         }
 
-        private static void Refuel(string[] tokens, List<Car> cars, int MAX_FUEL)
+        private static void Refuel(string[] tokens, List<Car> cars)
         {
+            const int MAX_FUEL = 75;
+
             string name = tokens[1];
             int fuel = int.Parse(tokens[2]);
 
@@ -100,8 +100,10 @@ namespace _3._Need_For_Speed_III_Objects
             Console.WriteLine($"{name} refueled with {car.Fuel - initialFuel} liters");
         }
 
-        private static void Revert(string[] tokens, List<Car> cars, int MIN_MILEAGE)
+        private static void Revert(string[] tokens, List<Car> cars)
         {
+            const int MIN_MILEAGE = 10000;
+
             string name = tokens[1];
             int kilometers = int.Parse(tokens[2]);
 

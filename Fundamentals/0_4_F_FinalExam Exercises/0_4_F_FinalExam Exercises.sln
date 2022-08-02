@@ -21,9 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. World Tour", "1. World T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Destination Mapper", "2. Destination Mapper\2. Destination Mapper.csproj", "{338AEC5E-B228-48D5-A122-046C53B019B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Plant Discovery with Objects", "3. Plant Discovery with Objects\3. Plant Discovery with Objects.csproj", "{928C305E-FCF5-4090-A8C9-D2458DCDA8DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Need For Speed III Objects", "3. Need For Speed III Objects\3. Need For Speed III Objects.csproj", "{D0D58FC5-A5ED-4B78-B441-EC3216EE5EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Need For Speed III Objects", "3. Need For Speed III Objects\3. Need For Speed III Objects.csproj", "{D0D58FC5-A5ED-4B78-B441-EC3216EE5EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. The Pianist Objects", "3. The Pianist Objects\3. The Pianist Objects.csproj", "{7B460DC9-F402-4089-81ED-8CDB169F8614}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Password Reset", "1. Password Reset\1. Password Reset.csproj", "{BC96DAC7-A68B-420C-B5C5-9FF9E31732CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Heroes of Code and Logic VII", "3. Heroes of Code and Logic VII\3. Heroes of Code and Logic VII.csproj", "{5F4F4E08-E2C3-494E-8065-DDC2887FBB02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Plant Discovery", "3. Plant Discovery\3. Plant Discovery.csproj", "{E288D68E-E6EC-4C42-BC22-D0E46FBEF6EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,14 +73,26 @@ Global
 		{338AEC5E-B228-48D5-A122-046C53B019B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{338AEC5E-B228-48D5-A122-046C53B019B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{338AEC5E-B228-48D5-A122-046C53B019B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{928C305E-FCF5-4090-A8C9-D2458DCDA8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{928C305E-FCF5-4090-A8C9-D2458DCDA8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{928C305E-FCF5-4090-A8C9-D2458DCDA8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{928C305E-FCF5-4090-A8C9-D2458DCDA8DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0D58FC5-A5ED-4B78-B441-EC3216EE5EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0D58FC5-A5ED-4B78-B441-EC3216EE5EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0D58FC5-A5ED-4B78-B441-EC3216EE5EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0D58FC5-A5ED-4B78-B441-EC3216EE5EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B460DC9-F402-4089-81ED-8CDB169F8614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B460DC9-F402-4089-81ED-8CDB169F8614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B460DC9-F402-4089-81ED-8CDB169F8614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B460DC9-F402-4089-81ED-8CDB169F8614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC96DAC7-A68B-420C-B5C5-9FF9E31732CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC96DAC7-A68B-420C-B5C5-9FF9E31732CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC96DAC7-A68B-420C-B5C5-9FF9E31732CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC96DAC7-A68B-420C-B5C5-9FF9E31732CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4F4E08-E2C3-494E-8065-DDC2887FBB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4F4E08-E2C3-494E-8065-DDC2887FBB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4F4E08-E2C3-494E-8065-DDC2887FBB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4F4E08-E2C3-494E-8065-DDC2887FBB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E288D68E-E6EC-4C42-BC22-D0E46FBEF6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E288D68E-E6EC-4C42-BC22-D0E46FBEF6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E288D68E-E6EC-4C42-BC22-D0E46FBEF6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E288D68E-E6EC-4C42-BC22-D0E46FBEF6EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

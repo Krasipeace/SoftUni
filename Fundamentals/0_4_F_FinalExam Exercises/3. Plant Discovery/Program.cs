@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _3._Plant_Discovery_with_Objects
+namespace _3._Plant_Discovery
 {
     internal class Program
     {
@@ -30,7 +30,7 @@ namespace _3._Plant_Discovery_with_Objects
                 {
                     switch (inputData[0])
                     {
-                        case "Rate:":
+                        case "Rate:":                            
                             Rate(plants, inputData, plant);
                             break;
                         case "Update:":
