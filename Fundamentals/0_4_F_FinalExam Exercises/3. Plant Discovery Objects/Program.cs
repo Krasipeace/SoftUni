@@ -117,7 +117,6 @@ namespace _3._Plant_Discovery_Objects
             {
                 return 0;
             }
-
         }
     }
 }

@@ -31,9 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Heroes of Code and Logic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Plant Discovery", "3. Plant Discovery\3. Plant Discovery.csproj", "{E288D68E-E6EC-4C42-BC22-D0E46FBEF6EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Heroes of Code and Logic VII Objects", "3. Heroes of Code and Logic VII Objects\3. Heroes of Code and Logic VII Objects.csproj", "{99DADE0E-0622-48AF-BAAD-649808B88864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Heroes of Code and Logic VII Objects", "3. Heroes of Code and Logic VII Objects\3. Heroes of Code and Logic VII Objects.csproj", "{99DADE0E-0622-48AF-BAAD-649808B88864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Plant Discovery Objects", "3. Plant Discovery Objects\3. Plant Discovery Objects.csproj", "{D97A04DE-94A4-4E0C-874F-BA5845FFD298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Plant Discovery Objects", "3. Plant Discovery Objects\3. Plant Discovery Objects.csproj", "{D97A04DE-94A4-4E0C-874F-BA5845FFD298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Activation Keys", "1. Activation Keys\1. Activation Keys.csproj", "{50026C64-5988-430B-ACF5-259BF4AB5326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Emoji Detector", "2. Emoji Detector\2. Emoji Detector.csproj", "{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{D97A04DE-94A4-4E0C-874F-BA5845FFD298}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D97A04DE-94A4-4E0C-874F-BA5845FFD298}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D97A04DE-94A4-4E0C-874F-BA5845FFD298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50026C64-5988-430B-ACF5-259BF4AB5326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50026C64-5988-430B-ACF5-259BF4AB5326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50026C64-5988-430B-ACF5-259BF4AB5326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50026C64-5988-430B-ACF5-259BF4AB5326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
