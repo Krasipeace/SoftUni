@@ -35,9 +35,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Heroes of Code and Logic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Plant Discovery Objects", "3. Plant Discovery Objects\3. Plant Discovery Objects.csproj", "{D97A04DE-94A4-4E0C-874F-BA5845FFD298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Activation Keys", "1. Activation Keys\1. Activation Keys.csproj", "{50026C64-5988-430B-ACF5-259BF4AB5326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Activation Keys", "1. Activation Keys\1. Activation Keys.csproj", "{50026C64-5988-430B-ACF5-259BF4AB5326}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Emoji Detector", "2. Emoji Detector\2. Emoji Detector.csproj", "{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Emoji Detector", "2. Emoji Detector\2. Emoji Detector.csproj", "{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Sino The Walker", "1. Sino The Walker\1. Sino The Walker.csproj", "{DAA8528E-297D-4A08-8B5F-3276BEA8963E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. P!rates", "3. P!rates\3. P!rates.csproj", "{3391D9FF-BB82-4D84-A1E0-244C7931577E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +121,14 @@ Global
 		{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BF34661-7DFD-4F4F-8535-1F8BFC1DED44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA8528E-297D-4A08-8B5F-3276BEA8963E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA8528E-297D-4A08-8B5F-3276BEA8963E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA8528E-297D-4A08-8B5F-3276BEA8963E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA8528E-297D-4A08-8B5F-3276BEA8963E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3391D9FF-BB82-4D84-A1E0-244C7931577E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3391D9FF-BB82-4D84-A1E0-244C7931577E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3391D9FF-BB82-4D84-A1E0-244C7931577E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3391D9FF-BB82-4D84-A1E0-244C7931577E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
