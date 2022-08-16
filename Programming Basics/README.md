@@ -1,9 +1,9 @@
-#Programming Basics - C#
+# Programming Basics - C#
 
-##SoftUni Judge Solved Tasks
+## SoftUni Judge Solved Tasks
 
-###Lab Solutions
 &nbsp;
+### Lab Solutions
 
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
 | :---: | :---: | :---: | :---: | :---: | :---: | 
@@ -19,9 +19,7 @@
 |                       |                       |                       | [OddEvenSum][31]   | 
 
 &nbsp;
-
-###Exercise Solutions
-&nbsp;
+### Exercise Solutions
 
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
 | :---: | :---: | :---: | :---: | :---: | :---: | 
@@ -32,7 +30,7 @@
 | [Supllies For School][49] | [GodzillavsKong][58] | [Journey][66]      | [Salary][74]        | [Coins][82]    | [Special Numbers][89]       |
 | [Repainting][50]          | [WorldSwim ecord][59]| [OperationsNum][67]| [Oscars][75]        | [Cake][83]     | [Cinema Tickets][90]        |
 | [Food Delivery][51]       | [Shopping][60]       | [Hotel Room][68]   | [Trekking Mania][76]| [Moving][84]   |
-| [Basketball Equipment][52]| [Lunch Break][61]     | [Ski Trip][69]     | [TennisRankList][77]|                |
+| [Basketball Equipment][52]| [Lunch Break][61]    | [Ski Trip][69]     | [TennisRankList][77]|                |
 | [Fish Tank][53]           | 
 
 
