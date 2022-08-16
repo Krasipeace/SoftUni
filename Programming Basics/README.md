@@ -1,8 +1,8 @@
-Programming Basics - C#
+#Programming Basics - C#
 
-Solved Tasks
+##Solved Tasks
 
-Lab Solutions
+###Lab Solutions
 &nbsp;
 
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
@@ -20,31 +20,20 @@ Lab Solutions
 
 &nbsp;
 
-Exercise Solutions
+###Exercise Solutions
 &nbsp;
 
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
 | :---: | :---: | :---: | :---: | :---: | :---: | 
-
-
-
-More Exercise Solutions
-&nbsp;
-
-| First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
-| :---: | :---: | :---: | :---: | :---: | :---: | 
-
-
-
-
-
-
-
-
-
-
-
-
+| [USDtoBGNConvert][45]     | [Sum Seconds][54]    | [Cinema][62]       | [Ending in 7][70]   | [Old Books][78]| [NumPyramid][85]            |
+| [RadianstoDegrees][46]    | [Bonus Score][55]    | [Summer Outfit][63]| [HalfSumElement][71]| [ExamPrep][79] | [EqualSums Even Odd Pos][86]|
+| [Deposit Calculator][47]  | [Time+15min][56]     | [New House][64]    | [Histogram][72]     | [Vacation][80] | [SumPrime NonPrime][87]     |
+| [Vacation Book List][48]  | [Toy Shop][57]       | [Fishing Boat][65] | [Clever Lily][73]   | [Walking][81]  | [Train the Trainers][88]    |
+| [Supllies For School][49] | [GodzillavsKong][58] | [Journey][66]      | [Salary][74]        | [Coins][82]    | [Special Numbers][89]       |
+| [Repainting][50]          | [WorldSwim ecord][59]| [OperationsNum][67]| [Oscars][75]        | [Cake][83]     | [Cinema Tickets][90]        |
+| [Food Delivery][51]       | [Shopping][60]       | [Hotel Room][68]   | [Trekking Mania][76]| [Moving][84]   |
+| [Basketball Equipment][52]| [Lunch Break[61]     | [Ski Trip][69]     | [TennisRankList][77]|                |
+| [Fish Tank][53]           | 
 
 
 
@@ -94,10 +83,49 @@ More Exercise Solutions
 [43]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops/Travelling/Program.cs
 [44]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops/Building/Program.cs
 
-[45]:
-[47]:
-[48]:
-[49]: 
-[50]:
-[51]: 
- 
+[45]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/USDtoBGN/Program.cs
+[46]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/RadiansToDegrees/Program.cs
+[47]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/DepositCalculator/Program.cs
+[48]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/VacationBooksList/Program.cs
+[49]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/SuppliesForSchool/Program.cs
+[50]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/Repainting/Program.cs
+[51]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/FoodDelivery/Program.cs
+[52]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/BasketballEquipment/Program.cs
+[53]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/First%20Steps%20in%20Coding%20-%20Exercise/FishTank/Program.cs
+[54]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/SumSeconds/Program.cs
+[55]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/BonusScore/Program.cs
+[56]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/time%2B15minutes/Program.cs
+[57]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/ToyShop/Program.cs
+[58]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/GodzillaVSKong/Program.cs
+[59]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/WorldSwimmingRecord/Program.cs
+[60]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/Shopping/Program.cs
+[61]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/LunchBreak/Program.cs
+[62]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/Cinema/Program.cs
+[63]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/SummerOutfit/Program.cs
+[64]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/NewHouse/Program.cs
+[65]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/FishingBoat/Program.cs
+[66]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/Journey/Program.cs
+[67]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/OperationsBetweenNumbers/Program.cs
+[68]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/HotelRoom/Program.cs
+[69]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/CondStatementsAdvExercises/SkiTrip/Program.cs
+[70]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/NumbersEndingIn7/Program.cs
+[71]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/HalfSumElement/Program.cs
+[72]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/Histogram/Program.cs
+[73]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/CleverLily/Program.cs
+[74]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/Salary/Program.cs
+[75]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/Oscars/Program.cs
+[76]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/TrekkingMania/Program.cs
+[77]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For_Lab/TennisRanklist/Program.cs
+[78]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-While_exercise/OldBooks/Program.cs
+[79]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-While_exercise/ExamPreparation/Program.cs
+[80]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-While_exercise/Vacation/Program.cs
+[81]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-While_exercise/Walking/Program.cs
+[82]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-While_exercise/Coins/Program.cs
+[83]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-While_exercise/Cake/Program.cs
+[84]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-While_exercise/Moving/Program.cs
+[85]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/NumberPyramid/Program.cs
+[86]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/EqualSumsEvenOddPosition/Program.cs
+[87]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/SumPrimeNonPrime/Program.cs
+[88]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/TrainTheTrainers/Program.cs
+[89]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/SpecialNumbers/Program.cs
+[90]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/CinemaTickets/Program.cs
