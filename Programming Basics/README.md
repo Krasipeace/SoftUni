@@ -28,3 +28,9 @@ More Exercise Solutions
 &nbsp;
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
 |: --- :|: --- :|: --- :|: --- :|: --- :|: --- :| 
+
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
