@@ -1,6 +1,6 @@
 #Programming Basics - C#
 
-##Solved Tasks
+##SoftUni Judge Solved Tasks
 
 ###Lab Solutions
 &nbsp;
