@@ -1,10 +1,10 @@
 Programming Basics - C#
-&nbsp;
+
 Solved Tasks
-&nbsp;
-&nbsp;
+
 Lab Solutions
 &nbsp;
+
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | Numbers 1 to 10   | Excellent Result | Day of Week        | Numbers 1to100 | Read Text     | Clock                |
@@ -17,21 +17,21 @@ Lab Solutions
 | Yard Greening     |                  |                    | NumberSequence |  
 |                   |                  |                    | LeftRight Sum  | 
 |                   |                  |                    | Odd Even Sum   | 
+
 &nbsp;
+
 Exercise Solutions
 &nbsp;
+
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
-|: --- :|: --- :|: --- :|: --- :|: --- :|: --- :| 
+| :---: | :---: | :---: | :---: | :---: | :---: | 
 
 
 
 More Exercise Solutions
 &nbsp;
+
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
-|: --- :|: --- :|: --- :|: --- :|: --- :|: --- :| 
+| :---: | :---: | :---: | :---: | :---: | :---: | 
 
 
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
