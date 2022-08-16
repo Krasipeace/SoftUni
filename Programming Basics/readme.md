@@ -17,6 +17,7 @@ Lab Solutions
 | Yard Greening |         |         | Numbers Sequence | Graduation |
 |               |          |          | Left and Right Sum | 
 |             |           |          | Odd Even Sum | 
+
 Exercise Solutions
 &nbsp;
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
