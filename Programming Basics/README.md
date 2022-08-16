@@ -9,10 +9,10 @@ Lab Solutions
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | [Numbers 1 to 10][1]  | [Excellent Result][9] | [Day of Week][15]     | [Numbers1to100][22]| [Read Text][32]   | [Clock][39]              |
 | [Rectangle Area][2]   | [Greater Number][10]  | [WeekendOfWorkDay][16]| [NumbersNto1][23]  | [Password][33]    | [MultiplicationTable][40]|
-| [Inch to Cm][3]       | [Even Or Odd][11]     | [Animal Type][17]     | [Nums1toNStep3[24] | [Sum Numbers][34] | [Combinations][41]       |
-| [Greeting By Name][4] | [Password Guess][12]  | [Personal Titles][18] | [EvenPowersOf2[25] | [Sequence2k+1][35]| [Sum of Two Numbers][42] |
-| [Concatenate Data][5] | [Number 100...200][13]| [Small Shop][19]      | [CharSequence[26]  | [Acc Balance][36] | [Travelling][43]         |
-| [Projects Creation][6]| [Speed Info][14]      | [Number in Range][20] | [Vowels Sum[27]    | [Max Number][37]  | [Building][44]           |
+| [Inch to Cm][3]       | [Even Or Odd][11]     | [Animal Type][17]     | [Nums1toNStep3][24]| [Sum Numbers][34] | [Combinations][41]       |
+| [Greeting By Name][4] | [Password Guess][12]  | [Personal Titles][18] | [EvenPowersOf2][25]| [Sequence2k+1][35]| [Sum of Two Numbers][42] |
+| [Concatenate Data][5] | [Number 100...200][13]| [Small Shop][19]      | [CharSequence][26] | [Acc Balance][36] | [Travelling][43]         |
+| [Projects Creation][6]| [Speed Info][14]      | [Number in Range][20] | [Vowels Sum][27]   | [Max Number][37]  | [Building][44]           |
 | [Pet Shop][7]         |                       | [Working Hours][21]   | [SumNumbers][28]   | [Min Number][38]  |                          |
 | [Yard Greening][8]    |                       |                       | [NumSequence][29]  |  
 |                       |                       |                       | [LeftRightSum][30] | 
