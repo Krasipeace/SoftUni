@@ -56,7 +56,7 @@ More Exercise Solutions
 [5]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/FirstStepsInCoding/ConcatenateData/ConcatenateData/Program.cs
 [6]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/FirstStepsInCoding/ProjectsCreation/ProjectsCreation/Program.cs 
 [7]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/FirstStepsInCoding/PetShop/PetShop/Program.cs
-[8}: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/FirstStepsInCoding/YardGreening/YardGreening/Program.cs
+[8]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/FirstStepsInCoding/YardGreening/YardGreening/Program.cs
 [9]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/ExcellentResult/Program.cs
 [10]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/BiggerNumber/Program.cs
 [11]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatements/EvenOrOdd/Program.cs
@@ -69,7 +69,7 @@ More Exercise Solutions
 [18]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatementsAdvanced/PersonalTitles/Program.cs
 [19]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatementsAdvanced/SmallShop/Program.cs
 [20]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatementsAdvanced/NumberInRange/Program.cs
-[21}: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatementsAdvanced/WorkingHours/Program.cs
+[21]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/ConditionalStatementsAdvanced/WorkingHours/Program.cs
 [22]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For/NumbersfromOneto100/Program.cs
 [23]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For/NumNto1/Program.cs
 [24]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Loops-For/Num1toNstep3/Program.cs
