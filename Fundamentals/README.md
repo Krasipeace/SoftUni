@@ -5,7 +5,6 @@
 &nbsp;
 
 ### Basic Syntax, Conditional Statements and Loops
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
@@ -24,7 +23,6 @@
 &nbsp;
 
 ### Data Types and Variables
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: |
@@ -43,7 +41,6 @@
 &nbsp;
 
 ### Arrays
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
@@ -61,7 +58,6 @@
 &nbsp;
 
 ### Methods
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
@@ -80,7 +76,6 @@
 &nbsp;
 
 ### Lists
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
@@ -98,7 +93,6 @@
 &nbsp;
 
 ### Objects and Classes
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
@@ -113,7 +107,6 @@
 &nbsp;
 
 ### Associative Arrays
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
@@ -128,7 +121,6 @@
 &nbsp;
 
 ### Text Processing
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
@@ -144,7 +136,6 @@
 &nbsp;
 
 ### Regular expressions
-&nbsp;
 
 | Lab | Exercises | More Exercises |
 | :---: | :---: | :---: | 
