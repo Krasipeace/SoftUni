@@ -6,62 +6,62 @@
 
 ### Stacks and Queues
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Multidimensional Arrays
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Sets and Dictionaries Advanced
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Streams, Files and Directories
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: |
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Functional Programming
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Defining Classes
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Generics
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Iterators and Comparators
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Lab | Exercises | 
+| :---: | :---: | 
 
 &nbsp;
 
 ### Basic Algorithms
 
-| Lab | Exercises | More Exercises |
-| :---: | :---: | :---: | 
+| Exercises | 
+| :---: | 
 
