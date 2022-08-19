@@ -5,19 +5,25 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Sum Matrix Elements", "1. Sum Matrix Elements\1. Sum Matrix Elements.csproj", "{CC435BB9-10CB-4F2C-AFF5-B30A7049BB21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Sum Matrix Columns", "2. Sum Matrix Columns\2. Sum Matrix Columns.csproj", "{7933275A-5311-43A5-8911-40A2ED7381DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Sum Matrix Columns", "2. Sum Matrix Columns\2. Sum Matrix Columns.csproj", "{7933275A-5311-43A5-8911-40A2ED7381DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Primary Diagonal", "3. Primary Diagonal\3. Primary Diagonal.csproj", "{C04FF3E5-9A42-410E-B21E-EAA31065D305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Primary Diagonal", "3. Primary Diagonal\3. Primary Diagonal.csproj", "{C04FF3E5-9A42-410E-B21E-EAA31065D305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Square with Max Sum", "5. Square with Max Sum\5. Square with Max Sum.csproj", "{99525F38-7C95-42B3-A26A-D71866D34210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. Square with Max Sum", "5. Square with Max Sum\5. Square with Max Sum.csproj", "{99525F38-7C95-42B3-A26A-D71866D34210}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Symbol in Matrix", "4. Symbol in Matrix\4. Symbol in Matrix.csproj", "{9332FFF9-B1ED-4280-8E25-8902581D52C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Symbol in Matrix", "4. Symbol in Matrix\4. Symbol in Matrix.csproj", "{9332FFF9-B1ED-4280-8E25-8902581D52C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. JagArr Modification", "6. JagArr Modification\6. JagArr Modification.csproj", "{8DA74605-DFA2-4270-B6E6-C182373F9A1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. JagArr Modification", "6. JagArr Modification\6. JagArr Modification.csproj", "{8DA74605-DFA2-4270-B6E6-C182373F9A1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Group Numbers", "7. Group Numbers\7. Group Numbers.csproj", "{C873D935-97E0-4932-8C0E-4A3680F76F35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Group Numbers", "7. Group Numbers\7. Group Numbers.csproj", "{C873D935-97E0-4932-8C0E-4A3680F76F35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. Pascal Triangle", "8. Pascal Triangle\8. Pascal Triangle.csproj", "{5449E686-7998-406F-AC5D-040533444535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8. Pascal Triangle", "8. Pascal Triangle\8. Pascal Triangle.csproj", "{5449E686-7998-406F-AC5D-040533444535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Matrix of Palindroms", "9. Matrix of Palindroms\9. Matrix of Palindroms.csproj", "{CA8BD6DF-FC8B-4869-8B73-4B637746036D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Diagonal Difference", "10. Diagonal Difference\10. Diagonal Difference.csproj", "{446C7371-FDEF-475D-8162-9725257A49D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. 2x2 in Matrix", "11. 2x2 in Matrix\11. 2x2 in Matrix.csproj", "{9BBCC8F0-EC04-4470-951B-E794343F6CED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{5449E686-7998-406F-AC5D-040533444535}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5449E686-7998-406F-AC5D-040533444535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5449E686-7998-406F-AC5D-040533444535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8BD6DF-FC8B-4869-8B73-4B637746036D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8BD6DF-FC8B-4869-8B73-4B637746036D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8BD6DF-FC8B-4869-8B73-4B637746036D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8BD6DF-FC8B-4869-8B73-4B637746036D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446C7371-FDEF-475D-8162-9725257A49D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446C7371-FDEF-475D-8162-9725257A49D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446C7371-FDEF-475D-8162-9725257A49D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446C7371-FDEF-475D-8162-9725257A49D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBCC8F0-EC04-4470-951B-E794343F6CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBCC8F0-EC04-4470-951B-E794343F6CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBCC8F0-EC04-4470-951B-E794343F6CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBCC8F0-EC04-4470-951B-E794343F6CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

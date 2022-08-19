@@ -26,7 +26,7 @@ namespace _3._Primary_Diagonal
                         diagonalSum += matrix[row, col];
                     }
                 }
-            }            
+            }
 
             Console.WriteLine(diagonalSum);
         }
