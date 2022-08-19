@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Group Numbers", "7. Grou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8. Pascal Triangle", "8. Pascal Triangle\8. Pascal Triangle.csproj", "{5449E686-7998-406F-AC5D-040533444535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Matrix of Palindroms", "9. Matrix of Palindroms\9. Matrix of Palindroms.csproj", "{CA8BD6DF-FC8B-4869-8B73-4B637746036D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9. Matrix of Palindroms", "9. Matrix of Palindroms\9. Matrix of Palindroms.csproj", "{CA8BD6DF-FC8B-4869-8B73-4B637746036D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Diagonal Difference", "10. Diagonal Difference\10. Diagonal Difference.csproj", "{446C7371-FDEF-475D-8162-9725257A49D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. Diagonal Difference", "10. Diagonal Difference\10. Diagonal Difference.csproj", "{446C7371-FDEF-475D-8162-9725257A49D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. 2x2 in Matrix", "11. 2x2 in Matrix\11. 2x2 in Matrix.csproj", "{9BBCC8F0-EC04-4470-951B-E794343F6CED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11. 2x2 in Matrix", "11. 2x2 in Matrix\11. 2x2 in Matrix.csproj", "{9BBCC8F0-EC04-4470-951B-E794343F6CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Max Sum", "12. Max Sum\12. Max Sum.csproj", "{98CD20D8-188A-4C39-BD98-919DB77D02CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{9BBCC8F0-EC04-4470-951B-E794343F6CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BBCC8F0-EC04-4470-951B-E794343F6CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BBCC8F0-EC04-4470-951B-E794343F6CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CD20D8-188A-4C39-BD98-919DB77D02CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CD20D8-188A-4C39-BD98-919DB77D02CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CD20D8-188A-4C39-BD98-919DB77D02CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CD20D8-188A-4C39-BD98-919DB77D02CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
