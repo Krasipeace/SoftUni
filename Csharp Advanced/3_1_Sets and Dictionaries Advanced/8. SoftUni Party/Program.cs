@@ -41,6 +41,7 @@ namespace _8._SoftUni_Party
             foreach (var item in guests)
             {
                 char[] symbol = item.ToCharArray();
+
                 if (char.IsDigit(symbol[0]))
                 {
                     Console.WriteLine(item);
@@ -49,6 +50,7 @@ namespace _8._SoftUni_Party
             foreach (var item in guests)
             {
                 char[] symbol = item.ToCharArray();
+
                 if (char.IsLetter(symbol[0]))
                 {
                     Console.WriteLine(item);
