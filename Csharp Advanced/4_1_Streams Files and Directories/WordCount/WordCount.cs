@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    public class WordCount  //unfinished
+    public class WordCount  
     {
         static void Main()
         {
