@@ -14,11 +14,10 @@ namespace CarManufacturer
                 new Tire(2, 2.3)
             };
 
-            Engine engine = new Engine(560, 6300);
+            Engine engine = new Engine(560, 6300);        
 
             Car car = new Car("Lamborghini", "Urus", 2010, 250, 9, engine, tires);
-
-            //Console.WriteLine(car.WhoAmI());
+          
         }
     }
 }
