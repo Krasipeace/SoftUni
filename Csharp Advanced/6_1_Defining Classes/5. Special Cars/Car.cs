@@ -66,9 +66,15 @@ namespace CarManufacturer
             }
         }
 
-        public string ShowSpecial()
+        public override string ToString()
         {
-            return $"Make: {this.Make}\nModel: {this.Model}\nYear: {this.Year}\nHorsePowers: {this.Engine.HorsePower}\nFuelQuantity: {this.FuelQuantity:f2}";
+            StringBuilder PrintCar = new StringBuilder();
+            PrintCar.AppendLine($"Make: {this.Make}");
+            PrintCar.AppendLine($"Model: {this.Model}");
+            PrintCar.AppendLine($"Year: {this.Year}");
+            PrintCar.AppendLine($"HorsePowers: {this.Engine.HorsePower}");
+            PrintCar.AppendLine($"FuelQuantity: {this.FuelQuantity}");
+            return PrintCar.ToString();
         }
 
     }
