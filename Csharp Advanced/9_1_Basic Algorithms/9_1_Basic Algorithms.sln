@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Recursive Array Sum", "1. Recursive Array Sum\1. Recursive Array Sum.csproj", "{46E24C38-4ADB-4C95-AD70-93EF41D867EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Recursive Array Sum", "1. Recursive Array Sum\1. Recursive Array Sum.csproj", "{46E24C38-4ADB-4C95-AD70-93EF41D867EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Recursive Factorial", "2. Recursive Factorial\2. Recursive Factorial.csproj", "{662D6E05-EF9C-4EAB-AF1B-CEA543A0C46C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Recursive Factorial", "2. Recursive Factorial\2. Recursive Factorial.csproj", "{662D6E05-EF9C-4EAB-AF1B-CEA543A0C46C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Quick Sort", "6. Quick Sort\6. Quick Sort.csproj", "{C05AA3C2-49E1-4C47-AEA1-380163E51D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Binary Search", "7. Binary Search\7. Binary Search.csproj", "{750167EC-44A2-4754-AADB-5454058E5E56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{662D6E05-EF9C-4EAB-AF1B-CEA543A0C46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662D6E05-EF9C-4EAB-AF1B-CEA543A0C46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662D6E05-EF9C-4EAB-AF1B-CEA543A0C46C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05AA3C2-49E1-4C47-AEA1-380163E51D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05AA3C2-49E1-4C47-AEA1-380163E51D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05AA3C2-49E1-4C47-AEA1-380163E51D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05AA3C2-49E1-4C47-AEA1-380163E51D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750167EC-44A2-4754-AADB-5454058E5E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750167EC-44A2-4754-AADB-5454058E5E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750167EC-44A2-4754-AADB-5454058E5E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750167EC-44A2-4754-AADB-5454058E5E56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
