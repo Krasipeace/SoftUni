@@ -30,12 +30,12 @@ namespace _10._Crossroads
 
                         if (greenLight < 0)
                         {
-                            int currWindow = freeWindow + (carBody - Math.Abs(greenLight));
+                            int carPart = freeWindow + (carBody - Math.Abs(greenLight));
 
-                            if (carBody > currWindow)
+                            if (carBody > carPart)
                             {
                                 Console.WriteLine("A crash happened!");
-                                Console.WriteLine($"{carPassing} was hit at {carPassing[currWindow]}.");
+                                Console.WriteLine($"{carPassing} was hit at {carPassing[carPart]}.");
 
                                 return;
                             }
