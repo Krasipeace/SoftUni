@@ -48,8 +48,6 @@ namespace _5._Fashion_Boutique
                 }
             }
             Console.WriteLine(boxCounter);
-
-
         }
     }
 }
