@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Diagonal Difference", "1. Diagonal Difference\1. Diagonal Difference.csproj", "{43786C7C-2319-4E5C-9D45-3AA1A1969F77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. 2x2 Square in Matrix", "2. 2x2 Square in Matrix\2. 2x2 Square in Matrix.csproj", "{C72DB627-6FE0-4FA5-990E-98556C6C5FFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Maximal Sum", "3. Maximal Sum\3. Maximal Sum.csproj", "{16DE308C-B136-418D-ABD1-9BBB9229EEEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{43786C7C-2319-4E5C-9D45-3AA1A1969F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43786C7C-2319-4E5C-9D45-3AA1A1969F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43786C7C-2319-4E5C-9D45-3AA1A1969F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C72DB627-6FE0-4FA5-990E-98556C6C5FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72DB627-6FE0-4FA5-990E-98556C6C5FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72DB627-6FE0-4FA5-990E-98556C6C5FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72DB627-6FE0-4FA5-990E-98556C6C5FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DE308C-B136-418D-ABD1-9BBB9229EEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DE308C-B136-418D-ABD1-9BBB9229EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DE308C-B136-418D-ABD1-9BBB9229EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DE308C-B136-418D-ABD1-9BBB9229EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
