@@ -49,7 +49,7 @@ namespace _6._Jagged_Array_Manipulator
                 int col = int.Parse(input[2]);
                 int value = int.Parse(input[3]);
 
-                if ((row >= 0 && row < jaggedArray.Length) && (col >= 0 && col < jaggedArray[row].Length))
+                if (row >= 0 && row < jaggedArray.Length && col >= 0 && col < jaggedArray[row].Length)
                 {
                     switch (input[0])
                     {

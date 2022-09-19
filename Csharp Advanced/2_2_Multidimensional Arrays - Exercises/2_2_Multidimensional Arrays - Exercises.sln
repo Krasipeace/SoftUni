@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. 2x2 Square in Matrix", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Maximal Sum", "3. Maximal Sum\3. Maximal Sum.csproj", "{16DE308C-B136-418D-ABD1-9BBB9229EEEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Matrix Shuffling", "4. Matrix Shuffling\4. Matrix Shuffling.csproj", "{D0D14574-39C5-4DB1-82CD-84A6030993E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Jagged Array Manipulator", "6. Jagged Array Manipulator\6. Jagged Array Manipulator.csproj", "{BB6016D7-AB78-4368-ABDC-CDBB91F7268F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{16DE308C-B136-418D-ABD1-9BBB9229EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DE308C-B136-418D-ABD1-9BBB9229EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DE308C-B136-418D-ABD1-9BBB9229EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D14574-39C5-4DB1-82CD-84A6030993E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D14574-39C5-4DB1-82CD-84A6030993E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D14574-39C5-4DB1-82CD-84A6030993E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D14574-39C5-4DB1-82CD-84A6030993E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB6016D7-AB78-4368-ABDC-CDBB91F7268F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6016D7-AB78-4368-ABDC-CDBB91F7268F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6016D7-AB78-4368-ABDC-CDBB91F7268F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6016D7-AB78-4368-ABDC-CDBB91F7268F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
