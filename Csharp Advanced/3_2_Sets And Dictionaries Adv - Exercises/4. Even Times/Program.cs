@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _4._Even_Times
 {
@@ -20,16 +21,18 @@ namespace _4._Even_Times
                 }
                 dictionary[number]++;
             }
+            
+            Console.WriteLine(dictionary.Single(n => n.Value % 2 == 0).Key);
 
-            foreach (var num in dictionary)
-            {
-                if (num.Value %  2 == 0)
-                {
-                    Console.WriteLine(num.Key);
+            //foreach (var num in dictionary)
+            //{
+            //    if (num.Value %  2 == 0)
+            //    {
+            //        Console.WriteLine(num.Key);
 
-                    return;
-                }
-            }
+            //        return;
+            //    }
+            //}
 
         }
     }
