@@ -31,10 +31,21 @@ namespace _6._Wardrobe
                 }
             }
 
-            string[] clothToSearch = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
-            string apparelType = clothToSearch[0];
-            string apparelColor = clothToSearch[1];
+            string apparelType, apparelColor;
+            SearchApparel(out apparelType, out apparelColor);
 
+            PrintClothes(allClothes, apparelType, apparelColor);
+        }
+
+        static void SearchApparel(out string apparelType, out string apparelColor)
+        {
+            string[] clothToSearch = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            apparelType = clothToSearch[0];
+            apparelColor = clothToSearch[1];
+        }
+
+        static void PrintClothes(Dictionary<string, Dictionary<string, int>> allClothes, string apparelType, string apparelColor)
+        {
             foreach (var apparel in allClothes) //main dictionary
             {
                 Console.WriteLine($"{apparel.Key} clothes:");
