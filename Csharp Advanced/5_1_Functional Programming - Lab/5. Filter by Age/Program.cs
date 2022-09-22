@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _5._Filter_by_Age
 {
@@ -7,60 +8,70 @@ namespace _5._Filter_by_Age
     {
         static void Main(string[] args)
         {
-            int numberOfInputs = int.Parse(Console.ReadLine());
-            Dictionary<string, int> data = new Dictionary<string, int>();
+            //Dictionary<string, int> data = new Dictionary<string, int>();
 
+            int numberOfInputs = int.Parse(Console.ReadLine());
+
+            List<(string name, int age)> data = new List<(string name, int age)>();
+
+            Func<(string name, int age), int, bool> caseYoung = (person, age) => person.age < age;
+            Func<(string name, int age), int, bool> caseOlder = (person, age) => person.age >= age;
+
+            ReadPeople(numberOfInputs, data);
+
+            string condition = Console.ReadLine();
+            int checkAge = int.Parse(Console.ReadLine());
+            string[] format = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+            data = FilterByCondition(data, caseYoung, caseOlder, condition, checkAge);
+
+            PrintPeople(data, format);
+        }
+
+        static void ReadPeople(int numberOfInputs, List<(string name, int age)> data)
+        {
             for (int i = 0; i < numberOfInputs; i++)
             {
                 string[] personInfo = Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries);
                 string name = personInfo[0];
                 int age = int.Parse(personInfo[1]);
 
-                data.Add(name, age);
+                data.Add((name, age));
             }
-
-            string condition = Console.ReadLine();
-            int checkAge = int.Parse(Console.ReadLine());
-            string format = Console.ReadLine();
-
-            Func<int, bool> tester = CreateTester(condition, checkAge);
-
-            Action<KeyValuePair<string, int>> printer = CreatePrinter(format);
-
-            PrintFilteredStudent(data, tester, printer);
         }
 
-
-        private static Func<int, bool> CreateTester(string condition, int checkAge)
+        static List<(string name, int age)> FilterByCondition(List<(string name, int age)> data, Func<(string name, int age), int, bool> caseYoung, Func<(string name, int age), int, bool> caseOlder, string condition, int checkAge)
         {
             switch (condition)
             {
-                case "older":
-                    return x => x >= checkAge;
                 case "younger":
-                    return x => x < checkAge;
-                default: return null;
+                    data = data.Where(n => caseYoung(n, checkAge)).ToList();
+                    break;
+                case "older":
+                    data = data.Where(n => caseOlder(n, checkAge)).ToList();
+                    break;
+            }
 
-            }
+            return data;
         }
-        private static Action<KeyValuePair<string, int>> CreatePrinter(string format)
+
+        static void PrintPeople(List<(string name, int age)> data, string[] format)
         {
-            switch (format)
+            foreach (var (person, output) in from person in data
+                                             let output = new List<string>()
+                                             select (person, output))
             {
-                case "name":
-                    return person => Console.WriteLine($"{person.Key}");
-                case "age":
-                    return person => Console.WriteLine($"{person.Value}");
-                case "name age":
-                    return person => Console.WriteLine($"{person.Key} - {person.Value}");
-                default: return null;
-            }
-        }
-        private static void PrintFilteredStudent(Dictionary<string, int> data, Func<int, bool> tester, Action<KeyValuePair<string, int>> printer)
-        {
-            foreach (var person in data)
-            {
-                Console.WriteLine(person.ToString());
+                if (format.Contains("name"))
+                {
+                    output.Add(person.name);
+                }
+
+                if (format.Contains("age"))
+                {
+                    output.Add(person.age.ToString());
+                }
+
+                Console.WriteLine(string.Join(" - ", output));
             }
         }
     }
