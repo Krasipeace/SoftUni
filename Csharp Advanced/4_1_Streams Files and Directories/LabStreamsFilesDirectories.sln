@@ -13,9 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeFiles", "MergeFiles\Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolderSize", "FolderSize\FolderSize.csproj", "{78CDCAE0-ADD2-487E-98D6-ED4A938F961F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SplitMergeBinaryFile", "SplitMergeBinaryFile\SplitMergeBinaryFile.csproj", "{519061BD-4626-4435-BC4D-591E946D20CE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractSpecialBytes", "ExtractSpecialBytes\ExtractSpecialBytes.csproj", "{1BBB51A9-D42C-4229-B6A8-5737D0FC230F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtractSpecialBytes", "ExtractSpecialBytes\ExtractSpecialBytes.csproj", "{1BBB51A9-D42C-4229-B6A8-5737D0FC230F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +41,6 @@ Global
 		{78CDCAE0-ADD2-487E-98D6-ED4A938F961F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78CDCAE0-ADD2-487E-98D6-ED4A938F961F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78CDCAE0-ADD2-487E-98D6-ED4A938F961F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{519061BD-4626-4435-BC4D-591E946D20CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{519061BD-4626-4435-BC4D-591E946D20CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{519061BD-4626-4435-BC4D-591E946D20CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{519061BD-4626-4435-BC4D-591E946D20CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1BBB51A9-D42C-4229-B6A8-5737D0FC230F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1BBB51A9-D42C-4229-B6A8-5737D0FC230F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BBB51A9-D42C-4229-B6A8-5737D0FC230F}.Release|Any CPU.ActiveCfg = Release|Any CPU

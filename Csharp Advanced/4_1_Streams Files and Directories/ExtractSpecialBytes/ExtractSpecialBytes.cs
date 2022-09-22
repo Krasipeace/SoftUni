@@ -1,11 +1,11 @@
-﻿namespace ExtractSpecialBytes
+﻿namespace ExtractBytes
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Text;
 
-    public class ExtractSpecialBytes //unfinished
+    public class ExtractBytes 
     {
         static void Main()
         {
