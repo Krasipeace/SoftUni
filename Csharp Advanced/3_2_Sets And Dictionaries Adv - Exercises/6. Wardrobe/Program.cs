@@ -44,7 +44,7 @@ namespace _6._Wardrobe
 
                     if (apparel.Key == apparelType && apparelCount.Key == apparelColor)
                     {
-                        printResult += " found!";
+                        printResult += " (found!)";
                     }
 
                     Console.WriteLine(printResult);
