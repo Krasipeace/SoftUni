@@ -53,7 +53,7 @@ namespace _6._Wardrobe
                 {
                     string printResult = $"* {apparelCount.Key} - {apparelCount.Value}";
 
-                    if (apparel.Key == apparelType && apparelCount.Key == apparelColor)
+                    if (apparel.Key == apparelType && apparelCount.Key == apparelColor)  //searched apparel
                     {
                         printResult += " (found!)";
                     }
