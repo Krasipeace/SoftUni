@@ -20,8 +20,8 @@
             int lineCounter = 1;
             foreach (var (currentLine, letterCount, signsCount) in from currentLine in allTextLines
                                                                        let letterCount = currentLine.Count(char.IsLetter)
-                                                                       let puncSignsCount = currentLine.Count(char.IsPunctuation)
-                                                                       select (currentLine, letterCount, puncSignsCount))
+                                                                       let signsCount = currentLine.Count(char.IsPunctuation)
+                                                                       select (currentLine, letterCount, signsCount))
             {
                 File.AppendAllText(outputFilePath, $"Line {lineCounter}: {currentLine} ({letterCount})({signsCount})\n");
                 lineCounter++;
