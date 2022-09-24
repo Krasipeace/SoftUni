@@ -29,7 +29,7 @@ namespace _4._Find_Even_or_Odds
                     }
                     break;
                 case "odd":
-                    IEnumerable odd = numbers.Where(n => n % 2 != 0);
+                    IEnumerable odd = numbers.Where(n => n % 2 != 0);                                    
                     foreach (var item in odd)
                     {
                         Console.Write($"{item} ");
