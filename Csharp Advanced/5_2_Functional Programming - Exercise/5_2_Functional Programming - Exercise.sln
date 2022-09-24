@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Action Point", "1. Action Point\1. Action Point.csproj", "{22760ED4-B132-422B-AC16-415D2EBA52DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Knights of Honor", "2. Knights of Honor\2. Knights of Honor.csproj", "{14A7B4DB-CB73-49BE-B27E-FCB9CDCE36B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{22760ED4-B132-422B-AC16-415D2EBA52DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22760ED4-B132-422B-AC16-415D2EBA52DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22760ED4-B132-422B-AC16-415D2EBA52DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A7B4DB-CB73-49BE-B27E-FCB9CDCE36B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A7B4DB-CB73-49BE-B27E-FCB9CDCE36B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A7B4DB-CB73-49BE-B27E-FCB9CDCE36B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A7B4DB-CB73-49BE-B27E-FCB9CDCE36B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
