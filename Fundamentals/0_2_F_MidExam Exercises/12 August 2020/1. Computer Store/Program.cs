@@ -37,7 +37,7 @@ namespace _1._Computer_Store
 
         }
 
-        private static double GetFinalPrice(string input, double pricesNoTax, double allTaxes, double priceFinal)
+        static double GetFinalPrice(string input, double pricesNoTax, double allTaxes, double priceFinal)
         {
             if (priceFinal == 0)
             {

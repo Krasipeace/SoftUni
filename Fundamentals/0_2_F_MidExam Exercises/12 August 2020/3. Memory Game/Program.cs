@@ -19,6 +19,7 @@ namespace _3._Memory_Game
                 {
                     break;
                 }
+
                 //user commands
                 int[] elements = command.Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
                 int userElementOne = elements[0];
@@ -43,6 +44,7 @@ namespace _3._Memory_Game
                 {
                     Console.WriteLine("Try again!");            //no equal elements
                 }
+
                 if (inputList.Count <= 0)
                 {
                     Console.WriteLine($"You have won in {moves} turns!");
