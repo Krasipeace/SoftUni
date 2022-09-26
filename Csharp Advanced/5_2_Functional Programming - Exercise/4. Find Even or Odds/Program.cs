@@ -19,6 +19,7 @@ namespace _4._Find_Even_or_Odds
             {
                 numbers.Add(i);
             }
+
             switch (command)
             {
                 case "even":
