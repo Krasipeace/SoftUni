@@ -20,23 +20,21 @@ namespace _4._Find_Even_or_Odds
                 numbers.Add(i);
             }
 
+            Func<List<int>, List<int>> even = list => list.Where(number => number % 2 == 0).ToList();
+            Func<List<int>, List<int>> odd = list => list.Where(number => number % 2 != 0).ToList();
+
+            Action<List<int>> print = list => Console.WriteLine(string.Join(" ", list));
+
             switch (command)
             {
                 case "even":
-                    IEnumerable even = numbers.Where(n => n % 2 == 0);
-                    foreach (var item in even)
-                    {
-                        Console.Write($"{item} ");
-                    }
+                    numbers = even(numbers);
                     break;
                 case "odd":
-                    IEnumerable odd = numbers.Where(n => n % 2 != 0);                                    
-                    foreach (var item in odd)
-                    {
-                        Console.Write($"{item} ");
-                    }
+                    numbers = odd(numbers);
                     break;
-            }          
+            }
+            print(numbers);
         }
     }
 }

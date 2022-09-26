@@ -8,30 +8,30 @@ namespace _5._Applied_Arithmetics
     {
         static void Main(string[] args)
         {
-            List<int> inputNumbers = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(n => int.Parse(n)).ToList();
-            string command = Console.ReadLine();
-            List<int> output = new List<int>();
-            
+            List<int> numbers = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(n => int.Parse(n)).ToList();
 
+            Func<List<int>, List<int>> add = list => list.Select(number => number += 1).ToList();
+            Func<List<int>, List<int>> multiply = list => list.Select(number => number *= 2).ToList();
+            Func<List<int>, List<int>> subtract = list => list.Select(number => number -= 1).ToList();
+
+            Action<List<int>> print = list => Console.WriteLine(string.Join(" ", list));
+
+            string command = Console.ReadLine();
             while (command != "end")
             {
                 switch (command)
                 {
                     case "add":
-                        output += inputNumbers.Select(n => n + 1).ToList();
+                        numbers = add(numbers);
                         break;
                     case "multiply":
-                        output = inputNumbers.Select(n => n * 2).ToList();
+                        numbers = multiply(numbers);
                         break;
                     case "subtract":
-                        output = inputNumbers.Select(n => n - 1).ToList();
+                        numbers = subtract(numbers);
                         break;
                     case "print":
-                        foreach (int num in output)
-                        {
-                            Console.Write($"{num} ");
-                        }
-                        Console.WriteLine();
+                        print(numbers);
                         break;
                 }
                 command = Console.ReadLine();
