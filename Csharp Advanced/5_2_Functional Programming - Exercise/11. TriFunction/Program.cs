@@ -12,7 +12,7 @@ namespace _11._TriFunction
             List<string> names = new List<string>(Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries));
 
             Func<string, int, bool> isWordMorePoints = (word, asciiPoints) => word.ToCharArray().Select(ch => (int)ch).Sum() >= asciiPoints;
-            Func<List<string>, int, Func<string, int, bool>, string> wordBestPoints = (arr, asciiPoints, func) => arr.FirstOrDefault(word => func(word, asciiPoints));
+            Func<List<string>, int, Func<string, int, bool>, string> wordBestPoints = (list, asciiPoints, func) => list.FirstOrDefault(word => func(word, asciiPoints));
 
             Action<string> print = str => Console.WriteLine(str);
 
