@@ -6,8 +6,8 @@ namespace CarManufacturer
 {
     public class Engine
     {
-        public int horsePower;
-        public double cubicCapacity;
+        private int horsePower;
+        private double cubicCapacity;
 
         public Engine (int horsePower, double cubicCapacity)
         {
