@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace _5._Date_Modifier
+namespace DefiningClasses
 {
     public class DateModifier
     {
-        public long GetDaysBetweenTwoDates(string firstDateAsString, string secondDateAsString)
+        public static int GetDateDifference(string first, string second)
         {
-            DateTime firstDate = DateTime.ParseExact(firstDateAsString, "yyyy MM dd", CultureInfo.InvariantCulture);
-            DateTime secondDate = DateTime.ParseExact(secondDateAsString, "yyyy MM dd", CultureInfo.InvariantCulture);
+            var firstDate = DateTime.ParseExact(first, "yyyy MM dd", CultureInfo.InvariantCulture);
+            var secondDate = DateTime.ParseExact(second, "yyyy MM dd", CultureInfo.InvariantCulture);
+            var dateDifference = firstDate - secondDate;
 
-            return Math.Abs((firstDate - secondDate).Days);
+            return Math.Abs(dateDifference.Days);
         }
     }
 }
