@@ -12,12 +12,12 @@ namespace DefiningClasses
         public int Age { get { return age; } set { age = value; } }
         public Person()
         {
-            name = "No name";
-            age = 1;
+            Name = "No name";
+            Age = 1;
         }
         public Person(int age) : this()
         {
-            this.age = age;
+            Age = age;
         }
         public Person(string name, int age): this(age)
         {
