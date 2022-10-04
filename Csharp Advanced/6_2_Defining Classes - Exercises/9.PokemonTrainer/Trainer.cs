@@ -27,7 +27,6 @@ namespace PokemonTrainer
                 for (int i = 0; i < this.Pokemons.Count; i++)
                 {
                     Pokemon currentPokemon = this.Pokemons[i];
-
                     currentPokemon.Health -= 10;
 
                     if (currentPokemon.Health <= 0)
