@@ -111,6 +111,14 @@ namespace CustomListClass
             this.Count++;
         }
 
+        //private bool Equals(int element, int elementTwo)
+        //{
+        //    if (element == elementTwo)
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
         public bool Contains(int element)
         {
             for (int i = 0; i < Count; i++)
