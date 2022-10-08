@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Bombs", "1.Bombs\1.Bombs.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Snake", "2.Snake\2.Snake.csproj", "{53F99B96-EB07-4F14-9D29-0300728DF115}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking", "Parking\Parking.csproj", "{00C2F528-803E-4A2D-9BE3-8AC801E5A48E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{53F99B96-EB07-4F14-9D29-0300728DF115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F99B96-EB07-4F14-9D29-0300728DF115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F99B96-EB07-4F14-9D29-0300728DF115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C2F528-803E-4A2D-9BE3-8AC801E5A48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C2F528-803E-4A2D-9BE3-8AC801E5A48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C2F528-803E-4A2D-9BE3-8AC801E5A48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C2F528-803E-4A2D-9BE3-8AC801E5A48E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
