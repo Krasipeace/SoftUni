@@ -18,41 +18,10 @@ namespace IteratorsAndComparators
             this.Authors = authors.ToList();
         }
 
-        public string Title
-        {
-            get
-            {
-                return this.title;
-            }
-            private set
-            {
-                this.title = value;
-            }
-        }
+        public string Title { get { return this.title; } private set { this.title = value; } }
+        public int Year { get { return this.year; } private set { this.year = value; } }
+        public List<string> Authors { get { return this.authors; } private set { this.authors = value; } }
 
-        public int Year
-        {
-            get
-            {
-                return this.year;
-            }
-            private set
-            {
-                this.year = value;
-            }
-        }
-
-        public List<string> Authors
-        {
-            get
-            {
-                return this.authors;
-            }
-            private set
-            {
-                this.authors = value;
-            }
-        }
         public int CompareTo(Book other)
         {
             int result = this.Year.CompareTo(other.Year);
