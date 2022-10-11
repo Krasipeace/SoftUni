@@ -11,7 +11,7 @@ namespace _2._Recursive_Factorial
             Console.WriteLine(Factorial(number));
         }
 
-        private static ulong Factorial(ulong number)
+        static ulong Factorial(ulong number)
         {
             if (number == 0)
             {

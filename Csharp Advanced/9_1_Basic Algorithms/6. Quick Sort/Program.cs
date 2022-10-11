@@ -7,7 +7,7 @@ namespace _6._Quick_Sort //not ideal solution
     {
         static void Main(string[] args)
         {
-            int[] inputArray = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] inputArray = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToArray();
 
             QuickSort(inputArray, 0, inputArray.Length - 1);
 
@@ -17,7 +17,7 @@ namespace _6._Quick_Sort //not ideal solution
             }
         }
 
-        private static int Partition(int[] inputArray, int left, int right)
+        static int Partition(int[] inputArray, int left, int right)
         {
             int pivot = inputArray[left];
             while (true)
@@ -48,7 +48,7 @@ namespace _6._Quick_Sort //not ideal solution
                 }
             }
         }
-        private static void QuickSort(int[] inputArray, int left, int right)
+        static void QuickSort(int[] inputArray, int left, int right)
         {
             if (left < right)
             {

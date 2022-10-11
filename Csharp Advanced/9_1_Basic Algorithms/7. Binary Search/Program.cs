@@ -7,7 +7,7 @@ namespace _7._Binary_Search
     {
         static void Main(string[] args)
         {
-            int[] array = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] array = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToArray();
             int key = int.Parse(Console.ReadLine());
 
             Console.WriteLine(BinarySearch(array, key));

@@ -7,13 +7,13 @@ namespace _1._Recursive_Array_Sum
     {
         static void Main(string[] args)
         {
-            int[] numbers = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] numbers = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToArray();
             int index = 0;
            
             Console.WriteLine(Sum(numbers,index));
         }
 
-        private static int Sum(int[] numbers, int index)
+        static int Sum(int[] numbers, int index)
         {
             if (index == numbers.Length - 1)
             {
