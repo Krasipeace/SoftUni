@@ -260,10 +260,10 @@
 [105]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/7_2_Generics%20-%20Exercise/7.Tuple
 [106]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/7_2_Generics%20-%20Exercise/8.Threeuple
 	   
-[107]: 
-[108]: 
-[109]: 
-[110]: 
+[107]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_1_IteratorsAndComparators/1.Library
+[108]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_1_IteratorsAndComparators/2.LibraryIterator
+[109]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_1_IteratorsAndComparators/3.ComparableBook
+[110]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_1_IteratorsAndComparators/4.BookComparer
 [111]: 
 [112]: 
 [113]: 
