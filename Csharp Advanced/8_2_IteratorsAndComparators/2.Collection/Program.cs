@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace ListyIterator
+namespace _2.Collection
 {
     public class Program
     {
@@ -26,9 +26,12 @@ namespace ListyIterator
                     case "Print":
                         listyIterator.Print();
                         break;
+                    case "PrintAll":
+                        listyIterator.PrintAll();
+                        break;
                 }
                 input = Console.ReadLine();
             }
-        }     
+        }
     }
 }
