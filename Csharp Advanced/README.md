@@ -264,13 +264,13 @@
 [108]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_1_IteratorsAndComparators/2.LibraryIterator
 [109]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_1_IteratorsAndComparators/3.ComparableBook
 [110]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_1_IteratorsAndComparators/4.BookComparer
-[111]: 
-[112]: 
-[113]: 
-[114]: 
-[115]: 
-[116]: 
-[117]: 
+[111]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_2_IteratorsAndComparators/1.ListyIterator
+[112]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_2_IteratorsAndComparators/2.Collection
+[113]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_2_IteratorsAndComparators/3.Stack
+[114]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_2_IteratorsAndComparators/4.Froggy
+[115]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_2_IteratorsAndComparators/5.ComparingObjects
+[116]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/8_2_IteratorsAndComparators/6.EqualityLogic
+[117]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/8_2_IteratorsAndComparators/7.CustomComparator/Program.cs
 	   
 [118]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/1.%20Recursive%20Array%20Sum/Program.cs
 [119]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/2.%20Recursive%20Factorial/Program.cs
