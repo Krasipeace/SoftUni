@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Binary Search", "7. Bina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.MergeSort", "5.MergeSort\5.MergeSort.csproj", "{36DD194A-64F4-4915-B6BE-4B08D0B48F13}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOfCoins", "SumOfCoins\SumOfCoins.csproj", "{A2ABB39E-43C0-4A64-8D1C-A9F509A8926F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SetCover", "SetCover\SetCover.csproj", "{E8CF7CB8-1615-404C-9193-BB2228B648A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{36DD194A-64F4-4915-B6BE-4B08D0B48F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36DD194A-64F4-4915-B6BE-4B08D0B48F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36DD194A-64F4-4915-B6BE-4B08D0B48F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2ABB39E-43C0-4A64-8D1C-A9F509A8926F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2ABB39E-43C0-4A64-8D1C-A9F509A8926F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2ABB39E-43C0-4A64-8D1C-A9F509A8926F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2ABB39E-43C0-4A64-8D1C-A9F509A8926F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CF7CB8-1615-404C-9193-BB2228B648A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CF7CB8-1615-404C-9193-BB2228B648A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CF7CB8-1615-404C-9193-BB2228B648A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CF7CB8-1615-404C-9193-BB2228B648A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
