@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Recursive Array Sum", "1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Recursive Factorial", "2. Recursive Factorial\2. Recursive Factorial.csproj", "{662D6E05-EF9C-4EAB-AF1B-CEA543A0C46C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Quick Sort", "6. Quick Sort\6. Quick Sort.csproj", "{C05AA3C2-49E1-4C47-AEA1-380163E51D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. Quick Sort", "6. Quick Sort\6. Quick Sort.csproj", "{C05AA3C2-49E1-4C47-AEA1-380163E51D78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Binary Search", "7. Binary Search\7. Binary Search.csproj", "{750167EC-44A2-4754-AADB-5454058E5E56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Binary Search", "7. Binary Search\7. Binary Search.csproj", "{750167EC-44A2-4754-AADB-5454058E5E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.MergeSort", "5.MergeSort\5.MergeSort.csproj", "{36DD194A-64F4-4915-B6BE-4B08D0B48F13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{750167EC-44A2-4754-AADB-5454058E5E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{750167EC-44A2-4754-AADB-5454058E5E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{750167EC-44A2-4754-AADB-5454058E5E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36DD194A-64F4-4915-B6BE-4B08D0B48F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DD194A-64F4-4915-B6BE-4B08D0B48F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DD194A-64F4-4915-B6BE-4B08D0B48F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DD194A-64F4-4915-B6BE-4B08D0B48F13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
