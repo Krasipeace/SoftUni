@@ -7,7 +7,7 @@ namespace CustomComparator
     {
         static void Main(string[] args)
         {
-            int[] list = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+            int[] list = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToArray();
 
             Func<int, int, int> customComparator = (numberOne, numberTwo) =>
             {
