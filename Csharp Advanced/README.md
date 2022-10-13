@@ -274,9 +274,9 @@
 	   
 [118]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/1.%20Recursive%20Array%20Sum/Program.cs
 [119]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/2.%20Recursive%20Factorial/Program.cs
-[120]: 
-[121]: 
-[122]: 
+[120]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/SumOfCoins/StartUp.cs
+[121]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/SetCover/StartUp.cs
+[122]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/5.MergeSort/Program.cs
 [123]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/6.%20Quick%20Sort/Program.cs
 [124]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/7.%20Binary%20Search/Program.cs
 [125]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_2_ImplementingLinkedList/CustomDoublyLinkedList
