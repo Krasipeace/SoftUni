@@ -57,43 +57,37 @@ namespace _2.Warships //70/100
                     continue;
                 }
 
-                //--> direct hits 
-
                 if (field[currentRow, currentCol] == FIRST_PLAYER_SHIP)
                 {
                     firstPlayerDestroyedShips++;
                 }
-                if (field[currentRow, currentCol] == SECOND_PLAYER_SHIP)
+                else if (field[currentRow, currentCol] == SECOND_PLAYER_SHIP)
                 {
                     secondPlayerDestroyedShips++;
+                    field[currentRow, currentCol] = DESTROYED_OBJECT;
                 }
-                field[currentRow, currentCol] = DESTROYED_OBJECT;
-
-                //--> check if any player hit SEA_MINE and destroy any ship in the area of the bomb explosion
-
-                if (field[currentRow, currentCol] == SEA_MINE)
+                else if (field[currentRow, currentCol] == SEA_MINE)
                 {
                     field[currentRow, currentCol] = DESTROYED_OBJECT;
 
-                    SeaMineExplosion(FIRST_PLAYER_SHIP, SECOND_PLAYER_SHIP, DESTROYED_OBJECT, field, ref firstPlayerDestroyedShips, ref secondPlayerDestroyedShips, currentRow, currentCol);
-
-                    continue;
-                }               
-
-                //--> check if any player has no ships left
-                int totalDestroyedShips = firstPlayerDestroyedShips + secondPlayerDestroyedShips;
-                if (firstPlayerDestroyedShips == firstPlayerAliveShips)
-                {
-                    Console.WriteLine($"Player Two has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
-                    break;
+                    SeaMineExplosion(FIRST_PLAYER_SHIP, SECOND_PLAYER_SHIP, DESTROYED_OBJECT, field, ref firstPlayerDestroyedShips, ref secondPlayerDestroyedShips, currentRow, currentCol);        
                 }
-                if (secondPlayerDestroyedShips == secondPlayerAliveShips)
+                else
                 {
-                    Console.WriteLine($"Player One has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
-                    break;
+                    continue;
                 }
             }
 
+            //--> check who wins
+            int totalDestroyedShips = firstPlayerDestroyedShips + secondPlayerDestroyedShips;
+            if (firstPlayerDestroyedShips == firstPlayerAliveShips)
+            {
+                Console.WriteLine($"Player Two has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
+            }
+            if (secondPlayerDestroyedShips == secondPlayerAliveShips)
+            {
+                Console.WriteLine($"Player One has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
+            }
             //--> draw 
             int playerOneLeftShipsAlive = firstPlayerAliveShips - firstPlayerDestroyedShips;
             int playerTwoLeftShipsAlive = secondPlayerAliveShips - secondPlayerDestroyedShips;
