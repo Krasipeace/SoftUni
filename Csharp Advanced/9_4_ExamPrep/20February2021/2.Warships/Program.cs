@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
 
-namespace _2.Warships //70/100
+namespace _2.Warships 
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            const char FIELD_POS = '*';           //miss hit
+            //const char FIELD_POS = '*';           //miss hit
             const char FIRST_PLAYER_SHIP = '<';
             const char SECOND_PLAYER_SHIP = '>';
             const char SEA_MINE = '#';            //bomb explosion
@@ -72,7 +72,7 @@ namespace _2.Warships //70/100
 
                     SeaMineExplosion(FIRST_PLAYER_SHIP, SECOND_PLAYER_SHIP, DESTROYED_OBJECT, field, ref firstPlayerDestroyedShips, ref secondPlayerDestroyedShips, currentRow, currentCol);        
                 }
-                else
+                else //FIELD_POS
                 {
                     continue;
                 }
