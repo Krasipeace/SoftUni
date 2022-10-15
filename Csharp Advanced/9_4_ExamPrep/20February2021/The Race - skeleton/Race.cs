@@ -16,7 +16,7 @@ namespace TheRace
         }
         public string Name { get; set; }
         public int Capacity { get; set; }
-        public int Count { get => racers.Count(); }
+        public int Count { get { return racers.Count; } }
 
         public void Add(Racer racer)
         {
@@ -28,22 +28,25 @@ namespace TheRace
 
         public bool Remove(string name)
         {
-            return racers.Remove(racers.Find(r => r.Name == name));
+            return racers.Remove(racers.FirstOrDefault(r => r.Name == name));
         }
 
         public Racer GetRacer(string name)
         {
-            Racer getRacer = racers.Find(r => r.Name == name);
+            Racer getRacer = racers.FirstOrDefault(r => r.Name == name);
+
             return getRacer;
         }
         public Racer GetOldestRacer()
         {
-            Racer oldestRacer = racers.OrderByDescending(r => r.Age).First();
+            Racer oldestRacer = racers.OrderByDescending(r => r.Age).FirstOrDefault();
+
             return oldestRacer;
         }
         public Racer GetFastestRacer()
         {
-            Racer fastestRacer = racers.OrderByDescending(r => r.Car.Speed).First();
+            Racer fastestRacer = racers.OrderByDescending(r => r.Car.Speed).FirstOrDefault();
+
             return fastestRacer;
         }
 
