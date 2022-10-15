@@ -70,7 +70,7 @@ namespace _2.Warships
                 {
                     field[currentRow, currentCol] = DESTROYED_OBJECT;
 
-                    SeaMineExplosion(FIRST_PLAYER_SHIP, SECOND_PLAYER_SHIP, DESTROYED_OBJECT, field, ref firstPlayerDestroyedShips, ref secondPlayerDestroyedShips, currentRow, currentCol);        
+                    SeaMineExplosion(FIRST_PLAYER_SHIP, SECOND_PLAYER_SHIP, DESTROYED_OBJECT, field, ref firstPlayerDestroyedShips, ref secondPlayerDestroyedShips, currentRow, currentCol);
                 }
                 else //FIELD_POS
                 {
@@ -78,25 +78,8 @@ namespace _2.Warships
                 }
             }
 
-            //--> check who wins
-            int totalDestroyedShips = firstPlayerDestroyedShips + secondPlayerDestroyedShips;
-            if (firstPlayerDestroyedShips == firstPlayerAliveShips)
-            {
-                Console.WriteLine($"Player Two has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
-            }
-            if (secondPlayerDestroyedShips == secondPlayerAliveShips)
-            {
-                Console.WriteLine($"Player One has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
-            }
-            //--> draw 
-            int playerOneLeftShipsAlive = firstPlayerAliveShips - firstPlayerDestroyedShips;
-            int playerTwoLeftShipsAlive = secondPlayerAliveShips - secondPlayerDestroyedShips;
-
-            if (playerOneLeftShipsAlive != 0 && playerTwoLeftShipsAlive != 0)
-            {
-                Console.WriteLine($"It's a draw! Player One has {playerOneLeftShipsAlive} ships left. Player Two has {playerTwoLeftShipsAlive} ships left.");
-            }
-        }
+            PrintResults(firstPlayerAliveShips, secondPlayerAliveShips, firstPlayerDestroyedShips, secondPlayerDestroyedShips);
+        }      
 
         static void SeaMineExplosion(char FIRST_PLAYER_SHIP, char SECOND_PLAYER_SHIP, char DESTROYED_OBJECT, char[,] field, ref int firstPlayerDestroyedShips, ref int secondPlayerDestroyedShips, int currentRow, int currentCol)
         {
@@ -201,6 +184,28 @@ namespace _2.Warships
         static bool isHitInField(char[,] field, int currentRow, int currentCol)
         {
             return currentRow >= 0 && currentRow < field.GetLength(0) && currentCol >= 0 && currentCol < field.GetLength(1);
+        }
+
+        static void PrintResults(int firstPlayerAliveShips, int secondPlayerAliveShips, int firstPlayerDestroyedShips, int secondPlayerDestroyedShips)
+        {
+            //--> check who wins
+            int totalDestroyedShips = firstPlayerDestroyedShips + secondPlayerDestroyedShips;
+            if (firstPlayerDestroyedShips == firstPlayerAliveShips)
+            {
+                Console.WriteLine($"Player Two has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
+            }
+            if (secondPlayerDestroyedShips == secondPlayerAliveShips)
+            {
+                Console.WriteLine($"Player One has won the game! {totalDestroyedShips} ships have been sunk in the battle.");
+            }
+            //--> draw 
+            int playerOneLeftShipsAlive = firstPlayerAliveShips - firstPlayerDestroyedShips;
+            int playerTwoLeftShipsAlive = secondPlayerAliveShips - secondPlayerDestroyedShips;
+
+            if (playerOneLeftShipsAlive != 0 && playerTwoLeftShipsAlive != 0)
+            {
+                Console.WriteLine($"It's a draw! Player One has {playerOneLeftShipsAlive} ships left. Player Two has {playerTwoLeftShipsAlive} ships left.");
+            }
         }
     }
 }
