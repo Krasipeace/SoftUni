@@ -38,7 +38,7 @@ namespace CocktailParty
 
         public bool Remove(string name)
         {
-            return Ingredients.Remove(Ingredients.FirstOrDefault(i => i.Name == name));
+            return this.Ingredients.Remove(Ingredients.FirstOrDefault(i => i.Name == name));
         }
 
         public Ingredient FindIngredient(string name)
