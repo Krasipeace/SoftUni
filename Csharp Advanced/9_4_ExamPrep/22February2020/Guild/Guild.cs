@@ -10,19 +10,19 @@ namespace Guild
         private readonly List<Player> roster;
         public Guild(string name, int capacity)
         {
-            this.Name = name;
-            this.Capacity = capacity;
-            this.roster = new List<Player>();
+            Name = name;
+            Capacity = capacity;
+            roster = new List<Player>();
         }
         public string Name { get; set; }
         public int Capacity { get; set; }
-        public int Count => this.roster.Count;
+        public int Count => roster.Count;
       
         public void AddPlayer(Player player)
         {
-            if (this.roster.Count < Capacity)
+            if (roster.Count < Capacity)
             {
-                this.roster.Add(player);
+                roster.Add(player);
             }
         }
 
@@ -34,7 +34,7 @@ namespace Guild
         public void PromotePlayer(string name)
         {
             Player player = roster.Find(p => p.Name == name);
-            if (player != null)
+            if (player.Rank != "Member")
             {
                 player.Rank = "Member";
             }
@@ -43,7 +43,7 @@ namespace Guild
         public void DemotePlayer(string name)
         {
             Player player = roster.Find(p => p.Name == name);
-            if (player != null)
+            if (player.Rank != "Trial")
             {
                 player.Rank = "Trial";
             }
@@ -51,22 +51,15 @@ namespace Guild
 
         public Player[] KickPlayersByClass(string @class)
         {
-            Player[] players = this.roster.FindAll(p => p.Class == @class).ToArray();
-            this.roster.RemoveAll(p => p.Class == @class);
+            Player[] players = roster.FindAll(p => p.Class == @class).ToArray();
+            roster.RemoveAll(p => p.Class == @class);
 
             return players;
         }
-
+       
         public string Report()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Players in the guild: {Name}");
-            foreach (var item in roster)
-            {
-                sb.AppendLine(item.ToString());
-            }
-
-            return sb.ToString().TrimEnd();
-        }
+            => $"Players in the guild: {this.Name}" +
+               Environment.NewLine +
+               string.Join(Environment.NewLine, this.roster);
     }
 }

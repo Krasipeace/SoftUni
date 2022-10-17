@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Guild //66/100
+namespace Guild 
 {
     public class StartUp
     {
@@ -51,7 +51,7 @@ namespace Guild //66/100
             //Description: Best healer EU
             //Player Marlin: Mage
             //Rank: Trial
-            //Description: n/a
+            //Description: n/a          
         }
     }
 }
