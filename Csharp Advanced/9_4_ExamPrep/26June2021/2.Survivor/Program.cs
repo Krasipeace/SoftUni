@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace _2.Survivor //71/100
+namespace _2.Survivor //85/100
 {
     internal class Program
     {
