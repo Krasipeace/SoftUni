@@ -34,7 +34,7 @@ namespace _2.Re_Volt
                     }
                 }
             }
-
+            //PLAYER movements
             bool isFinished = false;
             for (int i = 0; i < countOfCommands; i++)
             {
@@ -42,18 +42,17 @@ namespace _2.Re_Volt
                 {
                     matrix[currentRow, currentCol] = EMPTY_POS;
                 }
-                //PLAYER movements
 
                 string direction = Console.ReadLine();
-                GetPos(matrixSize, ref currentRow, ref currentCol, direction);
+                GetPos(matrixSize, matrix, ref currentRow, ref currentCol, direction);
 
                 if (matrix[currentRow, currentCol] == BONUS_POS)
                 {
-                    GetPos(matrixSize, ref currentRow, ref currentCol, direction);
+                    GetPos(matrixSize, matrix, ref currentRow, ref currentCol, direction);
                 }
                 if (matrix[currentRow, currentCol] == TRAP_POS)
                 {
-                    GetTrap(matrixSize, ref currentRow, ref currentCol, direction);
+                    GetTrap(matrixSize, matrix, ref currentRow, ref currentCol, direction);
                 }
 
                 if (matrix[currentRow, currentCol] == FINNISH_POS)
@@ -70,12 +69,13 @@ namespace _2.Re_Volt
 
         }
 
-        static void GetPos(int matrixSize, ref int currentRow, ref int currentCol, string direction)
+        static void GetPos(int matrixSize, char[,] matrix, ref int currentRow, ref int currentCol, string direction)
         {
             switch (direction)
             {
                 case "up":
                     currentRow--;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentRow < 0)
                     {
                         currentRow = matrixSize - 1;
@@ -83,6 +83,7 @@ namespace _2.Re_Volt
                     break;
                 case "down":
                     currentRow++;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentRow > matrixSize - 1)
                     {
                         currentRow = 0;
@@ -90,6 +91,7 @@ namespace _2.Re_Volt
                     break;
                 case "left":
                     currentCol--;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentRow < 0)
                     {
                         currentCol = matrixSize - 1;
@@ -97,6 +99,7 @@ namespace _2.Re_Volt
                     break;
                 case "right":
                     currentCol++;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentCol > matrixSize - 1)
                     {
                         currentCol = 0;
@@ -104,12 +107,13 @@ namespace _2.Re_Volt
                     break;
             }
         }
-        static void GetTrap(int matrixSize, ref int currentRow, ref int currentCol, string direction)
+        static void GetTrap(int matrixSize, char[,] matrix, ref int currentRow, ref int currentCol, string direction)
         {
             switch (direction)
             {
                 case "up":
                     currentRow++;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentRow > matrixSize - 1)
                     {
                         currentRow = 0;
@@ -117,6 +121,7 @@ namespace _2.Re_Volt
                     break;
                 case "down":
                     currentRow--;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentRow < 0)
                     {
                         currentRow = matrixSize - 1;
@@ -124,6 +129,7 @@ namespace _2.Re_Volt
                     break;
                 case "left":
                     currentCol++;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentRow > matrixSize - 1)
                     {
                         currentCol = 0;
@@ -131,6 +137,7 @@ namespace _2.Re_Volt
                     break;
                 case "right":
                     currentCol--;
+                    (currentRow, currentCol) = IsOutside(matrix, currentRow, currentCol);
                     if (currentCol < 0)
                     {
                         currentCol = matrixSize - 1;
@@ -138,6 +145,30 @@ namespace _2.Re_Volt
                     break;
             }
         }
+
+        public static (int row, int col) IsOutside(char[,] matrix, int currentRow, int currentCol)
+        {
+            if (currentRow < 0)
+            {
+                currentRow = matrix.GetLength(0) - 1;
+            }
+            else if (currentRow >= matrix.GetLength(0))
+            {
+                currentRow = 0;
+            }
+
+            if (currentCol < 0)
+            {
+                currentCol = matrix.GetLength(1) - 1;
+            }
+            else if (currentCol >= matrix.GetLength(1))
+            {
+                currentCol = 0;
+            }
+
+            return (currentRow, currentCol);
+        }
+
         static void PrintResults(int matrixSize, char[,] matrix, bool isFinished, int currentRow, int currentCol, char PLAYER)
         {
             if (isFinished)
