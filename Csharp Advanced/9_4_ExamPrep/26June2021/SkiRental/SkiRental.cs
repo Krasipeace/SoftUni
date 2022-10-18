@@ -27,10 +27,14 @@ namespace SkiRental
 
         public bool Remove(string manufacturer, string model)
         {
-            if (manufacturer != null && model != null)
+            Ski skiToRemove = data.Find(x => x.Manufacturer == manufacturer && x.Model == model);
+            if (skiToRemove != null)
             {
-                return data.Remove(data.Where(x => x.Manufacturer == manufacturer && x.Model == model).FirstOrDefault());
+                data.Remove(skiToRemove);
+
+                return true;
             }
+
             return false;
         }
 

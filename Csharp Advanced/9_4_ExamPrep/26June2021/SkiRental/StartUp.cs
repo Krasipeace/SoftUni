@@ -2,7 +2,7 @@
 
 namespace SkiRental
 {
-    public class StartUp
+    public class StartUp //91/100
     {
         static void Main(string[] args)
         {
