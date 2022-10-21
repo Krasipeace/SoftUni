@@ -75,7 +75,7 @@ namespace Basketball
 
         public List<Player> AwardPlayers(int games)
         {
-            var list = Players.Where(x => x.Games >= games).ToList();
+            var list = Players.FindAll(x => x.Games >= games).ToList();
 
             return list;
         }
