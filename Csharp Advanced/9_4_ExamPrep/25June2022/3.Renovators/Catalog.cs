@@ -28,7 +28,7 @@ namespace Renovators
             {
                 return $"Invalid renovator's information.";
             }
-            if (Renovators.Count >= NeededRenovators)
+            if (Count == NeededRenovators)
             {
                 return $"Renovators are no more needed.";
             }
