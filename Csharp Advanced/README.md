@@ -281,6 +281,7 @@
 [124]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20Advanced/9_1_Basic%20Algorithms/7.%20Binary%20Search/Program.cs
 [125]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_2_ImplementingLinkedList/CustomDoublyLinkedList
 [126]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/1.ImplementingCustomListClass
-[127]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/1.ImplementingCustomListClass
-[128]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/2.ImplementingCustomStackClass
-[129]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/3.ImplementingCustomQueueClass
+[127]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/2.ImplementingCustomStackClass
+[128]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/3.ImplementingCustomQueueClass
+[129]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/1.ImplementingCustomListClass
+
