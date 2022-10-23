@@ -72,7 +72,7 @@ namespace CustomListClass
         {
             if (index >= this.Count)
             {
-                throw new ArgumentOutOfRangeException($"Index is out of range!");
+                throw new ArgumentOutOfRangeException($"Index is out of range/invalid!");
             }
 
             int item = this.items[index];
@@ -99,7 +99,7 @@ namespace CustomListClass
         {
             if (index > this.Count)
             {
-                throw new IndexOutOfRangeException($"Index is out of range!");
+                throw new IndexOutOfRangeException($"Index is out of range/invalid!");
             }
             if (this.Count == this.items.Length)
             {
@@ -147,7 +147,7 @@ namespace CustomListClass
             }
             else
             {
-                throw new IndexOutOfRangeException($"Index is out of range!");
+                throw new InvalidOperationException($"One or both index(es) are invalid!");
             }
             
         }

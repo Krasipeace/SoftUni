@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.ImplementingCustomListClass", "1.ImplementingCustomListClass\1.ImplementingCustomListClass.csproj", "{558D62D5-F62F-4A64-844E-3C8B9A615E31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.ImplementingCustomListClass", "1.ImplementingCustomListClass\1.ImplementingCustomListClass.csproj", "{558D62D5-F62F-4A64-844E-3C8B9A615E31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ImplementingCustomStackClass", "2.ImplementingCustomStackClass\2.ImplementingCustomStackClass.csproj", "{7545AC6A-D64E-49A6-BE8B-DCA93DC0555A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{558D62D5-F62F-4A64-844E-3C8B9A615E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{558D62D5-F62F-4A64-844E-3C8B9A615E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{558D62D5-F62F-4A64-844E-3C8B9A615E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7545AC6A-D64E-49A6-BE8B-DCA93DC0555A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7545AC6A-D64E-49A6-BE8B-DCA93DC0555A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7545AC6A-D64E-49A6-BE8B-DCA93DC0555A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7545AC6A-D64E-49A6-BE8B-DCA93DC0555A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
