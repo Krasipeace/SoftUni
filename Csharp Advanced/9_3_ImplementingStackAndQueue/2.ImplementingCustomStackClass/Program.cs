@@ -10,9 +10,7 @@ namespace _2.ImplementingCustomStackClass
             CustomStack customStack = new CustomStack();
             customStack.Push(1);
             customStack.Push(2);
-            customStack.Push(3);
-            customStack.Push(4);
-            
+            customStack.Push(3);            
 
             Console.WriteLine(customStack.ToString());
 
