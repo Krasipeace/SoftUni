@@ -19,7 +19,7 @@ namespace CustomListClass
             {
                 if (index >= this.Count)
                 {
-                    throw new ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException($"Index is out of range!");
                 }
                 return items[index];
             }
@@ -27,7 +27,7 @@ namespace CustomListClass
             {
                 if (index >= this.Count)
                 {
-                    throw new ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException($"Index is out of range!");
                 }
                 items[index] = value;
             }
@@ -72,7 +72,7 @@ namespace CustomListClass
         {
             if (index >= this.Count)
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException($"Index is out of range!");
             }
 
             int item = this.items[index];
@@ -99,7 +99,7 @@ namespace CustomListClass
         {
             if (index > this.Count)
             {
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException($"Index is out of range!");
             }
             if (this.Count == this.items.Length)
             {
@@ -111,7 +111,7 @@ namespace CustomListClass
             this.Count++;
         }
 
-        //private bool Equals(int element, int elementTwo)
+        //public bool Equals(int element, int elementTwo)
         //{
         //    if (element == elementTwo)
         //    {
@@ -124,11 +124,16 @@ namespace CustomListClass
             for (int i = 0; i < Count; i++)
             {
                 int item = this.items[i];
+
                 if (item.Equals(element))
                 {
+                    Console.WriteLine($"True"); 
+                    
                     return true;
                 }
             }
+            Console.WriteLine($"False");
+
             return false;
         }
 
@@ -142,7 +147,7 @@ namespace CustomListClass
             }
             else
             {
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException($"Index is out of range!");
             }
             
         }
