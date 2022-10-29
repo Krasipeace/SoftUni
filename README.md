@@ -1,5 +1,7 @@
 # [SoftUni](https://softuni.bg/) 
 ![Lines of Code](https://img.shields.io/tokei/lines/github/krasipeace/SoftUni)
+![Last commit](https://img.shields.io/github/last-commit/Krasipeace/SoftUni)
+
 ### Web Developer - C#
 
 My solutions to SoftUni tasks/problems 
