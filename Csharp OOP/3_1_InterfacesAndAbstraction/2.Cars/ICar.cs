@@ -1,0 +1,10 @@
+﻿namespace Cars
+{
+    public interface ICar
+    {
+        public string Model { get; set; }
+        public string Color { get; set; }
+        public string Start { get; set; }
+        public string Stop { get; set; }
+    }
+}
