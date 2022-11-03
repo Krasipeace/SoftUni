@@ -4,8 +4,8 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using BorderControl.Models;
-    using BorderControl.Models.Interfaces;
+    using Models;
+    using Models.Interfaces;
     
     public class StartUp
     {
