@@ -12,9 +12,23 @@
         public static List<IIdentify> identifications;
         static void Main(string[] args)
         {
+            RunEngine();
+        }
+
+        private static void RunEngine()
+        {
             identifications = new List<IIdentify>();
 
             string input = Console.ReadLine();
+            input = GetIdentifications(input);
+
+            string detainedId = Console.ReadLine();
+
+            PrintResult(detainedId);
+        }
+
+        private static string GetIdentifications(string input)
+        {
             while (input != "End")
             {
                 string[] tokens = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
@@ -25,7 +39,7 @@
                     int age = int.Parse(tokens[1]);
                     string id = tokens[2];
 
-                    identifications.Add(new Citizen(name, age, id));     
+                    identifications.Add(new Citizen(name, age, id));
                 }
                 else
                 {
@@ -36,8 +50,11 @@
                 input = Console.ReadLine();
             }
 
-            string detainedId = Console.ReadLine();
+            return input;
+        }
 
+        private static void PrintResult(string detainedId)
+        {
             foreach (var item in identifications.Select(x => x.Id).Where(y => y.EndsWith(detainedId)))
             {
                 Console.WriteLine(item);
