@@ -37,6 +37,7 @@
         public override double CalculatePerimeter() => (Height + Width) * 2;
         public override double CalculateArea() => Height * Width;
         public override string Draw() => base.Draw() + GetType().Name;
+
         public void Drawing()
         {
             DrawLine(Width, '*', '*');
@@ -48,7 +49,6 @@
 
             DrawLine(Width, '*', '*');
         }
-
         private void DrawLine(double width, char end, char mid)
         {
             Console.Write(end);
