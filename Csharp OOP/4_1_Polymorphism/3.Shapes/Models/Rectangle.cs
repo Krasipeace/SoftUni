@@ -1,8 +1,8 @@
 ﻿namespace Shapes.Models
 {
     using System;
-
-    public class Rectangle : Shape
+    using Shapes.Models.Interfaces;
+    public class Rectangle : Shape, IDrawable
     {
         private double height;
         private double width;
