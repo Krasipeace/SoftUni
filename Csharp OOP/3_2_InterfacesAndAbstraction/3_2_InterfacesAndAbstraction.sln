@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.MultipleImplementation", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Telephony", "3.Telephony\3.Telephony.csproj", "{F0FC7F13-DD18-4E2C-8213-050633B2602E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.BorderControl", "4.BorderControl\4.BorderControl.csproj", "{61CA715F-A3CE-4F9E-AE81-4B672D0B3E5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.BorderControl", "4.BorderControl\4.BorderControl.csproj", "{61CA715F-A3CE-4F9E-AE81-4B672D0B3E5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.BirthdayCelebrations", "5.BirthdayCelebrations\5.BirthdayCelebrations.csproj", "{89A8A12F-1B27-4D31-91FD-0E0C7D693DD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.BirthdayCelebrations", "5.BirthdayCelebrations\5.BirthdayCelebrations.csproj", "{89A8A12F-1B27-4D31-91FD-0E0C7D693DD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.FoodShortage", "6.FoodShortage\6.FoodShortage.csproj", "{F0DC2CDD-569B-4DC2-A775-7D180B18D530}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{89A8A12F-1B27-4D31-91FD-0E0C7D693DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89A8A12F-1B27-4D31-91FD-0E0C7D693DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89A8A12F-1B27-4D31-91FD-0E0C7D693DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DC2CDD-569B-4DC2-A775-7D180B18D530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DC2CDD-569B-4DC2-A775-7D180B18D530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DC2CDD-569B-4DC2-A775-7D180B18D530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DC2CDD-569B-4DC2-A775-7D180B18D530}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
