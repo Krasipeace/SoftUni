@@ -6,9 +6,4 @@
     <RootNamespace>WildFarm</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Animals\" />
-    <Folder Include="Models\FoodTypes\" />
-  </ItemGroup>
-
 </Project>
