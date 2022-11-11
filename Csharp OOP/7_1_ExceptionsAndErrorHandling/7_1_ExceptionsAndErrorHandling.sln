@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SquareRoot", "1.SquareRoot\1.SquareRoot.csproj", "{3C154974-FBEE-41DE-A69C-22287F82CF2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.SquareRoot", "1.SquareRoot\1.SquareRoot.csproj", "{3C154974-FBEE-41DE-A69C-22287F82CF2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.EnterNumbers", "2.EnterNumbers\2.EnterNumbers.csproj", "{6AC2DD6E-B018-4373-8E6F-5A3C6AFA46A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.EnterNumbers", "2.EnterNumbers\2.EnterNumbers.csproj", "{6AC2DD6E-B018-4373-8E6F-5A3C6AFA46A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Cards", "3.Cards\3.Cards.csproj", "{C1C4AD93-165B-40DE-B389-45097F713B02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Cards", "3.Cards\3.Cards.csproj", "{C1C4AD93-165B-40DE-B389-45097F713B02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.SumOfIntegers", "4.SumOfIntegers\4.SumOfIntegers.csproj", "{355496CE-B99A-44A0-8E6E-D185A0C75149}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.SumOfIntegers", "4.SumOfIntegers\4.SumOfIntegers.csproj", "{355496CE-B99A-44A0-8E6E-D185A0C75149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.PlayCatch", "5.PlayCatch\5.PlayCatch.csproj", "{42155679-70CA-4E31-87C0-3A8DDF541DD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{355496CE-B99A-44A0-8E6E-D185A0C75149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{355496CE-B99A-44A0-8E6E-D185A0C75149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{355496CE-B99A-44A0-8E6E-D185A0C75149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42155679-70CA-4E31-87C0-3A8DDF541DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42155679-70CA-4E31-87C0-3A8DDF541DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42155679-70CA-4E31-87C0-3A8DDF541DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42155679-70CA-4E31-87C0-3A8DDF541DD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
