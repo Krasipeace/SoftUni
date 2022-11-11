@@ -20,7 +20,7 @@
 ### Encapsulation
 
 | Lab | Exercises | 
-| :---: | :---: | 
+| :--- | :--- | 
 | [1. Persons][12]    | [1. Class Box Data][16]      	 | 
 | [2. Salary][13]     | [2. Animal Farm][17]      		 | 
 | [3. Validation][14] | [3. Shopping Spree][18] 		 | 
@@ -32,7 +32,7 @@
 ### Interfaces and Abstraction
 
 | Lab | Exercises | 
-| :---: | :---: | 
+| :--- | :--- | 
 | [1. Shapes][21] | [1. Define an Interface IPerson][23] | 
 | [2. Cars][22]   | [2. Multiple Implementation][24]     | 
 | 				  | [3. Telephony][25] 		 			 | 
@@ -48,7 +48,7 @@
 ### Polymorphism
 
 | Lab | Exercises | 
-| :---: | :---: | 
+| :--- | :--- | 
 | [1. Math Operations][32] | [1. Vehicles][35] 			| 
 | [2. Animals][33]   	   | [2. Vehicles Extension][36]| 
 | [3. Shapes][34]   	   | [3. Raiding][37] 		 	| 
@@ -59,7 +59,7 @@
 ### Reflection and Attributes
 
 | Lab | Exercises | 
-| :---: | :---: | 
+| :--- | :--- | 
 | [1. Stealer][39] 		  			  | [1. Command Pattern][45] 	   |
 | [2. High Quality Mistakes][40]   	  | [2. Validation Attributes][46] | 
 | [3. Mission Private Impossible][41] | 	
@@ -72,17 +72,21 @@
 ### Unit Testing
 
 | Lab | Exercises | 
-| :---: | :---: | 
+| :--- | :--- | 
+| [1. Test Axe][47]    | [1. Database][49] 	    	|
+| [2. Dummy Tests][48] | [2. Extended Database][50] | 
+| 					   | [3. Car Manager][51] 	    |
+| 					   | [4. Fighting Arena][52] 	| 
 
 &nbsp;
 
 ### Other Exercises
 
 | Exceptions and Error Handling | Mocking and Test Driven Development | 
-| :---: | :---: | 
-| [1. Square Root][39] 		  | 	|
-| [2. Enter Numbers][40]   	  |     | 
-| [3. Cards][41] 		 	  | 	|
-| [4. Sum of Integers][42]    | 	|
-| [5. Play Catch][43] 		  | 	|
-| [6. Money Transactions][44] | 	|
+| :--- | :--- | 
+| [1. Square Root][51] 		  | [1. Fake Axe and Dummy][57] |
+| [2. Enter Numbers][52]   	  |      
+| [3. Cards][53] 		 	  | 	
+| [4. Sum of Integers][54]    | 	
+| [5. Play Catch][55] 		  | 	
+| [6. Money Transactions][56] | 	
