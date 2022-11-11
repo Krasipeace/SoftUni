@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Cards", "3.Cards\3.Cards.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.SumOfIntegers", "4.SumOfIntegers\4.SumOfIntegers.csproj", "{355496CE-B99A-44A0-8E6E-D185A0C75149}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.PlayCatch", "5.PlayCatch\5.PlayCatch.csproj", "{42155679-70CA-4E31-87C0-3A8DDF541DD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.PlayCatch", "5.PlayCatch\5.PlayCatch.csproj", "{42155679-70CA-4E31-87C0-3A8DDF541DD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.MoneyTransactions", "6.MoneyTransactions\6.MoneyTransactions.csproj", "{08C45FC5-9FB8-46C3-84AF-2CB7506C8F0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{42155679-70CA-4E31-87C0-3A8DDF541DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42155679-70CA-4E31-87C0-3A8DDF541DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42155679-70CA-4E31-87C0-3A8DDF541DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C45FC5-9FB8-46C3-84AF-2CB7506C8F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C45FC5-9FB8-46C3-84AF-2CB7506C8F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C45FC5-9FB8-46C3-84AF-2CB7506C8F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C45FC5-9FB8-46C3-84AF-2CB7506C8F0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
