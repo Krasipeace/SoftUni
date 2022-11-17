@@ -1,16 +1,13 @@
-﻿using System;
-
-namespace ValidationAttributes
+﻿namespace ValidationAttributes
 {
+    using System;
+    using ValidationAttributes.Core;
+
     public class StartUp
     {
         public static void Main(string[] args)
         {
-            var person = new Person
-             (
-                 null,
-                 -1
-             );
+            Person person = new Person("Henry", 77);
 
             bool isValidEntity = Validator.IsValid(person);
 
