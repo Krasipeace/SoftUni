@@ -4,6 +4,10 @@
 
 &nbsp;
 
+![in the matrix](https://github.com/Krasipeace/SoftUni/blob/main/Fundamentals/0_5_F_Matrix_Screen/matrix_screen_gif.gif)
+
+&nbsp;
+
 ### Basic Syntax, Conditional Statements and Loops
 
 | Lab | Exercises | More Exercises |
