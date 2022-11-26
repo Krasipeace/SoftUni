@@ -82,9 +82,9 @@
 
 ### Other Exercises
 
-| Exceptions and Error Handling | Mocking and Test Driven Development | Workshop
-| :--- | :--- | 
-| [1. Square Root][53] 		  | [1. Fake Axe and Dummy][59] | [1. Snake Game][60]
+| Exceptions and Error Handling | Mocking and Test Driven Development | Workshop |
+| :--- | :--- | :--- |
+| [1. Square Root][53] 		  | [1. Fake Axe and Dummy][59] | [1. Snake Game][60] |
 | [2. Enter Numbers][54]   	  |      
 | [3. Cards][55] 		 	  | 	
 | [4. Sum of Integers][56]    | 	
