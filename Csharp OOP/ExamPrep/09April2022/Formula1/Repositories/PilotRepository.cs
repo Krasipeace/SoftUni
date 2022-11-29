@@ -7,22 +7,22 @@
 
     public class PilotRepository : IRepository<IPilot>
     {
-        private List<IPilot> pilots;
+        private List<IPilot> models;
         public PilotRepository()
         {
-            pilots = new List<IPilot>();
+            models = new List<IPilot>();
         }
 
         public IReadOnlyCollection<IPilot> Models 
-            => pilots.AsReadOnly();
+            => models.AsReadOnly();
 
         public void Add(IPilot model)
-            => pilots.Add(model);
+            => models.Add(model);
 
         public IPilot FindByName(string name)
-            => pilots.Find(x => x.FullName == name);
+            => models.Find(x => x.FullName == name);
 
         public bool Remove(IPilot model)
-            => pilots.Remove(model);
+            => models.Remove(model);
     }
 }

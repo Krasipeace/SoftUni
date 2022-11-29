@@ -7,20 +7,21 @@
 
     public class FormulaOneCarRepository : IRepository<IFormulaOneCar>
     {
-        private List<IFormulaOneCar> cars;
-        public FormulaOneCarRepository() 
-            => cars = new List<IFormulaOneCar>(); 
+        private List<IFormulaOneCar> models;
+        public FormulaOneCarRepository()
+        {
+            models = new List<IFormulaOneCar>();
+        }
+        public IReadOnlyCollection<IFormulaOneCar> Models
+            => models.AsReadOnly();
 
-        public IReadOnlyCollection<IFormulaOneCar> Models 
-            => cars.AsReadOnly();
+        public void Add(IFormulaOneCar model)
+            => models.Add(model);
 
-        public void Add(IFormulaOneCar model) 
-            => cars.Add(model);
-
-        public IFormulaOneCar FindByName (string name)
-            => cars.Find(x => x.Model == name);
+        public IFormulaOneCar FindByName(string name)
+            => models.Find(x => x.Model == name);
 
         public bool Remove(IFormulaOneCar model)
-            => cars.Remove(model);
+            => models.Remove(model);
     }
 }

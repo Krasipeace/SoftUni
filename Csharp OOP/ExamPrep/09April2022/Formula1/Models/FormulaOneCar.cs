@@ -63,6 +63,6 @@
         }
 
         public double RaceScoreCalculator(int laps)
-            => EngineDisplacement / Horsepower * laps;
+            => engineDisplacement / horsepower * laps;
     }
 }

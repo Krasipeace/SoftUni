@@ -1,7 +1,7 @@
 ﻿namespace Formula1.Models
 {
     using System;
-
+    using System.Text;
     using Contracts;
 
     public class Pilot : IPilot
@@ -9,6 +9,7 @@
         private string fullName;
         private int numberOfWins;
         private IFormulaOneCar car;
+        private bool canRace;
         public Pilot(string fullName)
         {
             FullName = fullName;
@@ -41,7 +42,7 @@
             {
                 if (value == null)
                 {
-                    throw new ArgumentException(string.Format(Utilities.ExceptionMessages.InvalidCarForPilot));
+                    throw new NullReferenceException(string.Format(Utilities.ExceptionMessages.InvalidCarForPilot));
                 }
                 car = value;
             }
@@ -55,13 +56,19 @@
             }
             private set
             {
-                value = numberOfWins;
+                numberOfWins = value;
             }
         }
         public bool CanRace
         {
-            get;
-            private set;
+            get
+            {
+                return canRace;
+            }
+            private set
+            {
+                canRace = value;
+            }
         }
 
         public void AddCar(IFormulaOneCar car)
@@ -73,6 +80,11 @@
         public void WinRace() => numberOfWins++;
 
         public override string ToString()
-            => $"Pilot {FullName} has {NumberOfWins} wins.";
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine($"Pilot {fullName} has {numberOfWins} wins.");
+
+            return stringBuilder.ToString().Trim();
+        }
     }
 }

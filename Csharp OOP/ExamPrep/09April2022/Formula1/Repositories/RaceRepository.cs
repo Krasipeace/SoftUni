@@ -7,21 +7,21 @@
 
     public class RaceRepository : IRepository<IRace>
     {
-        private List<IRace> races;
+        private List<IRace> models;
         public RaceRepository()
         {
-            races = new List<IRace>();
+            models = new List<IRace>();
         }
 
-        public IReadOnlyCollection<IRace> Models => races.AsReadOnly();
+        public IReadOnlyCollection<IRace> Models => models.AsReadOnly();
 
         public void Add(IRace model)
-            => races.Add(model);
+            => models.Add(model);
 
         public IRace FindByName(string name)
-            => races.Find(x => x.RaceName == name);
+            => models.Find(x => x.RaceName == name);
 
         public bool Remove(IRace model)
-            => races.Remove(model);
+            => models.Remove(model);
     }
 }

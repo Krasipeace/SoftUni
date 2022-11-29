@@ -118,17 +118,18 @@
 
         public string StartRace(string raceName)
         {
-            if (!raceRepository.Models.Any(x => x.RaceName == raceName))
+            IRace race = raceRepository.FindByName(raceName);
+
+            if (race == null)
             {
                 throw new NullReferenceException(string.Format(Utilities.ExceptionMessages.RaceDoesNotExistErrorMessage, raceName));
             }
-
-            IRace race = raceRepository.FindByName(raceName);
 
             if (race.Pilots.Count < 3)
             {
                 throw new InvalidOperationException(string.Format(Utilities.ExceptionMessages.InvalidRaceParticipants, raceName));
             }
+
             if (race.TookPlace)
             {
                 throw new InvalidOperationException(string.Format(Utilities.ExceptionMessages.RaceTookPlaceErrorMessage));
@@ -142,23 +143,38 @@
             firstPlace.WinRace();
             race.TookPlace = true;
 
-            return $"Pilot {firstPlace.FullName} wins the {raceName} race." + Environment.NewLine +
-                   $"Pilot {secondPlace.FullName} is second in the {raceName} race." + Environment.NewLine +
-                   $"Pilot {thirdPlace.FullName} is third in the {raceName} race.";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Pilot {firstPlace.FullName} wins the {raceName} race.");
+            sb.AppendLine($"Pilot {secondPlace.FullName} is second in the {raceName}");
+            sb.AppendLine($"Pilot {thirdPlace.FullName} is third in the {raceName} race.");
+
+            return sb.ToString().Trim();
         }
 
         public string RaceReport()
         {
-            IEnumerable<IRace> executedRaces = raceRepository.Models.Where(x => x.TookPlace);
+            List<IRace> races = raceRepository.Models.Where(x => x.TookPlace).ToList();
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in races)
+            {
+                sb.AppendLine(item.RaceInfo());
+            }
 
-            return string.Join(Environment.NewLine, executedRaces);
+            return sb.ToString().Trim();
         }
 
         public string PilotReport()
         {
-            IOrderedEnumerable<IPilot> scoreBoard = pilotRepository.Models.OrderByDescending(x => x.NumberOfWins);
+            List<IPilot> scoreBoard = pilotRepository.Models.OrderByDescending(x => x.NumberOfWins).ToList();
 
-            return string.Join(Environment.NewLine, scoreBoard);
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in scoreBoard)
+            {
+                sb.AppendLine(item.ToString());;
+            }
+
+            return sb.ToString().Trim();
         }
+
     }
 }

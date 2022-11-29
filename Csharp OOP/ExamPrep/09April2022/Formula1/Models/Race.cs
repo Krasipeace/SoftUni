@@ -51,7 +51,7 @@
         }
         public bool TookPlace {get; set;}
 
-        public ICollection<IPilot> Pilots => pilots;
+        public ICollection<IPilot> Pilots => pilots.AsReadOnly();
 
         public void AddPilot(IPilot pilot) => pilots.Add(pilot);
 
@@ -59,9 +59,9 @@
         {
             StringBuilder sb = new StringBuilder();
             
-            sb.AppendLine($"The {RaceName} race has:");
+            sb.AppendLine($"The {raceName} race has:");
             sb.AppendLine($"Participants: {pilots.Count}");
-            sb.AppendLine($"Number of laps: {NumberOfLaps}");
+            sb.AppendLine($"Number of laps: {numberOfLaps}");
             if (TookPlace)
             {
                 sb.AppendLine($"Took place: Yes");
@@ -71,7 +71,7 @@
                 sb.AppendLine($"Took place: No");
             }
 
-            return sb.ToString().TrimEnd();
+            return sb.ToString().Trim();
         }
     }
 }
