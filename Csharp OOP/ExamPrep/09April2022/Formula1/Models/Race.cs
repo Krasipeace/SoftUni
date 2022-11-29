@@ -51,32 +51,25 @@
         }
         public bool TookPlace {get; set;}
 
-        public ICollection<IPilot> Pilots
-        {
-            get
-            {
-                return pilots.AsReadOnly();
-            }
-        }
+        public ICollection<IPilot> Pilots => pilots;
 
         public void AddPilot(IPilot pilot) => pilots.Add(pilot);
 
         public string RaceInfo()
         {
             StringBuilder sb = new StringBuilder();
-            string tookPlace = string.Empty;
-            if (TookPlace)
-            {
-                tookPlace = "Yes";
-            }
-            else
-            {
-                tookPlace = "No";
-            }
+            
             sb.AppendLine($"The {RaceName} race has:");
             sb.AppendLine($"Participants: {pilots.Count}");
             sb.AppendLine($"Number of laps: {NumberOfLaps}");
-            sb.AppendLine($"Took place: {tookPlace}");
+            if (TookPlace)
+            {
+                sb.AppendLine($"Took place: Yes");
+            }
+            else
+            {
+                sb.AppendLine($"Took place: No");
+            }
 
             return sb.ToString().TrimEnd();
         }
