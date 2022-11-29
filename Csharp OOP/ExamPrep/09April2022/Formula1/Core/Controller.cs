@@ -170,7 +170,7 @@
             StringBuilder sb = new StringBuilder();
             foreach (var item in scoreBoard)
             {
-                sb.AppendLine(item.ToString());;
+                sb.AppendLine($"Pilot {item.FullName} has {item.NumberOfWins} wins.");
             }
 
             return sb.ToString().Trim();

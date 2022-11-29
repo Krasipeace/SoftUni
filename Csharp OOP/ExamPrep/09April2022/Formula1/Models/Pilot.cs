@@ -79,12 +79,12 @@
 
         public void WinRace() => numberOfWins++;
 
-        public override string ToString()
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine($"Pilot {fullName} has {numberOfWins} wins.");
+        //public override string ToString()
+        //{
+        //    StringBuilder stringBuilder = new StringBuilder();
+        //    stringBuilder.AppendLine($"Pilot {fullName} has {numberOfWins} wins.");
 
-            return stringBuilder.ToString().Trim();
-        }
+        //    return stringBuilder.ToString().Trim();
+        //}
     }
 }
