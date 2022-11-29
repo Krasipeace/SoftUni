@@ -134,13 +134,13 @@
                 throw new InvalidOperationException(string.Format(Utilities.ExceptionMessages.RaceTookPlaceErrorMessage));
             }
 
-            race.TookPlace = true;
             IOrderedEnumerable<IPilot> winners = race.Pilots.OrderByDescending(x => x.Car.RaceScoreCalculator(race.NumberOfLaps));
-
             IPilot firstPlace = winners.First();
-            firstPlace.WinRace();
             IPilot secondPlace = winners.Skip(1).First();
             IPilot thirdPlace = winners.Skip(2).First();
+
+            firstPlace.WinRace();
+            race.TookPlace = true;
 
             return $"Pilot {firstPlace.FullName} wins the {raceName} race." + Environment.NewLine +
                    $"Pilot {secondPlace.FullName} is second in the {raceName} race." + Environment.NewLine +
