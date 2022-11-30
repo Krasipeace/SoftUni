@@ -11,7 +11,7 @@
     {
         private string fullName;
         private List<IVessel> vessels;
-        private int CombatExperience;
+        private int combatExperience;
         public Captain(string fullName)
         {
             FullName = fullName;
@@ -24,7 +24,7 @@
             {
                 return fullName;
             }
-            set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
@@ -34,9 +34,29 @@
             }
         }
 
-        public ICollection<IVessel> Vessels => vessels.AsReadOnly();
+        public ICollection<IVessel> Vessels
+        {
+            get
+            {
+                return vessels;
+            }
+            private set
+            {
+                vessels = (List<IVessel>)value;
+            }
+        }
 
-        int ICaptain.CombatExperience => CombatExperience;
+        public int CombatExperience
+        {
+            get
+            {
+                return combatExperience;
+            }
+            private set
+            {
+                combatExperience = value;
+            }
+        }
 
         public void AddVessel(IVessel vessel)
         {
@@ -61,7 +81,7 @@
             {
                 foreach (var item in vessels)
                 {
-                    sb.AppendLine(item.ToString());                   
+                    sb.AppendLine(item.ToString());
                 }
             }
 

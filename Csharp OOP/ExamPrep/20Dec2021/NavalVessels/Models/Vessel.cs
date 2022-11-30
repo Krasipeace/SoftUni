@@ -32,7 +32,7 @@
             {
                 return name;
             }
-            private set
+            protected set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
