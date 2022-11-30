@@ -7,10 +7,21 @@
     public class Battleship : Vessel, IBattleship
     {
         private const double BATTLESHIP_ARMOR_THICKNESS = 300;
-        public bool SonarMode { get; private set; }
+        private bool sonarMode;
         public Battleship(string name, double mainWeaponCaliber, double speed, double armorThickness) : base(name, mainWeaponCaliber, speed, BATTLESHIP_ARMOR_THICKNESS)
         {
             SonarMode = false;
+        }
+        public bool SonarMode
+        {
+            get
+            {
+                return sonarMode;
+            }
+            private set
+            {
+                sonarMode = value;
+            }
         }
 
         public void ToggleSonarMode()

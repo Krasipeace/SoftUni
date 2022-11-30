@@ -7,10 +7,21 @@
     public class Submarine : Vessel, ISubmarine
     {
         private const double SUBMARINE_ARMOR_THICKNESS = 200;
-        public bool SubmergeMode { get; private set; }
+        private bool submergeMode;
         public Submarine(string name, double mainWeaponCaliber, double speed, double armorThickness) : base(name, mainWeaponCaliber, speed, SUBMARINE_ARMOR_THICKNESS)
         {
             SubmergeMode = false;
+        }
+        public bool SubmergeMode
+        {
+            get
+            {
+                return submergeMode;
+            }
+            private set
+            {
+                submergeMode = value;
+            }
         }
 
         public void ToggleSubmergeMode()
