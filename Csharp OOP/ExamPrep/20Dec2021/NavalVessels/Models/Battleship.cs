@@ -8,7 +8,7 @@
     {
         private const double BATTLESHIP_ARMOR_THICKNESS = 300;
         private bool sonarMode;
-        public Battleship(string name, double mainWeaponCaliber, double speed, double armorThickness) : base(name, mainWeaponCaliber, speed, BATTLESHIP_ARMOR_THICKNESS)
+        public Battleship(string name, double mainWeaponCaliber, double speed) : base(name, mainWeaponCaliber, speed, BATTLESHIP_ARMOR_THICKNESS)
         {
             SonarMode = false;
         }
@@ -30,12 +30,12 @@
             if (SonarMode)
             {
                 MainWeaponCaliber += 40;
-                Speed += 5;
+                Speed -= 5;
             }
             else
             {
                 MainWeaponCaliber -= 40;
-                Speed -= 5;
+                Speed += 5;
             }
         }
 
@@ -60,7 +60,7 @@
             }
 
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Sonar mode: {sonarStatus}");
+            sb.AppendLine($" *Sonar mode: {sonarStatus}");
 
             return base.ToString() + sb.ToString().Trim();
         }

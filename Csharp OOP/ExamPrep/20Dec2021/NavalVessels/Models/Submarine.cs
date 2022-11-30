@@ -1,5 +1,6 @@
 ﻿namespace NavalVessels.Models
 {
+    using System;
     using System.Text;
 
     using NavalVessels.Models.Contracts;
@@ -8,7 +9,7 @@
     {
         private const double SUBMARINE_ARMOR_THICKNESS = 200;
         private bool submergeMode;
-        public Submarine(string name, double mainWeaponCaliber, double speed, double armorThickness) : base(name, mainWeaponCaliber, speed, SUBMARINE_ARMOR_THICKNESS)
+        public Submarine(string name, double mainWeaponCaliber, double speed) : base(name, mainWeaponCaliber, speed, SUBMARINE_ARMOR_THICKNESS)
         {
             SubmergeMode = false;
         }
@@ -30,12 +31,12 @@
             if (SubmergeMode)
             {
                 MainWeaponCaliber += 40;
-                Speed += 4;
+                Speed -= 4;
             }
             else
             {
                 MainWeaponCaliber -= 40;
-                Speed -= 4;
+                Speed += 4;
             }
         }
 
@@ -60,7 +61,7 @@
             }
 
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Sonar mode: {submergeStatus}");
+            sb.AppendLine($" *Submerge mode: {submergeStatus}");
 
             return base.ToString() + sb.ToString().Trim();
         }

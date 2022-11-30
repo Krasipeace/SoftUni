@@ -17,7 +17,7 @@
         private double armorThickness;
         private List<string> targets;
         private ICaptain captain;
-        public Vessel(string name, double mainWeaponCaliber, double speed, double armorThickness)
+        protected Vessel(string name, double mainWeaponCaliber, double speed, double armorThickness)
         {
             Name = name;
             MainWeaponCaliber = mainWeaponCaliber;
@@ -126,13 +126,13 @@
 
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"- {Name}");
-            sb.AppendLine($"*Type: {this.GetType().Name}");
-            sb.AppendLine($"*Armor thickness: {ArmorThickness}");
-            sb.AppendLine($"*Main weapon caliber: {MainWeaponCaliber}");
-            sb.AppendLine($"*Speed: {Speed}");
-            sb.AppendLine($"*Targets: {targetsList}");
+            sb.AppendLine($" *Type: {this.GetType().Name}");
+            sb.AppendLine($" *Armor thickness: {ArmorThickness}");
+            sb.AppendLine($" *Main weapon caliber: {MainWeaponCaliber}");
+            sb.AppendLine($" *Speed: {Speed}");
+            sb.AppendLine($" *Targets: {targetsList}");
 
-            return sb.ToString().Trim();
+            return sb.ToString();
         }
     }
 }
