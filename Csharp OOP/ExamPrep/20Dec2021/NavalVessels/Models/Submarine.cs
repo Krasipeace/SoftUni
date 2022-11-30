@@ -63,7 +63,7 @@
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($" *Submerge mode: {submergeStatus}");
 
-            return base.ToString() + sb.ToString().Trim();
+            return base.ToString() + sb.ToString();
         }
     }
 }

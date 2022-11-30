@@ -129,7 +129,7 @@
             sb.AppendLine($" *Type: {this.GetType().Name}");
             sb.AppendLine($" *Armor thickness: {ArmorThickness}");
             sb.AppendLine($" *Main weapon caliber: {MainWeaponCaliber}");
-            sb.AppendLine($" *Speed: {Speed}");
+            sb.AppendLine($" *Speed: {Speed} knots");
             sb.AppendLine($" *Targets: {targetsList}");
 
             return sb.ToString();

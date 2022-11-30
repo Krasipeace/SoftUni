@@ -93,7 +93,7 @@
         {
             if (vessels.FindByName(name) != null)
             {
-                return string.Format(OutputMessages.VesselIsAlreadyManufactured, name);
+                return string.Format(OutputMessages.VesselIsAlreadyManufactured, vesselType, name);
             }
 
             IVessel vessel;
