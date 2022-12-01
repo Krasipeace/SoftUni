@@ -32,11 +32,11 @@
             {
                 return name;
             }
-            protected set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException(string.Format(ExceptionMessages.InvalidVesselName));
+                    throw new ArgumentNullException(string.Format(nameof(this.Name), ExceptionMessages.InvalidVesselName));
                 }
                 name = value;
             }
