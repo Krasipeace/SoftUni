@@ -2,28 +2,29 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
 
-    using NavalVessels.Models.Contracts;
-    using NavalVessels.Utilities.Messages;
+    using Contracts;
+    using Utilities.Messages;
 
     public abstract class Vessel : IVessel
     {
-        private const int BELOW_ZERO_SET = 0;
-
         private string name;
-        private double mainWeponCaliber;
-        private double speed;
-        private double armorThickness;
-        private List<string> targets;
         private ICaptain captain;
+
+        private Vessel()
+        {
+            Targets = new List<string>();
+        }
+
         protected Vessel(string name, double mainWeaponCaliber, double speed, double armorThickness)
+            : this()
         {
             Name = name;
-            MainWeaponCaliber = mainWeaponCaliber;
+            MainWeaponCaliber= mainWeaponCaliber;
             Speed = speed;
             ArmorThickness = armorThickness;
-            targets = new List<string>();
         }
 
         public string Name
@@ -36,67 +37,37 @@
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException(string.Format(nameof(this.Name), ExceptionMessages.InvalidVesselName));
+                    throw new ArgumentNullException(nameof(this.Name), ExceptionMessages.InvalidVesselName);
                 }
+
                 name = value;
             }
         }
-        public double MainWeaponCaliber
-        {
-            get
-            {
-                return mainWeponCaliber;
-            }
-            protected set
-            {
-                mainWeponCaliber = value;
-            }
-        }
-        public double Speed
-        {
-            get
-            {
-                return speed;
-            }
-            protected set
-            {
-                speed = value;
-            }
-        }
-        public double ArmorThickness
-        {
-            get
-            {
-                return armorThickness;
-            }
-            set
-            {
-                if (value < 0)
-                {
-                    value = BELOW_ZERO_SET;
-                }
-                armorThickness = value;
-            }
-        }
 
-
-        public ICaptain Captain
-        {
+        public ICaptain Captain 
+        { 
             get
             {
                 return captain;
-            }
+            } 
             set
             {
                 if (value == null)
                 {
-                    throw new NullReferenceException(string.Format(ExceptionMessages.InvalidCaptainToVessel));
+                    throw new NullReferenceException(ExceptionMessages.InvalidCaptainToVessel);
                 }
+
                 captain = value;
             }
         }
 
-        public ICollection<string> Targets => targets.AsReadOnly();
+        public double ArmorThickness { get; set; }
+
+        public double MainWeaponCaliber { get; protected set; }
+
+        public double Speed { get; protected set; }
+
+        public ICollection<string> Targets { get; private set; }
 
         public void Attack(IVessel target)
         {
@@ -104,35 +75,35 @@
             {
                 throw new NullReferenceException(ExceptionMessages.InvalidTarget);
             }
-            target.ArmorThickness -= mainWeponCaliber;
-            targets.Add(target.Name);
+
+            target.ArmorThickness -= this.MainWeaponCaliber;
+            if (target.ArmorThickness < 0)
+            {
+                target.ArmorThickness = 0;
+            }
+
+            Targets.Add(target.Name);
+
+            Captain.IncreaseCombatExperience();
+            target.Captain.IncreaseCombatExperience();
         }
 
-        public virtual void RepairVessel()
-        {
-        }
+        public abstract void RepairVessel();
 
         public override string ToString()
         {
-            string targetsList = string.Empty;
-            if (targets.Count == 0)
-            {
-                targetsList = "None";
-            }
-            else
-            {
-                targetsList = string.Join(", ", targets);
-            }
-
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"- {Name}");
-            sb.AppendLine($" *Type: {this.GetType().Name}");
-            sb.AppendLine($" *Armor thickness: {ArmorThickness}");
-            sb.AppendLine($" *Main weapon caliber: {MainWeaponCaliber}");
-            sb.AppendLine($" *Speed: {Speed} knots");
-            sb.AppendLine($" *Targets: {targetsList}");
+            string targetsOutput = Targets.Any() ?
+                String.Join(", ", Targets) : "None";
 
-            return sb.ToString();
+            sb
+                .AppendLine($"- {Name}")
+                .AppendLine($" *Type: {GetType().Name}")
+                .AppendLine($" *Armor thickness: {ArmorThickness}")
+                .AppendLine($" *Main weapon caliber: {MainWeaponCaliber}")
+                .AppendLine($" *Speed: {Speed} knots")
+                .AppendLine($" *Targets: {targetsOutput}");
+            return sb.ToString().TrimEnd();
         }
     }
 }

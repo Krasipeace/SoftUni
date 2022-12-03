@@ -7,36 +7,32 @@
     public class Battleship : Vessel, IBattleship
     {
         private const double BATTLESHIP_ARMOR_THICKNESS = 300;
-        private bool sonarMode;
+        private const double MAIN_CALIBER_MODIFIER = 40;
+        private const double SPEED_MODIFIER = 5;
+
         public Battleship(string name, double mainWeaponCaliber, double speed) : base(name, mainWeaponCaliber, speed, BATTLESHIP_ARMOR_THICKNESS)
         {
             SonarMode = false;
         }
         public bool SonarMode
         {
-            get
-            {
-                return sonarMode;
-            }
-            private set
-            {
-                sonarMode = value;
-            }
+            get; private set;
         }
 
         public void ToggleSonarMode()
         {
-            SonarMode = !SonarMode;
-            if (SonarMode)
+            if (!SonarMode)
             {
-                MainWeaponCaliber += 40;
-                Speed -= 5;
+                MainWeaponCaliber += MAIN_CALIBER_MODIFIER;
+                Speed -= SPEED_MODIFIER;
             }
             else
             {
-                MainWeaponCaliber -= 40;
-                Speed += 5;
+                MainWeaponCaliber -= MAIN_CALIBER_MODIFIER;
+                Speed += SPEED_MODIFIER;
             }
+
+            SonarMode = !SonarMode;
         }
 
         public override void RepairVessel()
@@ -49,20 +45,13 @@
 
         public override string ToString()
         {
-            string sonarStatus = string.Empty;
-            if (SonarMode)
-            {
-                sonarStatus = "ON";
-            }
-            else
-            {
-                sonarStatus = "OFF";
-            }
-
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($" *Sonar mode: {sonarStatus}");
+            string sonarModeOnOff = SonarMode ? "ON" : "OFF";
 
-            return base.ToString() + sb.ToString();
+            sb.AppendLine(base.ToString())
+              .AppendLine($" *Sonar mode: {sonarModeOnOff}");
+
+            return sb.ToString().TrimEnd();
         }
     }
 }

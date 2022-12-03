@@ -4,20 +4,27 @@
     using System.Collections.Generic;
     using System.Text;
 
-    using NavalVessels.Models.Contracts;
-    using NavalVessels.Utilities.Messages;
+    using Contracts;
+    using Utilities.Messages;
 
     public class Captain : ICaptain
     {
+        private const int CombatExperienceIncreaseStep = 10;
+
         private string fullName;
-        private int combatExperience;
-        private List<IVessel> vessels;
+
+        private Captain()
+        {
+            CombatExperience = 0;
+            Vessels = new HashSet<IVessel>();
+        }
+
         public Captain(string fullName)
+            : this()
         {
             FullName = fullName;
-            CombatExperience = 0;
-            vessels = new List<IVessel>();
         }
+
         public string FullName
         {
             get
@@ -34,48 +41,38 @@
             }
         }
 
-        public ICollection<IVessel> Vessels => vessels.AsReadOnly();
+        public int CombatExperience { get; private set; }
 
-        public int CombatExperience
-        {
-            get
-            {
-                return combatExperience;
-            }
-            private set
-            {
-                combatExperience = value;
-            }
-        }
+        public ICollection<IVessel> Vessels { get; private set; }
 
         public void AddVessel(IVessel vessel)
         {
             if (vessel == null)
             {
-                throw new NullReferenceException(string.Format(ExceptionMessages.InvalidVesselForCaptain));
+                throw new NullReferenceException(ExceptionMessages.InvalidVesselForCaptain);
             }
-            vessels.Add(vessel);
+
+            Vessels.Add(vessel);
         }
 
         public void IncreaseCombatExperience()
         {
-            CombatExperience += 10;
+            CombatExperience += CombatExperienceIncreaseStep;
         }
 
         public string Report()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"{FullName} has {CombatExperience} combat experience and commands {vessels.Count} vessels.");
+            sb
+                .AppendLine($"{FullName} has {CombatExperience} combat experience and commands {Vessels.Count} vessels.");
 
-            if (vessels.Count > 0)
+            foreach (IVessel vessel in Vessels)
             {
-                foreach (var item in vessels)
-                {
-                    sb.AppendLine(item.ToString());
-                }
+                sb
+                    .AppendLine(vessel.ToString());
             }
 
-            return sb.ToString().Trim();
+            return sb.ToString().TrimEnd();
         }
     }
 }
