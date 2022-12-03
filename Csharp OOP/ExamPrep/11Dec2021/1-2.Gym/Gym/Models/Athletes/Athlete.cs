@@ -9,6 +9,10 @@ namespace Gym.Models.Athletes
         private string fullName;
         private string motivation;
         private int numberOfMedals;
+        private int stamina;
+
+        private const int STAMINA_MODIFIER = 15;
+        private const int STAMINA_MAX_VALUE = 100;
 
         public Athlete(string fullName, string motivation, int numberOfMedals, int stamina)
         {
@@ -50,7 +54,22 @@ namespace Gym.Models.Athletes
             }
         }
 
-        public int Stamina { get; protected set; }
+        public int Stamina
+        {
+            get
+            {
+                return stamina;
+            }
+            protected set
+            {
+                if (value > STAMINA_MAX_VALUE)
+                {
+                    stamina = STAMINA_MAX_VALUE;
+                    throw new ArgumentException(ExceptionMessages.InvalidStamina);
+                }
+                stamina = value;
+            }
+        }
 
         public int NumberOfMedals
         {

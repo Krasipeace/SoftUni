@@ -1,32 +1,31 @@
 ﻿namespace Gym.Repositories
 {
+    using System.Collections.Generic;
     using Gym.Models.Equipment.Contracts;
     using Gym.Repositories.Contracts;
 
-    using System.Collections.Generic;
-    using System.Linq;
     public class EquipmentRepository : IRepository<IEquipment>
     {
-        private readonly ICollection<IEquipment> equipments;
+        private List<IEquipment> equipment;
         public EquipmentRepository()
         {
-            equipments = new HashSet<IEquipment>();
+            equipment = new List<IEquipment>();
         }
-        public IReadOnlyCollection<IEquipment> Models => (IReadOnlyCollection<IEquipment>)equipments;
+        public IReadOnlyCollection<IEquipment> Models => equipment.AsReadOnly();
 
         public void Add(IEquipment model)
         {
-            equipments.Add(model);
+            this.equipment.Add(model);
         }
 
         public IEquipment FindByType(string type)
         {
-            return equipments.FirstOrDefault(x => x.GetType().Name == type);
+            return equipment.Find(x => x.GetType().Name == type);
         }
 
         public bool Remove(IEquipment model)
         {
-            return equipments.Remove(model);
+            return equipment.Remove(model);
         }
     }
 }

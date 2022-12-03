@@ -13,20 +13,15 @@ namespace Gym.Models.Gyms
     {
         private string name;
         private int capacity;
-        private double equipmentWeight;
         private List<IEquipment> equipment;
         private List<IAthlete> athletes;
 
-        protected Gym()
-        {
-            equipment = new List<IEquipment>();
-            athletes = new List<IAthlete>();
-        }
-
-        public Gym(string name, int capacity) : this()
+        public Gym(string name, int capacity)
         {
             Name = name;
             Capacity = capacity;
+            equipment = new List<IEquipment>();
+            athletes = new List<IAthlete>();
         }
 
         public string Name
@@ -58,7 +53,7 @@ namespace Gym.Models.Gyms
         }
 
         public double EquipmentWeight
-            => Equipment.Sum(x => x.Weight);
+            => equipment.Sum(x => x.Weight);
 
         public ICollection<IEquipment> Equipment => equipment.AsReadOnly();
 
@@ -66,25 +61,25 @@ namespace Gym.Models.Gyms
 
         public void AddAthlete(IAthlete athlete)
         {
-            if (Athletes.Count == Capacity)
+            if (athletes.Count == Capacity)
             {
                 throw new InvalidOperationException(ExceptionMessages.NotEnoughSize);
             }
-            Athletes.Add(athlete);
+            athletes.Add(athlete);
         }
         public bool RemoveAthlete(IAthlete athlete)
         {
-            return Athletes.Remove(athlete);
+            return athletes.Remove(athlete);
         }
 
         public void AddEquipment(IEquipment equipment)
         {
-            Equipment.Add(equipment);
+            this.equipment.Add(equipment);
         }
 
         public void Exercise()
         {
-            foreach (IAthlete item in Athletes)
+            foreach (IAthlete item in athletes)
             {
                 item.Exercise();
             }
@@ -93,12 +88,12 @@ namespace Gym.Models.Gyms
         public string GymInfo()
         {
             StringBuilder sb = new StringBuilder();
-            string output = Athletes.Any() ? string.Join(", ", Athletes.Select(x => x.FullName)) : "No athletes";
+            string output = athletes.Any() ? string.Join(", ", athletes.Select(x => x.FullName)) : "No athletes";
 
             sb
                 .AppendLine($"{Name} is a {GetType().Name}:")
                 .AppendLine($"Athletes: {output}")
-                .AppendLine($"Equipment total count: {Equipment.Count}")
+                .AppendLine($"Equipment total count: {this.equipment.Count}")
                 .AppendLine($"Equipment total weight: {EquipmentWeight:f2} grams");
 
             return sb.ToString().TrimEnd();
