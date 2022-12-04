@@ -7,7 +7,7 @@
         private const double FUEL_AVAILABLE = 65;
         private const double FUEL_CONSUMPTION_PER_RACE = 7.5;
 
-        public TunedCar(string make, string model, string vin, int horsePower, double fuelAvailable, double fuelConsumptionPerRace) : base(make, model, vin, horsePower, FUEL_AVAILABLE, FUEL_CONSUMPTION_PER_RACE)
+        public TunedCar(string make, string model, string vin, int horsePower) : base(make, model, vin, horsePower, FUEL_AVAILABLE, FUEL_CONSUMPTION_PER_RACE)
         {
         }
 

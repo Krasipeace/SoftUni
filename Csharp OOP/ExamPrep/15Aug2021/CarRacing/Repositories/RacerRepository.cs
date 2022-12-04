@@ -35,6 +35,5 @@
         {
             return racers.FirstOrDefault(x => x.Username == property);
         }
-
     }
 }

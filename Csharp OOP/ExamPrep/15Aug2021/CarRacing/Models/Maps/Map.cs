@@ -32,17 +32,21 @@
                 winner.Race();
 
                 return string.Format(OutputMessages.OneRacerIsNotAvailable, winner.Username, loser.Username);
-            }         
-
+            } 
+            
+            racerOne.Race();
+            racerTwo.Race();
             double racerOneChance = racerOne.Car.HorsePower * racerOne.DrivingExperience * GetBehaviorValue(racerOne.RacingBehavior);
-            double racerTwoChance = racerOne.Car.HorsePower * racerOne.DrivingExperience * GetBehaviorValue(racerOne.RacingBehavior);
+            double racerTwoChance = racerTwo.Car.HorsePower * racerTwo.DrivingExperience * GetBehaviorValue(racerTwo.RacingBehavior);
 
             winner = racerOneChance > racerTwoChance ? racerOne : racerTwo;
 
             return string.Format(OutputMessages.RacerWinsRace, racerOne.Username, racerTwo.Username, winner.Username);
         }
 
-        private double GetBehaviorValue(string racingBehavior) 
-            => racingBehavior == "aggressive" ? 1.1 : 1.2;
+        private double GetBehaviorValue(string racingBehavior)
+        {
+            return racingBehavior == "strict" ? 1.2 : 1.1;
+        }
     }
 }

@@ -64,7 +64,7 @@
             get { return car; }
             private set
             {
-                if (value == null || value.Equals(""))
+                if (value == null)
                 {
                     throw new ArgumentException(ExceptionMessages.InvalidRacerCar);
                 }
@@ -79,7 +79,7 @@
 
         public bool IsAvailable()
         {
-            return car.FuelAvailable - car.FuelConsumptionPerRace >= 0;
+            return car.FuelAvailable - car.FuelConsumptionPerRace > 0;
         }
     }
 }

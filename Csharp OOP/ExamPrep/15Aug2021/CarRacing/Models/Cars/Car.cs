@@ -58,7 +58,7 @@
                 {
                     throw new ArgumentException(ExceptionMessages.InvalidCarVIN);
                 }
-                VIN = value;
+                vin = value;
             }
         }
 
