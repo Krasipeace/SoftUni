@@ -32,9 +32,9 @@ namespace Computers.Tests
         [Test]
         public void AddComputer_ShouldIncreaseCount_ShouldWorkAsExpected()
         {
-            Assert.AreEqual(computerManager.Count, 0);
+            Assert.AreEqual(0, computerManager.Count);
             computerManager.AddComputer(computer);
-            Assert.AreEqual(computerManager.Count, 1);
+            Assert.AreEqual(1, computerManager.Count);
         }
 
         [Test]
@@ -61,11 +61,11 @@ namespace Computers.Tests
         {
             computerManager.AddComputer(computer);
             Assert.IsTrue(computerManager.Computers.Contains(computer));
-            Assert.AreEqual(computerManager.Count, 1);
+            Assert.AreEqual(1, computerManager.Count);
 
             computerManager.RemoveComputer(computer.Manufacturer, computer.Model);
 
-            Assert.AreEqual(computerManager.Count, 0);
+            Assert.AreEqual(0, computerManager.Count);
             Assert.IsFalse(computerManager.Computers.Contains(computer));
         }
 
@@ -105,7 +105,7 @@ namespace Computers.Tests
             computerManager.AddComputer(computer2);
 
             ICollection<Computer> computers = computerManager.GetComputersByManufacturer("IBM");
-            Assert.AreEqual(computers.Count, 1);
+            Assert.AreEqual(1, computers.Count);
         }
 
         [Test]
