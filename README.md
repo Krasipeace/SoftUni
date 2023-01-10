@@ -3,6 +3,9 @@
 ![Last commit](https://img.shields.io/github/last-commit/Krasipeace/SoftUni)
 
 ### Software Engineering 
+
+SoftUni's professional program in software engineering aims to build all the fundamental knowledge and practical skills necessary for the acquisition of the "software engineer" profession, working with the most modern software technologies and learning the best practices in the field of programming.
+
 <p align="left"><a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a>
 <a href="https://azure.microsoft.com/en-us/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/25181517/183911544-95ad6ba7-09bf-4040-ac44-0adafedb9616.png" alt="Microsoft Azure" width="40" height="40"/> </a>
 <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a>
