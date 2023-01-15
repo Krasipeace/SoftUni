@@ -30,7 +30,7 @@
 | [Deposit Calculator][47]  | [Time+15min][56]     | [New House][64]    | [Histogram][72]     | [Vacation][80] | [SumPrime NonPrime][87]     |
 | [Vacation Book List][48]  | [Toy Shop][57]       | [Fishing Boat][65] | [Clever Lily][73]   | [Walking][81]  | [Train the Trainers][88]    |
 | [Supllies For School][49] | [GodzillavsKong][58] | [Journey][66]      | [Salary][74]        | [Coins][82]    | [Special Numbers][89]       |
-| [Repainting][50]          | [WorldSwim ecord][59]| [OperationsNum][67]| [Oscars][75]        | [Cake][83]     | [Cinema Tickets][90]        |
+| [Repainting][50]          | [WorldSwim Record][59]| [OperationsNum][67]| [Oscars][75]        | [Cake][83]     | [Cinema Tickets][90]        |
 | [Food Delivery][51]       | [Shopping][60]       | [Hotel Room][68]   | [Trekking Mania][76]| [Moving][84]   |
 | [Basketball Equipment][52]| [Lunch Break][61]    | [Ski Trip][69]     | [TennisRankList][77]|                |
 | [Fish Tank][53]           | 
