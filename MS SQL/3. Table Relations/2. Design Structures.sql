@@ -1,0 +1,104 @@
+-- 1 Online Store Database
+CREATE TABLE ItemTypes
+(
+	ItemTypeID INT IDENTITY NOT NULL,
+	[Name] NVARCHAR NOT NULL,
+	PRIMARY KEY (ItemTypeID)
+);
+
+CREATE TABLE Items
+(
+	ItemID INT IDENTITY NOT NULL,
+	[Name] NVARCHAR NOT NULL,
+	ItemTypeID INT NOT NULL,
+	PRIMARY KEY (ItemID),
+	FOREIGN KEY (ItemTypeID)
+		REFERENCES ItemTypes(ItemTypeID)
+);
+
+CREATE TABLE Cities
+(
+	CityID INT IDENTITY NOT NULL,
+	[Name] NVARCHAR NOT NULL,
+	PRIMARY KEY (CityID)
+);
+
+CREATE TABLE Customers
+(
+	CustomerID INT IDENTITY NOT NULL,
+	[Name] NVARCHAR NOT NULL,
+	Birthday DATETIME2 NOT NULL,
+	CityID INT NOT NULL,
+	PRIMARY KEY (CustomerID),
+	FOREIGN KEY (CityID)
+		REFERENCES Cities(CityID)
+);
+
+CREATE TABLE Orders
+(
+	OrderID INT IDENTITY NOT NULL,
+	CustomerID INT NOT NULL,
+	PRIMARY KEY (OrderID),
+	FOREIGN KEY (CustomerID) 
+		REFERENCES Customers(CustomerID)
+);
+
+CREATE TABLE OrderItems
+(
+	OrderID INT NOT NULL,
+	ItemID INT NOT NULL,
+	PRIMARY KEY(OrderID, ItemID),
+	FOREIGN KEY (OrderID) 
+		REFERENCES Orders(OrderID),
+	FOREIGN KEY (ItemID)
+		REFERENCES Items(ItemID)
+);
+
+
+-- 2 University Database
+CREATE TABLE Majors
+(
+	MajorID INT NOT NULL,
+	[Name] NVARCHAR NOT NULL,
+	PRIMARY KEY (MajorID)
+);
+
+CREATE TABLE Subjects
+(
+	SubjectID INT NOT NULL,
+	SubjectName NVARCHAR NOT NULL,
+	PRIMARY KEY (SubjectID)
+);
+
+CREATE TABLE Students
+(
+	StudentID INT IDENTITY NOT NULL,
+	StudentNumber INT NOT NULL,
+	StudentName NVARCHAR NOT NULL,
+	MajorID INT NOT NULL,
+	PRIMARY KEY (StudentID),
+	FOREIGN KEY (MajorID)
+		REFERENCES Majors(MajorID)
+);
+
+CREATE TABLE Agenda
+(
+	StudentID INT NOT NULL,
+	SubjectID INT NOT NULL,
+	PRIMARY KEY (StudentID, SubjectID),
+	FOREIGN KEY (StudentID) 
+		REFERENCES Students(StudentID),
+	FOREIGN KEY (SubjectID)
+		REFERENCES Subjects(SubjectID)
+);
+
+CREATE TABLE Payments
+(
+	PaymentID INT NOT NULL,
+	PaymentDate DATETIME2 NOT NULL,
+	PaymentAmount MONEY NOT NULL,
+	StudentID INT NOT NULL
+	PRIMARY KEY (PaymentID),
+	FOREIGN KEY (StudentID)
+		REFERENCES Students(StudentID)
+);
