@@ -82,9 +82,9 @@
 
 ### Other Exercises
 
-| Exceptions and Error Handling | Mocking and Test Driven Development | Workshop |
+| Exceptions and Error Handling | Workshop |
 | :--- | :--- | :--- |
-| [1. Square Root][53] 		  | [1. Fake Axe and Dummy][59] | [1. Snake Game][60] |
+| [1. Square Root][53] 		  | [1. Snake Game][59] |
 | [2. Enter Numbers][54]   	  |      
 | [3. Cards][55] 		 	  | 	
 | [4. Sum of Integers][56]    | 	
@@ -157,4 +157,3 @@
 [57]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/7_1_ExceptionsAndErrorHandling/5.PlayCatch/Program.cs
 [58]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/7_1_ExceptionsAndErrorHandling/6.MoneyTransactions/Program.cs
 [59]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/
-[60]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/
