@@ -22,7 +22,7 @@ SoftUni Courses:
 | C# Web Development | Open Courses | 
 | :--- | :--- | 
 | [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] |  
-| [C# Advanced][3]                         | 		      |  
+| [C# Advanced][3]                         | [WordPress For Developers][7]	 |  
 | [C# Object Oriented Programming][4]      |        	  | 
 | [MS SQL][5]                              |              |  
 | [EF Core][6]     						   |              | 
@@ -35,3 +35,4 @@ SoftUni Courses:
 [4]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20OOP/README.md
 [5]: https://github.com/Krasipeace/SoftUni/blob/main/MS%20SQL/README.md
 [6]: https://github.com/Krasipeace/SoftUni/blob/main/EF%20Core/README.md
+[7]: https://github.com/Krasipeace/SoftUni/blob/main/

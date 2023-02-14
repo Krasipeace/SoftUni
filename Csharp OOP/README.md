@@ -83,7 +83,7 @@
 ### Other Exercises
 
 | Exceptions and Error Handling | Workshop |
-| :--- | :--- | :--- |
+| :--- | :--- | 
 | [1. Square Root][53] 		  | [1. Snake Game][59] |
 | [2. Enter Numbers][54]   	  |      
 | [3. Cards][55] 		 	  | 	
