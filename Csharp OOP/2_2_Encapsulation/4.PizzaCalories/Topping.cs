@@ -72,10 +72,10 @@
             return toppingCaloriesModifier;
         }
 
-        internal double GetToppingCalories()
+        public double GetToppingCalories()
         {
             double toppingCaloriesModifier = GetToppingCaloriesModifier();
-            double toppingCalories = Weight * 2 * toppingCaloriesModifier;
+            double toppingCalories = Weight * Constants.DEFAULT_CALORIES_TOPPING * toppingCaloriesModifier;
 
             return toppingCalories;
         }

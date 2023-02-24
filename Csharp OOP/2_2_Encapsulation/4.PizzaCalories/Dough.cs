@@ -65,12 +65,12 @@ namespace PizzaCalories
             }
         }
 
-        internal double GetDoughCalories()
+        public double GetDoughCalories()
         {
             double flourModifier = GetFlourTypeModifier(FlourType);
             double bakingModifier = GetBakingTechniqueModifier(BakingTechnique);
 
-            double doughCalories = ((2 * Weight) * flourModifier * bakingModifier);
+            double doughCalories = ((Constants.DEFAULT_CALORIES_DOUGH * Weight) * flourModifier * bakingModifier);
 
             return doughCalories;
         }
