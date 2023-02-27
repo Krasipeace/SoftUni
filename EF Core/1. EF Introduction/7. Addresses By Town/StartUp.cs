@@ -8,6 +8,7 @@ namespace SoftUni
     {
         static void Main(string[] args)
         {
+            SoftUniContext dbContext = new SoftUniContext();
             string result = GetAddressesByTown(dbContext);
 
             Console.WriteLine(result);

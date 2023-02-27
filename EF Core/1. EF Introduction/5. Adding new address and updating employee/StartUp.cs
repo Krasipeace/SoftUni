@@ -7,6 +7,7 @@ namespace SoftUni
     {
         static void Main(string[] args)
         {
+            SoftUniContext dbContext = new SoftUniContext();
             string result = AddNewAddressToEmployee(dbContext);
 
             Console.WriteLine(result);

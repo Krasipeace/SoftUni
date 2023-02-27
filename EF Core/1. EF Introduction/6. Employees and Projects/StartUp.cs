@@ -9,6 +9,7 @@ namespace SoftUni
     {
         static void Main(string[] args)
         {
+            SoftUniContext dbContext = new SoftUniContext();
             string result = GetEmployeesInPeriod(dbContext);
 
             Console.WriteLine(result);
