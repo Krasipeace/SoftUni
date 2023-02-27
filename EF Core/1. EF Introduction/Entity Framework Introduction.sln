@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Database First", "1. Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Employees Full Information", "2. Employees Full Information\2. Employees Full Information.csproj", "{4F196BBE-7D70-45DA-B3D1-B57880A85CE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Employees With Salary Over 50000", "3. Employees With Salary Over 50000\3. Employees With Salary Over 50000.csproj", "{FB81253E-E12C-4C95-AA76-02B6E77FD630}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4F196BBE-7D70-45DA-B3D1-B57880A85CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F196BBE-7D70-45DA-B3D1-B57880A85CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F196BBE-7D70-45DA-B3D1-B57880A85CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB81253E-E12C-4C95-AA76-02B6E77FD630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB81253E-E12C-4C95-AA76-02B6E77FD630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB81253E-E12C-4C95-AA76-02B6E77FD630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB81253E-E12C-4C95-AA76-02B6E77FD630}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
