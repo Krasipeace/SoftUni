@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SoftUni
 {
-    internal class StartUp
+    public class StartUp
     {
         static void Main(string[] args)
         {
