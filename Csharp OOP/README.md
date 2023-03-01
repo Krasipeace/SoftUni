@@ -1,5 +1,11 @@
 # C# Object Oriented Programming
 
+&nbsp;
+
+The C# OOP course will teach students the principles of object-oriented programming (OOP), working with classes and objects, using object-oriented modeling, and building class hierarchies. Basic principles of OOP such as abstraction (interfaces, abstract classes), encapsulation, inheritance and polymorphism will be studied. It will go into the most commonly used design patterns (creational, structural and behavioral design patterns). Students will be introduced to SOLID principles for object-oriented software design. Various debugging techniques will be covered. You will learn how to create and use decorators. Attention will be paid to component testing (writing unit tests) and the concept of Test Driven Development (TDD).
+
+&nbsp;
+
 ## Softuni Judge Solved Tasks
 
 &nbsp;
@@ -8,12 +14,12 @@
 
 | Lab | Exercises | 
 | :--- | :--- | 
-| [1. Single Inheritance][1]       | [1. Person][6]      		  | 
-| [2. Mutiple Inheritance][2]      | [2. Zoo][7]      			  | 
+| [1. Single Inheritance][1]       | [1. Person][6]      		     | 
+| [2. Mutiple Inheritance][2]      | [2. Zoo][7]      			      | 
 | [3. Hierarchical Inheritance][3] | [3. Players and Monsters][8] | 
-| [4. Random List][4]  			   | [4. Need for Speed][9]       | 
-| [5. Stack of Strings][5] 		   | [5. Restaurant][10]          | 
-|       						   | [6. Animals][11]             |
+| [4. Random List][4]  			       | [4. Need for Speed][9]       | 
+| [5. Stack of Strings][5] 		     | [5. Restaurant][10]          | 
+|       						               | [6. Animals][11]             |
 
 &nbsp;
 
@@ -21,11 +27,11 @@
 
 | Lab | Exercises | 
 | :--- | :--- | 
-| [1. Persons][12]    | [1. Class Box Data][16]      	 | 
-| [2. Salary][13]     | [2. Animal Farm][17]      		 | 
-| [3. Validation][14] | [3. Shopping Spree][18] 		 | 
-| [4. Team][15]  	  | [4. Pizza Calories][19]          | 
-|           		  | [5. Football Team Generator][20] | 
+| [1. Persons][12]    | [1. Class Box Data][16]        	 | 
+| [2. Salary][13]     | [2. Animal Farm][17]      	     | 
+| [3. Validation][14] | [3. Shopping Spree][18] 		     | 
+| [4. Team][15]  	    | [4. Pizza Calories][19]          | 
+|           		      | [5. Football Team Generator][20] | 
 
 &nbsp;
 
