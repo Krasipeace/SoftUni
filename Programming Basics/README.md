@@ -1,10 +1,15 @@
 # Programming Basics - C#
 
-## SoftUni Judge Solved Tasks
+&nbsp;
 
-![logo_train](https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Basic%20Projects/logo_train/logo_train1.gif)
+The "Programming Basics" course provides the initial programming skills necessary for all technology majors at Software University. This includes writing programming code at an entry level (basic coding skills), working with a development environment (IDE), using variables and data, operators and expressions, working with the console (reading input data and printing results), using conditional constructs (if, if-else) and loops (for, while, do-while).
 
 &nbsp;
+
+## SoftUni Judge Solved Tasks
+
+&nbsp;
+
 ### Lab Solutions
 
 | First Steps in Coding | Conditional Statements | Conditional Statements Advanced | Loops For | Loops While | Nested Loops |
@@ -36,7 +41,7 @@
 | [Fish Tank][53]           | 
 
 
-
+![logo_train](https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/Basic%20Projects/logo_train/logo_train1.gif)
 
 [1]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/FirstStepsInCoding/Num1to10/Num1to10/Program.cs
 [2]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/FirstStepsInCoding/RectangleArea/RectangleArea/Program.cs
