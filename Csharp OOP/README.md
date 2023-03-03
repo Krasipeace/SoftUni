@@ -162,4 +162,4 @@ The C# OOP course will teach students the principles of object-oriented programm
 [56]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/7_1_ExceptionsAndErrorHandling/4.SumOfIntegers/Program.cs
 [57]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/7_1_ExceptionsAndErrorHandling/5.PlayCatch/Program.cs
 [58]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/7_1_ExceptionsAndErrorHandling/6.MoneyTransactions/Program.cs
-[59]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/
+[59]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20OOP/8_1_Workshop/SimpleSnake
