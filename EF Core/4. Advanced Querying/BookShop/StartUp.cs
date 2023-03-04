@@ -29,8 +29,12 @@ public class StartUp
         //Console.WriteLine(GetBooksNotReleasedIn(db, inputYear));
 
         // Get Books by Category
-        string inputCategories = Console.ReadLine().ToLower();
-        Console.WriteLine(GetBooksByCategory(db, inputCategories));
+        //string inputCategories = Console.ReadLine().ToLower();
+        //Console.WriteLine(GetBooksByCategory(db, inputCategories));
+
+        // Released Before Date
+        string inputDate = Console.ReadLine();
+        Console.WriteLine(GetBooksReleasedBefore(db, inputDate));
     }
 
     // Age Restriction
@@ -132,6 +136,26 @@ public class StartUp
         return sb.ToString().TrimEnd();
     }
 
+    // Released Before Date
+    public static string GetBooksReleasedBefore(BookShopContext context, string date)
+    {
+        var formattedDate = DateTime.ParseExact(date, "dd-MM-yyyy", null);
+
+        var booksInfo = context.Books
+            .Where(b => b.ReleaseDate < formattedDate)
+            .OrderByDescending(b => b.ReleaseDate)
+            .Select(b => $"{b.Title} - {b.EditionType} - ${b.Price:f2}")
+            .ToArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var book in booksInfo)
+        {
+            sb.AppendLine(book);
+        }
+
+        return sb.ToString().TrimEnd();
+    }
 }
 
 
