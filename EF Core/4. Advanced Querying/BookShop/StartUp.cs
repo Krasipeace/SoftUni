@@ -12,13 +12,18 @@ public class StartUp
         using var db = new BookShopContext();
         //DbInitializer.ResetDatabase(db);
 
-            // Age Restriction
+        // Age Restriction
         //string command = Console.ReadLine().ToLower();
         //string result = GetBooksByAgeRestriction(db, command);
         //Console.WriteLine(result);
 
-            // Golden Books
-        Console.WriteLine(GetGoldenBooks(db));
+        // Golden Books
+        //Console.WriteLine(GetGoldenBooks(db));
+
+        // Books by Price
+        Console.WriteLine(GetBooksByPrice(db));
+
+
     }
 
     // Age Restriction
@@ -54,6 +59,25 @@ public class StartUp
         StringBuilder sb = new StringBuilder();
 
         foreach (var book in goldenBooks)
+        {
+            sb.AppendLine(book);
+        }
+
+        return sb.ToString().TrimEnd();
+    }
+
+    // Books by Price
+    public static string GetBooksByPrice(BookShopContext context)
+    {
+        var booksInfo = context.Books
+            .Where(b => b.Price > 40)
+            .OrderByDescending(b => b.Price)
+            .Select(b => $"{b.Title} - ${b.Price:f2}")
+            .ToArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var book in booksInfo)
         {
             sb.AppendLine(book);
         }
