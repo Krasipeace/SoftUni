@@ -1,9 +1,10 @@
 ﻿namespace BookShop;
 
+using System.Text;
+
 using BookShop.Models.Enums;
 using Data;
 using Initializer;
-using System.Text;
 
 public class StartUp
 {
@@ -21,9 +22,11 @@ public class StartUp
         //Console.WriteLine(GetGoldenBooks(db));
 
         // Books by Price
-        Console.WriteLine(GetBooksByPrice(db));
+        //Console.WriteLine(GetBooksByPrice(db));
 
-
+        // Not Released In
+        int inputYear = int.Parse(Console.ReadLine());
+        Console.WriteLine(GetBooksNotReleasedIn(db, inputYear));
     }
 
     // Age Restriction
@@ -73,6 +76,25 @@ public class StartUp
             .Where(b => b.Price > 40)
             .OrderByDescending(b => b.Price)
             .Select(b => $"{b.Title} - ${b.Price:f2}")
+            .ToArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var book in booksInfo)
+        {
+            sb.AppendLine(book);
+        }
+
+        return sb.ToString().TrimEnd();
+    }
+
+    // Not Released In
+    public static string GetBooksNotReleasedIn(BookShopContext context, int year)
+    {
+        var booksInfo = context.Books
+            .Where(b => b.ReleaseDate.Value.Year != year)
+            .OrderBy(b => b.BookId)
+            .Select(b => b.Title)
             .ToArray();
 
         StringBuilder sb = new StringBuilder();
