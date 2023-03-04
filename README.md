@@ -35,4 +35,4 @@ SoftUni Courses:
 [4]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20OOP/README.md
 [5]: https://github.com/Krasipeace/SoftUni/blob/main/MS%20SQL/README.md
 [6]: https://github.com/Krasipeace/SoftUni/blob/main/EF%20Core/README.md
-[7]: https://github.com/Krasipeace/SoftUni/blob/main/
+[7]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/README.md
