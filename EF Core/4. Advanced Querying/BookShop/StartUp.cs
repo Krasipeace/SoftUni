@@ -49,8 +49,11 @@ public class StartUp
         //Console.WriteLine(GetBooksByAuthor(db, input));
 
         // Count Books
-        int input = int.Parse(Console.ReadLine());
-        Console.WriteLine(CountBooks(db, input));
+        //int input = int.Parse(Console.ReadLine());
+        //Console.WriteLine(CountBooks(db, input));
+
+        // Total Book Copies
+        Console.WriteLine(CountCopiesByAuthor(db));
     }
 
     // Age Restriction
@@ -238,5 +241,23 @@ public class StartUp
             .Count();
 
         return booksCounter;
+    }
+
+    // Total Book Copies
+    public static string CountCopiesByAuthor(BookShopContext context)
+    {
+        var copiesCounter = context.Authors
+            .OrderByDescending(a => a.Books.Sum(b => b.Copies))
+            .Select(a => $"{a.FirstName} {a.LastName} - {a.Books.Sum(b => b.Copies)}")
+            .ToArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var author in copiesCounter)
+        {
+            sb.AppendLine(author);
+        }
+
+        return sb.ToString().TrimEnd();
     }
 }
