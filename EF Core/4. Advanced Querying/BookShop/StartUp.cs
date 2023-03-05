@@ -53,7 +53,10 @@ public class StartUp
         //Console.WriteLine(CountBooks(db, input));
 
         // Total Book Copies
-        Console.WriteLine(CountCopiesByAuthor(db));
+        //Console.WriteLine(CountCopiesByAuthor(db));
+
+        // Profit by Category
+        Console.WriteLine(GetTotalProfitByCategory(db));
     }
 
     // Age Restriction
@@ -259,5 +262,25 @@ public class StartUp
         }
 
         return sb.ToString().TrimEnd();
+    }
+
+    // Profit by Category
+    public static string GetTotalProfitByCategory(BookShopContext context)
+    {
+        var categoriesInfo = context.Categories
+            .OrderByDescending(c => c.CategoryBooks.Sum(b => b.Book.Price * b.Book.Copies))
+            .ThenBy(c => c.Name)
+            .Select(c => $"{c.Name} ${c.CategoryBooks.Sum(b => b.Book.Price * b.Book.Copies):f2}")
+            .ToArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var catProfit in categoriesInfo)
+        {
+            sb.AppendLine(catProfit);
+        }
+
+        return sb.ToString().TrimEnd();
+
     }
 }
