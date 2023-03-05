@@ -14,6 +14,7 @@ public class StartUp
         using var db = new BookShopContext();
         //DbInitializer.ResetDatabase(db);
 
+        // Method Tests:
 
         // Age Restriction
         //string command = Console.ReadLine().ToLower();
@@ -113,7 +114,7 @@ public class StartUp
 
 
         // Remove Books
-        Console.WriteLine(RemoveBooks(db));
+        //Console.WriteLine(RemoveBooks(db));
     }
 
     // Age Restriction
@@ -141,7 +142,7 @@ public class StartUp
     public static string GetGoldenBooks(BookShopContext context)
     {
         var goldenBooks = context.Books
-            .Where(b => b.EditionType == EditionType.Gold && b.Copies < 5000)
+            .Where(b => b.EditionType == EditionType.Gold && b.Copies < Constants.GOLDEN_BOOKS_COPIES)
             .OrderBy(b => b.BookId)
             .Select(b => b.Title)
             .ToArray();
@@ -160,7 +161,7 @@ public class StartUp
     public static string GetBooksByPrice(BookShopContext context)
     {
         var booksInfo = context.Books
-            .Where(b => b.Price > 40)
+            .Where(b => b.Price > Constants.BOOKS_BY_PRICE_HIGHER_THAN_PRICE)
             .OrderByDescending(b => b.Price)
             .Select(b => $"{b.Title} - ${b.Price:f2}")
             .ToArray();
@@ -378,12 +379,12 @@ public class StartUp
     public static void IncreasePrices(BookShopContext context)
     {
         var booksInfo = context.Books
-            .Where(b => b.ReleaseDate.Value.Year < 2010)
+            .Where(b => b.ReleaseDate.Value.Year < Constants.INCREASE_PRICES_RELEASED_BEFORE_YEAR)
             .ToArray();
 
         foreach (var book in booksInfo)
         {
-            book.Price += 5;
+            book.Price += Constants.INCREASE_PRICES_BY_PRICE;
         }
 
         context.SaveChanges();
@@ -393,7 +394,7 @@ public class StartUp
     public static int RemoveBooks(BookShopContext context)
     {
         var booksData = context.Books
-            .Where(b => b.Copies < 4200)           
+            .Where(b => b.Copies < Constants.REMOVE_BOOKS_THAT_HAVE_LESS_COPIES_THAN)           
             .ToArray();
 
         context.RemoveRange(booksData);
