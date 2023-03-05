@@ -5,6 +5,7 @@ using System.Text;
 using BookShop.Models.Enums;
 using Data;
 using Initializer;
+using Microsoft.EntityFrameworkCore;
 
 public class StartUp
 {
@@ -59,7 +60,42 @@ public class StartUp
         //Console.WriteLine(GetTotalProfitByCategory(db));
 
         // Most Recent Books
-        Console.WriteLine(GetMostRecentBooks(db));
+        //Console.WriteLine(GetMostRecentBooks(db));
+
+        // Increase Prices
+        int beforeYear = 2010;
+        Console.WriteLine("Books prices before changes: ");
+        Console.WriteLine();
+
+        var booksPrices = db.Books
+            .FromSqlInterpolated($"SELECT * FROM Books WHERE YEAR(ReleaseDate) < {beforeYear} ORDER BY Title ASC")
+            .ToList();
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var book in booksPrices)
+        {
+            sb.AppendLine($"{book.Title} - ${book.Price:f2}");
+        }
+
+        Console.WriteLine(sb.ToString());
+        Console.WriteLine();
+
+        IncreasePrices(db);
+
+        Console.WriteLine("Books prices after changes: ");
+        Console.WriteLine();
+
+        var booksPricesAfterChanges = db.Books
+            .FromSqlInterpolated($"SELECT * FROM Books WHERE YEAR(ReleaseDate) < {beforeYear} ORDER BY Title ASC")
+            .ToList();
+        StringBuilder sb2 = new StringBuilder();
+
+        foreach (var book in booksPricesAfterChanges)
+        {
+            sb2.AppendLine($"{book.Title} - ${book.Price:f2}");
+        }
+
+        Console.WriteLine(sb2.ToString().TrimEnd());
     }
 
     // Age Restriction
@@ -318,5 +354,20 @@ public class StartUp
         }
 
         return sb.ToString().TrimEnd();
+    }
+
+    // Increase Prices
+    public static void IncreasePrices(BookShopContext context)
+    {
+        var booksInfo = context.Books
+            .Where(b => b.ReleaseDate.Value.Year < 2010)
+            .ToArray();
+
+        foreach (var book in booksInfo)
+        {
+            book.Price += 5;
+        }
+
+        context.SaveChanges();
     }
 }
