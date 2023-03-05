@@ -56,7 +56,10 @@ public class StartUp
         //Console.WriteLine(CountCopiesByAuthor(db));
 
         // Profit by Category
-        Console.WriteLine(GetTotalProfitByCategory(db));
+        //Console.WriteLine(GetTotalProfitByCategory(db));
+
+        // Most Recent Books
+        Console.WriteLine(GetMostRecentBooks(db));
     }
 
     // Age Restriction
@@ -281,6 +284,39 @@ public class StartUp
         }
 
         return sb.ToString().TrimEnd();
+    }
 
+    // Most Recent Books
+    public static string GetMostRecentBooks(BookShopContext context)
+    {
+        var categoriesInfo = context.Categories
+            .OrderBy(c => c.Name)
+            .Select(c => new
+            {
+                CategoryName = c.Name,
+                CategoryBooks = c.CategoryBooks
+                    .OrderByDescending(cb => cb.Book.ReleaseDate)
+                    .Select(cb => new
+                    {
+                        BookTitle = cb.Book.Title,
+                        BookYear = cb.Book.ReleaseDate.Value.Year
+                    })
+                    .Take(3)
+            })
+            .ToArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var category in categoriesInfo)
+        {
+            sb.AppendLine($"--{category.CategoryName}");
+
+            foreach (var book in category.CategoryBooks)
+            {
+                sb.AppendLine($"{book.BookTitle} ({book.BookYear})");
+            }
+        }
+
+        return sb.ToString().TrimEnd();
     }
 }
