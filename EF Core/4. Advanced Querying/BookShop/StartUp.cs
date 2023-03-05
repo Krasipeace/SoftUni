@@ -14,88 +14,106 @@ public class StartUp
         using var db = new BookShopContext();
         //DbInitializer.ResetDatabase(db);
 
+
         // Age Restriction
         //string command = Console.ReadLine().ToLower();
         //string result = GetBooksByAgeRestriction(db, command);
         //Console.WriteLine(result);
 
+
         // Golden Books
         //Console.WriteLine(GetGoldenBooks(db));
 
+
         // Books by Price
         //Console.WriteLine(GetBooksByPrice(db));
+
 
         // Not Released In
         //int inputYear = int.Parse(Console.ReadLine());
         //Console.WriteLine(GetBooksNotReleasedIn(db, inputYear));
 
+
         // Get Books by Category
         //string inputCategories = Console.ReadLine().ToLower();
         //Console.WriteLine(GetBooksByCategory(db, inputCategories));
+
 
         // Released Before Date
         //string inputDate = Console.ReadLine();
         //Console.WriteLine(GetBooksReleasedBefore(db, inputDate));
 
+
         // Author Search
         //string input = Console.ReadLine();
         //Console.WriteLine(GetAuthorNamesEndingIn(db, input));
+
 
         // Book Search
         //string input = Console.ReadLine().ToLower();
         //Console.WriteLine(GetBookTitlesContaining(db, input));
 
+
         // Book Search by Author
         //string input = Console.ReadLine();
         //Console.WriteLine(GetBooksByAuthor(db, input));
+
 
         // Count Books
         //int input = int.Parse(Console.ReadLine());
         //Console.WriteLine(CountBooks(db, input));
 
+
         // Total Book Copies
         //Console.WriteLine(CountCopiesByAuthor(db));
+
 
         // Profit by Category
         //Console.WriteLine(GetTotalProfitByCategory(db));
 
+
         // Most Recent Books
         //Console.WriteLine(GetMostRecentBooks(db));
 
+
         // Increase Prices
-        int beforeYear = 2010;
-        Console.WriteLine("Books prices before changes: ");
-        Console.WriteLine();
+        //int beforeYear = 2010;
+        //Console.WriteLine("Books prices before changes: ");
+        //Console.WriteLine();
 
-        var booksPrices = db.Books
-            .FromSqlInterpolated($"SELECT * FROM Books WHERE YEAR(ReleaseDate) < {beforeYear} ORDER BY Title ASC")
-            .ToList();
-        StringBuilder sb = new StringBuilder();
+        //var booksPrices = db.Books
+        //    .FromSqlInterpolated($"SELECT * FROM Books WHERE YEAR(ReleaseDate) < {beforeYear} ORDER BY Title ASC")
+        //    .ToList();
+        //StringBuilder sb = new StringBuilder();
 
-        foreach (var book in booksPrices)
-        {
-            sb.AppendLine($"{book.Title} - ${book.Price:f2}");
-        }
+        //foreach (var book in booksPrices)
+        //{
+        //    sb.AppendLine($"{book.Title} - ${book.Price:f2}");
+        //}
 
-        Console.WriteLine(sb.ToString());
-        Console.WriteLine();
+        //Console.WriteLine(sb.ToString());
+        //Console.WriteLine();
 
-        IncreasePrices(db);
+        //IncreasePrices(db);
 
-        Console.WriteLine("Books prices after changes: ");
-        Console.WriteLine();
+        //Console.WriteLine("Books prices after changes: ");
+        //Console.WriteLine();
 
-        var booksPricesAfterChanges = db.Books
-            .FromSqlInterpolated($"SELECT * FROM Books WHERE YEAR(ReleaseDate) < {beforeYear} ORDER BY Title ASC")
-            .ToList();
-        StringBuilder sb2 = new StringBuilder();
+        //var booksPricesAfterChanges = db.Books
+        //    .FromSqlInterpolated($"SELECT * FROM Books WHERE YEAR(ReleaseDate) < {beforeYear} ORDER BY Title ASC")
+        //    .ToList();
+        //StringBuilder sb2 = new StringBuilder();
 
-        foreach (var book in booksPricesAfterChanges)
-        {
-            sb2.AppendLine($"{book.Title} - ${book.Price:f2}");
-        }
+        //foreach (var book in booksPricesAfterChanges)
+        //{
+        //    sb2.AppendLine($"{book.Title} - ${book.Price:f2}");
+        //}
 
-        Console.WriteLine(sb2.ToString().TrimEnd());
+        //Console.WriteLine(sb2.ToString().TrimEnd());
+
+
+        // Remove Books
+        Console.WriteLine(RemoveBooks(db));
     }
 
     // Age Restriction
@@ -369,5 +387,18 @@ public class StartUp
         }
 
         context.SaveChanges();
+    }
+
+    // Remove Books
+    public static int RemoveBooks(BookShopContext context)
+    {
+        var booksData = context.Books
+            .Where(b => b.Copies < 4200)           
+            .ToArray();
+
+        context.RemoveRange(booksData);
+        context.SaveChanges();
+        
+        return booksData.Count();
     }
 }
