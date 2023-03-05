@@ -45,8 +45,12 @@ public class StartUp
         //Console.WriteLine(GetBookTitlesContaining(db, input));
 
         // Book Search by Author
-        string input = Console.ReadLine();
-        Console.WriteLine(GetBooksByAuthor(db, input));
+        //string input = Console.ReadLine();
+        //Console.WriteLine(GetBooksByAuthor(db, input));
+
+        // Count Books
+        int input = int.Parse(Console.ReadLine());
+        Console.WriteLine(CountBooks(db, input));
     }
 
     // Age Restriction
@@ -224,5 +228,15 @@ public class StartUp
         }
 
         return sb.ToString().TrimEnd();
+    }
+
+    // Count Books
+    public static int CountBooks(BookShopContext context, int lengthCheck)
+    {
+        int booksCounter = context.Books
+            .Where(b => b.Title.Length > lengthCheck)
+            .Count();
+
+        return booksCounter;
     }
 }
