@@ -42,7 +42,6 @@ public class StartUp
         //Console.WriteLine(result);
     }
 
-
     // Employees Full Information
     public static string GetEmployeesFullInformation(SoftUniContext context)
     {
@@ -67,7 +66,6 @@ public class StartUp
         return sb.ToString().TrimEnd();
     }
 
-
     // Employees with Salary Over 50 000
     public static string GetEmployeesWithSalaryOver50000(SoftUniContext context)
     {
@@ -89,7 +87,6 @@ public class StartUp
 
         return sb.ToString().TrimEnd();
     }
-
 
     //  Employees from Research and Development
     public static string GetEmployeesFromResearchAndDevelopment(SoftUniContext context)
@@ -118,7 +115,6 @@ public class StartUp
         return sb.ToString().TrimEnd();
     }
 
-
     // Adding a New Address and Updating Employee 
     public static string AddNewAddressToEmployee(SoftUniContext context)
     {
@@ -143,7 +139,6 @@ public class StartUp
 
         return string.Join(Environment.NewLine, employeeAddresses);
     }
-
 
     // employees and projects
     public static string GetEmployeesInPeriod(SoftUniContext context)
@@ -189,7 +184,6 @@ public class StartUp
         return sb.ToString().TrimEnd();
     }
 
-
     // address by town
     public static string GetAddressesByTown(SoftUniContext context)
     {
@@ -216,8 +210,7 @@ public class StartUp
         return sb.ToString().TrimEnd();
     }
 
-
-    //    Employee 147 
+    // Employee 147 
     public static string GetEmployee147(SoftUniContext context)
     {
         var employee147 = context.Employees
@@ -245,7 +238,6 @@ public class StartUp
 
         return sb.ToString().TrimEnd();
     }
-
 
     //  Departments with More Than 5 Employees
     public static string GetDepartmentsWithMoreThan5Employees(SoftUniContext context)
@@ -286,7 +278,6 @@ public class StartUp
         return sb.ToString().TrimEnd();
     }
 
-
     // 	Find Latest 10 Projects 
     public static string GetLatestProjects(SoftUniContext context)
     {
@@ -313,7 +304,6 @@ public class StartUp
 
         return sb.ToString().TrimEnd();
     }
-
 
     // increase salaries
     public static string IncreaseSalaries(SoftUniContext context)
@@ -349,7 +339,6 @@ public class StartUp
         return string.Join(Environment.NewLine, salariesUpdated);
     }
 
-
     //  Find Employees by First Name Starting With Sa
     public static string GetEmployeesByFirstNameStartingWithSa(SoftUniContext context)
     {
@@ -362,7 +351,6 @@ public class StartUp
 
         return string.Join(Environment.NewLine, employeesStartingwithSA);
     }
-
 
     //  Delete project by Id
     public static string DeleteProjectById(SoftUniContext context)
@@ -386,7 +374,6 @@ public class StartUp
 
         return string.Join(Environment.NewLine, projectNames);
     }
-
 
     // Remove Town
     public static string RemoveTown(SoftUniContext context)

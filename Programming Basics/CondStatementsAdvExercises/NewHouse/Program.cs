@@ -26,28 +26,28 @@ namespace NewHouse
                 case "Gladiolus": price = 2.50;
                     break;
             }
+
             double flowerCost = flowerQ * price;
             //проверки за отстъпка
-            if (flowerType == "Roses" && flowerQ > 80)
+            switch (flowerType)
             {
-                flowerCost = flowerCost - flowerCost * 0.10;
+                case "Roses" when flowerQ > 80:
+                    flowerCost -= flowerCost * 0.10;
+                    break;
+                case "Dahlias" when flowerQ > 90:
+                    flowerCost -= flowerCost * 0.15;
+                    break;
+                case "Tulips" when flowerQ > 80:
+                    flowerCost -= flowerCost * 0.15;
+                    break;
+                case "Narcissus" when flowerQ < 120:
+                    flowerCost += flowerCost * 0.15;
+                    break;
+                case "Gladiolus" when flowerQ < 80:
+                    flowerCost += flowerCost * 0.20;
+                    break;
             }
-            else if (flowerType == "Dahlias" && flowerQ > 90)
-            {
-                flowerCost = flowerCost - flowerCost * 0.15;
-            }
-            else if (flowerType == "Tulips" && flowerQ > 80)
-            {
-                flowerCost -= flowerCost * 0.15;
-            }
-            else if (flowerType == "Narcissus" && flowerQ < 120)
-            {
-                flowerCost = flowerCost + flowerCost * 0.15;
-            }
-            else if (flowerType == "Gladiolus" && flowerQ < 80)
-            {
-                flowerCost += flowerCost * 0.20;
-            }
+
             if (budget >= flowerCost)
             {
                 Console.WriteLine($"Hey, you have a great garden with {flowerQ} {flowerType} and {budget - flowerCost:f2} leva left.");

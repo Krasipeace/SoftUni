@@ -9,121 +9,135 @@ namespace SkiTrip
             int days = int.Parse(Console.ReadLine());
             string place = Console.ReadLine();
             string assessment = Console.ReadLine();
-            days = days - 1;
+
+            days--;
             double priceAp = 25.0 * days;
             double pricePres = 35.0 * days;
             double priceRoom = 18.00 * days;
-            if (days < 10)
+
+            switch (days)
             {
-                if (place == "apartment")
-                {
-                    priceAp = priceAp - priceAp * 0.30;
-                    if (assessment == "positive")
+                case < 10:
+                    if (place == "apartment")
                     {
-                        priceAp = priceAp + priceAp * 0.25;
-                        Console.WriteLine($"{priceAp:f2}");
-                    }
-                    else if (assessment == "negative")
-                    {
-                        priceAp = priceAp - priceAp * 0.10;
-                        Console.WriteLine($"{priceAp:f2}");
-                    }
-                }
-                else if (place == "president apartment")
-                {
-                    pricePres = pricePres - pricePres * 0.10;
-                    if (assessment == "positive")
-                    {
-                        if (assessment == "positive")
+                        priceAp -= priceAp * 0.30;
+
+                        switch (assessment)
                         {
-                            pricePres = pricePres + pricePres * 0.25;
-                            Console.WriteLine($"{pricePres:f2}");
-                        }
-                        else if (assessment == "negative")
-                        {
-                            pricePres = pricePres - pricePres * 0.10;
-                            Console.WriteLine($"{pricePres:f2}");
+                            case "positive":
+                                priceAp += priceAp * 0.25;
+                                Console.WriteLine($"{priceAp:f2}");
+                                break;
+                            case "negative":
+                                priceAp -= priceAp * 0.10;
+                                Console.WriteLine($"{priceAp:f2}");
+                                break;
                         }
                     }
-                }
+                    else if (place == "president apartment")
+                    {
+                        pricePres -= pricePres * 0.10;
+
+                        switch (assessment)
+                        {
+                            case "positive":
+                                pricePres += pricePres * 0.25;
+                                Console.WriteLine($"{pricePres:f2}");
+                                break;
+                            case "negative":
+                                pricePres -= pricePres * 0.10;
+                                Console.WriteLine($"{pricePres:f2}");
+                                break;
+                        }
+
+                    }
+                    break;
+                case >= 10 and <= 15:
+                    if (place == "apartment")
+                    {
+                        priceAp -= priceAp * 0.35;
+
+                        switch (assessment)
+                        {
+                            case "positive":
+                                priceAp += priceAp * 0.25;
+                                Console.WriteLine($"{priceAp:f2}");
+                                break;
+                            case "negative":
+                                priceAp -= priceAp * 0.10;
+                                Console.WriteLine($"{priceAp:f2}");
+                                break;
+                        }
+                    }
+                    else if (place == "president apartment")
+                    {
+                        pricePres -= pricePres * 0.15;
+
+                        switch (assessment)
+                        {
+                            case "positive":
+                                pricePres += pricePres * 0.25;
+                                Console.WriteLine($"{pricePres:f2}");
+                                break;
+                            case "negative":
+                                pricePres -= pricePres * 0.10;
+                                Console.WriteLine($"{pricePres:f2}");
+                                break;
+                        }
+                    }
+                    break;
+                case > 15:
+                    if (place == "apartment")
+                    {
+                        priceAp -= priceAp * 0.50;
+
+                        switch (assessment)
+                        {
+                            case "positive":
+                                priceAp += priceAp * 0.25;
+                                Console.WriteLine($"{priceAp:f2}");
+                                break;
+                            case "negative":
+                                priceAp -= priceAp * 0.10;
+                                Console.WriteLine($"{priceAp:f2}");
+                                break;
+                        }
+                    }
+                    else if (place == "president apartment")
+                    {
+                        pricePres -= pricePres * 0.20;
+
+                        switch (assessment)
+                        {
+                            case "positive":
+                                pricePres += pricePres * 0.25;
+                                Console.WriteLine($"{pricePres:f2}");
+                                break;
+                            case "negative":
+                                pricePres -= pricePres * 0.10;
+                                Console.WriteLine($"{pricePres:f2}");
+                                break;
+                        }
+                    }
+                    break;
             }
-            else if (days >= 10 && days <= 15)
+
+            switch (assessment)
             {
-                if (place == "apartment")
-                {
-                    priceAp = priceAp - priceAp * 0.35;
-                    if (assessment == "positive")
+                case "positive":
+                    if (place == "room for one person")
                     {
-                        priceAp = priceAp + priceAp * 0.25;
-                        Console.WriteLine($"{priceAp:f2}");
+                        priceRoom += priceRoom * 0.25;
+                        Console.WriteLine($"{priceRoom:f2}");
                     }
-                    else if (assessment == "negative")
+                    break;
+                case "negative":
+                    if (place == "room for one person")
                     {
-                        priceAp = priceAp - priceAp * 0.10;
-                        Console.WriteLine($"{priceAp:f2}");
+                        priceRoom -= priceRoom * 0.10;
+                        Console.WriteLine($"{priceRoom:f2}");
                     }
-                }
-                else if (place == "president apartment")
-                {
-                    pricePres = pricePres - pricePres * 0.15;
-                    if (assessment == "positive")
-                    {
-                        pricePres = pricePres + pricePres * 0.25;
-                        Console.WriteLine($"{pricePres:f2}");
-                    }
-                    else if (assessment == "negative")
-                    {
-                        pricePres = pricePres - pricePres * 0.10;
-                        Console.WriteLine($"{pricePres:f2}");
-                    }
-                }
-            }
-            else if (days > 15)
-            {                
-                if (place == "apartment")
-                {
-                    priceAp = priceAp - priceAp * 0.50;
-                    if (assessment == "positive")
-                    {
-                        priceAp = priceAp + priceAp * 0.25;
-                        Console.WriteLine($"{priceAp:f2}");
-                    }
-                    else if (assessment == "negative")
-                    {
-                        priceAp = priceAp - priceAp * 0.10;
-                        Console.WriteLine($"{priceAp:f2}");
-                    }
-                }
-                else if (place == "president apartment")
-                {
-                    pricePres = pricePres - pricePres * 0.20;
-                    if (assessment == "positive")
-                    {
-                        pricePres = pricePres + pricePres * 0.25;
-                        Console.WriteLine($"{pricePres:f2}");
-                    }
-                    else if (assessment == "negative")
-                    {
-                        pricePres = pricePres - pricePres * 0.10;
-                        Console.WriteLine($"{pricePres:f2}");
-                    }
-                }                
-            }      
-            if (assessment == "positive")
-            {
-                if (place == "room for one person")
-                {
-                    priceRoom = priceRoom + priceRoom * 0.25;
-                    Console.WriteLine($"{priceRoom:f2}");
-                }
-            }
-            else if (assessment == "negative")
-            {
-                if (place == "room for one person")
-                {
-                    priceRoom = priceRoom - priceRoom * 0.10;
-                    Console.WriteLine($"{priceRoom:f2}");
-                }
+                    break;
             }
         }
     }

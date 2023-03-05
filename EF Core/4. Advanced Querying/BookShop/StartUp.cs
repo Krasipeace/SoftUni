@@ -1,11 +1,11 @@
 ﻿namespace BookShop;
 
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 using BookShop.Models.Enums;
 using Data;
 using Initializer;
-using Microsoft.EntityFrameworkCore;
 
 public class StartUp
 {
@@ -21,61 +21,48 @@ public class StartUp
         //string result = GetBooksByAgeRestriction(db, command);
         //Console.WriteLine(result);
 
-
         // Golden Books
         //Console.WriteLine(GetGoldenBooks(db));
 
-
         // Books by Price
         //Console.WriteLine(GetBooksByPrice(db));
-
 
         // Not Released In
         //int inputYear = int.Parse(Console.ReadLine());
         //Console.WriteLine(GetBooksNotReleasedIn(db, inputYear));
 
-
         // Get Books by Category
         //string inputCategories = Console.ReadLine().ToLower();
         //Console.WriteLine(GetBooksByCategory(db, inputCategories));
-
 
         // Released Before Date
         //string inputDate = Console.ReadLine();
         //Console.WriteLine(GetBooksReleasedBefore(db, inputDate));
 
-
         // Author Search
         //string input = Console.ReadLine();
         //Console.WriteLine(GetAuthorNamesEndingIn(db, input));
-
 
         // Book Search
         //string input = Console.ReadLine().ToLower();
         //Console.WriteLine(GetBookTitlesContaining(db, input));
 
-
         // Book Search by Author
         //string input = Console.ReadLine();
         //Console.WriteLine(GetBooksByAuthor(db, input));
-
 
         // Count Books
         //int input = int.Parse(Console.ReadLine());
         //Console.WriteLine(CountBooks(db, input));
 
-
         // Total Book Copies
         //Console.WriteLine(CountCopiesByAuthor(db));
-
 
         // Profit by Category
         //Console.WriteLine(GetTotalProfitByCategory(db));
 
-
         // Most Recent Books
         //Console.WriteLine(GetMostRecentBooks(db));
-
 
         // Increase Prices
         //int beforeYear = 2010;
@@ -111,7 +98,6 @@ public class StartUp
         //}
 
         //Console.WriteLine(sb2.ToString().TrimEnd());
-
 
         // Remove Books
         //Console.WriteLine(RemoveBooks(db));
