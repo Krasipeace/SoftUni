@@ -37,8 +37,12 @@ public class StartUp
         //Console.WriteLine(GetBooksReleasedBefore(db, inputDate));
 
         // Author Search
-        string input = Console.ReadLine();
-        Console.WriteLine(GetAuthorNamesEndingIn(db, input));
+        //string input = Console.ReadLine();
+        //Console.WriteLine(GetAuthorNamesEndingIn(db, input));
+
+        // Book Search
+        string input = Console.ReadLine().ToLower();
+        Console.WriteLine(GetBookTitlesContaining(db, input));
     }
 
     // Age Restriction
@@ -175,6 +179,25 @@ public class StartUp
         foreach (var author in authorsInfo)
         {
             sb.AppendLine(author);
+        }
+
+        return sb.ToString().TrimEnd();
+    }
+
+    // Book Search
+    public static string GetBookTitlesContaining(BookShopContext context, string input)
+    {
+        var booksInfo = context.Books
+            .Where(b => b.Title.ToLower().Contains(input.ToLower()))
+            .Select(b => b.Title)
+            .OrderBy(title => title)
+            .ToArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        foreach (var title in booksInfo)
+        {
+            sb.AppendLine(title);
         }
 
         return sb.ToString().TrimEnd();
