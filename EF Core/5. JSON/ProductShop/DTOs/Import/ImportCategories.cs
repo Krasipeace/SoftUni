@@ -1,7 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿namespace ProductShop.DTOs.Import;
+
 using System.ComponentModel.DataAnnotations;
 
-namespace ProductShop.DTOs.Import;
+using Newtonsoft.Json;
 
 [JsonObject]
 public class ImportCategories

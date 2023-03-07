@@ -34,11 +34,6 @@ public class ProductShopContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<CategoryProduct>(entity =>
-        {
-            entity.HasKey(cp => new { cp.CategoryId, cp.ProductId });
-        });
-
         modelBuilder.Entity<User>(entity =>
         {
             entity
@@ -59,6 +54,11 @@ public class ProductShopContext : DbContext
             entity
                 .Property(p => p.BuyerId)
                 .IsRequired(false);
-        });        
+        });
+
+        modelBuilder.Entity<CategoryProduct>(entity =>
+        {
+            entity.HasKey(cp => new { cp.CategoryId, cp.ProductId });
+        });
     }
 }
