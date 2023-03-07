@@ -2,20 +2,16 @@
 
 using System.Collections.Generic;
 using System.IO;
+using System.ComponentModel.DataAnnotations;
 
 using Newtonsoft.Json;
 
 using ProductShop.Data;
 using DTOs.Import;
 using ProductShop.Models;
-using System.Collections;
-using AutoMapper;
-using System.ComponentModel.DataAnnotations;
 
 public class StartUp
 {
-    private static string filePath;
-
     public static void Main()
     {
         ProductShopContext psContext = new ProductShopContext();
@@ -30,15 +26,15 @@ public class StartUp
         string result = ImportUsers(psContext, inputJson);
         Console.WriteLine(result);
 
-        // Import Categories
+        // Import Products
         string inputJson2 = File.ReadAllText("../../../Datasets/products.json");
         string result2 = ImportProducts(psContext, inputJson2);
         Console.WriteLine(result2);
 
         // Import Categories 
-        //string inputJson3 = File.ReadAllText("../../../Datasets/categories.json");
-        //string result3 = ImportCategories(psContext, inputJson3);
-        //Console.WriteLine(result3);
+        string inputJson3 = File.ReadAllText("../../../Datasets/categories.json");
+        string result3 = ImportCategories(psContext, inputJson3);
+        Console.WriteLine(result3);
 
         // Import Categories and Products
         string inputJson4 = File.ReadAllText("../../../Datasets/categories-products.json");
@@ -71,24 +67,12 @@ public class StartUp
     // Import Categories
     public static string ImportCategories(ProductShopContext context, string inputJson)
     {
-        ImportCategories[] categories = JsonConvert.DeserializeObject<ImportCategories[]>(inputJson);
-        ICollection<Category> validCategories = JsonConvert.DeserializeObject<ICollection<Category>>(inputJson);
+        ICollection<Category> categories = JsonConvert.DeserializeObject<ICollection<Category>>(inputJson).Where(c => c.Name != null).ToList();
 
-        foreach (ImportCategories currentCategory in categories)
-        {
-            if (!IsValid(currentCategory))
-            {
-                continue;
-            }
-
-            //no idea
-            //validCategories.Add(currentCategory);
-        }
-
-        context.Categories.AddRange(validCategories);
+        context.Categories.AddRange(categories);
         context.SaveChanges();
 
-        return $"Successfully imported {validCategories.Count}";
+        return $"Successfully imported {categories.Count}";
     }
 
     // Import Categories and Products
@@ -100,16 +84,5 @@ public class StartUp
         context.SaveChanges();
 
         return $"Successfully imported {categoryProduct.Count}";
-    }
-
-    // Validation method
-    private static bool IsValid(object obj)
-    {
-        var validationContext = new ValidationContext(obj);
-        var validationResult = new List<ValidationResult>();
-
-        bool isValid = Validator.TryValidateObject(obj, validationContext, validationResult, true);
-
-        return isValid;
     }
 }
