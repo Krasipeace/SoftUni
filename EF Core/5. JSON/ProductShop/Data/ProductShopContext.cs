@@ -53,5 +53,12 @@ public class ProductShopContext : DbContext
                 .HasForeignKey(u => u.SellerId)
                 .OnDelete(DeleteBehavior.NoAction);
         });
+
+        modelBuilder.Entity<Product>(entity =>
+        {
+            entity
+                .Property(p => p.BuyerId)
+                .IsRequired(false);
+        });        
     }
 }

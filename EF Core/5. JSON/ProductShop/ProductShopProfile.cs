@@ -11,5 +11,11 @@ public class ProductShopProfile : Profile
     {
         // Import Users
         this.CreateMap<ImportUsers, User>();
+
+        // Import Products
+        this.CreateMap<ImportProducts, Product>();
+
+        // Import Categories
+        this.CreateMap<ImportCategories, Category>();
     }
 }
