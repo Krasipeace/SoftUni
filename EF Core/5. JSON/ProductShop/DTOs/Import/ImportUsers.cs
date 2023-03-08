@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 
 using Newtonsoft.Json;
 
-
 [JsonObject]
 public class ImportUsers
 {

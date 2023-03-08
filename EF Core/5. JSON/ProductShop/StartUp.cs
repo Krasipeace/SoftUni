@@ -9,6 +9,9 @@ using Newtonsoft.Json;
 using ProductShop.Data;
 using DTOs.Import;
 using ProductShop.Models;
+using AutoMapper.QueryableExtensions;
+using ProductShop.DTOs.Export;
+using AutoMapper;
 
 public class StartUp
 {
@@ -21,7 +24,7 @@ public class StartUp
         psContext.Database.EnsureCreated();
         Console.WriteLine("Database created");
 
-        //Import Users
+        // Import Users
         string inputJson = File.ReadAllText("../../../Datasets/users.json");
         string result = ImportUsers(psContext, inputJson);
         Console.WriteLine(result);
@@ -40,6 +43,10 @@ public class StartUp
         string inputJson4 = File.ReadAllText("../../../Datasets/categories-products.json");
         string result4 = ImportCategoryProducts(psContext, inputJson4);
         Console.WriteLine(result4);
+
+        // Export Products in Range
+        string exportJson1 = GetProductsInRange(psContext);
+        Console.WriteLine(exportJson1);
     }
 
     // Import Users
@@ -84,5 +91,23 @@ public class StartUp
         context.SaveChanges();
 
         return $"Successfully imported {categoryProduct.Count}";
+    }
+
+    // Export Products in Range
+    public static string GetProductsInRange(ProductShopContext context)
+    {
+        var exportProductsInRange = context
+            .Products
+            .Where(p => p.Price >= 500 && p.Price <= 1000)
+            .OrderBy(p => p.Price)
+            .Select(p => new
+                {
+                name = p.Name,
+                price = p.Price,
+                seller = $"{p.Seller.FirstName} {p.Seller.LastName}"
+                })
+            .ToArray();
+
+        return JsonConvert.SerializeObject(exportProductsInRange, Formatting.Indented);
     }
 }
