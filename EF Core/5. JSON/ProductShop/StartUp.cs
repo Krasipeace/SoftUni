@@ -5,7 +5,6 @@ using System.IO;
 using System.ComponentModel.DataAnnotations;
 
 using Newtonsoft.Json;
-
 using ProductShop.Data;
 using DTOs.Import;
 using ProductShop.Models;
@@ -20,33 +19,45 @@ public class StartUp
         ProductShopContext psContext = new ProductShopContext();
 
         // Database reset
-        psContext.Database.EnsureDeleted();
-        psContext.Database.EnsureCreated();
-        Console.WriteLine("Database created");
+        //psContext.Database.EnsureDeleted();
+        //psContext.Database.EnsureCreated();
+        //Console.WriteLine("Database created");
 
-        // Import Users
-        string inputJson = File.ReadAllText("../../../Datasets/users.json");
-        string result = ImportUsers(psContext, inputJson);
-        Console.WriteLine(result);
+        //// Import Users
+        //string inputJson = File.ReadAllText("../../../Datasets/users.json");
+        //string result = ImportUsers(psContext, inputJson);
+        //Console.WriteLine(result);
 
-        // Import Products
-        string inputJson2 = File.ReadAllText("../../../Datasets/products.json");
-        string result2 = ImportProducts(psContext, inputJson2);
-        Console.WriteLine(result2);
+        //// Import Products
+        //string inputJson2 = File.ReadAllText("../../../Datasets/products.json");
+        //string result2 = ImportProducts(psContext, inputJson2);
+        //Console.WriteLine(result2);
 
-        // Import Categories 
-        string inputJson3 = File.ReadAllText("../../../Datasets/categories.json");
-        string result3 = ImportCategories(psContext, inputJson3);
-        Console.WriteLine(result3);
+        //// Import Categories 
+        //string inputJson3 = File.ReadAllText("../../../Datasets/categories.json");
+        //string result3 = ImportCategories(psContext, inputJson3);
+        //Console.WriteLine(result3);
 
-        // Import Categories and Products
-        string inputJson4 = File.ReadAllText("../../../Datasets/categories-products.json");
-        string result4 = ImportCategoryProducts(psContext, inputJson4);
-        Console.WriteLine(result4);
+        //// Import Categories and Products
+        //string inputJson4 = File.ReadAllText("../../../Datasets/categories-products.json");
+        //string result4 = ImportCategoryProducts(psContext, inputJson4);
+        //Console.WriteLine(result4);
 
-        // Export Products in Range
-        string exportJson1 = GetProductsInRange(psContext);
-        Console.WriteLine(exportJson1);
+        //// Export Products in Range
+        //string exportJson1 = GetProductsInRange(psContext);
+        //Console.WriteLine(exportJson1);
+
+        //// Export Sold Products
+        //string exportJson2 = GetSoldProducts(psContext);
+        //Console.WriteLine(exportJson2);
+
+        //// Export Categories by Products Count
+        //string exportJson3 = GetCategoriesByProductsCount(psContext);
+        //Console.WriteLine(exportJson3);
+
+        // Export Users and Products
+        string exportJson4 = GetUsersWithProducts(psContext);
+        Console.WriteLine(exportJson4);
     }
 
     // Import Users
@@ -101,13 +112,65 @@ public class StartUp
             .Where(p => p.Price >= 500 && p.Price <= 1000)
             .OrderBy(p => p.Price)
             .Select(p => new
-                {
+            {
                 name = p.Name,
                 price = p.Price,
                 seller = $"{p.Seller.FirstName} {p.Seller.LastName}"
-                })
+            })
             .ToArray();
 
         return JsonConvert.SerializeObject(exportProductsInRange, Formatting.Indented);
+    }
+
+    // Export Sold Products
+    public static string GetSoldProducts(ProductShopContext context)
+    {
+        var exportSoldProducts = context
+            .Users
+            .Where(u => u.ProductsSold.Any(b => b.Buyer != null))
+            .OrderBy(u => u.LastName)
+            .ThenBy(u => u.FirstName)
+            .Select(u => new
+            {
+                firstName = u.FirstName,
+                lastName = u.LastName,
+                soldProducts = u.ProductsSold.Select(p => new
+                {
+                    name = p.Name,
+                    price = p.Price,
+                    buyerFirstName = p.Buyer.FirstName,
+                    buyerLastName = p.Buyer.LastName,
+                })
+            })
+            .ToArray();
+
+        return JsonConvert.SerializeObject(exportSoldProducts, Formatting.Indented);
+    }
+
+    // Export Categories by Products Count
+    // 0/100  ._.
+    public static string GetCategoriesByProductsCount(ProductShopContext context)
+    {
+        var catsByProductsCount = context
+            .Categories
+            .OrderByDescending(cp => cp.CategoriesProducts.Count)
+            .Select(cp => new
+            {
+                category = cp.Name,
+                productsCount = cp.CategoriesProducts.Count,
+                averagePrice = $"{cp.CategoriesProducts.Average(p => p.Product.Price):f2}",
+                totalRevenue = $"{cp.CategoriesProducts.Sum(p => p.Product.Price):f2}"
+            })
+            .ToArray();
+            
+
+        return JsonConvert.SerializeObject(catsByProductsCount, Formatting.Indented);
+    }
+
+    public static string GetUsersWithProducts(ProductShopContext context)
+    {
+        
+
+        return "";
     }
 }
