@@ -1,16 +1,15 @@
 ﻿namespace ProductShop;
 
-using System.Collections.Generic;
-using System.IO;
-using System.ComponentModel.DataAnnotations;
-
-using Newtonsoft.Json;
-using ProductShop.Data;
-using DTOs.Import;
-using ProductShop.Models;
-using AutoMapper.QueryableExtensions;
-using ProductShop.DTOs.Export;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+
+using Data;
+using DTOs.Export;
+using DTOs.Import;
+using Models;
 
 public class StartUp
 {
@@ -51,7 +50,7 @@ public class StartUp
         //string exportJson2 = GetSoldProducts(psContext);
         //Console.WriteLine(exportJson2);
 
-        //// Export Categories by Products Count
+        // Export Categories by Products Count
         //string exportJson3 = GetCategoriesByProductsCount(psContext);
         //Console.WriteLine(exportJson3);
 
@@ -148,29 +147,81 @@ public class StartUp
     }
 
     // Export Categories by Products Count
-    // 0/100  ._.
+    // still 0/100
     public static string GetCategoriesByProductsCount(ProductShopContext context)
     {
-        var catsByProductsCount = context
-            .Categories
-            .OrderByDescending(cp => cp.CategoriesProducts.Count)
-            .Select(cp => new
-            {
-                category = cp.Name,
-                productsCount = cp.CategoriesProducts.Count,
-                averagePrice = $"{cp.CategoriesProducts.Average(p => p.Product.Price):f2}",
-                totalRevenue = $"{cp.CategoriesProducts.Sum(p => p.Product.Price):f2}"
-            })
-            .ToArray();
-            
+        IContractResolver contractResolver = ConfigureCamelCaseNaming();
 
-        return JsonConvert.SerializeObject(catsByProductsCount, Formatting.Indented);
+        var categories = context.Categories
+            .OrderByDescending(c => c.CategoriesProducts.Count)
+            .Select(c => new
+            {
+                Category = c.Name,
+                ProductsCount = c.CategoriesProducts.Count,
+                AveragePrice = Math.Round((double)c.CategoriesProducts.Average(p => p.Product.Price), 2),
+                TotalRevenue = Math.Round((double)c.CategoriesProducts.Sum(p => p.Product.Price), 2)
+            })
+            .AsNoTracking()
+            .ToArray();
+
+        return JsonConvert.SerializeObject(categories,
+            Formatting.Indented,
+            new JsonSerializerSettings()
+            {
+                ContractResolver = contractResolver
+            });
     }
 
+    // Export Users with Products
     public static string GetUsersWithProducts(ProductShopContext context)
     {
-        
+        IContractResolver contractResolver = ConfigureCamelCaseNaming();
 
-        return "";
+        var users = context.Users
+            .Where(u => u.ProductsSold.Any(p => p.Buyer != null))
+            .Select(u => new
+            {
+                u.FirstName,
+                u.LastName,
+                u.Age,
+                SoldProducts = new
+                {
+                    Count = u.ProductsSold
+                        .Count(p => p.Buyer != null),
+                    Products = u.ProductsSold
+                        .Where(p => p.Buyer != null)
+                        .Select(p => new
+                        {
+                            p.Name,
+                            p.Price
+                        })
+                        .ToArray()
+                }
+            })
+            .OrderByDescending(u => u.SoldProducts.Count)
+            .AsNoTracking()
+            .ToArray();
+
+        var userWrapperDto = new
+        {
+            UsersCount = users.Length,
+            Users = users
+        };
+
+        return JsonConvert.SerializeObject(userWrapperDto,
+            Formatting.Indented,
+            new JsonSerializerSettings()
+            {
+                ContractResolver = contractResolver,
+                NullValueHandling = NullValueHandling.Ignore
+            });
+    }
+
+    public static IContractResolver ConfigureCamelCaseNaming()
+    {
+        return new DefaultContractResolver()
+        {
+            NamingStrategy = new CamelCaseNamingStrategy(false, true)
+        };
     }
 }
