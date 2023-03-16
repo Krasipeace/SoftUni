@@ -51,12 +51,12 @@ public class StartUp
         //Console.WriteLine(exportJson2);
 
         // Export Categories by Products Count
-        //string exportJson3 = GetCategoriesByProductsCount(psContext);
-        //Console.WriteLine(exportJson3);
+        string exportJson3 = GetCategoriesByProductsCount(psContext);
+        Console.WriteLine(exportJson3);
 
         // Export Users and Products
-        string exportJson4 = GetUsersWithProducts(psContext);
-        Console.WriteLine(exportJson4);
+        //string exportJson4 = GetUsersWithProducts(psContext);
+        //Console.WriteLine(exportJson4);
     }
 
     // Import Users
@@ -147,7 +147,6 @@ public class StartUp
     }
 
     // Export Categories by Products Count
-    // still 0/100
     public static string GetCategoriesByProductsCount(ProductShopContext context)
     {
         IContractResolver contractResolver = ConfigureCamelCaseNaming();
@@ -158,8 +157,14 @@ public class StartUp
             {
                 Category = c.Name,
                 ProductsCount = c.CategoriesProducts.Count,
-                AveragePrice = Math.Round((double)c.CategoriesProducts.Average(p => p.Product.Price), 2),
-                TotalRevenue = Math.Round((double)c.CategoriesProducts.Sum(p => p.Product.Price), 2)
+                AveragePrice = (c.CategoriesProducts.Any() 
+                    ? c.CategoriesProducts.Average(p => p.Product.Price) 
+                    : 0)
+                    .ToString("f2"),
+                TotalRevenue = (c.CategoriesProducts.Any() 
+                    ? c.CategoriesProducts.Sum(p => p.Product.Price) 
+                    : 0)
+                    .ToString("f2")
             })
             .AsNoTracking()
             .ToArray();
