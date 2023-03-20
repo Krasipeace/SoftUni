@@ -65,9 +65,19 @@ public class StartUp
         //File.WriteAllText(exportFilePath, exportToJson);
 
         //// Export Cars With Their List Of Parts
-        string exportToJson = GetCarsWithTheirListOfParts(context);
-        string exportFilePath = @"../../../Results/cars-and-parts.json";
+        //string exportToJson = GetCarsWithTheirListOfParts(context);
+        //string exportFilePath = @"../../../Results/cars-and-parts.json";
+        //File.WriteAllText(exportFilePath, exportToJson);
+
+        //// Export Total Sales By Customer 
+        string exportToJson = GetTotalSalesByCustomer(context);
+        string exportFilePath = @"../../../Results/customers-total-sales.json";
         File.WriteAllText(exportFilePath, exportToJson);
+
+        //// Export Sales with Appllied Discount 
+        //string exportToJson = GetSalesWithAppliedDiscount(context);
+        //string exportFilePath = @"../../../Results/sales-discounts.json";
+        //File.WriteAllText(exportFilePath, exportToJson);
     }
 
     // Import Data
@@ -189,7 +199,7 @@ public class StartUp
     public static string GetCarsWithTheirListOfParts(CarDealerContext context)
         => JsonConvert.SerializeObject(context.Cars
             .Select(c => new
-            { 
+            {
                 car = new
                 {
                     Make = c.Make,
@@ -204,4 +214,36 @@ public class StartUp
                     })
             })
             .ToArray(), Formatting.Indented);
+
+    public static string GetTotalSalesByCustomer(CarDealerContext context)
+    {
+        var sales = context.Customers
+            .Where(c => c.Sales.Any())
+            .Select(c => new
+            {
+                fullName = c.Name,
+                boughtCars = c.Sales.Count(),
+                prices = c.Sales
+                    .SelectMany(p => p.Car.PartsCars
+                        .Select(p => p.Part.Price))
+            })
+            .ToArray();
+        var totalSales = sales
+            .Select(s => new
+            {
+                fullName = s.fullName,
+                boughtCars = s.boughtCars,
+                spentMoney = s.prices.Sum()
+            })
+            .OrderByDescending(s => s.spentMoney)
+            .ThenByDescending(s => s.boughtCars)
+            .ToArray();
+
+        return JsonConvert.SerializeObject(totalSales, Formatting.Indented);
+    }
+    //public static string GetSalesWithAppliedDiscount(CarDealerContext context)
+    //{
+
+    //}
+
 }
