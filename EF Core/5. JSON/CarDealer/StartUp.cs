@@ -1,9 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using System.Globalization;
+
+using Newtonsoft.Json;
 
 using CarDealer.Data;
 using CarDealer.Models;
 using CarDealer.DTOs.Import;
-using Castle.Core.Resource;
 
 namespace CarDealer;
 
@@ -42,10 +43,16 @@ public class StartUp
         //Console.WriteLine(importCustomersToDB);
 
         // Import Sales
-        string inputSalesFromFile = @"../../../Datasets/sales.json";
-        string readSalesFromFile = File.ReadAllText(inputSalesFromFile);
-        string importSalesToDB = ImportSales(context, readSalesFromFile);
-        Console.WriteLine(importSalesToDB);
+        //string inputSalesFromFile = @"../../../Datasets/sales.json";
+        //string readSalesFromFile = File.ReadAllText(inputSalesFromFile);
+        //string importSalesToDB = ImportSales(context, readSalesFromFile);
+        //Console.WriteLine(importSalesToDB);
+
+        // Export Ordered Customers 
+        string exportToJson = GetOrderedCustomers(context);
+        string exportFilePath = @"../../../Results/ordered-customers.json";
+        File.WriteAllText(exportFilePath, exportToJson);
+
     }
 
     // Import Data
@@ -125,4 +132,17 @@ public class StartUp
 
         return $"Successfully imported {sales.Count}.";
     }
+
+    // Export Data
+    public static string GetOrderedCustomers(CarDealerContext context) 
+        => JsonConvert.SerializeObject(context.Customers
+            .OrderBy(c => c.BirthDate)
+            .ThenBy(c => c.IsYoungDriver)
+            .Select(c => new
+            {
+                Name = c.Name,
+                BirthDate = c.BirthDate.ToString(@"dd/MM/yyyy", CultureInfo.InvariantCulture),
+                IsYoungDriver = c.IsYoungDriver,
+            })
+            .ToArray(), Formatting.Indented);
 }
