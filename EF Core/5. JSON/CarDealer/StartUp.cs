@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using CarDealer.Data;
 using CarDealer.Models;
 using CarDealer.DTOs.Import;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CarDealer;
 
@@ -59,8 +60,13 @@ public class StartUp
         //File.WriteAllText(exportFilePath, exportToJson);
 
         //// Export Local Suppliers
-        string exportToJson = GetLocalSuppliers(context);
-        string exportFilePath = @"../../../Results/local-suppliers.json";
+        //string exportToJson = GetLocalSuppliers(context);
+        //string exportFilePath = @"../../../Results/local-suppliers.json";
+        //File.WriteAllText(exportFilePath, exportToJson);
+
+        //// Export Cars With Their List Of Parts
+        string exportToJson = GetCarsWithTheirListOfParts(context);
+        string exportFilePath = @"../../../Results/cars-and-parts.json";
         File.WriteAllText(exportFilePath, exportToJson);
     }
 
@@ -177,6 +183,25 @@ public class StartUp
                 Id = s.Id,
                 Name = s.Name,
                 PartsCount = s.Parts.Count
+            })
+            .ToArray(), Formatting.Indented);
+
+    public static string GetCarsWithTheirListOfParts(CarDealerContext context)
+        => JsonConvert.SerializeObject(context.Cars
+            .Select(c => new
+            { 
+                car = new
+                {
+                    Make = c.Make,
+                    Model = c.Model,
+                    TraveledDistance = c.TraveledDistance
+                },
+                parts = c.PartsCars
+                    .Select(p => new
+                    {
+                        Name = p.Part.Name,
+                        Price = p.Part.Price.ToString("f2"),
+                    })
             })
             .ToArray(), Formatting.Indented);
 }
