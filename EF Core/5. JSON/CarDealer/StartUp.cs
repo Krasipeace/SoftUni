@@ -48,14 +48,19 @@ public class StartUp
         //string importSalesToDB = ImportSales(context, readSalesFromFile);
         //Console.WriteLine(importSalesToDB);
 
-        // Export Ordered Customers
+        //// Export Ordered Customers
         //string exportToJson = GetOrderedCustomers(context);
         //string exportFilePath = @"../../../Results/ordered-customers.json";
         //File.WriteAllText(exportFilePath, exportToJson);
 
-        // Export Cars from Make Toyota
-        string exportToJson = GetCarsFromMakeToyota(context);
-        string exportFilePath = @"../../../Results/toyota-cars.json";
+        //// Export Cars from Make Toyota
+        //string exportToJson = GetCarsFromMakeToyota(context);
+        //string exportFilePath = @"../../../Results/toyota-cars.json";
+        //File.WriteAllText(exportFilePath, exportToJson);
+
+        //// Export Local Suppliers
+        string exportToJson = GetLocalSuppliers(context);
+        string exportFilePath = @"../../../Results/local-suppliers.json";
         File.WriteAllText(exportFilePath, exportToJson);
     }
 
@@ -161,6 +166,17 @@ public class StartUp
                 Make = c.Make,
                 Model = c.Model,
                 TraveledDistance = c.TraveledDistance
+            })
+            .ToArray(), Formatting.Indented);
+
+    public static string GetLocalSuppliers(CarDealerContext context)
+        => JsonConvert.SerializeObject(context.Suppliers
+            .Where(s => s.IsImporter == false)
+            .Select(s => new
+            {
+                Id = s.Id,
+                Name = s.Name,
+                PartsCount = s.Parts.Count
             })
             .ToArray(), Formatting.Indented);
 }
