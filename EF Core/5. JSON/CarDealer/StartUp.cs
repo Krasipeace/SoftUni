@@ -30,29 +30,33 @@ public class StartUp
         //string importPartsToDB = ImportParts(context, readPartsFromFile);
         //Console.WriteLine(importPartsToDB);
 
-        // Import Cars
+        //// Import Cars
         //string inputCarsFromFile = @"../../../Datasets/cars.json";
         //string readCarsFromFile = File.ReadAllText(inputCarsFromFile);
         //string importCarsToDB = ImportCars(context, readCarsFromFile);
         //Console.WriteLine(importCarsToDB);
 
-        // Import Customers 
+        //// Import Customers
         //string inputCustomersFromFile = @"../../../Datasets/customers.json";
         //string readCustomersFromFile = File.ReadAllText(inputCustomersFromFile);
         //string importCustomersToDB = ImportCustomers(context, readCustomersFromFile);
         //Console.WriteLine(importCustomersToDB);
 
-        // Import Sales
+        //// Import Sales
         //string inputSalesFromFile = @"../../../Datasets/sales.json";
         //string readSalesFromFile = File.ReadAllText(inputSalesFromFile);
         //string importSalesToDB = ImportSales(context, readSalesFromFile);
         //Console.WriteLine(importSalesToDB);
 
-        // Export Ordered Customers 
-        string exportToJson = GetOrderedCustomers(context);
-        string exportFilePath = @"../../../Results/ordered-customers.json";
-        File.WriteAllText(exportFilePath, exportToJson);
+        // Export Ordered Customers
+        //string exportToJson = GetOrderedCustomers(context);
+        //string exportFilePath = @"../../../Results/ordered-customers.json";
+        //File.WriteAllText(exportFilePath, exportToJson);
 
+        // Export Cars from Make Toyota
+        string exportToJson = GetCarsFromMakeToyota(context);
+        string exportFilePath = @"../../../Results/toyota-cars.json";
+        File.WriteAllText(exportFilePath, exportToJson);
     }
 
     // Import Data
@@ -93,7 +97,7 @@ public class StartUp
             {
                 Make = car.Make,
                 Model = car.Model,
-                TravelledDistance = car.TravelledDistance
+                TraveledDistance = car.TraveledDistance
             };
             cars.Add(importCar);
 
@@ -134,7 +138,7 @@ public class StartUp
     }
 
     // Export Data
-    public static string GetOrderedCustomers(CarDealerContext context) 
+    public static string GetOrderedCustomers(CarDealerContext context)
         => JsonConvert.SerializeObject(context.Customers
             .OrderBy(c => c.BirthDate)
             .ThenBy(c => c.IsYoungDriver)
@@ -143,6 +147,20 @@ public class StartUp
                 Name = c.Name,
                 BirthDate = c.BirthDate.ToString(@"dd/MM/yyyy", CultureInfo.InvariantCulture),
                 IsYoungDriver = c.IsYoungDriver,
+            })
+            .ToArray(), Formatting.Indented);
+
+    public static string GetCarsFromMakeToyota(CarDealerContext context)
+        => JsonConvert.SerializeObject(context.Cars
+            .Where(c => c.Make == "Toyota")
+            .OrderBy(c => c.Model)
+            .ThenByDescending(c => c.TraveledDistance)
+            .Select(c => new
+            {
+                Id = c.Id,
+                Make = c.Make,
+                Model = c.Model,
+                TraveledDistance = c.TraveledDistance
             })
             .ToArray(), Formatting.Indented);
 }
