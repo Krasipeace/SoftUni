@@ -70,14 +70,14 @@ public class StartUp
         //File.WriteAllText(exportFilePath, exportToJson);
 
         //// Export Total Sales By Customer 
-        string exportToJson = GetTotalSalesByCustomer(context);
-        string exportFilePath = @"../../../Results/customers-total-sales.json";
-        File.WriteAllText(exportFilePath, exportToJson);
+        //string exportToJson = GetTotalSalesByCustomer(context);
+        //string exportFilePath = @"../../../Results/customers-total-sales.json";
+        //File.WriteAllText(exportFilePath, exportToJson);
 
         //// Export Sales with Appllied Discount 
-        //string exportToJson = GetSalesWithAppliedDiscount(context);
-        //string exportFilePath = @"../../../Results/sales-discounts.json";
-        //File.WriteAllText(exportFilePath, exportToJson);
+        string exportToJson = GetSalesWithAppliedDiscount(context);
+        string exportFilePath = @"../../../Results/sales-discounts.json";
+        File.WriteAllText(exportFilePath, exportToJson);
     }
 
     // Import Data
@@ -241,9 +241,26 @@ public class StartUp
 
         return JsonConvert.SerializeObject(totalSales, Formatting.Indented);
     }
-    //public static string GetSalesWithAppliedDiscount(CarDealerContext context)
-    //{
 
-    //}
+    public static string GetSalesWithAppliedDiscount(CarDealerContext context)
+    { 
+        var sales = context.Sales
+                .Take(10)
+                .Select(s => new
+                {
+                    car = new
+                    {
+                        s.Car.Make,
+                        s.Car.Model,
+                        s.Car.TraveledDistance
+                    },
+                    customerName = s.Customer.Name,
+                    discount = $"{s.Discount:f2}",
+                    price = $"{s.Car.PartsCars.Sum(p => p.Part.Price):f2}",
+                    priceWithDiscount = $"{s.Car.PartsCars.Sum(p => p.Part.Price) * (1 - s.Discount / 100):f2}"
+                })                
+                .ToArray();
 
+        return  JsonConvert.SerializeObject(sales, Formatting.Indented);
+    }
 }
