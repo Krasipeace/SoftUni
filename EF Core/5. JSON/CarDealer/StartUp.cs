@@ -36,10 +36,16 @@ public class StartUp
         //Console.WriteLine(importCarsToDB);
 
         // Import Customers 
-        string inputCustomersFromFile = @"../../../Datasets/customers.json";
-        string readCustomersFromFile = File.ReadAllText(inputCustomersFromFile);
-        string importCustomersToDB = ImportCustomers(context, readCustomersFromFile);
-        Console.WriteLine(importCustomersToDB);
+        //string inputCustomersFromFile = @"../../../Datasets/customers.json";
+        //string readCustomersFromFile = File.ReadAllText(inputCustomersFromFile);
+        //string importCustomersToDB = ImportCustomers(context, readCustomersFromFile);
+        //Console.WriteLine(importCustomersToDB);
+
+        // Import Sales
+        string inputSalesFromFile = @"../../../Datasets/sales.json";
+        string readSalesFromFile = File.ReadAllText(inputSalesFromFile);
+        string importSalesToDB = ImportSales(context, readSalesFromFile);
+        Console.WriteLine(importSalesToDB);
     }
 
     // Import Data
@@ -109,5 +115,14 @@ public class StartUp
         context.SaveChanges();
 
         return $"Successfully imported {customers.Count}.";
+    }
+
+    public static string ImportSales(CarDealerContext context, string inputJson)
+    {
+        var sales = JsonConvert.DeserializeObject<List<Sale>>(inputJson);
+        context.Sales.AddRange(sales);
+        context.SaveChanges();
+
+        return $"Successfully imported {sales.Count}.";
     }
 }
