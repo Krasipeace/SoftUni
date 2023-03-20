@@ -3,6 +3,7 @@
 using CarDealer.Data;
 using CarDealer.Models;
 using CarDealer.DTOs.Import;
+using Castle.Core.Resource;
 
 namespace CarDealer;
 
@@ -29,10 +30,16 @@ public class StartUp
         //Console.WriteLine(importPartsToDB);
 
         // Import Cars
-        string inputCarsFromFile = @"../../../Datasets/cars.json";
-        string readCarsFromFile = File.ReadAllText(inputCarsFromFile);
-        string importCarsToDB = ImportCars(context, readCarsFromFile);
-        Console.WriteLine(importCarsToDB);
+        //string inputCarsFromFile = @"../../../Datasets/cars.json";
+        //string readCarsFromFile = File.ReadAllText(inputCarsFromFile);
+        //string importCarsToDB = ImportCars(context, readCarsFromFile);
+        //Console.WriteLine(importCarsToDB);
+
+        // Import Customers 
+        string inputCustomersFromFile = @"../../../Datasets/customers.json";
+        string readCustomersFromFile = File.ReadAllText(inputCustomersFromFile);
+        string importCustomersToDB = ImportCustomers(context, readCustomersFromFile);
+        Console.WriteLine(importCustomersToDB);
     }
 
     // Import Data
@@ -93,5 +100,14 @@ public class StartUp
         context.SaveChanges();
 
         return $"Successfully imported {cars.Count}.";
+    }
+
+    public static string ImportCustomers(CarDealerContext context, string inputJson)
+    {
+        var customers = JsonConvert.DeserializeObject<List<Customer>>(inputJson);
+        context.Customers.AddRange(customers);
+        context.SaveChanges();
+
+        return $"Successfully imported {customers.Count}.";
     }
 }
