@@ -12,7 +12,7 @@ public class Part
 
     public int SupplierId { get; set; }
 
-    public Supplier Supplier { get; set; } = null!;
+    public virtual Supplier Supplier { get; set; } = null!;
 
-    public ICollection<PartCar> PartsCars { get; set; } = new List<PartCar>();
+    public virtual ICollection<PartCar> PartsCars { get; set; } = new List<PartCar>();
 }

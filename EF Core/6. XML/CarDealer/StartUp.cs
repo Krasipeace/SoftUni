@@ -1,25 +1,24 @@
 ﻿namespace CarDealer;
 
 using AutoMapper;
-
+using AutoMapper.QueryableExtensions;
 using CarDealer.Data;
+using CarDealer.DTOs.Export;
 using CarDealer.DTOs.Import;
 using CarDealer.Models;
 using CarDealer.Utilities;
-using Castle.Core.Resource;
-using System.IO;
 
 public class StartUp
 {
     public static void Main()
     {
         CarDealerContext context = new CarDealerContext();
-        //Database reset
+        ////Database reset
         //context.Database.EnsureDeleted();
         //context.Database.EnsureCreated();
         //Console.WriteLine("Database CarDealer created...");
 
-        ////Import Suppliers
+        //Import Suppliers
         //string inputSuppliers = File.ReadAllText("../../../Datasets/suppliers.xml");
         //string result = ImportSuppliers(context, inputSuppliers);
         //Console.WriteLine(result);
@@ -44,6 +43,21 @@ public class StartUp
         //string result5 = ImportCustomers(context, inputSales);
         //Console.WriteLine(result5);
 
+        ////Export Cars with Distance
+        //string result6 = GetCarsWithDistance(context);
+        //Console.WriteLine(result6);
+
+        //// Export Cars from Make BMW
+        //string result7 = GetCarsFromMakeBmw(context);
+        //Console.WriteLine(result7);
+
+        //// Export Local Suppliers
+        string result8 = GetLocalSuppliers(context);
+        Console.WriteLine(result8);
+
+        //// Export Cars with their list of parts
+        //string result9 = GetCarsWithTheirListOfParts(context);
+        //Console.WriteLine(result9);
     }
 
     // Import Data
@@ -205,6 +219,62 @@ public class StartUp
         context.SaveChanges();
 
         return $"Successfully imported {validSales.Count}";
+    }
+
+    // Export Data
+    public static string GetCarsWithDistance(CarDealerContext context)
+    {
+        IMapper mapper = InitializeAutoMapper();
+        XmlHelper xmlHelper = new XmlHelper();
+
+        ExportCarWithRangeDto[] cars = context.Cars
+            .Where(c => c.TraveledDistance > 2000000)
+            .OrderBy(c => c.Make)
+            .ThenBy(c => c.Model)
+            .Take(10)
+            .ProjectTo<ExportCarWithRangeDto>(mapper.ConfigurationProvider)
+            .ToArray();
+
+        return xmlHelper.Serialize<ExportCarWithRangeDto[]>(cars, "cars");
+    }
+
+    public static string GetCarsFromMakeBmw(CarDealerContext context)
+    {
+        IMapper mapper = InitializeAutoMapper();
+        XmlHelper xmlHelper = new XmlHelper();
+
+        ExportMakeBmwCarDto[] cars = context.Cars
+            .Where(c => c.Make.ToUpper() == "BMW")
+            .OrderBy(c => c.Model)
+            .ThenByDescending(c => c.TraveledDistance)
+            .ProjectTo<ExportMakeBmwCarDto>(mapper.ConfigurationProvider)
+            .ToArray();
+
+        return xmlHelper.Serialize<ExportMakeBmwCarDto[]>(cars, "cars");
+    }
+
+    public static string GetLocalSuppliers(CarDealerContext context)
+    {
+        IMapper mapper = InitializeAutoMapper();
+        XmlHelper XmlHelper = new XmlHelper();
+
+            
+    }
+
+    public static string GetCarsWithTheirListOfParts(CarDealerContext context)
+    {
+        IMapper mapper = InitializeAutoMapper();
+        XmlHelper XmlHelper = new XmlHelper();
+
+        ExportCarWithPartsDto[] cars = context
+            .Cars
+            .OrderByDescending(c => c.TraveledDistance)
+            .ThenBy(c => c.Model)
+            .Take(5)
+            .ProjectTo<ExportCarWithPartsDto>(mapper.ConfigurationProvider)
+            .ToArray();
+
+        return XmlHelper.Serialize(cars, "cars");
     }
 
     // Automapper
