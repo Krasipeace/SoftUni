@@ -5,9 +5,11 @@ namespace CarDealer.DTOs.Export;
 [XmlType("supplier")]
 public class ExportLocalSuppliersDto
 {
-    [XmlElement("name")]
+    [XmlAttribute("id")]
+    public int Id { get; set; }
+    [XmlAttribute("name")]
     public string Name { get; set; } = null!;
 
-    [XmlElement("parts-count")]
-
+    [XmlAttribute("parts-count")]
+    public int Count { get; set; }
 }
