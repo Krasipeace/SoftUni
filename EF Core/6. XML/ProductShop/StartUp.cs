@@ -200,7 +200,7 @@ public class StartUp
             .Users
             .Where(u => u.ProductsSold.Any())
             .OrderByDescending(u => u.ProductsSold.Count)
-            .Select(u => new UserInfo()
+            .Select(u => new ExportUserFullInfoDto()
             {
                 FirstName = u.FirstName,
                 LastName = u.LastName,
