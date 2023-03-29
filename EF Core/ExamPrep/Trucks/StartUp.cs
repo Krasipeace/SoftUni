@@ -2,10 +2,10 @@
 {
     using System;
     using System.IO;
+    using Microsoft.EntityFrameworkCore;
     using System.Globalization;
 
     using AutoMapper;
-    using Microsoft.EntityFrameworkCore;
 
     using Data;
 
