@@ -17,4 +17,3 @@ The "WordPress for Developers" course will teach you how to create sites, WordPr
 | 6 | Plugin Development Tools and improvement |
 | 7 | Exam prep                                |
 | 8 | Project (exam)                           |
-
