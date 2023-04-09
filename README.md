@@ -6,8 +6,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Krasipeace/SoftUni)
 ![GitHub language count](https://img.shields.io/github/languages/count/Krasipeace/SoftUni)
 ![GitHub top language](https://img.shields.io/github/languages/top/Krasipeace/SoftUni)
-![GitHub followers](https://img.shields.io/github/followers/Krasipeace?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Krasipeace/SoftUni?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Krasipeace/SoftUni?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Krasipeace/SoftUni?style=social)
 ![GitHub contributors](https://img.shields.io/github/contributors/Krasipeace/SoftUni)
