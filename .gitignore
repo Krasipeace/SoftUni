@@ -10,7 +10,6 @@
 *.userosscache
 *.sln.docstates
 *.txt
-*.png
 *.bin
 
 # User-specific files (MonoDevelop/Xamarin Studio)
@@ -400,3 +399,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Csharp Advanced/4_2_Streams Files and Directories - Exercises/ZipAndExtract/copyMe.png
+Csharp Advanced/4_2_Streams Files and Directories - Exercises/CopyBinaryFile/copyMe.png
+Csharp Advanced/4_2_Streams Files and Directories - Exercises/CopyBinaryFile/copyMe-copy.png
+Csharp Advanced/4_1_Streams Files and Directories/SplitMergeBinaryFile/Files/example.png
+Csharp Advanced/4_1_Streams Files and Directories/ExtractSpecialBytes/Files/example.png
