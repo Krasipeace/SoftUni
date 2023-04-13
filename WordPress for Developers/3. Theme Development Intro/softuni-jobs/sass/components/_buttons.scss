@@ -1,0 +1,32 @@
+.button {
+	--button-background-color: var(--color-primary);
+	--button-color: var(--color-base-light);
+	--button-border-radius: var(--border-radius-small);
+	--button-padding: 0.5em 0.75em;
+
+	display: inline-block;
+	padding: var(--button-padding);
+	border-radius: var(--button-border-radius);
+	background: var(--button-background-color);
+	color: var(--button-color);
+	font-weight: 700;
+	text-align: center;
+	outline: none;
+    border: none;
+	cursor: pointer;
+	transition: 0.25s ease-in-out;
+
+	&-wide {
+		width: 100%;
+	}
+
+	&-inline {
+		--button-background-color: transparent;
+		--button-color: var(--color-base-invert);
+		line-height: 1;
+
+		&:hover {
+			--button-color: var(--color-primary);
+		}
+	}
+}

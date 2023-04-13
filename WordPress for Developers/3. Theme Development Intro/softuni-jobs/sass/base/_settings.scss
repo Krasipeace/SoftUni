@@ -1,0 +1,62 @@
+$media-breakpoint-large: 60rem;
+$media-breakpoint-medium: 55rem;
+$media-breakpoint-small: 50rem;
+$media-breakpoint-mobile: 42rem;
+
+$breakpoint-mobile-navigation: 48em;
+
+:root {
+	// Colors
+	// ---------------------------------------------------------------------
+	--color-base: #f8f9ff;
+	--color-base-light: #fff;
+	--color-primary: #3c71fe;
+	--color-separator: #d5dcef;
+	--color-base-invert: #000;
+	--color-muted: #d9d9d9;
+	--color-muted-light: #e9e9e9;
+
+	// Layout
+	// ---------------------------------------------------------------------
+	--site-width-large: #{$media-breakpoint-large - 2};
+	--site-width-medium: #{$media-breakpoint-medium - 2};
+	--site-width-small: #{$media-breakpoint-small - 2};
+	--site-width-mobile: #{$media-breakpoint-mobile - 2};
+	--site-width-breakpoint-menu: #{$breakpoint-mobile-navigation};
+
+	--spacing-s: 1em;
+	--spacing-m: 1.5em;
+	--spacing-l: 2em;
+	--spacing-xl: 3em;
+	--spacing-xxl: 8em;
+
+	// Typography
+	// ---------------------------------------------------------------------
+	--font-primary: "DM Sans", sans-serif;
+
+	--font-size-h1: 2em;
+	--font-size-h2: 1.875em;
+	--font-size-h3: 1.75em;
+	--font-size-h4: 1.5em;
+	--font-size-h5: 1.25em;
+	--font-size-h6: 1em;
+
+	// Others:
+	// ---------------------------------------------------------------------
+	--border-radius-small: 0.25em;
+	--border-radius: 0.5em;
+	--border-radius-large: 1.5em;
+
+	--shadow-default: 0px 2px 4px rgba(0, 0, 0, 0.06);
+
+	@media (max-width: $media-breakpoint-mobile) {
+		--font-size-h1: 1.75em;
+		--font-size-h2: 1.625em;
+		--font-size-h3: 1.5em;
+		--font-size-h4: 1.25em;
+		--font-size-h5: 1em;
+		
+		--spacing-l: 1em;
+		--spacing-xl: 1.5em;
+	}
+}
