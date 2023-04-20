@@ -13,7 +13,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Krasipeace/SoftUni)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Krasipeace/SoftUni)
 
-### Software Engineering 
+### [Software Engineering ](https://softuni.bg/curriculum)
 
 SoftUni's professional program in software engineering aims to build all the fundamental knowledge and practical skills necessary for the acquisition of the "software engineer" profession, working with the most modern software technologies and learning the best practices in the field of programming.
 
@@ -32,7 +32,7 @@ SoftUni's professional program in software engineering aims to build all the fun
 &nbsp;
 
 SoftUni Courses:  
-| C# Web Development | Open Courses | 
+| [C# Web Development][42] | Open Courses | 
 | :--- | :--- | 
 | [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] |  
 | [C# Advanced][3]                         | [WordPress For Developers][7]	 |  
@@ -49,3 +49,7 @@ SoftUni Courses:
 [5]: https://github.com/Krasipeace/SoftUni/blob/main/MS%20SQL/README.md
 [6]: https://github.com/Krasipeace/SoftUni/blob/main/EF%20Core/README.md
 [7]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/README.md
+
+
+
+[42]: https://softuni.bg/professions/csharp

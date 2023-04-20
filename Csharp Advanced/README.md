@@ -1,4 +1,4 @@
-# C# Advanced
+# [C# Advanced](https://softuni.bg/trainings/3842/csharp-advanced-september-2022)
 
 &nbsp;
 
@@ -6,7 +6,7 @@ The "C# Advanced" course builds on the skills of working with the C# language an
 
 &nbsp;
 
-## Softuni Judge Solved Tasks
+## [Softuni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/182/CSharp-Advanced-Exercises)
 
 &nbsp;
 

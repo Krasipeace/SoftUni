@@ -1,4 +1,4 @@
-# Programming Basics - C#
+# [Programming Basics - C#](https://softuni.bg/trainings/3620/programming-basics-with-csharp-january-2022)
 
 &nbsp;
 
@@ -6,7 +6,7 @@ The "Programming Basics" course provides the initial programming skills necessar
 
 &nbsp;
 
-## SoftUni Judge Solved Tasks
+## [SoftUni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/245/CSharp-Basics)
 
 &nbsp;
 

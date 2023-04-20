@@ -1,4 +1,4 @@
-# MS SQL
+# [MS SQL](https://softuni.bg/trainings/3965/ms-sql-january-2023)
 
 &nbsp;
 
@@ -6,7 +6,7 @@ Databases are the standard way of using dynamic information in modern technology
 
 &nbsp;
 
-## SoftUni Judge Solved Tasks
+## [SoftUni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/62/CSharp-Databases-Basics-Exercises)
 
 &nbsp;
 

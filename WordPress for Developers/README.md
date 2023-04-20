@@ -7,7 +7,7 @@ The "WordPress for Developers" course will teach you how to create sites, WordPr
 &nbsp;
 
 #### Exercises:
-| | Name | 
+| | Exercise | 
 | ---: | :--- | 
 | 1 | [Intro to PHP][1]                        |
 | 2 | [WordPress Hooks, Actions and Tools][2]  |
@@ -16,7 +16,7 @@ The "WordPress for Developers" course will teach you how to create sites, WordPr
 | 5 | [Plugin Development Intro][5]            |
 | 6 | Plugin Development Tools and improvement |
 | 7 | Exam prep                                |
-| 8 | Project (exam)                           |
+| 8 | Exam(Project)                            |
 
 [1]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/1.%20Intro%20to%20PHP/intro%20to%20php.php
 [2]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/2.%20Hooks%20Actions%20and%20Tools/Exercise.php

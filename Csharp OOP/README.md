@@ -1,4 +1,4 @@
-# C# Object Oriented Programming
+# [C# Object Oriented Programming](https://softuni.bg/trainings/3843/csharp-oop-october-2022)
 
 &nbsp;
 
@@ -6,7 +6,7 @@ The C# OOP course will teach students the principles of object-oriented programm
 
 &nbsp;
 
-## Softuni Judge Solved Tasks
+## [Softuni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/184/CSharp-OOP-Exercises)
 
 &nbsp;
 
@@ -14,12 +14,12 @@ The C# OOP course will teach students the principles of object-oriented programm
 
 | Lab | Exercises | 
 | :--- | :--- | 
-| [1. Single Inheritance][1]       | [1. Person][6]      		     | 
-| [2. Mutiple Inheritance][2]      | [2. Zoo][7]      			      | 
+| [1. Single Inheritance][1]       | [1. Person][6]      		  | 
+| [2. Mutiple Inheritance][2]      | [2. Zoo][7]      			  | 
 | [3. Hierarchical Inheritance][3] | [3. Players and Monsters][8] | 
-| [4. Random List][4]  			       | [4. Need for Speed][9]       | 
-| [5. Stack of Strings][5] 		     | [5. Restaurant][10]          | 
-|       						               | [6. Animals][11]             |
+| [4. Random List][4]  			   | [4. Need for Speed][9] | 
+| [5. Stack of Strings][5] 		   | [5. Restaurant][10]  | 
+|       					       | [6. Animals][11] |
 
 &nbsp;
 
@@ -29,9 +29,9 @@ The C# OOP course will teach students the principles of object-oriented programm
 | :--- | :--- | 
 | [1. Persons][12]    | [1. Class Box Data][16]        	 | 
 | [2. Salary][13]     | [2. Animal Farm][17]      	     | 
-| [3. Validation][14] | [3. Shopping Spree][18] 		     | 
-| [4. Team][15]  	    | [4. Pizza Calories][19]          | 
-|           		      | [5. Football Team Generator][20] | 
+| [3. Validation][14] | [3. Shopping Spree][18] 		 | 
+| [4. Team][15]  	  | [4. Pizza Calories][19]          | 
+|           		  | [5. Football Team Generator][20] | 
 
 &nbsp;
 

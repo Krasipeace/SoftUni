@@ -1,4 +1,4 @@
-# Fundamentals of Programming - C#
+# [Fundamentals of Programming - C#](https://softuni.bg/trainings/3729/programming-fundamentals-with-csharp-may-2022)
 
 <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif" /></p>
 &nbsp;
@@ -9,7 +9,7 @@ Additional technologies needed by every software developer are studied, such as 
 
 &nbsp;
 
-## SoftUni Judge Solved Tasks
+## [SoftUni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/149/CSharp-Fundamentals)
 
 &nbsp;
 
