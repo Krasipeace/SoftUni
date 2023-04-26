@@ -15,7 +15,7 @@ The "WordPress for Developers" course will teach you how to create sites, WordPr
 | 4 | [Theme Development Tools and improvement][4] |
 | 5 | [Plugin Development Intro][5]            |
 | 6 | [Plugin Development Tools and improvement][6] |
-| 7 | Exam prep                                |
+| 7 | [Exam preparation[7]                     |
 | 8 | Exam(Project)                            |
 
 [1]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/1.%20Intro%20to%20PHP/intro%20to%20php.php
@@ -24,4 +24,5 @@ The "WordPress for Developers" course will teach you how to create sites, WordPr
 [4]: https://github.com/Krasipeace/SoftUni/tree/main/WordPress%20for%20Developers/4.%20Theme%20Development%20Improvement/softuni-jobs
 [5]: https://github.com/Krasipeace/SoftUni/tree/main/WordPress%20for%20Developers/5.%20Plugin%20Development%20Intro/softuni-jobs
 [6]: https://github.com/Krasipeace/SoftUni/tree/main/WordPress%20for%20Developers/6.%20Plugin%20Development%20Improvement
+[7]: https://github.com/Krasipeace/SoftUni/tree/main/WordPress%20for%20Developers/7.%20Exam%20preparation
  

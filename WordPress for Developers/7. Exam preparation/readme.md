@@ -7,5 +7,3 @@
 
 #### Plugin
 
-
-![screenshot](screenshot.png)
