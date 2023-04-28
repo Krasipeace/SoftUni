@@ -39,7 +39,7 @@ SoftUni Courses:
 | [C# Object Oriented Programming][4]      |        	  | 
 | [MS SQL][5]                              |              |  
 | [EF Core][6]     						   |              | 
-
+| [ASP.NET Fundamentals][8] 			   |			  |
 
 
 [1]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/README.md
@@ -49,6 +49,7 @@ SoftUni Courses:
 [5]: https://github.com/Krasipeace/SoftUni/blob/main/MS%20SQL/README.md
 [6]: https://github.com/Krasipeace/SoftUni/blob/main/EF%20Core/README.md
 [7]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/README.md
+[8]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Fundamentals/README.md
 
 
 
