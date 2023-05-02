@@ -89,6 +89,16 @@ The course "Entity Framework Core" follows in detail the work with the ORM techn
 
 &nbsp;
 
+### Workshops - ASP.NET MVC
+
+| | Projects |
+| ---: | :--- |
+| 1 | [Eventmi][37] |
+| 2 | [Blog][38]    |
+
+&nbsp;
+
+
 [1]: https://github.com/Krasipeace/SoftUni/tree/main/EF%20Core/1.%20EF%20Introduction/1.%20Database%20First
 [2]: https://github.com/Krasipeace/SoftUni/tree/main/EF%20Core/1.%20EF%20Introduction/2.%20Employees%20Full%20Information
 [3]: https://github.com/Krasipeace/SoftUni/tree/main/EF%20Core/1.%20EF%20Introduction/3.%20Employees%20With%20Salary%20Over%2050000
@@ -130,3 +140,6 @@ The course "Entity Framework Core" follows in detail the work with the ORM techn
 
 [35]: https://github.com/Krasipeace/SoftUni/tree/main/EF%20Core/6.%20XML/ProductShop
 [36]: https://github.com/Krasipeace/SoftUni/tree/main/EF%20Core/6.%20XML/CarDealer
+
+[37]: https://github.com/Krasipeace/SoftUni/tree/main/EF%20Core/Workshops/Eventmi
+[38]: https://github.com/Krasipeace/SoftUni/tree/main/EF%20Core/Workshops/Blog
