@@ -1,18 +1,30 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-color: white;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;  
+    background: radial-gradient(circle at 6.6% 12%, rgb(64, 0, 126) 20.8%, rgb(0, 255, 160) 100.2%);
+    color: darkorange;
+}
+
+.table {
+    color: orange;
+}
+
+.border-top .container {
+    color: White;
+    font-style: italic;
 }
