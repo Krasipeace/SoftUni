@@ -1,4 +1,8 @@
+using Eventmi.Core.Contracts;
+using Eventmi.Core.Services;
 using Eventmi.Infrastructure.Data;
+using Eventmi.Infrastructure.Data.Common;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace Eventmi
@@ -15,6 +19,10 @@ namespace Eventmi
             builder.Services.AddDbContext<EventmiDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("EventmiConnection")));
 
+            builder.Services.AddScoped<IRepository, Repository>();
+
+            builder.Services.AddScoped<IEventService, EventService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -26,6 +34,7 @@ namespace Eventmi
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
