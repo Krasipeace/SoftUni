@@ -1,0 +1,285 @@
+@import "./base/normalize";
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+:root {
+	--color-base: #f8f9ff;
+	--color-primary: #3c71fe;
+	--color-separator: #d5dcef;
+
+	--font-sans: "DM Sans", sans-serif;
+}
+
+body {
+	background: var(--color-base);
+	font-family: var(--font-sans);
+	line-height: 1.5;
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+.site-wrapper {
+	max-width: 58em;
+	margin: 0 auto;
+}
+
+.properties-listing {
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin-bottom: 1em;
+	}
+}
+
+.property-meta {
+	margin-bottom: 2em;
+}
+
+.property-card {
+	margin: 1.5em 0;
+	padding: 1.5em;
+	list-style: none;
+	background: white;
+	border: 1px solid var(--color-separator);
+	border-radius: 0.25em;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+	display: flex;
+
+	&:first-child{
+		margin-top: 0;
+	}
+
+	.property-primary {
+		flex: 1 1 auto;
+	}
+
+	.property-title {
+		margin: 0;
+		font-size: 1.375em;
+		margin-bottom: 0.25em;
+
+		a {
+			color: black;
+		}
+	}
+
+	.property-details {
+		margin-top: 2em;
+
+		&.grid {
+			display: grid;
+			gap: 1em;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		&-card{
+			border-radius: 0.25em;
+			padding: 1em;
+			list-style: none;
+			background: #fcfcfc;
+			border: 1px solid var(--color-separator);
+
+			h3{
+				margin: 0 0 0.25em;
+			}
+
+			ul {
+				list-style: none;
+				padding-left: 0;
+				margin: 0;
+			}
+		}
+	}
+
+	.property-price {
+		margin-right: 1em;
+		display: inline-block;
+	}
+
+	.property-date {
+		opacity: 0.5;
+		margin-left: 1em;
+	}
+
+	.property-edit {
+		display: flex;
+		align-items: center;
+
+		a {
+			color: black;
+			display: inline-block;
+		}
+
+		a + a {
+			margin-left: 1em;
+		}
+	}
+}
+
+.property-image {
+	flex: 0 0 12.5em;
+	background: white;
+	display: flex;
+	align-items: stretch;
+	justify-content: stretch;
+
+	&-box {
+		position: relative;
+		border: 1px solid var(--color-separator);
+		border-radius: 0.25em;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		width: 100%;
+		overflow: hidden;
+		min-height: 7.5em;
+
+		&-single{
+			min-height: unset;
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			object-fit: cover;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.property-single {
+	display: flex;
+
+	.property-secondary {
+		flex: 0 0 14em;
+		margin-left: 2em;
+		text-align: center;
+
+		.button {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	.property-main {
+		flex: 1 1 auto;
+	}
+
+	.property-body {
+		margin-top: 1em;
+		padding-top: 1em;
+		border-top: 1px solid var(--color-separator);
+
+		p:first-child {
+			margin-top: 0;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.property-image {
+		margin-bottom: 1em;
+	}
+}
+
+.section-heading {
+	margin-top: 2em;
+}
+
+.site-footer {
+	margin-top: 5em;
+	margin-bottom: 2em;
+}
+
+.button {
+	padding: 0.5em 0.75em;
+	border-radius: 0.25em;
+	background: var(--color-primary);
+	color: white;
+	font-weight: 500;
+	text-align: center;
+	display: inline-block;
+
+	&-wide {
+		width: 100%;
+	}
+}
+
+.meta-total-area{
+	margin-left: 1em;
+}
+
+
+@media (max-width: 960px) {
+	.property-single {
+		flex-direction: column;
+
+		.property-secondary {
+			margin-left: 0;
+			margin-top: 1em;
+		}
+	}
+
+	.property-details,
+	.property-meta {
+		span,
+		a {
+			display: block;
+		}
+
+		.property-price,
+		.property-date,
+		.meta-total-area {
+			margin: 0;
+		}
+	}
+
+	.site-wrapper {
+		margin: 0 1em;
+	}
+}
+
+@media (max-width: 680px) {
+	.property-card .property-details.grid{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.property-card {
+		flex-direction: column;
+
+		.property-image {
+			flex: 0 0 auto;
+			margin-top: 1em;
+		}
+
+		.property-details {
+			margin-top: 0.5em;
+		}
+	}
+}
