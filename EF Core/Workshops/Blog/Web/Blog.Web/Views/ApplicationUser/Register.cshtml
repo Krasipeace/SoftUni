@@ -12,9 +12,9 @@
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.UserName">Username</label>
-                <input class="form-control " autocomplete="username" aria-required="true" asp-for="@Model.UserName" />
-                <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+                <label asp-for="@Model.Username">Username</label>
+                <input class="form-control " autocomplete="username" aria-required="true" asp-for="@Model.Username" />
+                <span asp-validation-for="@Model.Username" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
                 <label asp-for="@Model.Email">Email</label>
@@ -27,9 +27,9 @@
                 <span asp-validation-for="@Model.Password" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.ConfirmPassword">Confirm Password</label>
-                <input class="form-control" type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.ConfirmPassword" />
-                <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
+                <label asp-for="@Model.PasswordConfirmation">Confirm Password</label>
+                <input class="form-control" type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.PasswordConfirmation" />
+                <span asp-validation-for="@Model.PasswordConfirmation" class="text-danger"></span>
             </div>
             <div class="text-center">
                 <button id="registerSubmit" type="submit" class="btn btn-primary">Register</button>

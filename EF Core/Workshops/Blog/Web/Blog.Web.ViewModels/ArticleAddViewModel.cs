@@ -1,10 +1,9 @@
-﻿﻿namespace Blog.Web.ViewModels.Article
+﻿﻿namespace Blog.Web.ViewModels
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     using Blog.Common;
-    using Blog.Web.ViewModels.Genres;
 
     public class ArticleAddViewModel
     {
@@ -18,7 +17,7 @@
         [MaxLength(ValidationConstants.CONTENTMAXLENGTH)]
         public string Content { get; set; }
 
-        public int GenreId { get; set; } 
+        public int GenreId { get; set; }
 
         public ICollection<ListGenreArticleAddViewModel> Genres { get; set; }
     }

@@ -1,9 +1,8 @@
-﻿
-namespace Blog.Services.Data
+﻿namespace Blog.Services.Data
 {
     using System.Threading.Tasks;
 
-    using Blog.Web.ViewModels.ApplicationUser;
+    using Blog.Web.ViewModels;
 
     public interface IApplicationUserService
     {

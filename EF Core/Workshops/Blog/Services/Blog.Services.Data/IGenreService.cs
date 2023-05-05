@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
-    using Blog.Web.ViewModels.Genres;
+    using Blog.Web.ViewModels;
 
     public interface IGenreService
     {

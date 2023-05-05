@@ -1,14 +1,13 @@
-﻿﻿namespace Blog.Services.Data
+﻿namespace Blog.Services.Data
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
-    using Microsoft.EntityFrameworkCore;
-    using Mapping;
-
     using Blog.Data.Common.Repositories;
     using Blog.Data.Models;
-    using Blog.Web.ViewModels.Genres;
+    using Blog.Services.Mapping;
+    using Blog.Web.ViewModels;
+    using Microsoft.EntityFrameworkCore;
 
     public class GenreService : IGenreService
     {

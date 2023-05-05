@@ -1,8 +1,10 @@
 ﻿namespace Blog.Web.Controllers
 {
+    using System.Collections.Generic;
     using System.Threading.Tasks;
 
     using Blog.Services.Data;
+    using Blog.Web.ViewModels;
 
     using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +26,7 @@
                 Genres = genres,
             };
 
-            return View(viewModel);
+            return this.View(viewModel);
         }
     }
 }

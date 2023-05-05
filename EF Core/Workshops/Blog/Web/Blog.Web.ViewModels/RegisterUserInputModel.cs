@@ -1,4 +1,4 @@
-﻿namespace Blog.Web.ViewModels.ApplicationUser
+﻿namespace Blog.Web.ViewModels
 {
     using System.ComponentModel.DataAnnotations;
 

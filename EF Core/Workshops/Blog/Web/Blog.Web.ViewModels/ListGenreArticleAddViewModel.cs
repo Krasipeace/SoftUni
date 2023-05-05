@@ -1,4 +1,4 @@
-﻿﻿namespace Blog.Web.ViewModels.Genres
+﻿namespace Blog.Web.ViewModels
 {
     using Blog.Data.Models;
     using Blog.Services.Mapping;

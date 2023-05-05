@@ -1,4 +1,4 @@
-﻿﻿namespace Blog.Web.ViewModels.ApplicationUser
+﻿﻿namespace Blog.Web.ViewModels
 {
     public class LoginInputModel
     {

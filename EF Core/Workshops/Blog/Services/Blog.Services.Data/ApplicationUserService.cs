@@ -7,9 +7,9 @@
 
     using Blog.Data.Common.Repositories;
     using Blog.Data.Models;
-    using Blog.Web.ViewModels.ApplicationUser;
+    using Blog.Web.ViewModels;
     using Microsoft.EntityFrameworkCore;
-    
+
     public class ApplicationUserService : IApplicationUserService
     {
         private readonly IRepository<ApplicationUser> userRepository;
@@ -62,8 +62,7 @@
                 .AllAsNoTracking()
                 .FirstAsync(u => u.Username == inputModel.Username);
 
-            string hashedPassword = 
-                this.ComputeSha256Hash(inputModel.Password, user.PasswordSalt);
+            string hashedPassword = this.ComputeSha256Hash(inputModel.Password, user.PasswordSalt);
             return hashedPassword == user.Password;
         }
 
@@ -92,8 +91,10 @@
         {
             var bytes = new byte[128 / 8];
 
-            var rng = new RNGCryptoServiceProvider();
-            rng.GetBytes(bytes);
+            using (RNGCryptoServiceProvider rng = new())
+            {
+                rng.GetBytes(bytes);
+            }
 
             return Convert.ToBase64String(bytes);
         }

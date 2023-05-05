@@ -21,14 +21,14 @@
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="@Model.CategoryId" class="form-label">Genre</label>
-                <select asp-for="@Model.CategoryId" class="form-control">
-                    @foreach (var category in Model.Categories)
+                <label asp-for="@Model.GenreId" class="form-label">Genre</label>
+                <select asp-for="@Model.GenreId" class="form-control">
+                    @foreach (var category in Model.Genres)
                     {
                         <option value="@category.Id">@category.Name</option>
                     }
                 </select>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                <span asp-validation-for="GenreId" class="text-danger"></span>
             </div>
             <div class="mb-3 text-center">
                 <input class="btn btn-primary" type="submit" value="Add" />

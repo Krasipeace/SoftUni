@@ -1,14 +1,13 @@
-﻿
-namespace Blog.Controllers
+﻿namespace Blog.Controllers
 {
     using System.Text;
     using System.Threading.Tasks;
 
     using Blog.Services.Data;
-
+    using Blog.Web.ViewModels;
     using Microsoft.AspNetCore.Mvc;
 
-    //[Authorize]
+    // [Authorize]
     public class ApplicationUserController : Controller
     {
         private readonly IApplicationUserService userService;
@@ -18,8 +17,8 @@ namespace Blog.Controllers
             this.userService = userService;
         }
 
+        // [AllowAnonymous]
         [HttpGet]
-        //[AllowAnonymous]
         public IActionResult Register()
         {
             return this.View(new RegisterUserInputModel());
@@ -28,9 +27,9 @@ namespace Blog.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUserInputModel model)
         {
-            if (!ModelState.IsValid)
+            if (!this.ModelState.IsValid)
             {
-                return View(model);
+                return this.View(model);
             }
 
             bool usernameOrEmailTaken = await this.userService.UsernameExistsAsync(model.Username) ||
@@ -53,42 +52,39 @@ namespace Blog.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            return View(new LoginInputModel());
+            return this.View(new LoginInputModel());
         }
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginInputModel model)
         {
-            if (!ModelState.IsValid)
+            if (!this.ModelState.IsValid)
             {
-                return View(model);
+                return this.View(model);
             }
 
             string userId = await this.userService.GetIdByUsernameAsync(model.Username);
             if (userId == null)
             {
-                ModelState.AddModelError("Username", "Invalid username!");
+                this.ModelState.AddModelError("Username", "Invalid username!");
                 return this.View(model);
             }
 
-            bool isLoggedIn = 
-                await this.userService.ValidateLoginInfoAsync(model);
+            bool isLoggedIn = await this.userService.ValidateLoginInfoAsync(model);
             if (!isLoggedIn)
             {
-                ModelState.AddModelError("Password", "Invalid password!");
+                this.ModelState.AddModelError("Password", "Invalid password!");
                 return this.View(model);
             }
 
-            HttpContext.Session.Set("userId", Encoding.UTF8.GetBytes(userId));
+            this.HttpContext.Session.Set("userId", Encoding.UTF8.GetBytes(userId));
 
             return this.RedirectToAction("Index", "Home");
         }
 
-        public async Task<IActionResult> Logout()
+        public Task<IActionResult> Logout()
         {
-            HttpContext.Session.Clear();
-
-            return RedirectToAction("Index", "Home");
+            return Task.FromResult<IActionResult>(this.RedirectToAction("Index", "Home"));
         }
     }
 }
