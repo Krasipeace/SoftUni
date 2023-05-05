@@ -26,6 +26,5 @@
         [MinLength(ValidationConstants.PASSWORDMINLENGTH)]
         [MaxLength(ValidationConstants.PASSWORDMAXLENGTH)]
         public string PasswordConfirmation { get; set; }
-
     }
 }
