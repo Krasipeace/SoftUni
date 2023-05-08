@@ -1,9 +1,10 @@
-﻿using Invoices.Data;
-using Microsoft.EntityFrameworkCore;
-using System.Globalization;
-
-namespace Invoices
+﻿namespace Invoices
 {
+    using System.Globalization;
+    using Microsoft.EntityFrameworkCore;
+
+    using Data;
+
     public class StartUp
     {
         public static void Main()
