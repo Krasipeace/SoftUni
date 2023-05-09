@@ -1,69 +1,88 @@
-﻿using System;
-using System.Linq;
-
-namespace _6._Quick_Sort //not ideal solution
+﻿namespace _6._Quick_Sort
 {
+    using System;
+    using System.Linq;
+
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int[] inputArray = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToArray();
+            int[] array = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
-            QuickSort(inputArray, 0, inputArray.Length - 1);
+            QuickSort<int>(array);
 
-            foreach (var item in inputArray)
+            Console.WriteLine(string.Join(" ", array));
+        }
+
+        public static void QuickSort<T>(T[] array) where T : IComparable<T>
+        {
+            Shuffle(array);
+
+            Sort(array, 0, array.Length - 1);
+        }
+
+        private static void Sort<T>(T[] array, int start, int end) where T : IComparable<T>
+        {
+            if (start >= end)
             {
-                Console.Write($"{item} ");
+                return;
+            }
+
+            int p = Partition(array, start, end);
+
+            Sort(array, start, p - 1);
+
+            Sort(array, p + 1, end);
+        }
+
+        private static void Shuffle<T>(T[] array) where T : IComparable<T>
+        {
+            Random random = new Random();
+            for (int i = 0; i < array.Length; i++)
+            {
+                int rnd = i + random.Next(0, array.Length - i);
+                Swap(array, i, rnd);
             }
         }
 
-        static int Partition(int[] inputArray, int left, int right)
+        private static int Partition<T>(T[] array, int start, int end) where T : IComparable<T>
         {
-            int pivot = inputArray[left];
+            if (start >= end)
+            {
+                return start;
+            }
+
+            int low = start;
+            int high = end + 1;
+
             while (true)
             {
-                while (inputArray[left] < pivot)
+                while (array[++low].CompareTo(array[start]) < 0)
                 {
-                    left++;
-                }
-                while (inputArray[right] > pivot)
-                {
-                    right--;
+                    if (low == end) break;
                 }
 
-                if (left < right)
+                while (array[start].CompareTo(array[--high]) < 0)
                 {
-                    if (inputArray[left] == inputArray[right])
-                    {
-                        return right;
-                    }
+                    if (high == start) break;
+                }
 
-                    int temp = inputArray[left];
-                    inputArray[left] = inputArray[right];
-                    inputArray[right] = temp;
-                }
-                else
+                if (low >= high)
                 {
-                    return right;
+                    break;
                 }
+
+                Swap(array, low, high);
             }
+
+            Swap(array, start, high);
+
+            return high;
         }
-        static void QuickSort(int[] inputArray, int left, int right)
-        {
-            if (left < right)
-            {
-                int pivot = Partition(inputArray, left, right);
 
-                if (pivot > 1)
-                {
-                    QuickSort(inputArray, left, pivot - 1);
-                }
-                if (pivot + 1 < right)
-                {
-                    QuickSort(inputArray, pivot + 1, right);
-                }
-            }
+        static void Swap<T>(T[] array, int low, int high)
+        {
+            (array[high], array[low]) = (array[low], array[high]);
         }
     }
 }
-
