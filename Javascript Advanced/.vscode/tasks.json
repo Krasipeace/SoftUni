@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"path": "Syntax Functions and Statements - Exercises/01-Fruit",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: install - Syntax Functions and Statements - Exercises/01-Fruit",
+			"detail": "install dependencies from package"
+		}
+	]
+}
