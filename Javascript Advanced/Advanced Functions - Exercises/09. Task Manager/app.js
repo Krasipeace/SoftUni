@@ -44,7 +44,7 @@ function solve() {
             div.remove();
         });
 
-        function elements(type, content, className) {
+        let elements = (type, content, className) => {
             let result = document.createElement(type);
             result.textContent = content;
 
@@ -53,6 +53,6 @@ function solve() {
             }
 
             return result;
-        }
+        };
     });
 }
