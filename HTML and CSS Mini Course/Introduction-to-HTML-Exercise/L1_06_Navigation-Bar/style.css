@@ -1,0 +1,29 @@
+nav {
+    background: rgb(197, 196, 196);
+}
+
+ul {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: #090;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+a:hover, a:focus {
+    cursor: pointer;
+    outline: none;
+    background: #009900;
+    color: white;
+}
