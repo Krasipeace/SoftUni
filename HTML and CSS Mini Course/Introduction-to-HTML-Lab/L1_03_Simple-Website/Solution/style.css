@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+p {
+    font-style: italic;
+}
+
+article {
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    background: #234467;
+    padding: 15px;
+}
+
+nav li {
+    padding: 0 20px;
+    display: inline-block;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {   
+    margin-top: auto;
+    background: #234467;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

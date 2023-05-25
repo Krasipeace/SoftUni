@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section {
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+p {
+    font-style: italic;
+}
+
+article {
+    font-size: 20px;
+}

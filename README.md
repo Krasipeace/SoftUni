@@ -36,9 +36,9 @@ SoftUni Courses:
 | :--- | :--- | 
 | [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] |
 | [C# Advanced][3]                         | [WordPress For Developers][7]	 |
-| [C# Object Oriented Programming][4]      |        	  | 
+| [C# Object Oriented Programming][4]      | [HTML & CSS Mini Course][10]	 | 
 | [MS SQL][5]                              |              | 
-| [Entity Framework Core][6]     						  | 
+| [Entity Framework Core][6]     		   |			  | 
 | [ASP.NET Fundamentals][8] 			   |			  |
 | [ASP.NET Advanced][9] 				   |			  |
 
@@ -51,6 +51,6 @@ SoftUni Courses:
 [7]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/README.md
 [8]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Fundamentals/README.md
 [9]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Advanced/README.md
-
+[10]: https://github.com/Krasipeace/SoftUni/blob/main/HTML%20and%20CSS%20Mini%20Course/README.md
 
 [42]: https://softuni.bg/professions/csharp
