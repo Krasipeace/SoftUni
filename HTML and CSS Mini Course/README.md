@@ -12,7 +12,7 @@ The course ends with a practical Workshop and building a complete page with HTML
     </summary>
 
 1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS%20Mini%20Course/Introduction-to-HTML-Lab)
-2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS%20Mini%20Course/Introduction-to-HTML-Exercises)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS%20Mini%20Course/Introduction-to-HTML-Exercise)
 </details>
 
 <details>
@@ -20,8 +20,8 @@ The course ends with a practical Workshop and building a complete page with HTML
         Introduction to CSS
     </summary>
 
-1. [Lab]()
-2. [Exercises]()
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS%20Mini%20Course/Introduction-to-CSS-Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS%20Mini%20Course/Introduction-to-CSS-Exercise)
 </details>
 
 <details>
@@ -29,5 +29,5 @@ The course ends with a practical Workshop and building a complete page with HTML
         Workshop
     </summary>
 
-1. [Landing Page]()
+1. [Landing Page](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS%20Mini%20Course/Workshop)
 </details>
