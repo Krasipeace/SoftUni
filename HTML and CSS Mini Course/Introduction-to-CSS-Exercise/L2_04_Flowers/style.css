@@ -1,0 +1,145 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    color: rgb(214, 116, 114);
+    text-align: center;
+    width: 1400px;
+    height: 10px;
+    padding: 0 25% 0 10%;
+}
+
+li {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #d77273;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.image {
+    width: 1100px;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(Images/header-flower.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    text-shadow: none;
+}
+
+.image h1 {
+    text-align: center;
+    padding: 220px 0 0 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.image hr {
+    color: #d77273;
+    text-align: center;
+    text-decoration: none;
+    width: 60px;
+    height: 2px;
+    background-color: #d77273;
+}
+
+.image p {
+    color: white;
+    width: 400px;
+    height: auto;
+    padding: 0 370px;
+    line-height: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.desc {
+    width: 1100px;
+    height: 300px;
+    margin: 0 394px;
+    background-color: #d77273;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    display: inline-block;
+}
+
+.desc hr {
+    text-align: center;
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    color: white;
+}
+
+.desc button {
+    background: white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #d77273;
+    width: auto;
+    height: auto;
+    padding: 5px 15px 5px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+.desc p {
+    padding: 0 10px 0 0;
+    margin: 0 0 0 5px;
+}
+
+article {
+    display: inline-block;
+}
+
+.images {
+    width: 1100px;
+    height: 300px;
+    margin: 0 394px;
+    text-align: center;
+}
+
+
+.images h1 {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.images hr {
+    width: 60px;
+    height: 2px;
+    text-align: center;
+    color: black;
+    background-color: black;
+}
+
+article {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    width: 1100px;
+    height: 30px;
+    margin: 0 394px;
+    background: #d77273;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}

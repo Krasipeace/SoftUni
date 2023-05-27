@@ -1,0 +1,43 @@
+body {
+    background-color: #FAEBC8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 50px;
+    margin: 100px 200px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px 5px #895248;
+    border-radius: 1%;
+    text-align: center;
+}
+
+section article {
+    vertical-align: top;
+    display: inline-block;  
+    width: 250px;
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+}
+
+article p {
+    text-align: left;
+}
+
+img {
+    display: inline-block;
+    width: 150px;
+}
+
+.authorName {
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    color: #895248;
+    text-shadow: 20px 20px 2px #b4b4b4;
+    font-style: italic;
+}
