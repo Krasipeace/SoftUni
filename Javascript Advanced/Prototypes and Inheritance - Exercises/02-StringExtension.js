@@ -44,7 +44,7 @@
         params.forEach((el, i) => {
             str = str.replace(`{${i}}`, el);
         });
-        
+
         return str;
     }
 })()
