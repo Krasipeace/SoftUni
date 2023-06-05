@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Nums 1 ... " + ViewBag.Count;
+}
+
+<div class="text-left">
+    <h2 class="text-center">@ViewBag.Title</h2>
+    <ul>
+        @for (int i = 1; i <= ViewBag.Count; i++)
+        {
+            <li style="color: @(IsPrime(i) ? "red" : "black")">@i</li>
+        }
+    </ul>
+
+    <form method="post">
+        <input type="number" name="count" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <!-- check if i is Prime -->
+    @functions
+    {
+        public bool IsPrime(int number)
+        {
+            if (number <= 1)
+            {
+                return false;
+            }
+
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if (number % i == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    }
+    
+    <p>Prime Numbers are marked in red</p>
+</div>
