@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Diagnostics;
+
+using Microsoft.AspNetCore.Mvc;
+
 using ShoppingList.Models;
-using System.Diagnostics;
 
 namespace ShoppingList.Controllers
 {
