@@ -25,6 +25,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <div class="dropdown">
+                            <li class="nav-item-dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">Posts</button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Post" asp-action="All">All Posts</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Post" asp-action="Add">Add Post</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
