@@ -16,7 +16,14 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text">@product.Name</p>
+                        <p class="card-text">@product.Name</p>            
+                        <h6 class="card-subtitle mb-2 text-muted">Notes:</h6>
+                        <ul>
+                            @foreach (var note in product.ProductNotes)
+                            {
+                                <li>@note.Content</li>
+                            }
+                        </ul>
                         <div class="d-grid gap-2">
                             <a asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id" class="btn btn-warning">Edit</a>
                             <form class="mt-2" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id">

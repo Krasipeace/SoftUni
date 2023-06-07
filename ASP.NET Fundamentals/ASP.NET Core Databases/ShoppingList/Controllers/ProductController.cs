@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 using ShoppingList.Data;
 using ShoppingList.Data.Models;
@@ -55,6 +56,11 @@ namespace ShoppingList.Controllers
         {
             var product = data.Products.Find(id);
 
+            if (product == null)
+            {
+                return NotFound();
+            }
+
             return View(new ProductFormModel()
             {
                 Name = product.Name
@@ -62,12 +68,28 @@ namespace ShoppingList.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(int id, Product model)
+        public IActionResult Edit(int id, Product model, string noteContent)
         {
-            var productData = data.Products.Find(id);
-            productData.Name = model.Name;
+            var productData = data.Products
+                .Include(p => p.ProductNotes)
+                .FirstOrDefault(p => p.Id == id);
 
-            data.SaveChanges();
+            if (productData != null)
+            {
+                productData.Name = model.Name;
+
+                if (!string.IsNullOrEmpty(noteContent))
+                {
+                    var note = new ProductNote
+                    {
+                        Content = noteContent
+                    };
+
+                    productData.ProductNotes.Add(note);
+                }
+
+                data.SaveChanges();
+            }
 
             return RedirectToAction("All");
         }
@@ -77,8 +99,11 @@ namespace ShoppingList.Controllers
         {
             var product = data.Products.Find(id);
 
-            data.Products.Remove(product);
-            data.SaveChanges();
+            if (product != null)
+            {
+                data.Products.Remove(product);
+                data.SaveChanges();
+            }
 
             return RedirectToAction("All");
         }

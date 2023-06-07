@@ -13,6 +13,11 @@
                 <input asp-for="Name" class="form-control" placeholder="Write Your product here..." />
                 <span asp-validation-for="Name" class="small text-danger"></span>
             </div>
+            <div class="mb-3">
+                <label asp-for="Content"></label>
+                <input asp-for="Content" class="form-control" placeholder="Write Your note here..." />
+                <span asp-validation-for="Content" class="small text-danger"></span>
+            </div>
         </div>
         <input class="btn btn-primary mt-3" type="submit" value="Edit" />
     </form>
