@@ -35,7 +35,7 @@
         public int BoardId { get; set; }
 
         /// <summary>
-        /// Collection of boards that the task is in.
+        /// Board object that the task is in.
         /// </summary>
         public Board? Board { get; set; }
 
@@ -45,7 +45,7 @@
         public string OwnerId { get; set; } = null!;
 
         /// <summary>
-        /// IdentityUser that created the task.
+        /// IdentityUser object of the user that created the task.
         /// </summary>
         public IdentityUser User { get; set; } = null!;
     }
