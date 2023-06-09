@@ -1,9 +1,9 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using TaskBoardApp.Data;
-
 namespace TaskBoardApp
 {
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.EntityFrameworkCore;
+    using TaskBoardApp.Data;
+
     public class Program
     {
         public static void Main(string[] args)
@@ -29,6 +29,11 @@ namespace TaskBoardApp
                 .AddEntityFrameworkStores<TaskBoardAppDbContext>();
 
             builder.Services.AddControllersWithViews();
+
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Identity/Account/Login";
+            });
 
             var app = builder.Build();
 

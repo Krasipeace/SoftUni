@@ -1,7 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace TaskBoardApp.Data.Models
+﻿namespace TaskBoardApp.Data.Models
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class Board
     {
         /// <summary>

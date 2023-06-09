@@ -1,8 +1,6 @@
 ﻿namespace TaskBoardApp.Data
 {
     using Microsoft.AspNetCore.Identity;
-    using Microsoft.EntityFrameworkCore;
-    using System.Configuration;
     using TaskBoardApp.Data.Models;
 
     public class SeedData
