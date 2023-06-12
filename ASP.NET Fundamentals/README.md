@@ -4,4 +4,14 @@ The "ASP.NET Fundamentals" course will lay the foundations of important principl
 
 &nbsp;
 
+<details>
+    <summary>
+        Tasks:
+    </summary>
 
+1. [ASP.NET Core Introduction](https://github.com/Krasipeace/SoftUni/tree/main/ASP.NET%20Fundamentals/ASP.NET%20Core%20Introduction)
+2. [Asynchronous Processing](https://github.com/Krasipeace/SoftUni/tree/main/ASP.NET%20Fundamentals/Asynchronous%20Processing)
+3. [ASP.NET Core Databases](https://github.com/Krasipeace/SoftUni/tree/main/ASP.NET%20Fundamentals/ASP.NET%20Core%20Databases)
+4. [Workshop - ASP.NET Databases](https://github.com/Krasipeace/SoftUni/tree/main/ASP.NET%20Fundamentals/Workshop%20-%20ASP.NET%20and%20Databases)
+5. [Workshop - ASP.NET Identity](https://github.com/Krasipeace/SoftUni/tree/main/ASP.NET%20Fundamentals/Workshop%20-%20ASP.NET%20Core%20Identity)
+</details>
