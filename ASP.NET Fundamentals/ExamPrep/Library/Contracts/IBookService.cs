@@ -17,5 +17,9 @@ namespace Library.Contracts
         Task<AddBookViewModel> GetNewAddBookModelAsync();
 
         Task AddBookAsync(AddBookViewModel model);
+
+        Task<EditBookViewModel?> GetIdForEditBookAsync(int id);
+
+        Task EditBookAsync(EditBookViewModel model, int id);
     }
 }

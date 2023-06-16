@@ -87,5 +87,39 @@ namespace Library.Controllers
 
             return RedirectToAction(nameof(All));
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            EditBookViewModel? book = await bookService.GetIdForEditBookAsync(id);
+
+            if (book == null)
+            {
+                return RedirectToAction(nameof(All));
+            }
+
+            return View(book);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, EditBookViewModel model)
+        {
+            decimal rating;
+            if (!decimal.TryParse(model.Rating, out rating) || rating < 0 || rating > 10)
+            {
+                ModelState.AddModelError(nameof(model.Rating), "Rating must be a number between 0.0 and 10.0");
+
+                return View(model);
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            await bookService.EditBookAsync(model, id);
+
+            return RedirectToAction(nameof(All));
+        }
     }
 }
