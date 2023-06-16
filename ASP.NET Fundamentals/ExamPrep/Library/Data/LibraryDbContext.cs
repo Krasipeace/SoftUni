@@ -69,7 +69,6 @@ namespace Library.Data
                Name = "Fantasy"
            });
 
-
             base.OnModelCreating(builder);
         }
     }

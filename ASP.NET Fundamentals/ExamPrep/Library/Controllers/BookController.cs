@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Library.Contracts;
 using Library.Models;
+using Library.Constants;
 
 namespace Library.Controllers
 {
@@ -71,7 +72,7 @@ namespace Library.Controllers
         public async Task<IActionResult> Add(AddBookViewModel model)
         {
             decimal rating;
-            if (!decimal.TryParse(model.Rating, out rating) || rating < 0 || rating > 10)
+            if (!decimal.TryParse(model.Rating, out rating) || rating < ValidationConstants.RatingMinValue || rating > ValidationConstants.RatingMaxValue)
             {
                 ModelState.AddModelError(nameof(model.Rating), "Rating must be a number between 0.0 and 10.0");
 
@@ -105,7 +106,7 @@ namespace Library.Controllers
         public async Task<IActionResult> Edit(int id, EditBookViewModel model)
         {
             decimal rating;
-            if (!decimal.TryParse(model.Rating, out rating) || rating < 0 || rating > 10)
+            if (!decimal.TryParse(model.Rating, out rating) || rating < ValidationConstants.RatingMinValue || rating > ValidationConstants.RatingMaxValue)
             {
                 ModelState.AddModelError(nameof(model.Rating), "Rating must be a number between 0.0 and 10.0");
 

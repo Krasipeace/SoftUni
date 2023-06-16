@@ -1,5 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
+using Library.Constants;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace Library.Data.Models
@@ -13,17 +16,17 @@ namespace Library.Data.Models
 
         [Comment("Title of the book")]
         [Required]
-        [MaxLength(50)]
+        [MaxLength(DataConstants.BookTitleLength)]
         public string Title { get; set; } = null!;
 
         [Comment("Author of the book")]
         [Required]
-        [MaxLength(50)]
+        [MaxLength(DataConstants.BookAuthorLength)]
         public string Author { get; set; } = null!;
 
         [Comment("Description of the book")]
         [Required]
-        [MaxLength(5000)]
+        [MaxLength(DataConstants.BookDescriptionLength)]
         public string Description { get; set; } = null!;
 
         [Comment("Image URL of the book")]

@@ -1,15 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Library.Constants;
+
+using System.ComponentModel.DataAnnotations;
 
 namespace Library.Models
 {
     public class AddBookViewModel
     {
         [Required]
-        [StringLength(50, MinimumLength = 10)]
+        [StringLength(ValidationConstants.BookTitleMaxLength, MinimumLength = ValidationConstants.BookTitleMinLength)]
         public string Title { get; set; } = null!;
 
         [Required]
-        [StringLength(50, MinimumLength = 5)]
+        [StringLength(ValidationConstants.BookAuthorMaxLength, MinimumLength = ValidationConstants.BookAuthorMinLength)]
         public string Author { get; set; } = null!;
 
         [Required(AllowEmptyStrings = false)]
@@ -19,7 +21,7 @@ namespace Library.Models
         public string Rating { get; set; } = null!;
 
         [Required]
-        [StringLength(5000, MinimumLength = 5)]
+        [StringLength(ValidationConstants.BookDescriptionMaxLength, MinimumLength = ValidationConstants.BookDescriptionMinLength)]
         public string Description { get; set; } = null!;
 
         [Range(0, int.MaxValue)]
