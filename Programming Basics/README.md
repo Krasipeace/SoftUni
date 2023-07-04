@@ -6,6 +6,20 @@ The "Programming Basics" course provides the initial programming skills necessar
 
 &nbsp;
 
+Acquired Skills:
+  * Working with the console (data input and output)
+  * Working with loops (for)
+  * Work with more complex logical checks
+  * Working with logical checks (if-else)
+  * Perform simple calculations
+  * Working with more complex loops (nested for loops and while)
+  * 
+&nbsp;
+
+[Certificate (Click here to preview)](https://softuni.bg/certificates/details/125096/0b8df380)
+
+&nbsp;
+
 ## [SoftUni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/245/CSharp-Basics)
 
 &nbsp;
