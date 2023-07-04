@@ -6,6 +6,18 @@ Databases are the standard way of using dynamic information in modern technology
 
 &nbsp;
 
+Acquired skills:
+ * Using procedures and functions
+ * Fundamental knowledge of databases
+ * Transaction management
+ * Handling and storing data
+ * Creation of basic Back-End architectures
+ * Using the ACID model
+
+&nbsp;
+[Certificate(Click here to preview)](https://softuni.bg/Certificates/Details/157687/b2ffff6f)
+&nbsp;
+
 ## [SoftUni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/62/CSharp-Databases-Basics-Exercises)
 
 &nbsp;
