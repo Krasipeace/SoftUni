@@ -4,12 +4,12 @@ The course "Entity Framework Core" follows in detail the work with the ORM techn
 
 &nbsp;
 Acquired skills:
- * Using procedures and functions
- * Fundamental knowledge of databases
- * Transaction management
- * Handling and storing data
- * Creation of basic Back-End architectures
- * Using the ACID model
+* Building a database architecture
+* Using the Code First approach
+* Using the Database First approach
+* Retrieve data using LINQ queries
+* Working with a database using an ORM
+* Work with different data formats - XML, JSON
 
 &nbsp;
 [Certificate(Click here to preview)](https://softuni.bg/Certificates/Details/164765/b57666a1)
