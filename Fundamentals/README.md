@@ -9,6 +9,19 @@ Additional technologies needed by every software developer are studied, such as 
 
 &nbsp;
 
+Acquired Skills:
+  * Handling standard programming language functionality
+  * Working with linear data structures
+  * Understanding the interrelationship between different IT concepts
+  * Problem analysis and reduction to computer-executable steps
+  * Basic HTML and CSS skills
+
+&nbsp;
+
+[Certificate (Click here for preview)](https://softuni.bg/certificates/details/139273/0cd58ad0)
+
+&nbsp;
+
 ## [SoftUni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/149/CSharp-Fundamentals)
 
 &nbsp;
