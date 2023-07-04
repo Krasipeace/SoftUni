@@ -6,6 +6,19 @@ The "C# Advanced" course builds on the skills of working with the C# language an
 
 &nbsp;
 
+Acquired skills:
+
+* Working with multidimensional and associative data structures
+* Creating linear data structures
+* Application of basic algorithms
+* Application of functional programming
+* Work with data streams, files and directories
+* Working with classes, creating template classes
+
+&nbsp;
+[Certificate(Click here to preview)](https://softuni.bg/Certificates/Details/143918/5e2fae1a)
+&nbsp;
+
 ## [Softuni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/182/CSharp-Advanced-Exercises)
 
 &nbsp;
