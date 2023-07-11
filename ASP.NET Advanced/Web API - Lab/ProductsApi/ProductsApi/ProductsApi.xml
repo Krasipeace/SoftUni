@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductsApi</name>
+    </assembly>
+    <members>
+        <member name="M:ProductsApi.Controllers.ProductsController.GetProducts">
+             <summary>
+             Gets a list of all products
+             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProductsApi.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            Gets a product by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProductsApi.Controllers.ProductsController.PostProduct(ProductsApi.Data.Models.Product)">
+             <summary>
+             Creates a product.
+             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProductsApi.Controllers.ProductsController.PutProduct(System.Int32,ProductsApi.Data.Models.Product)">
+             <summary>
+             Edits a product.
+             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProductsApi.Controllers.ProductsController.PatchProduct(System.Int32,ProductsApi.Data.Models.Product)">
+             <summary>
+             Edits a product partially.
+             </summary>
+             <param name="id"></param>
+             <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProductsApi.Controllers.ProductsController.DeleteProduct(System.Int32)">
+             <summary>
+             Deletes a product.
+             </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ProductsApi.Data.Models.Product">
+            <summary>
+            Product model
+            </summary>
+        </member>
+        <member name="P:ProductsApi.Data.Models.Product.Id">
+            <summary>
+            Id of Product
+            </summary>
+        </member>
+        <member name="P:ProductsApi.Data.Models.Product.Name">
+            <summary>
+            Name of Product
+            </summary>
+        </member>
+        <member name="P:ProductsApi.Data.Models.Product.Description">
+            <summary>
+            Description of Product
+            </summary>
+        </member>
+    </members>
+</doc>
