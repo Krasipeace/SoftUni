@@ -13,7 +13,7 @@ Acquired Skills:
   * Working with logical checks (if-else)
   * Perform simple calculations
   * Working with more complex loops (nested for loops and while)
-  * 
+    
 &nbsp;
 
 [Certificate (Click here to preview)](https://softuni.bg/certificates/details/125096/0b8df380)
