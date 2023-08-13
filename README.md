@@ -1,5 +1,4 @@
 # [SoftUni](https://softuni.bg/) 
-![Lines of Code](https://img.shields.io/tokei/lines/github/krasipeace/SoftUni)
 ![Last commit](https://img.shields.io/github/last-commit/Krasipeace/SoftUni) 
 [![CodeFactor](https://www.codefactor.io/repository/github/krasipeace/softuni/badge)](https://www.codefactor.io/repository/github/krasipeace/softuni)
 ![License](https://img.shields.io/github/license/Krasipeace/SoftUni)
@@ -41,6 +40,8 @@ SoftUni Courses:
 | [Entity Framework Core][6]     		   |			  | 
 | [ASP.NET Fundamentals][8] 			   |			  |
 | [ASP.NET Advanced][9] 				   |			  |
+| [HTML & CSS][11] 				           |			  |
+| [Javascript Front-End][12] 			   |		      |
 
 [1]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/README.md
 [2]: https://github.com/Krasipeace/SoftUni/blob/main/Fundamentals/README.md
@@ -52,5 +53,7 @@ SoftUni Courses:
 [8]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Fundamentals/README.md
 [9]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Advanced/README.md
 [10]: https://github.com/Krasipeace/SoftUni/blob/main/HTML%20and%20CSS%20Mini%20Course/README.md
+[11]: https://github.com/Krasipeace/SoftUni/blob/main/
+[12]: https://github.com/Krasipeace/SoftUni/blob/main/
 
 [42]: https://softuni.bg/professions/csharp
