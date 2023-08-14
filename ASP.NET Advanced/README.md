@@ -7,3 +7,7 @@ The training includes hands-on workshops for building complete, full-featured AS
 &nbsp;
 
 -> [Course Project Repository Here](https://github.com/Krasipeace/PCHCB---ASP.NET-Advanced-Exam-Project)
+&nbsp;
+-> 
+[Certificate(Click here to preview)](https://softuni.bg/certificates/details/182221/2f80009e)
+
