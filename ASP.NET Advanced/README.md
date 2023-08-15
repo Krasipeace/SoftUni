@@ -4,10 +4,20 @@ The ASP.NET Advanced course will teach students how to build modern Web applicat
 
 The training includes hands-on workshops for building complete, full-featured ASP.NET Core web applications. A project to build a web application will be worked on, with the course concluding with a project defense.
 
+Acquired Skills:
+
+* Building web applications with ASP.NET Core
+* Web Application Architectures
+* Working with filters and middleware
+* Creation of server scripts conforming to the REST standard
+* Working with users, roles and sessions
+* Generate HTML content using templates
+* Understanding the principles of Model binding
+* Testing and Deploying
+
+
 &nbsp;
 
 -> [Course Project Repository Here](https://github.com/Krasipeace/PCHCB---ASP.NET-Advanced-Exam-Project)
-&nbsp;
--> 
-[Certificate(Click here to preview)](https://softuni.bg/certificates/details/182221/2f80009e)
 
+-> [Certificate(Click here to preview)](https://softuni.bg/certificates/details/182221/2f80009e)
