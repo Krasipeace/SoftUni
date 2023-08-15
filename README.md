@@ -36,7 +36,7 @@ SoftUni Courses:
 | [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] |
 | [C# Advanced][3]                         | [WordPress For Developers][7]	 |
 | [C# Object Oriented Programming][4]      | [HTML & CSS Mini Course][10]	 | 
-| [MS SQL][5]                              | [Data Structures - Fundaments][13] | 
+| [MS SQL][5]                              | [Data Structures - Fundamentals][13] | 
 | [Entity Framework Core][6]     		   | [Data Structures - Advanced][14] | 
 | [ASP.NET Fundamentals][8] 			   |			  |
 | [ASP.NET Advanced][9] 				   |			  |
