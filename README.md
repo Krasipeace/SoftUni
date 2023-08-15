@@ -36,8 +36,8 @@ SoftUni Courses:
 | [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] |
 | [C# Advanced][3]                         | [WordPress For Developers][7]	 |
 | [C# Object Oriented Programming][4]      | [HTML & CSS Mini Course][10]	 | 
-| [MS SQL][5]                              |              | 
-| [Entity Framework Core][6]     		   |			  | 
+| [MS SQL][5]                              | [Data Structures - Fundaments][13] | 
+| [Entity Framework Core][6]     		   | [Data Structures - Advanced][14] | 
 | [ASP.NET Fundamentals][8] 			   |			  |
 | [ASP.NET Advanced][9] 				   |			  |
 | [HTML & CSS][11] 				           |			  |
@@ -55,5 +55,7 @@ SoftUni Courses:
 [10]: https://github.com/Krasipeace/SoftUni/blob/main/HTML%20and%20CSS%20Mini%20Course/README.md
 [11]: https://github.com/Krasipeace/SoftUni/blob/main/
 [12]: https://github.com/Krasipeace/SoftUni/blob/main/
+[13]: https://github.com/Krasipeace/SoftUni/blob/main/
+[14]: https://github.com/Krasipeace/SoftUni/blob/main/
 
 [42]: https://softuni.bg/professions/csharp
