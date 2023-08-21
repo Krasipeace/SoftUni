@@ -18,6 +18,6 @@ Acquired Skills:
 
 &nbsp;
 
--> [Course Project Repository Here](https://github.com/Krasipeace/PCHCB---ASP.NET-Advanced-Exam-Project)
+-> [Course Project Repository(Click Here...)](https://github.com/Krasipeace/PCHCB---ASP.NET-Advanced-Exam-Project)
 
--> [Certificate(Click here to preview)](https://softuni.bg/certificates/details/182221/2f80009e)
+-> [Certificate(Click here...)](https://softuni.bg/certificates/details/182221/2f80009e)
