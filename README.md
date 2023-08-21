@@ -55,7 +55,7 @@ SoftUni Courses:
 [10]: https://github.com/Krasipeace/SoftUni/blob/main/HTML%20and%20CSS%20Mini%20Course/README.md
 [11]: https://github.com/Krasipeace/SoftUni/blob/main/
 [12]: https://github.com/Krasipeace/SoftUni/blob/main/
-[13]: https://github.com/Krasipeace/SoftUni/blob/main/
-[14]: https://github.com/Krasipeace/SoftUni/blob/main/
+[13]: https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/README.md
+[14]: https://github.com/Krasipeace/SoftUni/blob/main/Data%20Structures%20-%20Advanced/README.md
 
 [42]: https://softuni.bg/professions/csharp
