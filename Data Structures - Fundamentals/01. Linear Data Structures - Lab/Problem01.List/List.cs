@@ -59,7 +59,6 @@
             return false;
         }
 
-
         public int IndexOf(T item)
         {
             for (int i = 0; i < this.Count; i++)
