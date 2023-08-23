@@ -1,10 +1,20 @@
 # [C# Advanced](https://softuni.bg/trainings/3842/csharp-advanced-september-2022)
 
-&nbsp;
 
 The "C# Advanced" course builds on the skills of working with the C# language and the .NET platform by addressing more complex concepts typical of the language. During the course, the audience will learn to create and work with linear data structures. Knowledge of working with arrays will be upgraded by learning how to work with multidimensional arrays or matrices. There will be an opportunity to get acquainted with the Generic concept - creating template classes and methods. Algorithmic problems will be solved (problem solving skills), streams, files and directories will be worked with. Attention is paid to the functional programming paradigm, as well as to the main tool based on it - LINQ for processing data streams. The development environment that will be used by the training team is Microsoft Visual Studio 2022, but each trainee is free to use tools of preference.
 
-&nbsp;
+## Topics
+
+- Stacks and Queues
+- Multidimensional Arrays
+- Sets and Dictionaries Advanced
+- Streams, Files and Directories
+- Functional Programming
+- Defining Classes
+- Implementing Linked List
+- Generics
+- Iterators and Comparators
+- Algorithms Introduction
 
 Acquired skills:
 
@@ -304,3 +314,6 @@ Acquired skills:
 [128]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/3.ImplementingCustomQueueClass
 [129]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20Advanced/9_3_ImplementingStackAndQueue/1.ImplementingCustomListClass
 
+---
+
+[Back top top](#)

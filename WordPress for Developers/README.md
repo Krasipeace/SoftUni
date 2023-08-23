@@ -4,7 +4,15 @@
 
 The "WordPress for Developers" course will teach you how to create sites, WordPress themes and plugins yourself. They can be used both for personal use and for your clients. During the course sessions, you will learn the main features and Hooks & Actions in WordPress, what they are for and how they are used. The training will go through developing WP Plugins and Themes. You will learn what WP-CLI is and the basic commands needed to work. You will learn how to use Gulp to compile SASS code. You will also learn how to use Debugging Tooling.
 
-&nbsp;
+## Topics
+
+- Introduction to PHP, WordPress and Web Servers
+- WordPress Hooks, Actions and Tools
+- Theme Development Intro
+- Theme Development Tools and improvement
+- Plugin Development Intro
+- Plugin Extension and Enhancement
+
 
 #### Exercises:
 | | Exercise | 
@@ -26,3 +34,7 @@ The "WordPress for Developers" course will teach you how to create sites, WordPr
 [6]: https://github.com/Krasipeace/SoftUni/tree/main/WordPress%20for%20Developers/6.%20Plugin%20Development%20Improvement
 [7]: https://github.com/Krasipeace/SoftUni/tree/main/WordPress%20for%20Developers/7.%20Exam%20preparation
 [8]: https://github.com/Krasipeace/Wordpress_For_Developers_Exam_Project
+
+---
+
+[Back to top](#)

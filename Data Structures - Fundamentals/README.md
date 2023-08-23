@@ -40,8 +40,8 @@ The Data Structures course introduces participants to the most used data structu
         IV. Exam Preparation - Exercises
     </summary>
 
-1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/)
-2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/)
+1. [](https://github.com/Krasipeace/SoftUni/tree/main/)
+2. [](https://github.com/Krasipeace/SoftUni/tree/main/)
 </details>
 
 ---

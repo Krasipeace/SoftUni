@@ -6,6 +6,17 @@ Databases are the standard way of using dynamic information in modern technology
 
 &nbsp;
 
+## Topics:
+
+- CRUD operations
+- Table Relations
+- Built-in Functions
+- Subqueries and Joins
+- Indices and Data Aggregation
+- Functions and Stored Procedures
+- Triggers and Transactions
+
+
 Acquired skills:
  * Using procedures and functions
  * Fundamental knowledge of databases
@@ -146,3 +157,7 @@ Acquired skills:
 
 [30]: https://github.com/Krasipeace/SoftUni/blob/main/MS%20SQL/8.%20Triggers%20and%20Transactions/1.%20Queries%20for%20Bank%20DB.sql
 [31]: https://github.com/Krasipeace/SoftUni/blob/main/MS%20SQL/8.%20Triggers%20and%20Transactions/3.%20Queries%20for%20SoftUni%20DB.sql
+
+---
+
+[Back top top](#)

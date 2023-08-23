@@ -1,10 +1,21 @@
 # [C# Object Oriented Programming](https://softuni.bg/trainings/3843/csharp-oop-october-2022)
 
-&nbsp;
-
 The C# OOP course will teach students the principles of object-oriented programming (OOP), working with classes and objects, using object-oriented modeling, and building class hierarchies. Basic principles of OOP such as abstraction (interfaces, abstract classes), encapsulation, inheritance and polymorphism will be studied. It will go into the most commonly used design patterns (creational, structural and behavioral design patterns). Students will be introduced to SOLID principles for object-oriented software design. Various debugging techniques will be covered. You will learn how to create and use decorators. Attention will be paid to component testing (writing unit tests) and the concept of Test Driven Development (TDD).
 
-&nbsp;
+## Topics
+
+- Inheritance
+- Encapsulation
+- Interfaces and Abstraction
+- Polymorphism
+- Exceptions and Error Handling
+- Debugging Techniques
+- SOLID
+- Reflection and Attributes
+- Unit Testing
+- Mocking and Test Driven Development
+- Design Patterns
+- Workshop
 
 ## [Softuni Judge Solved Tasks](https://judge.softuni.org/Contests#!/List/ByCategory/184/CSharp-OOP-Exercises)
 
@@ -163,3 +174,7 @@ The C# OOP course will teach students the principles of object-oriented programm
 [57]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/7_1_ExceptionsAndErrorHandling/5.PlayCatch/Program.cs
 [58]: https://github.com/Krasipeace/SoftUni/blob/main/Csharp%20OOP/7_1_ExceptionsAndErrorHandling/6.MoneyTransactions/Program.cs
 [59]: https://github.com/Krasipeace/SoftUni/tree/main/Csharp%20OOP/8_1_Workshop/SimpleSnake
+
+---
+
+[Back to Top](#)

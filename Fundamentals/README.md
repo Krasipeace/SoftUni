@@ -7,7 +7,26 @@ With "Programming Fundamentals", students begin to study SoftUni's in-house prog
 
 Additional technologies needed by every software developer are studied, such as HTML and CSS, HTTP, bitwise operations, and more. The basics of web development are covered, as well as one of the most common technologies and tools, with which the course successfully builds an idea among students about the upcoming professional modules and the knowledge they will gain from them to become successful software developers.
 
-&nbsp;
+
+## Topics
+
+- Basic Syntax, Conditional Statements and Loops
+- Git and GitHub
+- Data Types and Variables
+- HTTP Basics
+- Arrays and Lists
+- Bitwise Operations
+- Associative Arrays
+- Text Processing
+- Software Development Concepts
+- Regular Expressions
+- QA Introduction
+- Objects and Classes
+- HTML & CSS Basics
+- Problem Solving
+- Database Basics
+- Workshop - Basic Web Project
+
 
 Acquired Skills:
   * Handling standard programming language functionality
@@ -362,3 +381,7 @@ Acquired Skills:
 [192]: https://github.com/Krasipeace/SoftUni/blob/main/Fundamentals/9_3_F_Regex%20More%20Exercises/1.%20Winning%20Ticket/Program.cs
 [193]: https://github.com/Krasipeace/SoftUni/blob/main/Fundamentals/9_3_F_Regex%20More%20Exercises/2.%20Rage%20Quit/Program.cs
 [194]: https://github.com/Krasipeace/SoftUni/blob/main/Fundamentals/9_3_F_Regex%20More%20Exercises/4.%20Santa%20Secret%20Helper/Program.cs
+
+---
+
+[Back to top](#)

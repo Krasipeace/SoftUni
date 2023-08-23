@@ -4,6 +4,16 @@ The "ASP.NET Fundamentals" course will lay the foundations of important principl
 
 &nbsp;
 
+## Topics
+
+- Internet Explained
+- HTTP Protocol
+- State Management & Asynchronous Processing
+- ASP.NET Core Introduction
+- ASP.NET and Databases
+- ASP.NET Core Identity
+- Workshops - Task Board App, Forum App
+
 <details>
     <summary>
         Tasks:
@@ -15,3 +25,7 @@ The "ASP.NET Fundamentals" course will lay the foundations of important principl
 4. [Workshop - ASP.NET Databases](https://github.com/Krasipeace/SoftUni/tree/main/ASP.NET%20Fundamentals/Workshop%20-%20ASP.NET%20and%20Databases)
 5. [Workshop - ASP.NET Identity](https://github.com/Krasipeace/SoftUni/tree/main/ASP.NET%20Fundamentals/Workshop%20-%20ASP.NET%20Core%20Identity)
 </details>
+
+---
+
+[Back to top](#)

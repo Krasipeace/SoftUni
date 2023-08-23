@@ -35,13 +35,13 @@ SoftUni Courses:
 | :--- | :--- | 
 | [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] |
 | [C# Advanced][3]                         | [WordPress For Developers][7]	 |
-| [C# Object Oriented Programming][4]      | [HTML & CSS Mini Course][10]	 | 
-| [MS SQL][5]                              | [Data Structures - Fundamentals][13] | 
-| [Entity Framework Core][6]     		   | [Data Structures - Advanced][14] | 
+| [C# Object Oriented Programming][4]      | [Data Structures - Fundamentals][12] | 
+| [MS SQL][5]                              | [Data Structures - Advanced][13] | 
+| [Entity Framework Core][6]     		   |              | 
 | [ASP.NET Fundamentals][8] 			   |			  |
 | [ASP.NET Advanced][9] 				   |			  |
-| [HTML & CSS][11] 				           |			  |
-| [Javascript Front-End][12] 			   |		      |
+| [HTML & CSS][10] 				           |			  |
+| [Javascript Front-End][11] 			   |		      |
 
 [1]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/README.md
 [2]: https://github.com/Krasipeace/SoftUni/blob/main/Fundamentals/README.md
@@ -52,10 +52,14 @@ SoftUni Courses:
 [7]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/README.md
 [8]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Fundamentals/README.md
 [9]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Advanced/README.md
-[10]: https://github.com/Krasipeace/SoftUni/blob/main/HTML%20and%20CSS%20Mini%20Course/README.md
+[10]: https://github.com/Krasipeace/SoftUni/blob/main/
 [11]: https://github.com/Krasipeace/SoftUni/blob/main/
-[12]: https://github.com/Krasipeace/SoftUni/blob/main/
-[13]: https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/README.md
-[14]: https://github.com/Krasipeace/SoftUni/blob/main/Data%20Structures%20-%20Advanced/README.md
+[12]: https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/README.md
+[13]: https://github.com/Krasipeace/SoftUni/blob/main/Data%20Structures%20-%20Advanced/README.md
 
 [42]: https://softuni.bg/professions/csharp
+
+
+---
+
+[Back to top](#)

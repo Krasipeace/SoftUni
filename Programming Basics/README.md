@@ -6,6 +6,14 @@ The "Programming Basics" course provides the initial programming skills necessar
 
 &nbsp;
 
+## Topics:
+
+- First Steps in Coding
+- Conditional Statements
+- Loops - For
+- Loops - While
+- Nested Loops
+
 Acquired Skills:
   * Working with the console (data input and output)
   * Working with loops (for)
@@ -148,3 +156,7 @@ Acquired Skills:
 [88]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/TrainTheTrainers/Program.cs
 [89]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/SpecialNumbers/Program.cs
 [90]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/NestedLoops-Exercise/CinemaTickets/Program.cs
+
+---
+
+[Back top top](#)
