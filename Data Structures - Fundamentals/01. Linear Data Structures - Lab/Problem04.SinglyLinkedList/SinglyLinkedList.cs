@@ -4,8 +4,6 @@
     using System.Collections;
     using System.Collections.Generic;
 
-    using static System.Net.Mime.MediaTypeNames;
-
     public class SinglyLinkedList<T> : IAbstractLinkedList<T>
     {
         private Node<T> _first;
