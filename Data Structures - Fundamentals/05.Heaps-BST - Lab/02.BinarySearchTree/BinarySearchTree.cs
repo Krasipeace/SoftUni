@@ -1,7 +1,6 @@
 ﻿namespace _02.BinarySearchTree
 {
     using System;
-    using System.Xml;
 
     public class BinarySearchTree<T> : IBinarySearchTree<T>
         where T : IComparable<T>

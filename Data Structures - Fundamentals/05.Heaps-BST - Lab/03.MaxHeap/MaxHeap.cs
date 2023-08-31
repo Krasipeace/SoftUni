@@ -91,12 +91,12 @@
 
         private int GetLeftChildIndex(int index)
         {
-            return index * 2 + 1;
+            return ((index * 2) + 1);
         }
 
         private int GetRightChildIndex(int index)
         {
-            return index * 2 + 2;
+            return ((index * 2) + 2);
         }
     }
 }
