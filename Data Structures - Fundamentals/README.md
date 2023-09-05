@@ -17,7 +17,7 @@ The Data Structures course introduces participants to the most used data structu
     </summary>
 
 1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/01.%20Linear%20Data%20Structures%20-%20Lab)
-2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/02.%20Linear%20Data%20Structures%20-%20Exercise)
 </details>
 <details>
     <summary>
