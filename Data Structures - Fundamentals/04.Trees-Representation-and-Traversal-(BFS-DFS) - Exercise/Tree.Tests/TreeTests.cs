@@ -3,7 +3,7 @@ namespace Tree.Tests
     using NUnit.Framework;
     using System;
     using System.Collections.Generic;
-    using Tree;
+    using global::Tree;
 
     [TestFixture]
     public class TreeTests

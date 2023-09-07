@@ -13,13 +13,5 @@
         void AddChild(Tree<T> child);
 
         string GetAsString();
-
-        IEnumerable<T> GetLeafKeys();
-
-        IEnumerable<T> GetMiddleKeys();
-
-        T GetDeepestKey();
-
-        IEnumerable<T> GetLongestPath();
     }
 }

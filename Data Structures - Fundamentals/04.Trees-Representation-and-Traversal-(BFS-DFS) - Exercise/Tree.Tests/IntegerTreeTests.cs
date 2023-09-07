@@ -4,7 +4,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Tree;
+    using global::Tree;
 
     [TestFixture]
     public class IntegerTreeTests
