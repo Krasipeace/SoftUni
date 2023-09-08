@@ -32,8 +32,8 @@ The Data Structures course introduces participants to the most used data structu
         III. Heaps and Binary Trees 
     </summary>
 
-1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/)
-2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/05.Heaps-BST%20-%20Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/06.Heaps-BST%20-%20Exercise)
 </details>
 <details>
     <summary>
