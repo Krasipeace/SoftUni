@@ -2,32 +2,29 @@
 {
     using System;
     using System.Linq;
-    using _03.MinHeap;
+
+    using Wintellect.PowerCollections;
 
     public class CookiesProblem
     {
         public int Solve(int minSweetness, int[] cookies)
         {
-            var cookiesHeap = new MinHeap<int>();
+            var cookiesHeap = new OrderedBag<int>();
+            cookiesHeap.AddMany(cookies);
             int countOperations = 0;
 
-            foreach (var cookie in cookies)
+            while (cookiesHeap.GetFirst() < minSweetness && cookiesHeap.Count > 1)
             {
-                cookiesHeap.Add(cookie);
-            }
-
-            while (cookiesHeap.Size > 0 && cookiesHeap.Peek() < minSweetness)
-            {
-                int firstCookie = cookiesHeap.ExtractMin();
-                int secondCookie = cookiesHeap.ExtractMin();
+                int firstCookie = cookiesHeap.RemoveFirst();
+                int secondCookie = cookiesHeap.RemoveFirst();
                 int combinedCookie = firstCookie + (2 * secondCookie);
 
                 cookiesHeap.Add(combinedCookie);
                 countOperations++;
             }
 
-            return cookiesHeap.Peek() < minSweetness 
-                ? -1 
+            return cookiesHeap.GetFirst() < minSweetness
+                ? -1
                 : countOperations;
         }
     }
