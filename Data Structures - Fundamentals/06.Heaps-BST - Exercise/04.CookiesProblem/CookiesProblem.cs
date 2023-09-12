@@ -1,8 +1,5 @@
 ﻿namespace _04.CookiesProblem
 {
-    using System;
-    using System.Linq;
-
     using Wintellect.PowerCollections;
 
     public class CookiesProblem
