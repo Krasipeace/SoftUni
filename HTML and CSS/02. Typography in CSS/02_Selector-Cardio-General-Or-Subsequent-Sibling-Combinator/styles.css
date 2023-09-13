@@ -1,0 +1,7 @@
+code ~ span {
+    color: red;
+}
+
+p ~ span {
+    color: red;
+}

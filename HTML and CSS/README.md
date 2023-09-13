@@ -14,6 +14,11 @@ The purpose of the course "HTML & CSS" is to provide basic knowledge of web tech
 
 ## Exercises
 
+- Introduction to Html and CSS
+- Typography in CSS
+- Box Model and Position
+- CSS Layout Flexbox
+- Working with Forms
 
 ---
 
