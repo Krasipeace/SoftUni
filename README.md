@@ -52,8 +52,8 @@ SoftUni Courses:
 [7]: https://github.com/Krasipeace/SoftUni/blob/main/WordPress%20for%20Developers/README.md
 [8]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Fundamentals/README.md
 [9]: https://github.com/Krasipeace/SoftUni/blob/main/ASP.NET%20Advanced/README.md
-[10]: https://github.com/Krasipeace/SoftUni/blob/main/
-[11]: https://github.com/Krasipeace/SoftUni/blob/main/
+[10]: https://github.com/Krasipeace/SoftUni/blob/main/HTML%20and%20CSS/README.md
+[11]: https://github.com/Krasipeace/SoftUni/blob/main/Javascript%20Front-End/README.md
 [12]: https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/README.md
 [13]: https://github.com/Krasipeace/SoftUni/blob/main/Data%20Structures%20-%20Advanced/README.md
 
