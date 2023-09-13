@@ -14,11 +14,11 @@ The purpose of the course "HTML & CSS" is to provide basic knowledge of web tech
 
 ## Exercises
 
-- Introduction to Html and CSS
-- Typography in CSS
-- Box Model and Position
-- CSS Layout Flexbox
-- Working with Forms
+- [Introduction to Html and CSS](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/01.%20Introduction%20to%20HTML%20and%20CSS)
+- [Typography in CSS](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/02.%20Typography%20in%20CSS)
+- [Box Model and Position](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/03.%20Box%20Model%20and%20Position)
+- [CSS Layout Flexbox](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/04.%20CSS%20Layout%20Flexbox)
+- [Working with Forms](https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/05.%20Working%20with%20Forms)
 
 ---
 
