@@ -1,0 +1,18 @@
+/* comment/uncomment depends on task */
+div {
+    background-color: green;
+    color: red;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.first {
+    text-decoration: underline;
+}
+
+#second {
+    font-style: italic;
+}
