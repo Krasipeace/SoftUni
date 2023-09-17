@@ -1,0 +1,96 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+body {
+    background-color: rgb(238, 238, 238);
+    padding: 100px;
+}
+
+aside {
+    width: 27%;
+    float: right;
+}
+
+main {
+    width: 70%;
+}
+
+a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+
+blockquote {
+    font-family: 'Georgia', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+header p {
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-flex;
+    position: relative;
+    margin: 0;
+}
+
+header ul {
+    display: inline-flex;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+header li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: purple;
+}
+
+blockquote {
+    border-left: 3px solid rgb(221, 221, 221);
+    font-style: italic;
+    padding-left: 20px;
+    width: 40%;
+    float: right;
+}
+
+.secondImage {
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 1.0);
+    margin: 10px;
+    float: right;
+}
+
+.firstImage {
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 1.0);
+    margin: 10px;
+    float: left;
+}
+
+#sign {
+    text-align: right;
+}

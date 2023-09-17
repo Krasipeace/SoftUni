@@ -1,0 +1,22 @@
+h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+span {
+    padding-left: 3px;
+    color: gray;
+    font-size: 14px;
+}
+
+div {
+    position: relative;
+    bottom: 330px;
+    left: 180px;
+}
+
+.frame {
+    position: absolute;
+    top: 250px;
+    left: 180px;
+}

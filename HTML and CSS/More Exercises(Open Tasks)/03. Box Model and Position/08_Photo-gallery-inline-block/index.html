@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Photo Gallery - Inline Block</title>
+</head>
+<body>
+    <ul class="gallery">
+        <li>
+            <img src="images/picture1.jpg" alt="picture of a sunflower">
+        </li>
+        <li>
+            <img src="images/picture2.jpg" alt="picture of a walking woman">
+        </li>
+        <li>
+            <img src="images/picture3.jpg" alt="picture of a skateboard">
+        </li>
+        <li>
+            <img src="images/picture4.jpg" alt="picture of a palm tree">
+        </li>
+        <li>
+            <img src="images/picture5.jpg" alt="picture of a surfer">
+        </li>
+        <li>
+            <img src="images/picture6.jpg" alt="picture of a coffee cup">
+        </li>
+        <script>
+            const gallery = document.querySelector('.gallery');
+            const galleryCopy = gallery.cloneNode(true);
+            gallery.parentNode.appendChild(galleryCopy);
+        </script>
+    </ul>
+</body>
+</html>
