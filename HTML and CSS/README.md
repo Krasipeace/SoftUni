@@ -32,3 +32,5 @@ The purpose of the course "HTML & CSS" is to provide basic knowledge of web tech
 [4]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/04.%20CSS%20Layout%20Flexbox
 [5]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/05.%20Working%20with%20Forms
 [6]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/More%20Exercises(Open%20Tasks)/01.%20Intro%20to%20HTML
+[7]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/02.%20Typography%20in%20CSS
+[8]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/03.%20Box%20Model%20and%20Position
