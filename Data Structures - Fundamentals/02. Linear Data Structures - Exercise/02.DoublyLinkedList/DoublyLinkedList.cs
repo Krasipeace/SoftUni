@@ -4,8 +4,22 @@
     using System.Collections;
     using System.Collections.Generic;
 
-    public partial class DoublyLinkedList<T> : IAbstractLinkedList<T>
+    public class DoublyLinkedList<T> : IAbstractLinkedList<T>
     {
+        private class Node
+        {
+            public Node Next { get; set; }
+
+            public Node Previous { get; set; }
+
+            public T Value { get; set; }
+
+            public Node(T value)
+            {
+                this.Value = value;
+            }
+        }
+
         private Node head;
         private Node tail;
 
