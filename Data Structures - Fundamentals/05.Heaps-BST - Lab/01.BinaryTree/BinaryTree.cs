@@ -16,10 +16,11 @@
         public T Value { get; private set; }
 
         public IAbstractBinaryTree<T> LeftChild { get; private set; }
-        
-        public IAbstractBinaryTree<T> RightChild {
+
+        public IAbstractBinaryTree<T> RightChild
+        {
             get; private set;
-        } 
+        }
 
         public string AsIndentedPreOrder(int indent)
         {

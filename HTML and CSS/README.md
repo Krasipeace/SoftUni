@@ -14,13 +14,15 @@ The purpose of the course "HTML & CSS" is to provide basic knowledge of web tech
 
 ## Exercises
 
-| | Exercises | Open Tasks |
+| | Homework | Open Tasks |
 | ---: | :--- | :--- |
 | 1 | [Introduction to HTML and CSS][1] | [Intro to HTML and CSS][6] |
 | 2 | [Typography in CSS][2] | [Typography in CSS][7] |
 | 3 | [Box Model and Position][3] | [Box Model and Position][8] |
 | 4 | [CSS Layout Flexbox][4] | [CSS Layout Flexbox][9] |
-| 5 | [Working with Forms][5] | [Working with Forms][10] |
+| 5 | [Working with Forms][5] | [Responsive Web Design - Lab][10] |
+| 6 | | [Responsive Web Design - Exercise][11] |
+| 7 | | [Design to Code - Workshop][12] |
 
 ---
 
