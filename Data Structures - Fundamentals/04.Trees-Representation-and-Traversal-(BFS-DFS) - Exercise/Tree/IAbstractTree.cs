@@ -11,11 +11,11 @@
 
         void AddChild(Tree<T> child);
 
-        string AsString();
+        string GetAsString();
 
         IEnumerable<T> GetLeafKeys();
 
-        IEnumerable<T> GetInternalKeys();
+        IEnumerable<T> GetMiddleKeys();
 
         T GetDeepestKey();
 

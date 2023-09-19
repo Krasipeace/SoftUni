@@ -16,7 +16,7 @@ namespace Tree.Tests
                 "7 19", "7 21", "7 14", "19 1", "19 12", "19 31", "14 23", "14 6"
                };
 
-            var tree = new IntegerTreeFactory().CreateTreeFromStrings(input);
+            var tree = new TreeFactory().CreateTreeFromStrings(input);
 
             string expectedOutput =
                 $"7{Environment.NewLine}" +
@@ -29,7 +29,7 @@ namespace Tree.Tests
                 $"    23{Environment.NewLine}" +
                 $"    6";
 
-            Assert.AreEqual(expectedOutput, tree.AsString());
+            Assert.AreEqual(expectedOutput, tree.GetAsString());
         }
 
         [Test]
@@ -48,7 +48,7 @@ namespace Tree.Tests
         public void GetInternalKeys_ShouldWorkCorrectly(TreeTestData data)
         {
             int[] expected = data.expectedInternalNodes;
-            IEnumerable<int> middleKeys = data.tree.GetInternalKeys();
+            IEnumerable<int> middleKeys = data.tree.GetMiddleKeys();
 
             CollectionAssert.AreEquivalent(expected, middleKeys);
         }
@@ -121,7 +121,7 @@ namespace Tree.Tests
 
         public TreeTestData(string testName, string[] pairs, int[] leafNodes, int[] internalNodes, int deepestNode, int[] longestPath)
         {
-            this.tree = new IntegerTreeFactory().CreateTreeFromStrings(pairs);
+            this.tree = new TreeFactory().CreateTreeFromStrings(pairs);
             this.expectedLeafNodes = leafNodes;
             this.expectedInternalNodes = internalNodes;
             this.expectedDeepestNode = deepestNode;
