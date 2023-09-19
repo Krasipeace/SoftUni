@@ -94,9 +94,10 @@
 
         public IEnumerable<IAbstractBinaryTree<T>> PreOrder()
         {
-            var result = new List<IAbstractBinaryTree<T>>();
-
-            result.Add(this);
+            var result = new List<IAbstractBinaryTree<T>>
+            {
+                this
+            };
 
             if (this.LeftChild != null)
             {

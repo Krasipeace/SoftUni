@@ -1,9 +1,5 @@
 ﻿namespace Tree
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class Program
     {
         public static void Main(string[] args)
@@ -23,6 +19,7 @@
             newTree.AddChild(7, new Tree<int>(8));
             newTree.OrderBfs();
             newTree.OrderDfs();
+            //newTree.OrderDfsWithStack();
             newTree.Swap(19, 14);
             newTree.RemoveNode(21);
         }

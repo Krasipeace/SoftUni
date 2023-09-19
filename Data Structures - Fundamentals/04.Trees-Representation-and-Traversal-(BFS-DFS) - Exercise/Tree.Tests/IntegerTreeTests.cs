@@ -4,7 +4,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using global::Tree;
+    using Tree;
 
     [TestFixture]
     public class IntegerTreeTests
@@ -26,7 +26,7 @@
                 "14 6"
             };
 
-            this.tree = new TreeFactory().CreateTreeFromStrings(input);
+            this.tree = new IntegerTreeFactory().CreateTreeFromStrings(input);
         }
 
         [Test]
@@ -38,7 +38,7 @@
                 { 7, 14, 6 }
             };
 
-            var paths = this.tree.PathsWithGivenSum(27).Select(x => x.ToList()).ToList();
+            var paths = this.tree.GetPathsWithGivenSum(27).Select(x => x.ToList()).ToList();
 
             for (int i = 0; i < expected.GetLength(0); i++)
             {
@@ -56,7 +56,7 @@
 
             Assert.AreEqual(1, subtrees.Count);
 
-            string treeAsString = subtrees[0].GetAsString();
+            string treeAsString = subtrees[0].AsString();
 
             string expectedOutput =
                 $"14{Environment.NewLine}" +

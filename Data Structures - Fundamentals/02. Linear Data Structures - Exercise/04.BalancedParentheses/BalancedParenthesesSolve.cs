@@ -1,6 +1,5 @@
 ﻿namespace Problem04.BalancedParentheses
 {
-    using System;
     using System.Collections.Generic;
 
     public class BalancedParenthesesSolve : ISolvable

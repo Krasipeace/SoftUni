@@ -62,6 +62,27 @@
             return list;
         }
 
+        public IEnumerable<T> OrderDfsWithStack()
+        {
+            var result = new Stack<T>();
+            var stack = new Stack<Tree<T>>();
+            stack.Push(this);
+
+            while (stack.Count > 0)
+            {
+                var node = stack.Pop();
+
+                foreach (var child in stack)
+                {
+                    stack.Push(child);
+                }
+
+                result.Push(node.value);
+            }
+
+            return result;
+        }
+
         public void RemoveNode(T nodeKey)
         {
             Tree<T> toBeDeletedNode = BfsNode(nodeKey) ?? throw new ArgumentNullException();
@@ -71,19 +92,11 @@
 
         public void Swap(T firstKey, T secondKey)
         {
-            Tree<T> firstNode = this.BfsNode(firstKey);
-            Tree<T> secondNode = this.BfsNode(secondKey);
-            if (firstNode is null || secondNode is null)
-            {
-                throw new ArgumentNullException();
-            }
+            Tree<T> firstNode = this.BfsNode(firstKey) ?? throw new ArgumentNullException();
+            Tree<T> secondNode = this.BfsNode(secondKey) ?? throw new ArgumentNullException();
 
-            Tree<T> firstParent = firstNode.parent;
-            Tree<T> secondParent = secondNode.parent;
-            if (firstParent is null || secondParent is null)
-            {
-                throw new ArgumentException();
-            }
+            Tree<T> firstParent = firstNode.parent ?? throw new ArgumentException();
+            Tree<T> secondParent = secondNode.parent ?? throw new ArgumentException();
 
             int firstChildPos = firstParent.children.IndexOf(firstNode);
             int secondChildPos = secondParent.children.IndexOf(secondNode);
