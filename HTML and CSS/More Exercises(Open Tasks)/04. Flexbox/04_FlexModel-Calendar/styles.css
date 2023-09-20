@@ -34,10 +34,6 @@ span {
     width: 500px;
 }
 
-.workweek {
+.workweek, .weekend {
     width: 100%;
-}
-
-.weekend {
-    width:100%;
 }
