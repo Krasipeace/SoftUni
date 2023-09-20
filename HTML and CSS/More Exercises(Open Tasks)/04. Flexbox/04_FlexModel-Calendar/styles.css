@@ -1,0 +1,43 @@
+body {
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    flex: 1 1 auto;
+    border: 1px solid black;
+    text-align: center;
+    height: 72px;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.notes {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: normal;
+    width: 15vw;
+    height: 296px;
+}
+
+.week {
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.workweek {
+    width: 100%;
+}
+
+.weekend {
+    width:100%;
+}

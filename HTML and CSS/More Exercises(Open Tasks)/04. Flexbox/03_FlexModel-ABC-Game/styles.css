@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    max-width: 15vw;
+    height: 35rem;
+}
+
+span {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 5px;
+}
+
+.container {
+    flex-direction: column;
+
+}
+
+.html {
+    position: relative;
+    top: -373px;
+    left: 60px;
+}
+
+#H {
+    order: 9;
+}
+
+#e {
+    order: 2;
+}
+
+#T {
+    order: 10;
+}
+
+#a {
+    order: 4;
+}
+
+#c {
+    order: 8;
+}
+
+#i {
+    order: 7;
+}
+
+#M {
+    order: 11;
+}
+
+#n {
+    order: 5;
+}
+
+#t {
+    order: 6;
+}
+
+#L {
+    order: 12;
+}
+
+#S {
+    order: 1;
+}
+
+#m {
+    order: 3;
+}

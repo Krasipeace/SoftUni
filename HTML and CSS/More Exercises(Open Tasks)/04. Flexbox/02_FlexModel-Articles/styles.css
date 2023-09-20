@@ -1,0 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
+@import url('https://fonts.cdnfonts.com/css/georgia');
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    line-height: 1.2;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    padding: 50px;
+}
+
+article {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+}

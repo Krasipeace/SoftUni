@@ -1,0 +1,36 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica');
+
+body {
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+main {
+    padding-left: 30px;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header p {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}

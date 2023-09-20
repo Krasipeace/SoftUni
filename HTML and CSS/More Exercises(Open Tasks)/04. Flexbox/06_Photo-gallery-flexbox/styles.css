@@ -1,0 +1,31 @@
+body, ul, li {
+    display: flex;
+    background-color: rgb(226, 226, 226);
+}
+
+ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    border: 10px solid black;
+    background-color: white;
+    padding: 15px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+img {
+    display: flex;
+    margin: auto 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
