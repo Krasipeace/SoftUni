@@ -1,7 +1,6 @@
 ﻿namespace Tree
 {
     using System;
-    using System.Collections;
     using System.Collections.Generic;
 
     public class IntegerTree : Tree<int>, IIntegerTree
@@ -15,15 +14,18 @@
         {
             var result = new List<List<int>>();
 
+            #region DFS
             var currentPath = new LinkedList<int>();
             currentPath.AddFirst(this.Key);
-
             int currentSum = this.Key;
             this.DfsPathsEqualsGivenSum(this, result, currentPath, ref currentSum, sum);
+            #endregion
 
+            #region BFS         
             //var queue = new Queue<Tuple<Tree<int>, List<int>, int>>();
             //queue.Enqueue(new Tuple<Tree<int>, List<int>, int>(this, new List<int>() { this.Key }, this.Key));
             //BfsPathsEqualsGivenSum(queue, sum, result);
+            #endregion
 
             return result;
         }
@@ -74,8 +76,13 @@
         {
             var result = new List<Tree<int>>();
 
-            this.DfsCalculateSubtreesSum(this, result, sum);
-            //this.BfsCalculateSubtreesSum(this, result, sum);
+            #region DFS
+            //this.DfsCalculateSubtreesSum(this, result, sum);
+            #endregion
+
+            #region BFS
+            this.BfsCalculateSubtreesSum(this, result, sum);
+            #endregion
 
             return result;
         }
