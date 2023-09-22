@@ -103,7 +103,6 @@
                     maxDepth = depth;
                     deepestNode = leaf;
                 }
-
             }
 
             return deepestNode;
