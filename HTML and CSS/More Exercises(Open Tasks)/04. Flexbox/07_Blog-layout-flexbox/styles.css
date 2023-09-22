@@ -1,0 +1,69 @@
+@import url('https://fonts.cdnfonts.com/css/georgia');
+
+body {
+    background-color: rgb(238, 238, 238);
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+}
+
+main {
+    width: 90%;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    float: right;
+}
+
+img {
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 1.0);
+    margin: 10px;
+    float: left;
+}
+
+section:first-of-type img:last-of-type {
+    float: right;
+}
+
+blockquote, h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 2px solid rgb(207, 207, 207);
+    padding-left: 20px;
+    width: 40%;
+    float: right;
+}
+
+.authorName {
+    text-align: right;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
