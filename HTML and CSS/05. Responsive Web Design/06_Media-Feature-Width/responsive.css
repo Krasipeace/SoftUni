@@ -1,0 +1,23 @@
+body {
+    width: 360px;
+    color: red;
+}
+
+@media screen and (min-width: 35rem) {
+    body {
+        background-color: yellow;
+    } 
+}
+
+@media screen and (max-width: 50rem) {
+    body {
+        border: 2px solid blue;
+    } 
+}
+
+@media (hover: hover) {
+    code:hover {
+        background-color: black;
+        color: white;
+    }
+}
