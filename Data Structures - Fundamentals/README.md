@@ -35,14 +35,6 @@ The Data Structures course introduces participants to the most used data structu
 1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/05.Heaps-BST%20-%20Lab)
 2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/06.Heaps-BST%20-%20Exercise)
 </details>
-<details>
-    <summary>
-        IV. Exam Preparation - Exercises
-    </summary>
-
-1. [](https://github.com/Krasipeace/SoftUni/tree/main/)
-2. [](https://github.com/Krasipeace/SoftUni/tree/main/)
-</details>
 
 ---
 
