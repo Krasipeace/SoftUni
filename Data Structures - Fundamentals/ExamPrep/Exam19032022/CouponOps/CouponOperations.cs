@@ -10,13 +10,13 @@
 
     public class CouponOperations : ICouponOperations
     {
-        private readonly Dictionary<Website, List<Coupon>> websites;
-        private readonly List<Coupon> coupons;
+        private readonly Dictionary<Website, HashSet<Coupon>> websites;
+        private readonly HashSet<Coupon> coupons;
 
         public CouponOperations()
         {
-            this.coupons = new List<Coupon>();
-            this.websites = new Dictionary<Website, List<Coupon>>();
+            this.coupons = new HashSet<Coupon>();
+            this.websites = new Dictionary<Website, HashSet<Coupon>>();
         }
 
         public void AddCoupon(Website website, Coupon coupon)
@@ -68,7 +68,7 @@
                 throw new ArgumentException();
             }
 
-            this.websites.Add(website, new List<Coupon>());
+            this.websites.Add(website, new HashSet<Coupon>());
         }
 
         public Website RemoveWebsite(string domain)

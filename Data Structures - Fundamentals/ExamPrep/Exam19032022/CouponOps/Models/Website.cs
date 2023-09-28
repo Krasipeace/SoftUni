@@ -8,11 +8,11 @@
         {
             this.Domain = domain;
             this.UsersCount = usersCount;
-            this.Coupons = new List<Coupon>();
+            this.Coupons = new HashSet<Coupon>();
         }
 
         public string Domain { get; set; }
         public int UsersCount { get; set; }
-        public List<Coupon> Coupons { get; set; }
+        public HashSet<Coupon> Coupons { get; set; }
     }
 }
