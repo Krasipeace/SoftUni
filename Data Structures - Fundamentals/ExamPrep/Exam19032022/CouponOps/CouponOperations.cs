@@ -10,13 +10,13 @@
 
     public class CouponOperations : ICouponOperations
     {
-        private readonly Dictionary<string, Website> websites;
-        private readonly Dictionary<string, Coupon> coupons;
+        private readonly Dictionary<Website, List<Coupon>> websites;
+        private readonly List<Coupon> coupons;
 
         public CouponOperations()
         {
-            this.websites = new Dictionary<string, Website>();
-            this.coupons = new Dictionary<string, Coupon>();
+            this.coupons = new List<Coupon>();
+            this.websites = new Dictionary<Website, List<Coupon>>();
         }
 
         public void AddCoupon(Website website, Coupon coupon)
@@ -26,40 +26,40 @@
                 throw new ArgumentException();
             }
 
-            this.coupons.Add(coupon.Code, coupon);
-            this.websites[website.Domain].Coupons.Add(coupon);
-            coupon.Website = website;
-        }
-
-        public bool Exist(Website website)
-            => this.websites.ContainsKey(website.Domain);
-
-        public bool Exist(Coupon coupon)
-            => this.coupons.ContainsKey(coupon.Code);
-
-        public IEnumerable<Coupon> GetCouponsForWebsite(Website website)
-        {
-            if (!this.Exist(website))
+            if (this.Exist(coupon))
             {
                 throw new ArgumentException();
             }
 
-            return this.coupons.Values
-                .Where(c => c.Website.Domain == website.Domain);
+            this.websites[website].Add(coupon);
+            this.coupons.Add(coupon);
+            coupon.Website = website;
         }
 
+        public bool Exist(Website website)
+            => this.websites.ContainsKey(website);
+
+        public bool Exist(Coupon coupon)
+            => this.coupons.Contains(coupon);
+
+        public IEnumerable<Coupon> GetCouponsForWebsite(Website website)
+            => !this.Exist(website) 
+                ? throw new ArgumentException() 
+                : (IEnumerable<Coupon>)this.websites[website];
+
         public IEnumerable<Coupon> GetCouponsOrderedByValidityDescAndDiscountPercentageDesc()
-            => this.coupons.Values
+            => this.coupons
                 .OrderByDescending(c => c.Validity)
                 .ThenByDescending(c => c.DiscountPercentage);
 
         public IEnumerable<Website> GetSites()
-            => this.websites.Values;
+            => this.websites.Keys;
 
         public IEnumerable<Website> GetWebsitesOrderedByUserCountAndCouponsCountDesc()
-            => this.websites.Values
-                .OrderByDescending(w => w.UsersCount)
-                .ThenByDescending(w => w.Coupons.Count);
+            => this.websites
+                .OrderBy(w => w.Key.UsersCount)
+                .ThenByDescending(w => w.Value.Count)
+                .Select(w => w.Key);
 
         public void RegisterSite(Website website)
         {
@@ -68,46 +68,50 @@
                 throw new ArgumentException();
             }
 
-            this.websites.Add(website.Domain, website);
-        }
-
-        public Coupon RemoveCoupon(string code)
-        {
-            var coupon = this.coupons[code];
-            if (coupon == null)
-            {
-                throw new ArgumentException();
-            }
-
-            websites[coupon.Website.Domain].Coupons
-                .Remove(coupon);
-            coupon.Website = null;
-            coupons.Remove(code);
-
-            return coupon;
+            this.websites.Add(website, new List<Coupon>());
         }
 
         public Website RemoveWebsite(string domain)
         {
-            this.websites[domain].Coupons
-                .ForEach(c => this.coupons.Remove(c.Code));
+            Website toRemove = this.websites.Keys
+                .FirstOrDefault(w => w.Domain == domain) 
+                ?? throw new ArgumentException();
 
-            return this.websites[domain];
+            foreach (var coupon in this.websites[toRemove])
+            {
+                coupon.Website = null;
+                this.coupons.Remove(coupon);
+            }
+
+            this.websites.Remove(toRemove);
+            return toRemove;
         }
 
         public void UseCoupon(Website website, Coupon coupon)
         {
-            if (!this.Exist(website) 
+            if (!this.Exist(website)
                 || !this.Exist(coupon)
-                || !website.Coupons.Contains(coupon))
+                || !this.websites[website].Contains(coupon))
             {
                 throw new ArgumentException();
             }
 
-            websites[website.Domain].Coupons
-                .Remove(coupon);
+            this.websites[website].Remove(coupon);
             coupon.Website = null;
-            coupons.Remove(coupon.Code);
+            this.coupons.Remove(coupon);
+        }
+
+        public Coupon RemoveCoupon(string code)
+        {
+            var removeCoupon = this.coupons
+                .FirstOrDefault(c => c.Code == code) 
+                ?? throw new ArgumentException();
+
+            this.websites[removeCoupon.Website].Remove(removeCoupon);
+            removeCoupon.Website = null;
+            this.coupons.Remove(removeCoupon);
+
+            return removeCoupon;
         }
     }
 }
