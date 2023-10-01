@@ -15,11 +15,14 @@
             this.links = new List<ILink>();
         }
 
-        public int Size => this.links.Count;
+        public int Size 
+            => this.links.Count;
 
-        public void Clear() => this.links.Clear();
+        public void Clear() 
+            => this.links.Clear();
 
-        public bool Contains(ILink link) => this.links.Contains(link);
+        public bool Contains(ILink link) 
+            => this.links.Contains(link);
 
         public ILink DeleteFirst()
         {
@@ -118,7 +121,8 @@
             for (int i = this.Size - 1; i >= 0; i--)
             {
                 history
-                    .Append($"-- {this.links[i].Url} {this.links[i].LoadingTime}s").AppendLine();
+                    .Append($"-- {this.links[i].Url} {this.links[i].LoadingTime}s")
+                    .AppendLine();
             }
 
             return history.Length == 0 
