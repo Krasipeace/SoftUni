@@ -70,7 +70,7 @@ namespace _01.Inventory
         {
             IsWeaponExist(weapon);
 
-            if (weapon.Ammunition + ammunition > weapon.MaxCapacity)
+            if (weapon.Ammunition + ammunition >= weapon.MaxCapacity)
             {
                 weapon.Ammunition = weapon.MaxCapacity;
             }

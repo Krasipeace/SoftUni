@@ -96,7 +96,7 @@ namespace Exam.DeliveriesManager
 
         public IEnumerable<Airline> GetAirlinesWithFlightsFromOriginToDestination(string origin, string destination)
             => this.airlines
-                .Where(a => a.Value.Any(f => f.Origin == origin && f.Destination == destination))
+                .Where(a => a.Value.Any(f => f.Origin == origin && f.Destination == destination && !f.IsCompleted))
                 .Select(a => a.Key);
 
         public IEnumerable<Flight> GetFlightsOrderedByCompletionThenByNumber()
