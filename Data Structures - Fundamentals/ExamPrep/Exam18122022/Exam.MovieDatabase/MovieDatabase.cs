@@ -12,13 +12,11 @@ namespace Exam.MovieDatabase
 
         public void AddActor(Actor actor)
         {
-            if (this.Contains(actor))
+            if (!this.Contains(actor))
             {
-                throw new ArgumentException();
-            }
-            
-            this.actors.Add(actor.Id, actor);
-            this.actorMovies.Add(actor, new List<Movie>());
+                this.actors.Add(actor.Id, actor);
+                this.actorMovies.Add(actor, new List<Movie>());
+            }     
         }
 
         public void AddMovie(Actor actor, Movie movie)
@@ -40,11 +38,9 @@ namespace Exam.MovieDatabase
 
         public IEnumerable<Actor> GetActorsOrderedByMaxMovieBudgetThenByMoviesCount()
             => this.actorMovies
-                .OrderByDescending(a => a.Value
-                    .Max(m => m.Budget))
+                .OrderByDescending(a => a.Value)
                 .ThenByDescending(a => a.Value.Count)
                 .Select(a => a.Key);
-
 
         public IEnumerable<Movie> GetAllMovies()
             => this.movies.Values;
