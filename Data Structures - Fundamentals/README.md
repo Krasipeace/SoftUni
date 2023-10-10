@@ -12,7 +12,7 @@ The Data Structures course introduces participants to the most used data structu
 
 &nbsp;
 
-![Certificate (click here to preview)](https://softuni.bg/certificates/details/185483/2cdc21ac)
+[Certificate (click here to preview)](https://softuni.bg/certificates/details/185483/2cdc21ac)
 
 &nbsp;
 
