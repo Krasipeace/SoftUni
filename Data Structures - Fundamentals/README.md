@@ -2,12 +2,19 @@
 
 The Data Structures course introduces participants to the most used data structures in programming by laying a solid foundation, lots of hands-on work, as well as useful theory. Students will learn about the implementation of lists, queues, stacks, trees, and some algorithms such as recursive depth-first search (DFS) and breadth-first search (BFS). They will learn to work not only with ready-made program libraries, but also to implement their own structures. They will gain knowledge of how to judge when and which data structure to use by analyzing the complexity of the algorithms for each of the operations.
 
+
 ## Topics
 
 - Data Structures and Complexity
 - Linear Data Structures
 - Trees Represantion and Traversal(BFS and DFS)
 - Heaps, BST
+
+&nbsp;
+
+![Certificate (click here to preview)](https://softuni.bg/certificates/details/185483/2cdc21ac)
+
+&nbsp;
 
 ## Exercises
 
