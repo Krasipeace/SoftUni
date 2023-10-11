@@ -9,7 +9,42 @@ The Advanced Data Structures course introduces participants to the implementatio
 - Hash Tables Sets and Maps
 - Data Structures Augmentation
 
+&nbsp;
 
+## Exercises
+
+<details>
+    <summary>
+        I. B-Trees 2-3 Trees and Red-Black Trees
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+</details>
+<details>
+    <summary>
+        II. AVL Trees and AA-Trees
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+</details>
+<details>
+    <summary>
+        III. Hash Tables Sets and Maps
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+</details>
+<details>
+    <summary>
+        IV. Data Structures Augmentation
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+</details>
 
 ---
 
