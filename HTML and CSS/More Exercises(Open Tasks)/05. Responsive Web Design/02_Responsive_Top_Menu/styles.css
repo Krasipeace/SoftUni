@@ -30,6 +30,27 @@ header, footer {
     flex: 1 1 100%;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 1em 1.5em;
+    color: blue;
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
     color: purple;
@@ -42,5 +63,9 @@ a:hover {
 @media (max-width: 500px) {
     body {
         flex-direction: column;
+    }
+
+    header, nav ul {
+        display: block;
     }
 }
