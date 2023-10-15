@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    box-shadow: 1px 2px 6px 5px gray;
+    margin: 80px 0px 0px 60px;
+    border-radius: 2px;
+}
+
+.card .text {
+    padding: 15px;
+}
+
+.card h1 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+}
+
+.card p {
+    margin: 10px 0px 20px 0px;
+}
+
+.card button {
+    display: block;
+    background-color: rgb(0, 153, 0);
+    padding: 7px 14px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: auto;
+}

@@ -1,19 +1,11 @@
 body {
     background-color: rgb(238, 238, 238);
-    padding-top: 10px;
-    padding-right: 100px;
-    padding-bottom: 10px;
-    padding-left: 100px;
+    padding: 1% 5%;
 }
 
 main {
     width: 90%;
     float: left;
-}
-
-aside {
-    width: 20%;
-    float: right;
 }
 
 img {
@@ -23,7 +15,7 @@ img {
     float: left;
 }
 
-section:first-of-type img:last-of-type {
+main:first-of-type img:last-of-type {
     float: right;
 }
 
@@ -64,4 +56,40 @@ header p {
 .page {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 501px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1800px) {
+    body {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1801px) {
+    body {
+        font-size: 23px;
+    }
 }
