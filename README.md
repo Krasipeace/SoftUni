@@ -31,7 +31,7 @@ SoftUni's professional program in software engineering aims to build all the fun
 &nbsp;
 
 SoftUni Courses:  
-| <div style="text-align: center">[C# Web Development][42]</div> | <div style="text-align: center">Open Courses</div> | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [C# Web Development][42] | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open Courses | 
 | :--- | :--- | 
 | [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] |
 | [C# Advanced][3]                         | [WordPress For Developers][7]	 |
