@@ -15,7 +15,79 @@ In the "JS Front-End" course, students will gain basic knowledge of the JavaScri
 
 ## Exercises
 
+<details>
+    <summary>
+        I. JS Syntax Fundametals
+    </summary>
 
+1. [Lab](#)
+2. [Exercises](#)
+3. [More Exercises](#)
+</details>
+<details>
+    <summary>
+        II. JS Arrays & Strings
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+3. [More Exercises](#)
+</details>
+<details>
+    <summary>
+        III. Functions and Statements
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+3. [More Exercises](#)
+</details>
+<details>
+    <summary>
+        IV. Objects and Classes
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+3. [More Exercises](#)
+</details>
+<details>
+    <summary>
+        V. DOM Introduction
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+</details>
+<details>
+    <summary>
+        VI. DOM Manipulation and Events
+    </summary>
+
+1. [Lab](#)
+2. [Exercises](#)
+</details>
+<details>
+    <summary>
+        VII. HTTP and REST
+    </summary>
+
+* [Lab](#)
+</details>
+<details>
+    <summary>
+        VIII. Asynchronous Programming
+    </summary>
+
+* [Lab](#)
+</details>
+<details>
+    <summary>
+        IX. HTTP and AJAX
+    </summary>
+
+* [Exercise](#)
+</details>
 ---
 
 [Back to top](#)
