@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sql data reader example", "sql data reader example\sql data reader example.csproj", "{3905211F-8650-4B1F-A0BD-E8B6484EC0D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minions", "Minions\Minions.csproj", "{CDA3F523-DBE7-40BA-AFBE-B7EEC2AC1F2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3905211F-8650-4B1F-A0BD-E8B6484EC0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3905211F-8650-4B1F-A0BD-E8B6484EC0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3905211F-8650-4B1F-A0BD-E8B6484EC0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3905211F-8650-4B1F-A0BD-E8B6484EC0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA3F523-DBE7-40BA-AFBE-B7EEC2AC1F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA3F523-DBE7-40BA-AFBE-B7EEC2AC1F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA3F523-DBE7-40BA-AFBE-B7EEC2AC1F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA3F523-DBE7-40BA-AFBE-B7EEC2AC1F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C68DF73-E258-44CC-8C54-AA0FB3ABE853}
+	EndGlobalSection
+EndGlobal
