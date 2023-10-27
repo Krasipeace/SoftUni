@@ -24,6 +24,8 @@ The purpose of the course "HTML & CSS" is to provide basic knowledge of web tech
 | 6 | | [Responsive Web Design - Exercise][11] |
 | 7 | | [Design to Code - Workshop][12] |
 
+[Certificate(Click here to preview)](https://softuni.bg/certificates/details/190825/bbb93574)
+
 ---
 
 [Back to top](#)
@@ -40,4 +42,4 @@ The purpose of the course "HTML & CSS" is to provide basic knowledge of web tech
 [9]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/More%20Exercises(Open%20Tasks)/04.%20Flexbox
 [10]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/05.%20Responsive%20Web%20Design
 [11]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/More%20Exercises(Open%20Tasks)/05.%20Responsive%20Web%20Design
-[12]: #
+[12]: https://github.com/Krasipeace/SoftUni/tree/main/HTML%20and%20CSS/More%20Exercises(Open%20Tasks)/06.%20Design%20to%20Code%20-%20Workshop

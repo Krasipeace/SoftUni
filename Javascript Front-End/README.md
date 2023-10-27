@@ -20,9 +20,9 @@ In the "JS Front-End" course, students will gain basic knowledge of the JavaScri
         I. JS Syntax Fundametals
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
-3. [More Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/1.%20Syntax%20Fundamentals/Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/1.%20Syntax%20Fundamentals/Exercises)
+3. [More Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/1.%20Syntax%20Fundamentals/More%20Exercises)
 </details>
 <details>
     <summary>
