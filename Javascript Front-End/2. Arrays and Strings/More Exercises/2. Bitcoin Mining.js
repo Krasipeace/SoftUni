@@ -1,6 +1,8 @@
 function solve(shifts) {
     const goldGramPrice = 67.51;
     const bitcoinPrice = 11949.16;
+    const thirdShift = 3
+    const goldReducement = 0.7;
     let totalGold = 0;
     let totalBitcoins = 0;
     let startDay = 0;
@@ -8,8 +10,8 @@ function solve(shifts) {
     for (let i = 0; i < shifts.length; i++) {
         let minedGold = shifts[i];
 
-        if ((i + 1) % 3 === 0) {
-            minedGold *= 0.7;
+        if ((i + 1) % thirdShift === 0) {
+            minedGold *= goldReducement;
         }
 
         totalGold += minedGold;

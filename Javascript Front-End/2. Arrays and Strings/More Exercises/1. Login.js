@@ -1,13 +1,14 @@
 function solve (input) {
     const username = input.shift();
     const password = username.split('').reverse().join('');
+    const forthAttempt = 4;
     let currentPassword = input.shift();
     let count = 0;
     
     while (currentPassword !== password) {
         count++;
 
-        if (count === 4) {
+        if (count === forthAttempt) {
             console.log(`User ${username} blocked!`);
             break;
         }
