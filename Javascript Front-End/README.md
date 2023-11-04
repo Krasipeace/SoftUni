@@ -29,9 +29,9 @@ In the "JS Front-End" course, students will gain basic knowledge of the JavaScri
         II. JS Arrays & Strings
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
-3. [More Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/2.%20Arrays%20and%20Strings/Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/2.%20Arrays%20and%20Strings/Exercises)
+3. [More Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/2.%20Arrays%20and%20Strings/More%20Exercises)
 </details>
 <details>
     <summary>
