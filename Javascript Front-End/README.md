@@ -38,55 +38,55 @@ In the "JS Front-End" course, students will gain basic knowledge of the JavaScri
         III. Functions and Statements
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
-3. [More Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/3.%20Functions%20and%20Statements/Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/3.%20Functions%20and%20Statements/Exercises)
+3. [More Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/3.%20Functions%20and%20Statements/More%20Exercises)
 </details>
 <details>
     <summary>
         IV. Objects and Classes
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
-3. [More Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/4.%20Objects%20and%20Classes/Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/4.%20Objects%20and%20Classes/Exercises)
+3. [More Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/4.%20Objects%20and%20Classes/More%20Exercises)
 </details>
 <details>
     <summary>
         V. DOM Introduction
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/5.%20DOM%20Introduction/Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/5.%20DOM%20Introduction/Exercises)
 </details>
 <details>
     <summary>
         VI. DOM Manipulation and Events
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/6.%20DOM%20Manipulation%20and%20Events/Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/6.%20DOM%20Manipulation%20and%20Events/Exercises)
 </details>
 <details>
     <summary>
         VII. HTTP and REST
     </summary>
 
-* [Lab](#)
+* [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/7.%20HTTP%20and%20REST)
 </details>
 <details>
     <summary>
         VIII. Asynchronous Programming
     </summary>
 
-* [Lab](#)
+* [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/8.%20Asynchronous%20Programming)
 </details>
 <details>
     <summary>
         IX. HTTP and AJAX
     </summary>
 
-* [Exercise](#)
+* [Exercise](https://github.com/Krasipeace/SoftUni/tree/main/Javascript%20Front-End/9.%20HTTP%20and%20AJAX)
 </details>
 
 ---
