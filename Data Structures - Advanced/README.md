@@ -18,8 +18,8 @@ The Advanced Data Structures course introduces participants to the implementatio
         I. B-Trees 2-3 Trees and Red-Black Trees
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/01.%20B-Trees-2-3-Trees%20-%20Lab)
+2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/01.%20Red-Black-Trees%20-%20Exercise)
 </details>
 <details>
     <summary>
