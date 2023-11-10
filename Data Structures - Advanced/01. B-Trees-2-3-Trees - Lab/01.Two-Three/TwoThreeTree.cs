@@ -14,12 +14,12 @@
 
         private TreeNode<T> Insert(TreeNode<T> node, T element)
         {
-            if(node == null)
+            if (node == null)
             {
                 return new TreeNode<T>(element);
             }
 
-            if(node.IsLeaf())
+            if (node.IsLeaf())
             {
                 return this.MergeNodes(node, new TreeNode<T>(element));
             }
@@ -44,10 +44,7 @@
             }
         }
 
-        private bool IsLesser(T element, T key)
-        {
-            return element.CompareTo(key) < 0;
-        }
+        private bool IsLesser(T element, T key) => element.CompareTo(key) < 0;
 
         private TreeNode<T> MergeNodes(TreeNode<T> currentNode, TreeNode<T> node)
         {

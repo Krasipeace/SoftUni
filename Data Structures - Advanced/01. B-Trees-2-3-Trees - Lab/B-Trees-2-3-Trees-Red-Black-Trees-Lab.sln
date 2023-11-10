@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{9E9B782F-6A52-463C-A92D-A2AE70C4C87F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{9E9B782F-6A52-463C-A92D-A2AE70C4C87F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Two-Three", "01.Two-Three\01.Two-Three.csproj", "{1676DA7B-8194-4A4F-BC10-51D1C307E8BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Two-Three", "01.Two-Three\01.Two-Three.csproj", "{1676DA7B-8194-4A4F-BC10-51D1C307E8BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Two-Three.Tests", "01.Two-Three.Tests\01.Two-Three.Tests.csproj", "{1BFF56BF-ADC7-4C37-9525-6D10BA0A8D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Two-Three.Tests", "01.Two-Three.Tests\01.Two-Three.Tests.csproj", "{1BFF56BF-ADC7-4C37-9525-6D10BA0A8D2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
