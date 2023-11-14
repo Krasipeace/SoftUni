@@ -1,24 +1,33 @@
 function inventory(heroInfo) {
-    let heroes = [];
+    function createHero(heroInfo) {
+        let heroes = [];
 
-    for (let i = 0; i < heroInfo.length; i++) {
-        let [name, level, items] = heroInfo[i].split(' / ');
+        for (let i = 0; i < heroInfo.length; i++) {
+            let [name, level, items] = heroInfo[i].split(' / ');
 
-        let hero = {
-            name,
-            level: Number(level),
-            items: items.split(', ').join(', ')
+            let hero = {
+                name,
+                level: Number(level),
+                items: items.split(', ').join(', ')
+            }
+            heroes.push(hero);
         }
-        heroes.push(hero);
+
+        heroes.sort((a, b) => a.level - b.level);
+
+        return heroes;
     }
 
-    heroes.sort((a, b) => a.level - b.level);
-
-    for (let i = 0; i < heroes.length; i++) {
-        console.log(`Hero: ${heroes[i].name}`);
-        console.log(`level => ${heroes[i].level}`);
-        console.log(`items => ${heroes[i].items}`);
+    function printHeroInfo(heroes) {
+        for (let i = 0; i < heroes.length; i++) {
+            console.log(`Hero: ${heroes[i].name}`);
+            console.log(`level => ${heroes[i].level}`);
+            console.log(`items => ${heroes[i].items}`);
+        }
     }
+
+    let heroes = createHero(heroInfo);
+    printHeroInfo(heroes);
 }
 
 inventory([

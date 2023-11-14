@@ -1,11 +1,11 @@
-function solve(string, count) {
+function multiplyString(string, multiplier) {
     let result = '';
-    for (let i = 0; i < count; i++) {
+    for (let i = 0; i < multiplier; i++) {
         result += string;
     }
     
     return result;
 }
 
-console.log(solve('abc', 3)); //abcabcabc
-console.log(solve('String', 2)); //StringString
+console.log(multiplyString('abc', 3)); //abcabcabc
+console.log(multiplyString('String', 2)); //StringString

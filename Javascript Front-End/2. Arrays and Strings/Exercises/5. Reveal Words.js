@@ -1,4 +1,4 @@
-function solve(words, text) {
+function uncensoreWords(words, text) {
     const specialWord = words.split(', ');
     const allWords = text.split(' ');
   
@@ -14,4 +14,4 @@ function solve(words, text) {
     return allWords.join(' ');
 }
 
-console.log(solve('great, learning', 'softuni is ***** place for ******** new programming languages')); // softuni is great place for learning new programming languages
+console.log(uncensoreWords('great, learning', 'softuni is ***** place for ******** new programming languages')); // softuni is great place for learning new programming languages

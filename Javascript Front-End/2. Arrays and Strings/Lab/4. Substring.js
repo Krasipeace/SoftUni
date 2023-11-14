@@ -1,8 +1,8 @@
-function solve(word, startIndex, count) {
+function substringFromIndex(word, startIndex, count) {
     let result = word.substr(startIndex, count);
 
     console.log(result);
 }
 
-solve("ASentence", 1, 8); // Sentence
-solve("SkipWord", 4, 7); // Word
+substringFromIndex("ASentence", 1, 8); // Sentence
+substringFromIndex("SkipWord", 4, 7); // Word

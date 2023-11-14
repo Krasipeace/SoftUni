@@ -1,7 +1,7 @@
-function solve(firstChar, secondChar, thirdChar) {
+function charsToString(firstChar, secondChar, thirdChar) {
     console.log(`${firstChar}${secondChar}${thirdChar}`);
 }
 
-solve('a', 'b', 'c'); // abc
-solve('%', '2', 'o'); // %2o
-solve('1', '5', 'p'); // 15p
+charsToString('a', 'b', 'c'); // abc
+charsToString('%', '2', 'o'); // %2o
+charsToString('1', '5', 'p'); // 15p

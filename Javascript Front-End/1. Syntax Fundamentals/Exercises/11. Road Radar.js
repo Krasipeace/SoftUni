@@ -1,4 +1,4 @@
-function solve(speed, area) {
+function roadRadar(speed, area) {
     const speedLimits = {
         'motorway': 130,
         'interstate': 90,
@@ -22,7 +22,7 @@ function solve(speed, area) {
     }
 }
 
-solve(40, 'city'); // Driving 40 km/h in a 50 zone
-solve(21, 'residential'); // The speed is 1 km/h faster than the allowed speed of 20 - speeding
-solve(120, 'interstate'); // The speed is 30 km/h faster than the allowed speed of 90 - excessive speeding
-solve(200, 'motorway'); // The speed is 70 km/h faster than the allowed speed of 130 - reckless driving
+roadRadar(40, 'city'); // Driving 40 km/h in a 50 zone
+roadRadar(21, 'residential'); // The speed is 1 km/h faster than the allowed speed of 20 - speeding
+roadRadar(120, 'interstate'); // The speed is 30 km/h faster than the allowed speed of 90 - excessive speeding
+roadRadar(200, 'motorway'); // The speed is 70 km/h faster than the allowed speed of 130 - reckless driving

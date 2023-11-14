@@ -1,4 +1,4 @@
-function addressBook(input) {
+function printAddressBookAsc(input) {
     let addressBook = {};
 
     for (let line of input) {
@@ -14,7 +14,7 @@ function addressBook(input) {
     }
 }
 
-addressBook(['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']);
+printAddressBookAsc(['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']);
 // Bill -> Ornery Rd
 // Peter -> Carlyle Ave
 // Tim -> Doe Crossing

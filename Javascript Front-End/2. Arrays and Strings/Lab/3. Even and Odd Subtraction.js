@@ -1,4 +1,4 @@
-function solve(elements) {
+function subtractEvenOddElements(elements) {
     const evenSum = elements
         .filter(num => num % 2 === 0)
         .reduce((acc, curr) => acc + curr, 0);
@@ -9,6 +9,6 @@ function solve(elements) {
     console.log(evenSum - oddSum);
 }
 
-solve([1, 2, 3, 4, 5, 6]) // 3
-solve([3, 5, 7, 9]) // -24
-solve([2, 4, 6, 8, 10]) // 30
+subtractEvenOddElements([1, 2, 3, 4, 5, 6]) // 3
+subtractEvenOddElements([3, 5, 7, 9]) // -24
+subtractEvenOddElements([2, 4, 6, 8, 10]) // 30

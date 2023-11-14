@@ -1,4 +1,4 @@
-function solve(text, wordToCensor) {
+function censoreWords(text, wordToCensor) {
     let result = text.replace(wordToCensor, '*'.repeat(wordToCensor.length));
 
     while (result.includes(wordToCensor)) {
@@ -8,4 +8,4 @@ function solve(text, wordToCensor) {
     console.log(result);
 }
 
-solve("A small sentence with some words", "small"); // A ***** sentence with some words
+censoreWords("A small sentence with some words", "small"); // A ***** sentence with some words

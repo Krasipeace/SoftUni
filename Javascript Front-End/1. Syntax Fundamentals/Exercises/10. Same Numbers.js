@@ -1,4 +1,4 @@
-function solve(number) {
+function sameNumbers(number) {
     let sum = 0;
     let digits = number.toString();
 
@@ -10,5 +10,5 @@ function solve(number) {
     console.log(sum);
 }
 
-solve(2222222); // true 14
-solve(1234); // false 10
+sameNumbers(2222222); // true 14
+sameNumbers(1234); // false 10

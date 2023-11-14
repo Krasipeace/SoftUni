@@ -1,15 +1,15 @@
-function solve(firstNumber, secondNumber, operator) {
+function getSimpleCalculation(firstNumber, secondNumber, operator) {
     const operations = {
-        'add': (a, b) => a + b,
-        'subtract': (a, b) => a - b,
-        'multiply': (a, b) => a * b,
-        'divide': (a, b) => a / b
+        'add': (firstNumber, secondNumber) => firstNumber + secondNumber,
+        'subtract': (firstNumber, secondNumber) => firstNumber - secondNumber,
+        'multiply': (firstNumber, secondNumber) => firstNumber * secondNumber,
+        'divide': (firstNumber, secondNumber) => firstNumber / secondNumber
     };
 
     return operations[operator](firstNumber, secondNumber);
 }
 
-console.log(solve(5, 5, 'multiply')); //25
-console.log(solve(40, 8, 'divide')); //5
-console.log(solve(2, 2, 'add')); //4
-console.log(solve(2, 2, 'subtract')); //0
+console.log(getSimpleCalculation(5, 5, 'multiply')); //25
+console.log(getSimpleCalculation(40, 8, 'divide')); //5
+console.log(getSimpleCalculation(2, 2, 'add')); //4
+console.log(getSimpleCalculation(2, 2, 'subtract')); //0

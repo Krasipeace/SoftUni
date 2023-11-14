@@ -1,4 +1,4 @@
-function solve (arrayNumbers, rotations) {
+function rotateArray (arrayNumbers, rotations) {
     for (let i = 0; i < rotations; i++) {
         const firstElement = arrayNumbers.shift();
         arrayNumbers.push(firstElement);
@@ -7,4 +7,4 @@ function solve (arrayNumbers, rotations) {
     return arrayNumbers.join(' ');
 }
 
-console.log(solve(['2', '4', '15', '31'], 5)) // 4 15 31 2
+console.log(rotateArray(['2', '4', '15', '31'], 5)) // 4 15 31 2

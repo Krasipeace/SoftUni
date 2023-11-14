@@ -1,4 +1,4 @@
-function solve(number) {
+function getMonthByNumber(number) {
     const months = [
       'January', 'February', 'March', 'April', 'May', 'June',
       'July', 'August', 'September', 'October', 'November', 'December'
@@ -11,7 +11,7 @@ function solve(number) {
     }
 }
 
-solve(2); // February
-solve(13); // Error!
-solve(-2); // Error!
-solve(0); // Error!
+getMonthByNumber(2); // February
+getMonthByNumber(13); // Error!
+getMonthByNumber(-2); // Error!
+getMonthByNumber(0); // Error!

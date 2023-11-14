@@ -1,27 +1,37 @@
-function flightSchedule(input) {
+function getFlightSchedule(input) {
     let flights = {};
     let flightStatus = {};
     let status = input[2][0];
 
-    for (let line of input[0]) {
-        let [flight, destination] = line.split(' ');
-        flights[flight] = destination;
-        flightStatus[flight] = 'Ready to fly';
+    function processFlights(input) {
+        for (let line of input) {
+            let [flight, destination] = line.split(' ');
+            flights[flight] = destination;
+            flightStatus[flight] = 'Ready to fly';
+        }
     }
 
-    for (let line of input[1]) {
-        let [flight, status] = line.split(' ');
-        flightStatus[flight] = status;
+    function updateFlightStatus(input) {
+        for (let line of input) {
+            let [flight, status] = line.split(' ');
+            flightStatus[flight] = status;
+        }
     }
 
-    let result = Object.keys(flights).filter(f => flightStatus[f] === status);
+    function printFlights(status) {
+        let result = Object.keys(flights).filter(f => flightStatus[f] === status);
 
-    for (let flight of result) {
-        console.log({ Destination: flights[flight], Status: flightStatus[flight] });
+        for (let flight of result) {
+            console.log({ Destination: flights[flight], Status: flightStatus[flight] });
+        }
     }
+
+    processFlights(input[0]);
+    updateFlightStatus(input[1]);
+    printFlights(status);
 }
 
-flightSchedule([
+getFlightSchedule([
     ['WN269 Delaware',
         'FL2269 Oregon',
         'WN498 Las Vegas',

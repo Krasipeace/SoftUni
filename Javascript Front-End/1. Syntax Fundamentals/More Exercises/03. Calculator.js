@@ -1,9 +1,9 @@
-function solve(num1, operator, num2) {
+function calculator(num1, operator, num2) {
     const operations = {
-      '+': (a, b) => a + b,
-      '-': (a, b) => a - b,
-      '*': (a, b) => a * b,
-      '/': (a, b) => a / b
+      '+': (num1, num2) => num1 + num2,
+      '-': (num1, num2) => num1 - num2,
+      '*': (num1, num2) => num1 * num2,
+      '/': (num1, num2) => num1 / num2
     };
   
     const operation = operations[operator];
@@ -16,5 +16,5 @@ function solve(num1, operator, num2) {
     console.log(result.toFixed(2));
 }
 
-solve(5, '+', 10); // 15.00
-solve(25.5, '-', 3); // 22.50
+calculator(5, '+', 10); // 15.00
+calculator(25.5, '-', 3); // 22.50

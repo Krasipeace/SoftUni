@@ -1,4 +1,4 @@
-function solve(year) {
+function leapYear(year) {
     if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
       console.log('yes');
     } else {
@@ -6,6 +6,6 @@ function solve(year) {
     }
 }
 
-solve(1984); // yes
-solve(2003); // no
-solve(4); // yes
+leapYear(1984); // yes
+leapYear(2003); // no
+leapYear(4); // yes

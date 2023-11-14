@@ -1,4 +1,4 @@
-function solve(number) {
+function categorizeAge(number) {
     const ages = [
       'baby', 'child', 'teenager', 'adult', 'elder'
     ];
@@ -18,9 +18,9 @@ function solve(number) {
     }
 }
 
-solve(20); // adult
-solve(1); // baby
-solve(100); // elder
-solve(8); // child
-solve(14); // teenager
-solve(-1); // out of bounds
+categorizeAge(20); // adult
+categorizeAge(1); // baby
+categorizeAge(100); // elder
+categorizeAge(8); // child
+categorizeAge(14); // teenager
+categorizeAge(-1); // out of bounds

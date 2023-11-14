@@ -1,4 +1,4 @@
-function solve(product, quantity) {
+function getProductPrice(product, quantity) {
     const prices = {
         'coffee': 1.50,
         'water': 1.00,
@@ -9,5 +9,5 @@ function solve(product, quantity) {
     return (prices[product] * quantity).toFixed(2);
 }
 
-console.log(solve('water', 5)); //5.00
-console.log(solve('coffee', 2)); //3.00
+console.log(getProductPrice('water', 5)); //5.00
+console.log(getProductPrice('coffee', 2)); //3.00

@@ -1,4 +1,4 @@
-function solve (input) {
+function login (input) {
     const username = input.shift();
     const password = username.split('').reverse().join('');
     const forthAttempt = 4;
@@ -22,6 +22,6 @@ function solve (input) {
     }
 }
 
-solve(['Acer','login','go','let me in','recA']) // Incorrect password. Try again. Incorrect password. Try again. ncorrect password. Try again. User Acer logged in.
-solve(['momo','omom']) // User momo logged in.
-solve(['sunny','rainy','cloudy','sunny','not sunny']) // Incorrect password. Try again. Incorrect password. Try again. Incorrect password. Try again. User sunny blocked!
+login(['Acer','login','go','let me in','recA']) // Incorrect password. Try again. Incorrect password. Try again. ncorrect password. Try again. User Acer logged in.
+login(['momo','omom']) // User momo logged in.
+login(['sunny','rainy','cloudy','sunny','not sunny']) // Incorrect password. Try again. Incorrect password. Try again. Incorrect password. Try again. User sunny blocked!

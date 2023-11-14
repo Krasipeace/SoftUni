@@ -1,4 +1,4 @@
-function solve(number) {
+function sumDigits(number) {
     let sum = 0;
     let digits = number.toString();
 
@@ -9,6 +9,6 @@ function solve(number) {
     console.log(sum);
 }
 
-solve(245678); // 32
-solve(97561); // 28
-solve(543); // 12
+sumDigits(245678); // 32
+sumDigits(97561); // 28
+sumDigits(543); // 12

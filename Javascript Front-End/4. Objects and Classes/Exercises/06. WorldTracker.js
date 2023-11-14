@@ -1,4 +1,4 @@
-function wordsTracker(input) {
+function getWordCountDesc(input) {
     let words = input.shift().split(' ');
     let wordsCount = {};
 
@@ -17,7 +17,7 @@ function wordsTracker(input) {
         .forEach(word => console.log(`${word[0]} - ${word[1]}`));
 }
 
-wordsTracker([
+getWordCountDesc([
     'this sentence',
     'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurrences', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task'
 ]);

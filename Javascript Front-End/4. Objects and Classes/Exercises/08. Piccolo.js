@@ -1,4 +1,4 @@
-function piccolo(input) {
+function piccoloParking(input) {
     let parking = {};
 
     for (let car of input) {
@@ -21,7 +21,7 @@ function piccolo(input) {
         : console.log('Parking Lot is Empty');
 }
 
-piccolo([
+piccoloParking([
     'IN, CA2844AA',
     'IN, CA1234TA',
     'OUT, CA2844AA',
@@ -37,7 +37,7 @@ piccolo([
 // CA2844AA
 // CA9876HH
 // CA9999TT
-piccolo([
+piccoloParking([
     'IN, CA2844AA',
     'IN, CA1234TA',
     'OUT, CA2844AA',

@@ -1,4 +1,4 @@
-function solve(input) {
+function getCircleArea(input) {
     if (typeof input === 'number') {
         let result = Math.PI * input * input;
         console.log(result.toFixed(2));
@@ -7,5 +7,5 @@ function solve(input) {
     }
 }
 
-solve(5); // 78.54
-solve('name'); // We can not calculate the circle area, because we receive a string.
+getCircleArea(5); // 78.54
+getCircleArea('name'); // We can not calculate the circle area, because we receive a string.

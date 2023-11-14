@@ -1,4 +1,4 @@
-function cats(input) {
+function getCatMeow(input) {
     class Cat {
         constructor(name, age) {
             this.name = name
@@ -17,5 +17,5 @@ function cats(input) {
     }
 }
 
-cats(['Mellow 2', 'Tom 5']);
-cats(['Candy 1', 'Poppy 3', 'Nyx 2']);
+getCatMeow(['Mellow 2', 'Tom 5']);
+getCatMeow(['Candy 1', 'Poppy 3', 'Nyx 2']);

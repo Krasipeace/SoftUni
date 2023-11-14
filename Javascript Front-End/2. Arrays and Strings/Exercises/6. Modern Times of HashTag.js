@@ -1,4 +1,4 @@
-function solve(text) {
+function extractHashtags(text) {
     const words = text.split(' ');
     const specialWords = words.filter(w => w.startsWith('#'));
 
@@ -18,5 +18,5 @@ function solve(text) {
     }
 }
 
-solve('Nowadays everyone uses # to tag a #special word in #socialMedia'); // #special #socialMedia
-solve('The symbol # is known #variously in English-speaking #regions as the #number sign'); // #variously #regions #number
+extractHashtags('Nowadays everyone uses # to tag a #special word in #socialMedia'); // #special #socialMedia
+extractHashtags('The symbol # is known #variously in English-speaking #regions as the #number sign'); // #variously #regions #number

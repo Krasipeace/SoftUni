@@ -1,4 +1,4 @@
-function solve(typeOfDay, personAge) {
+function buyTickets(typeOfDay, personAge) {
     const prices = {
       'Weekday': [12, 18, 12],
       'Weekend': [15, 20, 15],
@@ -26,8 +26,8 @@ function solve(typeOfDay, personAge) {
     }
 }
 
-solve('Weekday', 42); // 18$
-solve('Holiday', -12); // Error!
-solve('Holiday', 15); // 5$
-solve('Weekend', 3); // 15$
-solve('Weekend', 123); // Error!
+buyTickets('Weekday', 42); // 18$
+buyTickets('Holiday', -12); // Error!
+buyTickets('Holiday', 15); // 5$
+buyTickets('Weekend', 3); // 15$
+buyTickets('Weekend', 123); // Error!

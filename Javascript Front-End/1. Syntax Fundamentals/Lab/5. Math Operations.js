@@ -1,22 +1,22 @@
-function solve(numberOne, numberTwo, operator) {
-    const operations = {
-      '+': (a, b) => a + b,
-      '-': (a, b) => a - b,
-      '*': (a, b) => a * b,
-      '/': (a, b) => a / b,
-      '%': (a, b) => a % b,
-      '**': (a, b) => a ** b
-    };
-  
-    const operation = operations[operator];
-    const result = operation(numberOne, numberTwo);
+function executeMathOperation(numberOne, numberTwo, operator) {
+  const operations = {
+    '+': (numberOne, numberTwo) => numberOne + numberTwo,
+    '-': (numberOne, numberTwo) => numberOne - numberTwo,
+    '*': (numberOne, numberTwo) => numberOne * numberTwo,
+    '/': (numberOne, numberTwo) => numberOne / numberTwo,
+    '%': (numberOne, numberTwo) => numberOne % numberTwo,
+    '**': (numberOne, numberTwo) => numberOne ** numberTwo
+  };
 
-    console.log(result);
+  const operation = operations[operator];
+  const result = operation(numberOne, numberTwo);
+
+  console.log(result);
 }
 
-solve(5, 6, '+'); // 11
-solve(3, 5.5, '*'); // 16.5
-solve(4, 2, '**'); // 16
-solve(3, 5, '/'); // 0.6
-solve(5, 3, '%'); // 2
-solve(5, 3, '-'); // 2
+executeMathOperation(5, 6, '+'); // 11
+executeMathOperation(3, 5.5, '*'); // 16.5
+executeMathOperation(4, 2, '**'); // 16
+executeMathOperation(3, 5, '/'); // 0.6
+executeMathOperation(5, 3, '%'); // 2
+executeMathOperation(5, 3, '-'); // 2

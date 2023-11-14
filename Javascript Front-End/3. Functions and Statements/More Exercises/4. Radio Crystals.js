@@ -1,4 +1,4 @@
-function radioCrystals(params) {
+function getCrystalSize(params) {
     const desiredFinalThickness = Number(params[0]);
     const cutValue = 4;
     const lapValue = 0.8;
@@ -87,5 +87,5 @@ function radioCrystals(params) {
     }
 }
 
-radioCrystals([1375, 50000]); 
-radioCrystals([1000, 4000, 8100]);
+getCrystalSize([1375, 50000]);
+getCrystalSize([1000, 4000, 8100]);

@@ -1,9 +1,9 @@
 function carWash(commands) {
     let actions = {
-        "soap": (x) => x + 10,
-        "water": (x) => x + x * 0.2,
-        "vacuum cleaner": (x) => x + x * 0.25,
-        "mud": (x) => x - x * 0.1,
+        "soap": (cleanLevel) => cleanLevel + 10,
+        "water": (cleanLevel) => cleanLevel + cleanLevel * 0.2,
+        "vacuum cleaner": (cleanLevel) => cleanLevel + cleanLevel * 0.25,
+        "mud": (cleanLevel) => cleanLevel - cleanLevel * 0.1,
     };
 
     let value = 0;

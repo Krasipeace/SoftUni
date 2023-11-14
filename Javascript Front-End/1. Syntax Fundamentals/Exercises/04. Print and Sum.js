@@ -1,4 +1,4 @@
-function solve(startNumber, endNumber) {
+function printAndSum(startNumber, endNumber) {
     let sum = 0;
     let numbersRange = '';
 
@@ -17,5 +17,5 @@ function solve(startNumber, endNumber) {
     console.log(`Sum: ${sum}`);
 }
 
-solve(5, 10); // 5 6 7 8 9 10 Sum: 45
-solve(-5, 5); // -5 -4 -3 -2 -1 0 1 2 3 4 5 Sum: 0
+printAndSum(5, 10); // 5 6 7 8 9 10 Sum: 45
+printAndSum(-5, 5); // -5 -4 -3 -2 -1 0 1 2 3 4 5 Sum: 0

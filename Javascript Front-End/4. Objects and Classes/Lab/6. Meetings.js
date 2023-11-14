@@ -1,4 +1,4 @@
-function meetings(input) {
+function getMeetings(input) {
     let schedule = {};
 
     for (let line of input) {
@@ -17,7 +17,7 @@ function meetings(input) {
     }
 }
 
-meetings(['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']);
+getMeetings(['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']);
 // Scheduled for Monday
 // Scheduled for Wednesday
 // Conflict on Monday!

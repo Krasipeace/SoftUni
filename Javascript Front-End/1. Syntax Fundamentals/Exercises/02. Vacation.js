@@ -1,4 +1,4 @@
-function solve(groupOfPeople, typeOfGroup, dayOfWeek) {
+function vacation(groupOfPeople, typeOfGroup, dayOfWeek) {
     const prices = {
       'Students': {'Friday': 8.45, 'Saturday': 9.80, 'Sunday': 10.46},
       'Business': {'Friday': 10.90, 'Saturday': 15.60, 'Sunday': 16},
@@ -18,5 +18,5 @@ function solve(groupOfPeople, typeOfGroup, dayOfWeek) {
     console.log(`Total price: ${totalPrice.toFixed(2)}`);
 }
 
-solve(30, 'Students', 'Sunday'); // Total price: 266.73
-solve(40, 'Regular', 'Saturday'); // Total price: 800.00
+vacation(30, 'Students', 'Sunday'); // Total price: 266.73
+vacation(40, 'Regular', 'Saturday'); // Total price: 800.00

@@ -1,4 +1,4 @@
-function solve(...elements) {
+function cookingByNumbers(...elements) {
     let number = Number(elements.shift());
     const operations = {
         'chop': (num) => num / 2,
@@ -14,5 +14,5 @@ function solve(...elements) {
     }
 }
 
-solve('32', 'chop', 'chop', 'chop', 'chop', 'chop'); // 16 8 4 2 1
-solve('9', 'dice', 'spice', 'chop', 'bake', 'fillet'); // 3 4 2 6 4.8
+cookingByNumbers('32', 'chop', 'chop', 'chop', 'chop', 'chop'); // 16 8 4 2 1
+cookingByNumbers('9', 'dice', 'spice', 'chop', 'bake', 'fillet'); // 3 4 2 6 4.8

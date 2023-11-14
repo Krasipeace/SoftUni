@@ -1,4 +1,4 @@
-function solve(startingYield) {
+function calculateSpiceHarvesting(startingYield) {
     let days = 0;
     let totalAmount = 0;
 
@@ -15,5 +15,5 @@ function solve(startingYield) {
     return console.log(`${days}\n${totalAmount}`);
 }
 
-solve(111); // 2 134
-solve(450); // 36 8938
+calculateSpiceHarvesting(111); // 2 134
+calculateSpiceHarvesting(450); // 36 8938

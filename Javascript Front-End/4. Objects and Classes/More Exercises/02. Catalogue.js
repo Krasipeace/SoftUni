@@ -1,32 +1,41 @@
-function calalogue(input) {
-    let catalogue = {};
+function printCatalogue(input) {
+    function populateCatalogue(input) {
+        let catalogue = {};
 
-    for (let line of input) {
-        let [name, price] = line.split(' : ');
-        price = Number(price);
-        let letter = name[0];
+        for (let line of input) {
+            let [name, price] = line.split(' : ');
+            price = Number(price);
+            let letter = name[0];
 
-        if (!catalogue.hasOwnProperty(letter)) {
-            catalogue[letter] = {};
+            if (!catalogue.hasOwnProperty(letter)) {
+                catalogue[letter] = {};
+            }
+
+            catalogue[letter][name] = price;
         }
 
-        catalogue[letter][name] = price;
+        return catalogue;
     }
-
-    let sortedLetters = Object.keys(catalogue).sort((a, b) => a.localeCompare(b));
-
-    for (let letter of sortedLetters) {
-        console.log(letter);
-
-        let sortedProducts = Object.keys(catalogue[letter]).sort((a, b) => a.localeCompare(b));
-
-        for (let product of sortedProducts) {
-            console.log(`  ${product}: ${catalogue[letter][product]}`);
+    
+    function printSortedCatalogue(catalogue) {
+        let sortedLetters = Object.keys(catalogue).sort((a, b) => a.localeCompare(b));
+        
+        for (let letter of sortedLetters) {
+            console.log(letter);
+            
+            let sortedProducts = Object.keys(catalogue[letter]).sort((a, b) => a.localeCompare(b));
+            
+            for (let product of sortedProducts) {
+                console.log(`  ${product}: ${catalogue[letter][product]}`);
+            }
         }
     }
+    
+    let catalogue = populateCatalogue(input);
+    printSortedCatalogue(catalogue);
 }
 
-calalogue([
+printCatalogue([
     'Appricot : 20.4',
     'Fridge : 1500',
     'TV : 1499',
@@ -49,7 +58,7 @@ calalogue([
 // T
 // T - Shirt: 10
 // TV: 1499
-calalogue([
+printCatalogue([
     'Omlet : 5.4',
     'Shirt : 15',
     'Cake : 59'
