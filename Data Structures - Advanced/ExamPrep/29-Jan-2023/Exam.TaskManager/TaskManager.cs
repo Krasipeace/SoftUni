@@ -6,11 +6,15 @@ namespace Exam.TaskManager
 {
     public class TaskManager : ITaskManager
     {
-        private Dictionary<string, Queue<Task>> tasksById;
+        private LinkedList<Task> unexecutedTasks;
+        private HashSet<Task> executedTasks;
+        private Dictionary<string, Task> tasksById;
 
         public TaskManager()
         {
-            tasksById = new Dictionary<string, Queue<Task>>();
+            this.unexecutedTasks = new LinkedList<Task>();
+            this.executedTasks = new HashSet<Task>();
+            this.tasksById = new Dictionary<string, Task>();
         }
 
         public int Size()
@@ -21,39 +25,60 @@ namespace Exam.TaskManager
 
         public void AddTask(Task task)
         {
-            this.tasksById.Add(task.Id, new Queue<Task>());
-            this.tasksById[task.Id].Enqueue(task);
+            this.unexecutedTasks.AddLast(task);
+            this.tasksById.Add(task.Id, task);
         }
 
         public void DeleteTask(string taskId)
         {
-            var taskToDelete = this.tasksById[taskId].Dequeue() ?? throw new ArgumentException();
+            if (!tasksById.ContainsKey(taskId))
+            {
+                throw new ArgumentException();
+            }
 
-            tasksById.Remove(taskToDelete.Id);
+            var taskToDelete = tasksById[taskId];
+            tasksById.Remove(taskId);
+
+            if (executedTasks.Contains(taskToDelete))
+            {
+                executedTasks.Remove(taskToDelete);
+            }
+            else
+            {
+                unexecutedTasks.Remove(taskToDelete);
+            }
         }
 
         public Task ExecuteTask()
         {
-            var taskToExecute = tasksById.First().Value.Dequeue() ?? throw new ArgumentException();
-            tasksById.First().Value.Enqueue(taskToExecute);
+            if (unexecutedTasks.Count == 0)
+            {
+                throw new ArgumentException();
+            }
+
+            var taskToExecute = unexecutedTasks.First.Value;
+
+            unexecutedTasks.RemoveFirst();
+            executedTasks.Add(taskToExecute);
 
             return taskToExecute;
         }
 
         public Task GetTask(string taskId)
         {
-            if (tasksById.TryGetValue(taskId, out var taskQueue))
+            if (!tasksById.ContainsKey(taskId))
             {
-                return taskQueue.Peek();
+                throw new ArgumentException();
             }
-            throw new ArgumentException();
+
+            return tasksById[taskId];
         }
 
         public IEnumerable<Task> GetAllTasksOrderedByEETThenByName()
             => tasksById.Values
-                .SelectMany(t => t)
-                .OrderByDescending(t => t.EstimatedExecutionTime)
-                .ThenBy(t => t.Name.Length);
+                .OrderBy(t => t.EstimatedExecutionTime)
+                .ThenBy(t => t.Name.Length)
+                .ToList();
 
         public void RescheduleTask(string taskId)
         {
@@ -62,19 +87,28 @@ namespace Exam.TaskManager
                 throw new ArgumentException();
             }
 
-            var taskToReschedule = tasksById[taskId].Dequeue() ?? throw new ArgumentException();
-            tasksById[taskId].Enqueue(taskToReschedule);
+            var taskToReschedule = tasksById[taskId];
+            executedTasks.Remove(taskToReschedule);
+            unexecutedTasks.AddLast(taskToReschedule);
         }
 
         public IEnumerable<Task> GetDomainTasks(string domain)
-            => tasksById.Values
-                .SelectMany(t => t)
+        {
+            var tasks = unexecutedTasks
                 .Where(t => t.Domain == domain)
-            ?? throw new ArithmeticException();
+                .ToList();
+
+            if (tasks.Count == 0)
+            {
+                throw new ArgumentException();
+            }
+
+            return tasks;
+        }
 
         public IEnumerable<Task> GetTasksInEETRange(int lowerBound, int upperBound)
-            => tasksById.Values
-                .SelectMany(t => t)
-                .Where(t => t.EstimatedExecutionTime >= lowerBound && t.EstimatedExecutionTime <= upperBound);
+            => unexecutedTasks
+                .Where(t => t.EstimatedExecutionTime >= lowerBound && t.EstimatedExecutionTime <= upperBound)
+                .ToList();
     }
 }
