@@ -64,6 +64,19 @@ namespace Exam.TaskManager
             return taskToExecute;
         }
 
+        public void RescheduleTask(string taskId)
+        {
+            if (!tasksById.ContainsKey(taskId))
+            {
+                throw new ArgumentException();
+            }
+
+            var taskToReschedule = tasksById[taskId];
+
+            executedTasks.Remove(taskToReschedule);
+            unexecutedTasks.AddLast(taskToReschedule);
+        }
+
         public Task GetTask(string taskId)
         {
             if (!tasksById.ContainsKey(taskId))
@@ -76,21 +89,9 @@ namespace Exam.TaskManager
 
         public IEnumerable<Task> GetAllTasksOrderedByEETThenByName()
             => tasksById.Values
-                .OrderBy(t => t.EstimatedExecutionTime)
+                .OrderByDescending(t => t.EstimatedExecutionTime)
                 .ThenBy(t => t.Name.Length)
                 .ToList();
-
-        public void RescheduleTask(string taskId)
-        {
-            if (!tasksById.ContainsKey(taskId))
-            {
-                throw new ArgumentException();
-            }
-
-            var taskToReschedule = tasksById[taskId];
-            executedTasks.Remove(taskToReschedule);
-            unexecutedTasks.AddLast(taskToReschedule);
-        }
 
         public IEnumerable<Task> GetDomainTasks(string domain)
         {
