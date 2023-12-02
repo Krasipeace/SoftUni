@@ -14,6 +14,8 @@
 
         public HashSet<Category> Children { get; set; } = new HashSet<Category>();
 
+        public int Depth { get; set; }
+
         public Category(string id, string name, string description)
         {
             Id = id;

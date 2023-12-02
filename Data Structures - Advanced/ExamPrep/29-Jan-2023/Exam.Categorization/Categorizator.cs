@@ -13,6 +13,12 @@ namespace Exam.Categorization
             this.categoriesById = new Dictionary<string, Category>();
         }
 
+        public int Size()
+            => this.categoriesById.Count;
+
+        public bool Contains(Category category)
+            => this.categoriesById.ContainsKey(category.Id);
+
         public void AddCategory(Category category)
         {
             if (categoriesById.ContainsKey(category.Id))
@@ -20,6 +26,7 @@ namespace Exam.Categorization
                 throw new ArgumentException();
             }
 
+            category.Depth = 0;
             categoriesById.Add(category.Id, category);
         }
 
@@ -33,20 +40,41 @@ namespace Exam.Categorization
             var childCategory = categoriesById[childCategoryId];
             var parentCategory = categoriesById[parentCategoryId];
 
-            if (childCategory.Parent != null)
+            if (parentCategory.Children.Contains(childCategory))
             {
                 throw new ArgumentException();
             }
 
             childCategory.Parent = parentCategory;
             parentCategory.Children.Add(childCategory);
+
+            var ancestor = parentCategory;
+            while (ancestor.Parent != null)
+            {
+                ancestor = ancestor.Parent;
+            }
+
+            UpdateParentDepth(ancestor);
         }
 
-        public int Size()
-            => this.categoriesById.Count;
+        private int UpdateParentDepth(Category ancestor)
+        {
+            if (ancestor == null)
+            {
+                return 0;
+            }
 
-        public bool Contains(Category category)
-            => categoriesById.ContainsKey(category.Id);
+            var depth = 0;
+
+            foreach (var child in ancestor.Children)
+            {
+                depth = Math.Max(depth, UpdateParentDepth(child));
+            }
+
+            ancestor.Depth = depth + 1;
+
+            return ancestor.Depth;
+        }
 
         public IEnumerable<Category> GetChildren(string categoryId)
         {
@@ -86,11 +114,13 @@ namespace Exam.Categorization
 
         private void GetAllParents(Category category, Stack<Category> hierarchy)
         {
-            if (category.Parent != null)
+            if (category == null)
             {
-                hierarchy.Push(category.Parent);
-                GetAllParents(category.Parent, hierarchy);
+                return;
             }
+
+            hierarchy.Push(category);
+            GetAllParents(category.Parent, hierarchy);
         }
 
         public void RemoveCategory(string categoryId)
@@ -122,8 +152,8 @@ namespace Exam.Categorization
 
         public IEnumerable<Category> GetTop3CategoriesOrderedByDepthOfChildrenThenByName()
             => this.categoriesById.Values
-                .OrderByDescending(c => GetChildren(c.Id).Count())
-                .ThenBy(c => c.Name.Length)
+                .OrderByDescending(c => c.Depth)
+                .ThenBy(c => c.Name)
                 .Take(3);
     }
 }
