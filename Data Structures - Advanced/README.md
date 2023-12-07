@@ -19,33 +19,28 @@ The Advanced Data Structures course introduces participants to the implementatio
     </summary>
 
 1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/01.%20B-Trees-2-3-Trees%20-%20Lab)
-2. [Exercises](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/01.%20Red-Black-Trees%20-%20Exercise)
+2. [Exercise](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/01.%20Red-Black-Trees%20-%20Exercise)
 </details>
 <details>
     <summary>
         II. AVL Trees and AA-Trees
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/02.%20AVL-Trees-and-AA-Trees%20-%20Lab)
+2. [Exercise](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/02.%20AVL-Trees-and-AA-Trees%20-%20Exercise)
 </details>
 <details>
     <summary>
         III. Hash Tables Sets and Maps
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/03.%20Hash-Tables-Sets-and-Dictionaries%20-%20Lab)
+2. [Exercise](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/03.%20Hash-Tables-Sets-and-Dictionaries%20-%20Exercise)
 </details>
 <details>
     <summary>
         IV. Data Structures Augmentation
     </summary>
 
-1. [Lab](#)
-2. [Exercises](#)
+1. [Lab](https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Advanced/04.%20Advanced-Data-Structures-Augmentation%20-%20Lab)
 </details>
-
----
-
-[Back to top](#)
