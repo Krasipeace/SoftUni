@@ -11,6 +11,10 @@ The Advanced Data Structures course introduces participants to the implementatio
 
 &nbsp;
 
+[Certificate (click here to preview)](https://softuni.bg/certificates/details/195850/d1f5d772)
+
+&nbsp;
+
 ## Exercises
 
 <details>
