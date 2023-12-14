@@ -37,7 +37,6 @@ function solve(input) {
                 console.log(`${name} took a breath and recovered ${astronaut.oxygen - oxygenBeforeBreath} oxygen!`);
                 break;
         }
-
     }
 
     printAstronauts();
