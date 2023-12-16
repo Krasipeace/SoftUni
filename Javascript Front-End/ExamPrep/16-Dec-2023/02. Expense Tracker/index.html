@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <h1>Expense Tracker</h1>
+    <main id="main">
+        <div id="wallet-container">
+            <div id="form-container">
+                <form class="expense-content">
+                    <label for="expense">Expense Type</label>
+                    <input type="text" id="expense" />
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" />
+                    <label for="date">Date</label>
+                    <input type="date" id="date" />
+
+                    <button type="button" id="add-btn">Add</button>
+                </form>
+            </div>
+        </div>
+        <div id="right-container">
+            <div id="preview">
+                <h2>Preview</h2>
+
+                <ul id="preview-list">
+                    <!-- <li class="expense-item">
+                        <article>
+                            <p>Type: Food</p>
+                            <p>Amount: 50$</p>
+                            <p>Date: YY-MM-DD</p>
+                        </article>
+                        <div class="buttons">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn ok">ok</button>
+                        </div>
+                    </li> -->
+                </ul>
+
+            </div>
+            <div id="expenses">
+                <h2>Expenses</h2>
+                <ul id="expenses-list">
+                    <!-- <li class="expense-item">
+                        <article>
+                            <p>Type: Food</p>
+                            <p>Amount: 50$</p>
+                            <p>Date: YY-MM-DD</p>
+                        </article>
+                    </li> -->
+                </ul>
+                <button class="btn delete">Delete</button>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
