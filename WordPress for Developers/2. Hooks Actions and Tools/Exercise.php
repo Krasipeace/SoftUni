@@ -7,9 +7,9 @@
  // 1. Check if user is admin
 
 if ( is_admin() ) {
-    var dump( 'is_admin' );
+    var_dump( 'is_admin' );
 } else {
-    var dump( 'is not admin' );
+    var_dump( 'is not admin' );
 }
 
 // 2. highest priority of execution = lowest number in filter
