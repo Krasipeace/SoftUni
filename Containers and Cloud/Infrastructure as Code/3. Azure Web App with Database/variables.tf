@@ -1,49 +1,49 @@
 variable "resource_group_name" {
   type        = string
-  description = "Name of the resource group in which the resources will be created"
+  description = "Name of resource group"
 }
 
 variable "resource_group_location" {
   type        = string
-  description = "Location of the resource group in which the resources will be created"
+  description = "Location of resource group"
 }
 
 variable "app_service_plan_name" {
   type        = string
-  description = "Name of the App Service Plan"
+  description = "App service plan name"
 }
 
 variable "app_service_name" {
   type        = string
-  description = "Name of the App Service"
+  description = "App service name"
 }
 
 variable "sql_server_name" {
   type        = string
-  description = "Name of the SQL Server"
+  description = "Sql server name"
 }
 
 variable "sql_database_name" {
   type        = string
-  description = "Name of the SQL Database"
+  description = "Name of database"
 }
 
 variable "sql_admin_login" {
   type        = string
-  description = "SQL Server admin login"
+  description = "Username for sql server"
 }
 
 variable "sql_admin_password" {
   type        = string
-  description = "SQL Server admin password"
+  description = "Password for sql user"
 }
 
 variable "firewall_rule_name" {
   type        = string
-  description = "Name of the firewall rule"
+  description = "Name of firewall rule"
 }
 
 variable "repo_URL" {
   type        = string
-  description = "URL of the GitHub repository"
+  description = "URL of GitHub repository"
 }
