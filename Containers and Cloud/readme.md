@@ -14,3 +14,4 @@ The main goal of the Containers and Cloud course is to familiarize students with
 List of CLI Commands:
 https://gist.github.com/Krasipeace/9cb762b68185636beb809ed789718a99
 
+[Course Certificate(click here to preview)](https://softuni.bg/certificates/details/206996/aa875462)
