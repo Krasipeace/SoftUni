@@ -60,7 +60,7 @@ SoftUni Courses:
 [42]: https://softuni.bg/professions/csharp
 
 [53]: https://softuni.bg/modules/133/devops-for-developers-january-2024/1452
-[54]: https://github.com/Krasipeace/SoftUni/blob/main/
-[55]: https://github.com/Krasipeace/SoftUni/blob/main/
+[54]: https://github.com/Krasipeace/SoftUni/blob/main/Containers%20and%20Cloud/readme.md
+[55]: https://github.com/Krasipeace/SoftUni/blob/main/Software%20Engineering%20and%20DevOps/readme.md
 
 ---
