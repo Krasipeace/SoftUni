@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  mongodb:
+    networks:
+      - shoplist
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=max
+      - MONGO_INITDB_ROOT_PASSWORD=secret
+    volumes:
+      - data:/data/db
+    image: mongo
+  backend:
+    networks:
+      - shoplist
+    ports:
+      - 80:80
+    volumes:
+      - logs:/logs
+      - node_modules:/node_modules
+    image: krasipeace/sl-backend
+  frontend:
+    networks:
+      - shoplist
+    ports:
+      - 3001:3000
+    volumes:
+      - ./frontend/src:/src
+    image: krasipeace/sl-frontend
+networks:
+  shoplist:
+volumes:
+  data:
+  logs:
+  node_modules:
