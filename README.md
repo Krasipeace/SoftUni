@@ -16,6 +16,8 @@
 
 SoftUni's professional program in software engineering aims to build all the fundamental knowledge and practical skills necessary for the acquisition of the "software engineer" profession, working with the most modern software technologies and learning the best practices in the field of programming.
 
+#### Tech Stack
+
 <p text-align="center">
     <a href="https://dotnet.microsoft.com/en-us/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/25181517/121405754-b4f48f80-c95d-11eb-8893-fc325bde617f.png" alt="mssql" width="40" height="40"/> </a>
     <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a>
@@ -26,22 +28,30 @@ SoftUni's professional program in software engineering aims to build all the fun
     <a href="https://www.w3schools.com/php/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a>
     <a href="https://www.w3schools.com/sql" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>
     <a href="https://azure.microsoft.com/en-us/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/25181517/183911544-95ad6ba7-09bf-4040-ac44-0adafedb9616.png" alt="Microsoft Azure" width="40" height="40"/> </a>
+    <a href="https://www.docker.com/products/docker-desktop/" target="_blank" rel="norefferer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40" /> </a>
+    <a href="https://www.terraform.io/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" height="40" width="40" alt="terraform" /> </a>
+    <a href="https://grafana.com/" target="_blank" rel="norefferer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" height="40" width="40" alt="Grafana" /> </a>
+    <a href="https://github.com/" target="_blank" rel="norefferer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="GitHub" height="40" width="40" /> </a>
+    <a href="https://github.com/features/actions" target="_blank" rel="norefferer" > <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="github actions" height="40" width="40" /> </a>
+    <a href="https://git-scm.com/" target="_blank" rel="norefferer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" height="40" width="40" alt="git" /> </a>
+    <a href="https://www.jenkins.io/" target="_blank" rel="norefferer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt="Jenkins" height="40" width="40" /> </a>
+
 </p>
 
 &nbsp;
 
-SoftUni Courses:  
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [C# Web Development][42] | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open Courses | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Full Stack][53]
-| :--- | :--- | :--- |
-| [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1] | [Containers and Cloud][54] |
-| [C# Advanced][3]                         | [WordPress For Developers][7]	 | [Software Engineering and DevOps][55] |
-| [C# Object Oriented Programming][4]      | [Data Structures - Fundamentals][12] | 
-| [MS SQL][5]                              | [Data Structures - Advanced][13] | 
-| [Entity Framework Core][6]     		   |              | 
-| [ASP.NET Fundamentals][8] 			   |			  |
-| [ASP.NET Advanced][9] 				   |			  |
-| [HTML & CSS][10] 				           |			  |
-| [Javascript Front-End][11] 			   |		      |
+#### SoftUni Courses:  
+| [C# Web Development][42]                 | Open Courses                         | [Full Stack][53]                      |
+| :--------------------------------------- | :----------------------------------- | :------------------------------------ |
+| [Fundamentals of Programming with C#][2] | [Programming Basics with C#][1]      | [Containers and Cloud][54]            |
+| [C# Advanced][3]                         | [WordPress For Developers][7]        | [Software Engineering and DevOps][55] |
+| [C# Object Oriented Programming][4]      | [Data Structures - Fundamentals][12] |
+| [MS SQL][5]                              | [Data Structures - Advanced][13]     |
+| [Entity Framework Core][6]               |                                      |
+| [ASP.NET Fundamentals][8]                |                                      |
+| [ASP.NET Advanced][9]                    |                                      |
+| [HTML & CSS][10]                         |                                      |
+| [Javascript Front-End][11]               |                                      |
 
 [1]: https://github.com/Krasipeace/SoftUni/blob/main/Programming%20Basics/README.md
 [2]: https://github.com/Krasipeace/SoftUni/blob/main/Fundamentals/README.md
