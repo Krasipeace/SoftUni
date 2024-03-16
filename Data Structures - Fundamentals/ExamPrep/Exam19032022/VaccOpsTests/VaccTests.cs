@@ -10,7 +10,7 @@ using VaccOps;
 public class Tests
 {
     private VaccDb vaccOps;
-    Doctor d1, d2, d3, d4, d5, d6, d7, d8 ;
+    Doctor d1, d2, d3, d4, d5, d6, d7, d8;
     Patient p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11;
 
     [SetUp]
@@ -23,7 +23,6 @@ public class Tests
         p1 = new Patient("a", 1, 1, "a");
         p2 = new Patient("b", 1, 2, "b");
         p3 = new Patient("c", 1, 3, "c");
-
         d4 = new Doctor("d", 3);
         d5 = new Doctor("e", 4);
         d6 = new Doctor("f", 4);
@@ -44,7 +43,6 @@ public class Tests
     {
         vaccOps.AddDoctor(d1);
         var d = this.vaccOps.GetDoctors().ToList();
-
 
         Assert.True(d.Count() == 1);
         Assert.True(d[0].Name == d1.Name);
@@ -102,7 +100,6 @@ public class Tests
     {
         Assert.Throws<ArgumentException>(() => this.vaccOps.AddPatient(d1, p1));
     }
-
 
     [Test]
     public void TestNotAddingAnyDoctors()
@@ -176,13 +173,11 @@ public class Tests
         this.vaccOps.AddPatient(d1, p2);
         this.vaccOps.AddPatient(d1, p3);
 
-
         this.vaccOps.RemoveDoctor(d1.Name);
 
         Assert.False(this.vaccOps.Exist(p1));
         Assert.False(this.vaccOps.Exist(p2));
         Assert.False(this.vaccOps.Exist(p3));
-
         var coll = this.vaccOps.GetDoctorsByPopularity(d1.Popularity);
         Assert.IsTrue(coll.Count() == 0);
     }
@@ -202,7 +197,6 @@ public class Tests
     {
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
-
         this.vaccOps.AddPatient(d1, p1);
         this.vaccOps.ChangeDoctor(d1, d2, p1);
 
@@ -216,7 +210,6 @@ public class Tests
     {
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
-
         this.vaccOps.AddPatient(d1, p1);
         this.vaccOps.ChangeDoctor(d1, d2, p1);
 
@@ -230,7 +223,6 @@ public class Tests
     {
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
-
         this.vaccOps.AddPatient(d1, p1);
         this.vaccOps.ChangeDoctor(d1, d2, p1);
 
@@ -245,7 +237,6 @@ public class Tests
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
 
-
         Assert.IsTrue(this.vaccOps.GetDoctorsByPopularity(1).Count() == 2);
     }
 
@@ -256,7 +247,6 @@ public class Tests
         this.vaccOps.AddDoctor(d2);
         this.vaccOps.RemoveDoctor(d1.Name);
 
-
         Assert.IsTrue(this.vaccOps.GetDoctorsByPopularity(1).Count() == 1);
     }
 
@@ -266,7 +256,6 @@ public class Tests
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
         this.vaccOps.RemoveDoctor(d1.Name);
-
 
         Assert.IsTrue(this.vaccOps.GetDoctorsByPopularity(2).Count() == 0);
     }
@@ -331,8 +320,6 @@ public class Tests
         this.vaccOps.AddDoctor(d3);
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
-
-
         this.vaccOps.AddPatient(d1, p1);
         this.vaccOps.AddPatient(d2, p2);
         this.vaccOps.AddPatient(d2, p3);
@@ -349,8 +336,6 @@ public class Tests
         this.vaccOps.AddDoctor(d3);
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
-
-
         this.vaccOps.AddPatient(d1, p1);
         this.vaccOps.AddPatient(d2, p2);
         this.vaccOps.AddPatient(d2, p3);
@@ -368,8 +353,6 @@ public class Tests
         this.vaccOps.AddDoctor(d3);
         this.vaccOps.AddDoctor(d1);
         this.vaccOps.AddDoctor(d2);
-
-
         this.vaccOps.AddPatient(d3, p1);
         this.vaccOps.AddPatient(d3, p2);
 
@@ -395,7 +378,6 @@ public class Tests
         this.vaccOps.AddDoctor(d4);
         this.vaccOps.AddDoctor(d5);
         this.vaccOps.AddDoctor(d6);
-
         this.vaccOps.AddPatient(d4, p4);
         this.vaccOps.AddPatient(d5, p5);
         this.vaccOps.AddPatient(d6, p6);
@@ -410,7 +392,6 @@ public class Tests
     [Test]
     public void TestGetPatientsSortedByDoctorsPopularityAscThenByHeightDescThenByAgeDesc2()
     {
-
         this.vaccOps.AddDoctor(d4);
         this.vaccOps.AddDoctor(d5);
         this.vaccOps.AddDoctor(d6);
@@ -427,7 +408,6 @@ public class Tests
         this.vaccOps.AddPatient(d8, p11);
 
         var c = this.vaccOps.GetPatientsSortedByDoctorsPopularityAscThenByHeightDescThenByAge().ToList();
-
         var expected = new List<Patient>() { p9, p10, p11, p4, p8, p7, p5, p6 };
         CollectionAssert.AreEquivalent(expected, c);
     }
