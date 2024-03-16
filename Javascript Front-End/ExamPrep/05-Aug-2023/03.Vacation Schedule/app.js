@@ -70,7 +70,7 @@ function loadVacations() {
 function createListVacations(vacations) {
     listVacations.innerHTML = '';
     vacations.map(createVacationArea).forEach(v => listVacations.appendChild(v));
-};
+}
 
 function createVacationArea(vacation) {
     const container = document.createElement('div');

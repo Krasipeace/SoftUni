@@ -4,7 +4,7 @@ function tickets(input, status) {
             this.destination = destination;
             this.price = Number(price);
             this.status = status;
-        };
+        }
     }
 
     let tickets = [];
