@@ -9,7 +9,6 @@ using CouponOps.Models;
 [TestFixture]
 public class CouponTests
 {
-
     private CouponOperations couponOperations;
     private Website w1;
     private Website w2;
@@ -135,7 +134,6 @@ public class CouponTests
 
         Assert.Throws<ArgumentException>(() => this.couponOperations.RemoveCoupon(c1.Code));
     }
-
 
     [Test]
     public void TestRemoveCouponAndAddingAgain()
@@ -306,7 +304,6 @@ public class CouponTests
         var expected = new List<Coupon>() { c4, c1, c5 };
         CollectionAssert.AreEqual(res, expected);
     }
-
     /*
      *  private CouponOperations couponOperations;
         private Website w1 = new Website("a", 1);
@@ -475,5 +472,4 @@ public class CouponTests
         sw.Stop();
         Assert.IsTrue(sw.ElapsedMilliseconds <= 20);
     }
-
 }
