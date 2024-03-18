@@ -1,0 +1,40 @@
+name: Lint C# Code
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Install StyleCop
+        run: dotnet tool install --global StyleCop.CommandLine
+
+      - name: Run StyleCop
+        run: dotnet stylecop
+
+      - name: Auto-fix Lint Errors (if possible)
+        run: dotnet stylecop fix --include '**/*.cs'
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Auto-fix lint errors"
+          labels: "lint"
+          body: |
+            This pull request was automatically created to fix lint errors identified by StyleCop.
