@@ -1,0 +1,60 @@
+name: CI/CD Workflow
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    name: Build App
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20.x
+        cache: 'npm'
+
+    - name: Install Dependencies
+      run: npm install
+    - name: Install Playwright Environment
+      run: npx playwright install
+
+    - name: Start server
+      run: npm run start-server &
+    - name: Timeout
+      run: sleep 30
+
+    - name: Start app
+      run: npm run start &
+    - name: Timeout
+      run: sleep 30
+
+    - name: Test app
+      run: npm run test-ui
+
+  deploy-server:
+    name: Deploy Server to render.com
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Deploy
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.SERVICE_ID }} 
+          api-key: ${{ secrets.RENDERAPIKEY }} 
+  deploy-app:
+    name: Deploy App to render.com
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Deploy
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.SERVICE_APP_ID }} 
+          api-key: ${{ secrets.RENDERAPIKEY }} 

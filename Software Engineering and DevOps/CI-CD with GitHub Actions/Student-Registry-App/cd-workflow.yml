@@ -1,0 +1,40 @@
+name: CD Workflow
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    name: Build App
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20.x
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start app
+      run: npm start &
+
+    - name: Test app
+      run: npm test
+
+  deploy:
+    name: Deploy App
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Deploy to render.com
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.SERVICE_ID }} 
+          api-key: ${{ secrets.RENDERAPIKEY }} 
