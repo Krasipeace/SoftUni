@@ -1,0 +1,24 @@
+name: Clean Up Empty Lines on Issue
+
+on:
+  issues:
+    types: [bracket]
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Clean up empty lines
+      run: |
+        sed -i '' -E 's/{\s*$//g' *.cs
+        sed -i '' -E 's/^\s*}$/}/g' *.cs
+
+    - name: Commit changes
+      run: |
+        git add *.cs
+        git commit -m "Clean up empty lines"
+        git push origin test-remove-blank-lines
