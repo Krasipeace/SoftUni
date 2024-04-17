@@ -9,3 +9,6 @@ The main objective of the Software Engineering and DevOps course is to introduce
 - Creation and management of Continuous integration process
 - Working with CI/CD Pipelines
 - Creating conditions for automated testing
+
+
+[Course Certificate(Click here to preview)](https://softuni.bg/certificates/details/213353/285d5444)
