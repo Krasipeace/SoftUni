@@ -12,6 +12,10 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Krasipeace/SoftUni)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Krasipeace/SoftUni)
 
+## Diploma
+
+* [C# Web Developer](https://softuni.bg/certificates/details/215879/bd51ee79)
+
 ### [Software Engineering ](https://softuni.bg/curriculum)
 
 SoftUni's professional program in software engineering aims to build all the fundamental knowledge and practical skills necessary for the acquisition of the "software engineer" profession, working with the most modern software technologies and learning the best practices in the field of programming.
