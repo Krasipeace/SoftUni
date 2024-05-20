@@ -1,4 +1,4 @@
-Github repo(private): https://github.com/Krasipeace/kravedra-regular-exam
+Github repo: https://github.com/Krasipeace/kravedra-regular-exam
 
 Render.com Link: https://kravedra.onrender.com
 
