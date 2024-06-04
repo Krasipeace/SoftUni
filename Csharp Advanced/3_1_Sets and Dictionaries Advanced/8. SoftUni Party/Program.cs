@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -27,10 +27,7 @@ namespace _8._SoftUni_Party
 
                 if (isPartyOn)
                 {
-                    if (guests.Contains(input))
-                    {
-                        guests.Remove(input);
-                    }
+                    guests.Remove(input);
                 }
 
                 input = Console.ReadLine();

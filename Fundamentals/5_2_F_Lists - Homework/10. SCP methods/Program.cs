@@ -98,14 +98,11 @@ namespace _10._SCP_methods
         static List<string> LessonRemove(List<string> lessons, string[] command)
         {
             string lessonTitle = command[1];
-            if (lessons.Contains(lessonTitle))
-            {
-                lessons.Remove(lessonTitle);
-            }
-            else if (lessons.Contains(lessonTitle + "-Exercise"))
-            {
-                lessons.Remove(lessonTitle + "-Exercise");
-            }
+            if (!lessons.Remove(lessonTitle))
+                if (lessons.Contains(lessonTitle + "-Exercise"))
+                {
+                    lessons.Remove(lessonTitle + "-Exercise");
+                }
             return lessons;
         }
         static List<string> LessonInsert(List<string> lessons, string[] command)

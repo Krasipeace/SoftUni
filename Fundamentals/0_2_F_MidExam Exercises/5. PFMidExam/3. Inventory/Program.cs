@@ -68,10 +68,7 @@ namespace _3._Inventory
 
         private static void Drop(string item, List<string> items)
         {
-            if (items.Contains(item))
-            {
-                items.Remove(item);
-            }
+            items.Remove(item);
         }
 
         private static void Collect(string item, List<string> items)
