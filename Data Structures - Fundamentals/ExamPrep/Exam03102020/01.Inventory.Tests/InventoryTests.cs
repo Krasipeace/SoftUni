@@ -176,7 +176,7 @@ namespace _01.Inventory.Tests
             List<IWeapon> actualWeapons = this._inventory
                 .RetriveInRange(Category.Medium, Category.Heavy)
                 .OrderBy(w => w.Id)
-                .ToList(); ;
+                .ToList();
 
             Assert.AreEqual(weaponsInRange.Capacity, actualWeapons.Capacity);
 

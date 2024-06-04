@@ -132,7 +132,7 @@ namespace _7.ListManipulationAdvanced
                 {
                     Console.Write($"{number} ");
                 }
-            };
+            }
             Console.WriteLine();
         }
 
@@ -144,7 +144,7 @@ namespace _7.ListManipulationAdvanced
                 {
                     Console.Write($"{number} ");
                 }
-            };
+            }
             Console.WriteLine();
         }
 

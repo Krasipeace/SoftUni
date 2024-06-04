@@ -1,4 +1,4 @@
-﻿namespace BorderControl.Core
+namespace BorderControl.Core
 {
     using System;
     using System.Collections.Generic;
@@ -25,7 +25,7 @@
 
                 if (dataInfo.Length > 3)
                 {
-                    buyers.Add(new Citizen(name, age, dataInfo[2], dataInfo[3])); ;
+                    buyers.Add(new Citizen(name, age, dataInfo[2], dataInfo[3]));
                 }
                 else
                 {
