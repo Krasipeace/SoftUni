@@ -407,7 +407,7 @@ public class HashTableTests
         HashTable<string, double> hashTable = new HashTable<string, double>();
 
         // Assert
-        CollectionAssert.AreEquivalent(new string[0], hashTable.Keys.ToArray());
+        CollectionAssert.AreEquivalent(Array.Empty<string>(), hashTable.Keys.ToArray());
 
         // Arrange
         hashTable.Add("Peter", 12.5);
@@ -429,7 +429,7 @@ public class HashTableTests
         HashTable<string, double> hashTable = new HashTable<string, double>();
 
         // Assert
-        CollectionAssert.AreEquivalent(new string[0], hashTable.Values.ToArray());
+        CollectionAssert.AreEquivalent(Array.Empty<string>(), hashTable.Values.ToArray());
 
         // Arrange
         hashTable.Add("Peter", 12.5);

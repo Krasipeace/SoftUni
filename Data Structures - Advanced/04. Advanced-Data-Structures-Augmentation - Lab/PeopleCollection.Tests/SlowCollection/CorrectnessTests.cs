@@ -1,4 +1,4 @@
-﻿namespace CollectionOfPeople.SlowCollection
+namespace CollectionOfPeople.SlowCollection
 {
     using System.Linq;
     using NUnit.Framework;
@@ -97,7 +97,7 @@
                 peopleYahoo.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
-                new string[] { },
+                System.Array.Empty<string>(),
                 peopleHoo.Select(p => p.Email).ToList());
         }
 
@@ -122,11 +122,11 @@
                 peoplePeshoPlovdiv.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
-                new string[] { },
+                System.Array.Empty<string>(),
                 peopleLowercase.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
-                new string[] { },
+                System.Array.Empty<string>(),
                 peoplePeshoNoTown.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
@@ -157,7 +157,7 @@
                 peopleAgedFrom21to22.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
-                new string[] { },
+                System.Array.Empty<string>(),
                 peopleAgedFrom10to11.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
@@ -200,7 +200,7 @@
                 peopleAgedFrom21to22Plovdiv.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
-                new string[] { },
+                System.Array.Empty<string>(),
                 peopleAgedFrom10to11Sofia.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
@@ -216,7 +216,7 @@
                 peopleAgedFrom0to1000Plovdiv.Select(p => p.Email).ToList());
 
             CollectionAssert.AreEqual(
-                new string[] { },
+                System.Array.Empty<string>(),
                 peopleAgedFrom0to1000NewYork.Select(p => p.Email).ToList());
         }
 
@@ -289,7 +289,7 @@
 
             peoplePeshoPlovdiv = people.FindPeople("Pesho", "Plovdiv");
             CollectionAssert.AreEqual(
-                new string[] { },
+                System.Array.Empty<string>(),
                 peoplePeshoPlovdiv.Select(p => p.Email).ToList());
 
             peoplePeshoSofia = people.FindPeople("Pesho", "Sofia");
