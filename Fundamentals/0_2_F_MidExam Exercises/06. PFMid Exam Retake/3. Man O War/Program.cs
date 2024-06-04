@@ -8,7 +8,6 @@ namespace _3._Man_O_War //The pirates encounter a huge Man-O-War at sea.
     {
         static void Main(string[] args)
         {
-
             List<int> pirateShip = Console.ReadLine().Split(">").Select(int.Parse).ToList();
             List<int> manowarShip = Console.ReadLine().Split(">").Select(int.Parse).ToList();
             int maxDeckHealth = int.Parse(Console.ReadLine());

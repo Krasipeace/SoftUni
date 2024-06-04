@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _08._Condense_Array_to_Number
@@ -17,7 +17,6 @@ namespace _08._Condense_Array_to_Number
 
             while (length > 0)
             {
-
                 for (int i = 0; i < length; i++)
                 {
                     condensedArray[i] = inputArray[i] + inputArray[i + 1];

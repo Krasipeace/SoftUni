@@ -6,7 +6,6 @@ namespace FightingArena.Tests
     [TestFixture]
     public class WarriorTests
     {
-
         [Test]
         public void Test_ConstructorShouldInitializeWarriorName()
         {

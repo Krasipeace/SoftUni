@@ -148,7 +148,6 @@ namespace _01.RedBlackTree
 
         public T Ceiling(T element)
         {
-
             return this.Select(this.Rank(element) + 1);
         }
 

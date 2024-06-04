@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _14._Stack_Fibonacci
@@ -16,7 +16,6 @@ namespace _14._Stack_Fibonacci
 
             for (int i = 0; i < index - 1; i++)
             {
-
                 if (fibonacci.Count == index)
                 {
                     break;

@@ -14,13 +14,11 @@ namespace _04_ReverseArrayofStrings
 
             for (int index = 0; index < arrayLength; index++)
             {
-
                 reversedArray[arrayLength - index - 1] = input[index];
             }
 
             for (int index = 0; index < arrayLength; index++)
             {
-
                 Console.Write($"{reversedArray[index]} ");
             }
         }

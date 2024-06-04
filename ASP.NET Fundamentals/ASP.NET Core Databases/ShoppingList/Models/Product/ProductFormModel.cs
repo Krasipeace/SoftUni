@@ -1,8 +1,7 @@
-﻿using ShoppingList.Data.Models;
+using ShoppingList.Data.Models;
 
 namespace ShoppingList.Models.Product
 {
-    
     public class ProductFormModel 
     {
         public int Id { get; set; }

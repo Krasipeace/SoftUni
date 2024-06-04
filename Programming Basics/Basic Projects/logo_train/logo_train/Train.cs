@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Threading;
 
@@ -8,7 +8,6 @@ namespace logo_train
     {
         static void Main(string[] args)
         {
-
             char[] name = new char[] { 'K', 'R', 'A', 'S', 'I', 'P', 'E', 'A', 'C', 'E', 'o', 'o', 'o', 'o', 'o' };
 
             for (int i = 0; i < 5; i++)

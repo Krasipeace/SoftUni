@@ -1,4 +1,4 @@
-﻿using SoftUni.Data;
+using SoftUni.Data;
 using SoftUni.Models;
 using System.Globalization;
 using System.Text;
@@ -9,7 +9,6 @@ namespace SoftUni
     {
         static void Main(string[] args)
         {
-
             SoftUniContext dbContext = new SoftUniContext();
 
             string result = RemoveTown(dbContext);

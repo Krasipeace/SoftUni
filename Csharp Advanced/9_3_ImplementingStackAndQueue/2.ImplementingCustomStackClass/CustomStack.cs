@@ -34,7 +34,6 @@ namespace _2.ImplementingCustomStackClass
 
         public int Pop()
         {
-
             if (elements.Length == 0)
             {
                 throw new InvalidOperationException("The CustomStack is empty!");

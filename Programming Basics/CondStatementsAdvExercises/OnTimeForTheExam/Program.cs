@@ -55,7 +55,6 @@ namespace OnTimeForTheExam
 
                 if (examMin != arrivalMin)
                 {
-
                     Console.WriteLine($"{difference} minutes before the start");
                 }
             }

@@ -5,7 +5,6 @@ using AA_Tree;
 [TestFixture]
 public class AATests
 {
-
     private AATree<int> AATree;
     private int[] input = {
             18,

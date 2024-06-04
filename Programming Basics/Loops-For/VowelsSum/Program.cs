@@ -6,7 +6,6 @@ namespace VowelsSum
     {
         static void Main(string[] args)
         {
-
             string text = Console.ReadLine();
             int sum = 0;
             for (int i = 0; i < text.Length; i++)

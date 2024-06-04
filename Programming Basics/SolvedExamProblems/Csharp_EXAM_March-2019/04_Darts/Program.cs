@@ -6,7 +6,6 @@ namespace _04_Darts
     {
         static void Main(string[] args)
         {
-
             string playerName = Console.ReadLine();
                         
             int markPoints = 301;

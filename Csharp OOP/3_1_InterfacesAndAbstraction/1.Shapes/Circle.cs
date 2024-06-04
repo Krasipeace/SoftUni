@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Shapes
 {
@@ -28,7 +28,6 @@ namespace Shapes
         double rOut = Radius + 0.4;
         for (double y = Radius; y >= -Radius; --y)
         {
-
             for (double x = -Radius; x < rOut; x += 0.5)
             {
                 double value = x * x + y * y;

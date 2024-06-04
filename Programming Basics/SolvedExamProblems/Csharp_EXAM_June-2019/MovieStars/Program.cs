@@ -25,7 +25,6 @@ namespace MovieStars
                 budget -= salary;
                 if (budget <= 0)
                 {
-
                     Console.WriteLine($"We need {Math.Abs(budget):f2} leva for our actors.");
                     endBudget = true;
                     break;

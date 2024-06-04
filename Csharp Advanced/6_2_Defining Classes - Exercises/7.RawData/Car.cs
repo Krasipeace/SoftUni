@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,7 +6,6 @@ namespace RawData
 {
     public class Car
     {
-
         public Car(string model, int speed, int power,
                    int cargoWeight, string cargoType,
                    double tire1pressure, int tire1age,
