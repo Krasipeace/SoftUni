@@ -127,7 +127,6 @@ public class Tests
 
     // Performance Tests
 
-
     [Test]
     public void TestContainsAirline_With100000Results_ShouldPassQuickly()
     {
@@ -172,7 +171,6 @@ public class Tests
         }));
 
         int count = 100000;
-
 
         Airline airline = GetRandomAirline();
         Airline airline2 = GetRandomAirline();

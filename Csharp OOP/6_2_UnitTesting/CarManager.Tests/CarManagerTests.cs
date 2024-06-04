@@ -14,7 +14,6 @@ namespace CarManager.Tests
             this.simulatedCar = new Car("Opel", "Astra", 6.6, 75);
         }
 
-
         //  BEST CASE SCENARIO
         [Test]
         public void Test_CarMake_ShouldWorkCorrectly()
@@ -76,7 +75,6 @@ namespace CarManager.Tests
 
             Assert.AreEqual(expectedSpentFuel, simulatedCar.FuelAmount, "Drive does not decrease Fuel Amount properly");
         }
-
 
         // WORST CASE SCENARIO
 

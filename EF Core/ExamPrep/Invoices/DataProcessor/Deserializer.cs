@@ -1,4 +1,4 @@
-﻿namespace Invoices.DataProcessor
+namespace Invoices.DataProcessor
 {
     using System.ComponentModel.DataAnnotations;
     using System.Globalization;
@@ -23,7 +23,6 @@
 
         private const string SuccessfullyImportedProducts
             = "Successfully imported product - {0} with {1} clients.";
-
 
         public static string ImportClients(InvoicesContext context, string xmlString)
         {
@@ -77,7 +76,6 @@
 
             return sb.ToString().TrimEnd();
         }
-
 
         public static string ImportInvoices(InvoicesContext context, string jsonString)
         {

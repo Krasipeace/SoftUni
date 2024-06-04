@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace UniquePINCodes
 {
@@ -9,7 +9,6 @@ namespace UniquePINCodes
             int digitOne = int.Parse(Console.ReadLine());
             int digitTwo = int.Parse(Console.ReadLine());
             int digitThree = int.Parse(Console.ReadLine());
-            
 
             for (int i = 2; i <= digitOne; i+=2)
             {

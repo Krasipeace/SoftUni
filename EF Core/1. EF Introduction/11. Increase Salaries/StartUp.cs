@@ -1,4 +1,4 @@
-﻿using SoftUni.Data;
+using SoftUni.Data;
 using SoftUni.Models;
 using System.Text;
 
@@ -18,7 +18,6 @@ namespace SoftUni
         public static string IncreaseSalaries(SoftUniContext context)
         {
             const decimal SALARY_UPDATE = 1.12m;
-
 
             var promotedEmployees = context.Employees
                 .Where(e =>

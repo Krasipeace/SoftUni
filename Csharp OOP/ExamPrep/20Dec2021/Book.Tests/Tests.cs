@@ -1,4 +1,4 @@
-﻿namespace Book.Tests
+namespace Book.Tests
 {
     using System;
     using System.Collections.Generic;
@@ -14,7 +14,6 @@
             defaultBook = new Book("City and the stars", "Arthur C. Clarke");
             defaultBook.AddFootnote(1, "Alvin exits Diaspar");
         }
-
 
         [Test]
         public void Test_CreateBookWorksAsExpected()

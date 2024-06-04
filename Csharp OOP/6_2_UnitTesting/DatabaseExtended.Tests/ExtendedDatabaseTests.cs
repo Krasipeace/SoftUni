@@ -27,7 +27,6 @@ namespace Tests
             }
         }
 
-
         [Test]
         public void Test_ConstructorSetDataCorrectly()
         {
@@ -91,8 +90,6 @@ namespace Tests
                 this.defaultDB.FindByUsername(null);
             });
         }
-
-
 
         [Test]
         public void Test_RemoveMethodWorksCorrectly()

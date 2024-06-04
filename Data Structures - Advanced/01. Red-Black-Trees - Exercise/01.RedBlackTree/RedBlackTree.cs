@@ -170,7 +170,6 @@ namespace _01.RedBlackTree
             return node;
         }
 
-
         private Node FindElement(T element)
         {
             Node current = this.root;
@@ -350,7 +349,6 @@ namespace _01.RedBlackTree
 
             return node;
         }
-
 
         private int Rank(T element, Node node)
         {

@@ -22,7 +22,6 @@ namespace _02.FitGym.Tests
         private Trainer train4;
         private Trainer train5;
 
-
         [SetUp]
         public void Setup()
         {

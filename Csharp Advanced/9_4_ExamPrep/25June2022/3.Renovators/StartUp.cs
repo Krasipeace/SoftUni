@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Renovators //93/100
@@ -34,7 +34,6 @@ namespace Renovators //93/100
             Renovator fifthRenovator = new Renovator("Stamat", "Furniture", 300, 4);
             Renovator sixthRenovator = new Renovator("Genadi", "Furniture", 80, 15);
             Renovator seventhRenovator = new Renovator("Unufri", "Furniture", 80, 15);
-
 
             // Add Renovators
             Console.WriteLine(catalog.AddRenovator(secondRenovator)); // Successfully added Pesho to the catalog.

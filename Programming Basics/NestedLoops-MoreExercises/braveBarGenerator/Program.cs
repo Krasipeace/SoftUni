@@ -12,7 +12,6 @@ namespace _04._Balls
             int count = 0;
             int digit;
 
-
             for (int i = numberOne; i <= numberTwo; i++)
             {
                 number = i;

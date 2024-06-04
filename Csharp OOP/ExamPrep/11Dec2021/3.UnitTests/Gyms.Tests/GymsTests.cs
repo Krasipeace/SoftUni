@@ -1,4 +1,4 @@
-﻿namespace Gyms.Tests
+namespace Gyms.Tests
 {
     using NUnit.Framework;
     using System.Linq;
@@ -73,7 +73,6 @@
 
             Assert.Throws<InvalidOperationException>(() => gym.RemoveAthlete("Hristo"));
         }
-
 
         [Test]
         public void Test_InjureAthlete_ShouldWorkAsExpected()

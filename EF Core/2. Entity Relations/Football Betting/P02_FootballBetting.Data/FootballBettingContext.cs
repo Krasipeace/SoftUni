@@ -34,7 +34,6 @@ public class FootballBettingContext : DbContext
 
     public DbSet<User> Users { get; set; }
 
-
     // connection configuration
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

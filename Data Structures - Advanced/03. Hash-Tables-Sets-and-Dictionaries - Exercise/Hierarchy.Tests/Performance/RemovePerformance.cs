@@ -1,4 +1,4 @@
-﻿using Hierarchy;
+using Hierarchy;
 using NUnit.Framework;
 using System.Diagnostics;
 using System.Linq;
@@ -19,7 +19,6 @@ public class RemovePerformance
             hierarchy.Add(counter1, ++counter1);
             hierarchy.Add(counter2, ++counter2);
         }
-
 
         Stopwatch timer = new Stopwatch();
         timer.Start();

@@ -1,4 +1,4 @@
-﻿namespace ProductShop.Data;
+namespace ProductShop.Data;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -22,7 +22,6 @@ public class ProductShopContext : DbContext
     public DbSet<User> Users { get; set; }
 
     public DbSet<CategoryProduct> CategoriesProducts { get; set; }
-
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

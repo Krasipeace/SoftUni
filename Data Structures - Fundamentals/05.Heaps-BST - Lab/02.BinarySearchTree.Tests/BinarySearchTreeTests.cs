@@ -61,7 +61,6 @@ public class BinarySearchTreeTests
         Assert.IsFalse(contains);
     }
 
-
     [Test]
     public void Search_NonExistingElement_ShouldReturnNull()
     {
@@ -71,7 +70,6 @@ public class BinarySearchTreeTests
 
         Assert.IsNull(result);
     }
-
 
     [Test]
     public void Search_ExistingElement_ShouldReturnSubTree()

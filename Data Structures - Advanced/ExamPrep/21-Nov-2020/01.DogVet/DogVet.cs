@@ -43,7 +43,6 @@ namespace _01.DogVet
             this.dogs.Add(dog.Id, dog);
         }
 
-
         public Dog GetDog(string name, string ownerId)
         {
             CheckIfOwnerOrDogExistAlready(name, ownerId);

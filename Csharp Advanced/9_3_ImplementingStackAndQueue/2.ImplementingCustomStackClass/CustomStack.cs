@@ -47,7 +47,6 @@ namespace _2.ImplementingCustomStackClass
             return popped;
         }
 
-
         public void Peek()
         {
             if (elements.Length == 0)
@@ -57,7 +56,6 @@ namespace _2.ImplementingCustomStackClass
 
             Console.WriteLine(elements[count - 1]);
         }
-
 
         public override string ToString()
         {

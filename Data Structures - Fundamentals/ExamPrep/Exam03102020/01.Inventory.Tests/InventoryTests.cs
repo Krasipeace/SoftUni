@@ -71,13 +71,11 @@ namespace _01.Inventory.Tests
             Assert.AreEqual(this._savedWeapon, weaponById);
         }
 
-
         [Test]
         public void ContainsFindsEntity()
         {
             Assert.IsTrue(this._inventory.Contains(this._savedWeapon));
         }
-
 
         [Test]
         public void RefillAmmunitionWorksCorrectly()
@@ -163,7 +161,6 @@ namespace _01.Inventory.Tests
 
             Assert.AreEqual(0, this._inventory.Capacity);
         }
-
 
         [Test]
         public void RetrieveInRangeWorksCorrectly()

@@ -108,8 +108,6 @@ namespace _2.TheBattleOfTheFiveArmies
                 }
             }
 
-
-
             if (isArmyDead)
             {
                 Console.WriteLine($"The army was defeated at {currentRow};{currentCol}.");

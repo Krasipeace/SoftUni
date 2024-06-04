@@ -32,7 +32,6 @@ namespace _06_TheMostPowerfulWord
                     result = Math.Floor(charSum / word.Length);
                 }
 
-
                 if (result > maxResult)
                 {
                     maxResult = result;

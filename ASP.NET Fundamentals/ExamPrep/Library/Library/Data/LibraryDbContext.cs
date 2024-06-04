@@ -1,4 +1,4 @@
-﻿using Library.Data.Models;
+using Library.Data.Models;
 
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -60,7 +60,6 @@ namespace Library.Data
                Id = 5,
                Name = "Fantasy"
            });
-
 
             builder.Entity<IdentityUserBook>()
                 .HasKey(x => new { x.CollectorId, x.BookId });

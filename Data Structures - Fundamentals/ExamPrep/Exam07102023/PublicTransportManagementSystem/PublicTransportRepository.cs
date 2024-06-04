@@ -54,7 +54,6 @@ namespace PublicTransportManagementSystem
             => this.buses.Values
                 .Where(b => b.Capacity >= capacity);
 
-
         private void ValidatePassengerAndBus(Passenger passenger, Bus bus)
         {
             if (!this.Contains(passenger) || !this.Contains(bus))
