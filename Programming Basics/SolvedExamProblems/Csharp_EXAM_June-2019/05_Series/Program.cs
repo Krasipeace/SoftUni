@@ -14,7 +14,6 @@ namespace _05_Series
             {
                 string tvName = Console.ReadLine();
                 double tvPrice = double.Parse(Console.ReadLine());
-                
 
                 if (tvName == "Thrones")
                 {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace OnTimeForTheExam
 {
@@ -9,7 +9,6 @@ namespace OnTimeForTheExam
             //10:00
             int examHour = int.Parse(Console.ReadLine());
             int examMin = int.Parse(Console.ReadLine());
-
 
             int arrivalHour = int.Parse(Console.ReadLine());
             int arrivalMin = int.Parse(Console.ReadLine());

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace StreetRacing
 {
@@ -44,7 +44,6 @@ namespace StreetRacing
             //License Plate: NFS2007
             //Horse Power: 150
             //Weight: 1350
-
 
             //Print Race report
             Console.WriteLine(race.Report());

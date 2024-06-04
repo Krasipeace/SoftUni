@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace cinema_test
 {
@@ -17,7 +17,6 @@ namespace cinema_test
             {
                 int people = int.Parse(command);
                 capacity -= people;
-
 
                 if (capacity < 0)
                 {

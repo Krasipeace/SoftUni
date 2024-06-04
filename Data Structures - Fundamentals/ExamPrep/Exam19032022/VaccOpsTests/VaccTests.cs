@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -93,7 +93,6 @@ public class Tests
 
         Assert.True(this.vaccOps.GetPatients().Count() == 1000);
     }
-
 
     [Test]
     public void TestAddingPatientWithNonExistentDoctorThrowException()

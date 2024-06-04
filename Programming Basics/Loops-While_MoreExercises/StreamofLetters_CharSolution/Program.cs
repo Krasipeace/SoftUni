@@ -12,7 +12,6 @@ namespace StreamofLetters_CharSolution
             char currentLetter = '+';
             string newWord = "";
 
-
             while (command != "End")
             {
                 command = Console.ReadLine();

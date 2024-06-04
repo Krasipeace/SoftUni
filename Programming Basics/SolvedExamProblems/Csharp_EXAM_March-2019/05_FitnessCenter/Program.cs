@@ -15,7 +15,6 @@ namespace _05_FitnessCenter
             double counterShake = 0;
             double counterBar = 0;
 
-
             for (int i = 1; i <= clients; i++)
             {
                 string activity = Console.ReadLine();

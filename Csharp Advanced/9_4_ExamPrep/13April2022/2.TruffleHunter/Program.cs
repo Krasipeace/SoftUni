@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2.TruffleHunter
@@ -87,12 +87,10 @@ namespace _2.TruffleHunter
                         break;
                 }
 
-
                 commands = Console.ReadLine();
             }
             PrintResults(wildBoarAte, countBlackTruffles, countSummerTruffles, countWhiteTruffles, forestSize, forest);
         }
-
 
         static int GetWildBoarUpDown(char BLACK_TRUFFLE, char SUMMER_TRUFFLE, char WHITE_TRUFFLE, char EMPTY_POS, int wildBoarAte, char[,] forest, int currentCol, int rows)
         {

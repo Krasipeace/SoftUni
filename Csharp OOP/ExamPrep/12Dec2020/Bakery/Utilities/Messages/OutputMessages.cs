@@ -1,4 +1,4 @@
-﻿namespace Bakery.Utilities.Messages
+namespace Bakery.Utilities.Messages
 {
     public static class OutputMessages
     {
@@ -8,11 +8,9 @@
 
         public const string TableAdded = "Added table number {0} in the bakery";
 
-
         public const string TableReserved = "Table {0} has been reserved for {1} people";
 
         public const string ReservationNotPossible = "No available table for {0} people";
-
 
         public const string WrongTableNumber = "Could not find table {0}";
 

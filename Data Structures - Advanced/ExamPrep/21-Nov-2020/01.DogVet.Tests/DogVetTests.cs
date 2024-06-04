@@ -42,7 +42,6 @@ namespace _01.DogVet.Tests
         {
             dogVet.AddDog(d1, o1);
 
-
             var d = dogVet.GetDog(d1.Name, o1.Id);
             Assert.AreEqual(d, d1);
         }
@@ -73,7 +72,6 @@ namespace _01.DogVet.Tests
             dogVet.AddDog(d1, o1);
             Assert.True(dogVet.Contains(d1));
         }
-
 
         [Test]
         public void TestContainsDogReturnFalse()
@@ -206,7 +204,6 @@ namespace _01.DogVet.Tests
 
             CollectionAssert.AreEquivalent(dogs, list);
         }
-
 
         [Test]
         public void TestGetDogsByOwner()

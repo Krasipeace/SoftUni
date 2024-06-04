@@ -1,4 +1,4 @@
-﻿namespace Bakery.Core
+namespace Bakery.Core
 {
     using Bakery.Core.Contracts;
     using Bakery.Models.BakedFoods;
@@ -24,7 +24,6 @@
             drinks = new List<IDrink>();
             tables = new List<ITable>();
         }
-
 
         public string AddFood(string type, string name, decimal price)
         {
@@ -76,7 +75,6 @@
 
             return string.Format(OutputMessages.TableAdded, tableNumber);
         }
-
 
         public string ReserveTable(int numberOfPeople)
         {
@@ -144,7 +142,6 @@
 
             return sb.ToString().TrimEnd();
         }
-
 
         public string GetFreeTablesInfo()
         {

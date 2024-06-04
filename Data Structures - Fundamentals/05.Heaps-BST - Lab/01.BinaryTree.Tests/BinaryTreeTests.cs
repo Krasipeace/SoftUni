@@ -52,7 +52,6 @@ public class BinaryTreeTests
         }
     }
 
-
     [Test]
     public void TestInOrder()
     {
@@ -64,7 +63,6 @@ public class BinaryTreeTests
             Assert.AreEqual(expected[i], trees[i].Value);
         }
     }
-
 
     [Test]
     public void TestPostOrder()

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace ExtendedDatabase
@@ -82,7 +82,6 @@ namespace ExtendedDatabase
             Person person = this.persons.First(p => p.UserName == name);
             return person;
         }
-
 
         public Person FindById(long id)
         {

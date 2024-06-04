@@ -135,7 +135,6 @@ namespace Problem03.ReversedList.Tests
             Assert.Throws<IndexOutOfRangeException>(() => { this.list[index] = 5; ; });
         }
 
-
         [Test]
         public void IndexOf_OnCollectionWithSingleElement_ShouldReturnCorrectIndex()
         {
@@ -344,7 +343,6 @@ namespace Problem03.ReversedList.Tests
 
             Assert.AreEqual(false, this.list.Remove(element));
         }
-
 
         [Test]
         public void Insert_SingleElement_ShouldIncreaseCount()

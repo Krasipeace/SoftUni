@@ -1,4 +1,4 @@
-﻿using SoftUni.Data;
+using SoftUni.Data;
 using SoftUni.Models;
 using System.Text;
 
@@ -12,7 +12,6 @@ namespace SoftUni
             string result = GetEmployeesFullInformation(dbContext);
             Console.WriteLine(result);
         }
-
 
         public static string GetEmployeesFullInformation(SoftUniContext context)
         {

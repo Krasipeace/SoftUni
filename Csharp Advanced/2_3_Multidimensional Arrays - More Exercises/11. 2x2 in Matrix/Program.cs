@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _11._2x2_in_Matrix
@@ -26,7 +26,6 @@ namespace _11._2x2_in_Matrix
             }
 
             int counter = 0;
-            
 
             for (int row = 0; row < rows; row++)
             {

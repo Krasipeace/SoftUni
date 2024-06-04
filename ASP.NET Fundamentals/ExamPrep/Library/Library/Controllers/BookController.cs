@@ -1,4 +1,4 @@
-﻿namespace Library.Controllers
+namespace Library.Controllers
 {
     using Library.Contracts;
     using Library.Models;
@@ -74,7 +74,6 @@
 
                 return View(model);
             }
-
 
             if (!ModelState.IsValid)
             {

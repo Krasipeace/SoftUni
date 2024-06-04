@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -68,7 +68,6 @@ namespace Exam.DeliveriesManager
 
             return this.deliverers.Keys;
         }
-
         public IEnumerable<Deliverer> GetDeliverersOrderedByCountOfPackagesThenByName()
             => this.deliverers.Keys
                 .OrderByDescending(d => this.deliverers[d]?.Count ?? 0)

@@ -142,7 +142,6 @@ namespace _02.LegionSystem.Tests
                 legion.Create(new Kamikaze(i, i * 2));
             }
 
-
             var fasterEnemies = legion.GetFaster(9);
             Assert.IsTrue(fasterEnemies.All(e => e.AttackSpeed > 9));
         }
@@ -156,7 +155,6 @@ namespace _02.LegionSystem.Tests
             {
                 legion.Create(new Kamikaze(i, i * 2));
             }
-
 
             var fasterEnemies = legion.GetSlower(9);
             Assert.IsTrue(fasterEnemies.All(e => e.AttackSpeed < 9));

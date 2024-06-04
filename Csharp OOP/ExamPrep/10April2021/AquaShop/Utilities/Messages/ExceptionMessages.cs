@@ -1,4 +1,4 @@
-﻿namespace AquaShop.Utilities.Messages
+namespace AquaShop.Utilities.Messages
 {
     using System;
 
@@ -10,13 +10,11 @@
 
         public const string InvalidFishPrice = "Fish price cannot be below or equal to 0.";
 
-
         public const string InvalidAquariumName = "Aquarium name cannot be null or empty.";
 
         public const string NotEnoughCapacity = "Not enough capacity.";
 
         public const string InvalidAquariumType = "Invalid aquarium type.";
-
 
         public const string InvalidDecorationType = "Invalid decoration type.";
 

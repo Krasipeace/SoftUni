@@ -1,4 +1,4 @@
-﻿namespace CarRacing.Repositories
+namespace CarRacing.Repositories
 {
     using CarRacing.Models.Racers.Contracts;
     using CarRacing.Repositories.Contracts;
@@ -14,7 +14,6 @@
         {
             racers = new List<IRacer>();
         }
-
 
         public IReadOnlyCollection<IRacer> Models => racers.AsReadOnly();
 

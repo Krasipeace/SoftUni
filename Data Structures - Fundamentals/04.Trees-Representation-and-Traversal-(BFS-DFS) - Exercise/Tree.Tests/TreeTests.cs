@@ -39,7 +39,6 @@ namespace Tree.Tests
             int[] expected = data.expectedLeafNodes;
             IEnumerable<int> leafKeys = data.tree.GetLeafKeys();
 
-
             CollectionAssert.AreEquivalent(expected, leafKeys);
         }
 
@@ -61,7 +60,6 @@ namespace Tree.Tests
 
             Assert.AreEqual(data.expectedDeepestNode, deepestKey);
         }
-
 
         [Test]
         [TestCaseSource("TreeTestData")]

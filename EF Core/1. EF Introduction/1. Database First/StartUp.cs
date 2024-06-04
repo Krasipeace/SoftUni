@@ -1,4 +1,4 @@
-﻿using SoftUni.Data;
+using SoftUni.Data;
 using SoftUni.Models;
 using System.Globalization;
 using System.Text;
@@ -103,7 +103,6 @@ public class StartUp
             .OrderBy(e => e.Salary)
             .ThenByDescending(e => e.FirstName)
             .ToArray();
-
 
         StringBuilder sb = new StringBuilder();
 

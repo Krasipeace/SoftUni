@@ -314,7 +314,6 @@ public class StartUp
             .OrderByDescending(pc => pc.SpentMoney)
             .ToArray();
 
-
         XmlRootAttribute xmlRoot = new("customers");
         XmlSerializerNamespaces namespaces = new();
         namespaces.Add(string.Empty, string.Empty);

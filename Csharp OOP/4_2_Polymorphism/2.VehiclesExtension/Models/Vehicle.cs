@@ -1,4 +1,4 @@
-﻿namespace Vehicles.Models
+namespace Vehicles.Models
 {
     using Contracts;
     using System;
@@ -16,7 +16,6 @@
             FuelQuantity = fuelQuantity;
             FuelConsumption = fuelConsumption;
         }
-
 
         public double FuelQuantity
         {

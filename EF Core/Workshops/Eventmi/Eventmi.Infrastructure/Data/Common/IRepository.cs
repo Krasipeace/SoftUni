@@ -1,4 +1,4 @@
-﻿using System.Linq.Expressions;
+using System.Linq.Expressions;
 
 namespace Eventmi.Infrastructure.Data.Common
 {
@@ -79,7 +79,6 @@ namespace Eventmi.Infrastructure.Data.Common
 
         void DeleteRange<T>(IEnumerable<T> entities) where T : class;
         void DeleteRange<T>(Expression<Func<T, bool>> deleteWhereClause) where T : class;
-
 
         /// <summary>
         /// Detaches given entity from the context

@@ -135,7 +135,6 @@ namespace TaskManager.Tests
             Assert.True(result);
         }
 
-
         [Test]
         public void Get_ShouldThrowQuickly_WhenDoesNotExist_With1000000Tasks()
         {
@@ -371,7 +370,6 @@ namespace TaskManager.Tests
                 }
             }
 
-
             // Act
             var sw = new Stopwatch();
 
@@ -431,7 +429,6 @@ namespace TaskManager.Tests
                     this.taskManager.AddDependency(taskTarget.Id, task.Id);
                 }
             }
-
 
             // Act
             var sw = new Stopwatch();
