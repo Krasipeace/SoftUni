@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -39,11 +39,7 @@ namespace Exam.TaskManager
             var taskToDelete = tasksById[taskId];
             tasksById.Remove(taskId);
 
-            if (executedTasks.Contains(taskToDelete))
-            {
-                executedTasks.Remove(taskToDelete);
-            }
-            else
+            if (!executedTasks.Remove(taskToDelete))
             {
                 unexecutedTasks.Remove(taskToDelete);
             }

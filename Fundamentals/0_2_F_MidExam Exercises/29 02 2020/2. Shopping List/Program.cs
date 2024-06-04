@@ -61,10 +61,7 @@ namespace _2._Shopping_List
 
         private static void Unnecessary(string item, List<string> list)
         {
-            if (list.Contains(item))
-            {
-                list.Remove(item);
-            }
+            list.Remove(item);
         }
 
         private static void Urgent(string item, List<string> list)
