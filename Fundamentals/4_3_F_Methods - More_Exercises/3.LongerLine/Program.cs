@@ -28,13 +28,11 @@ namespace _3.LongerLine
                 {
                     Console.WriteLine($"({x1}, {y1})({x2}, {y2})");
                 }
-
                 else
                 {
                     Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
                 }
             }
-
             else
             {
                 bool isClosest = CloseToCenterPoint(x3, y3, x4, y4);
@@ -42,7 +40,6 @@ namespace _3.LongerLine
                 {
                     Console.WriteLine($"({x3}, {y3})({x4}, {y4})");
                 }
-
                 else
                 {
                     Console.WriteLine($"({x4}, {y4})({x3}, {y3})");

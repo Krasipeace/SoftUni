@@ -57,7 +57,6 @@ namespace _10._SCP_methods
 
                 lessons.Insert(index + 1, lessonTitle + "-Exercise");
             }
-
             else if (!lessons.Contains(lessonTitle))
             {
                 lessons.Add(lessonTitle);

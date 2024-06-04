@@ -25,7 +25,6 @@ namespace OddEvenSum2
                 {
                     Console.WriteLine("Yes");
                     Console.WriteLine($"Sum =" { evenSum})
-        
                 else
                 {
                 Console.WriteLine("No");
