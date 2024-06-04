@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _05_Oscars
 {
@@ -24,13 +24,11 @@ namespace _05_Oscars
                     Console.WriteLine($"Congratulations, {actorName} got a nominee for leading role with {pointsSum:f1}!");
                     break;
                 }
-                
             }
             if (pointsSum < 1250.5)
             {
                 Console.WriteLine($"Sorry, {actorName} you need {Math.Abs(1250.5 - pointsSum):f1} more!");
             }
-            
         }
     }
 }

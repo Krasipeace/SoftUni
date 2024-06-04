@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _5.LongestIncreasingSubsequence
@@ -45,7 +45,6 @@ namespace _5.LongestIncreasingSubsequence
             }
             Array.Reverse(lis);
             Console.WriteLine(string.Join(" ", lis));
-
         }
     }
 }

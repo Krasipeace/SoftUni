@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SpecialNumbers
 {
@@ -25,7 +25,6 @@ namespace SpecialNumbers
                 Console.WriteLine($"{digit} -> {specialNumber}");
                 sum = 0;
                 currentNumber = digit;
-
             }
         }
     }

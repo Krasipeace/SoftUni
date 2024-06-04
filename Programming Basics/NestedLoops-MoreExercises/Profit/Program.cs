@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Profit
 {
@@ -20,7 +20,6 @@ namespace Profit
                         if (i * 1 + j * 2 + k * 5 == sum)
                         {
                             Console.WriteLine($"{i} * 1 lv. + {j} * 2 lv. + {k} * 5 lv. = {sum} lv.");
-
                         }
                     }
                 }

@@ -1,4 +1,4 @@
-﻿namespace BorderControl.Models
+namespace BorderControl.Models
 {
     using Interfaces;
 
@@ -14,6 +14,5 @@
         public int Age { get; set; }
         public string Id { get; set; }
     }
-
 }
 

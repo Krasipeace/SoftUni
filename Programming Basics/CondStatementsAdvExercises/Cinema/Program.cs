@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Cinema
 {
@@ -27,9 +27,6 @@ namespace Cinema
             }
             //изчисляваме приходите от билетите
             Console.WriteLine($"{income:F2} leva");
-
-
-
         }
     }
 }

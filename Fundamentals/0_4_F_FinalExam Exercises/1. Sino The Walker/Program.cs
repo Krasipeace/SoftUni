@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _1._Sino_The_Walker
 {
@@ -16,7 +16,6 @@ namespace _1._Sino_The_Walker
             DateTime endTime = time.AddSeconds(timeAllSteps);
 
             Console.WriteLine("Time Arrival: {0}", endTime.ToString("HH:mm:ss"));
-
         }
     }
 }

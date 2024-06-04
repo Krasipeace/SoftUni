@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TournamentofChristmas
 {
@@ -58,7 +58,6 @@ namespace TournamentofChristmas
             {
                 Console.WriteLine($"You lost the tournament! Total raised money: {profitT:f2}");
             }
-
         }
     }
 }

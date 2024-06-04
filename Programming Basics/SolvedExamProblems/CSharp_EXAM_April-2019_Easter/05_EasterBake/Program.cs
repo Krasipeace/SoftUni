@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _05_EasterBake
 {
@@ -30,7 +30,6 @@ namespace _05_EasterBake
                 {
                     flourMax = flourQ;
                 }
-
             }
 
             packSugar = Math.Ceiling(sugarNeed / 950);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04_EasterShop
 {
@@ -30,17 +30,14 @@ namespace _04_EasterShop
                 else if (input == "Fill")
                 {
                     eggsQ += eggs;
-
                 }
                 input = Console.ReadLine();
-
             }
             if (input == "Close")
             {
                 Console.WriteLine($"Store is closed!");
                 Console.WriteLine($"{counterSoldEggs} eggs sold.");
             }
-
         }
     }
 }

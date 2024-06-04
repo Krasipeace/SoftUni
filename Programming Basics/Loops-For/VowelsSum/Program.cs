@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace VowelsSum
 {
@@ -23,7 +23,6 @@ namespace VowelsSum
                         break;
                     case 'u': sum += 5;
                         break;
-
                 }
             }
             Console.WriteLine(sum);

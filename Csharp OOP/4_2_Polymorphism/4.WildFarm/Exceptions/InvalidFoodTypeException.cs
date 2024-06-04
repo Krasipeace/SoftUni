@@ -1,4 +1,4 @@
-﻿namespace WildFarm.Exceptions
+namespace WildFarm.Exceptions
 {
     using System;
     public class InvalidFoodTypeException : Exception
@@ -7,5 +7,4 @@
         public InvalidFoodTypeException() : base (DEFAULT_MESSAGE) { }
         public InvalidFoodTypeException(string message) : base(message) { }
     }
-
 }

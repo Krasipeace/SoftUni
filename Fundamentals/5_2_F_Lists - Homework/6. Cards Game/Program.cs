@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -40,7 +40,6 @@ namespace _6._Cards_Game
                     Console.WriteLine($"First player wins! Sum: {sum}");
                     break;
                 }
-
             }
         }
     }

@@ -101,6 +101,5 @@ namespace Problem02.Stack.Tests
 
             Assert.IsFalse(_stack.Contains(count));
         }
-
     }
 }

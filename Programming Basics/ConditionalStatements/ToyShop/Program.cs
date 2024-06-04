@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ToyShop
 {
@@ -33,8 +33,6 @@ namespace ToyShop
                 {
                     Console.WriteLine($"Not enough money! {Math.Abs(difference):F2} lv needed.");
                 }
-
-
         }
     }
 }

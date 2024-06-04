@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _4._1.TribonacciSequence  //second attempt
 {
@@ -47,8 +47,6 @@ namespace _4._1.TribonacciSequence  //second attempt
                 Console.Write("1");
                 return;
             }
-
-
         }
     }
 }

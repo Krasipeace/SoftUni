@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _10.MultiplyEvensByOdds
 {
@@ -14,7 +14,6 @@ namespace _10.MultiplyEvensByOdds
             int result = GetMultiplyOfEvenAndOdds(evenSum, oddSum);
 
             Console.WriteLine(result);
-
         }
 
         static int GetSumOfEvenDigits(int input)
@@ -55,6 +54,5 @@ namespace _10.MultiplyEvensByOdds
         {
             return evenSum * oddSum;
         }
-
     }
 }

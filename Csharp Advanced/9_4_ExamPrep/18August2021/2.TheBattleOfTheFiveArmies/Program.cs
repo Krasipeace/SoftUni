@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2.TheBattleOfTheFiveArmies
@@ -122,7 +122,6 @@ namespace _2.TheBattleOfTheFiveArmies
             {
                 Console.WriteLine(string.Join("", item));
             }
-
         }
 
         static bool isMoveInField(string[][] field, int currentRow, int currentCol)

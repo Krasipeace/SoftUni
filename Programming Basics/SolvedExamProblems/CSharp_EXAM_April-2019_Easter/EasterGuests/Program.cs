@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace EasterGuests
 {
@@ -26,7 +26,6 @@ namespace EasterGuests
                 Console.WriteLine($"Lyubo doesn't have enough money.");
                 Console.WriteLine($"He needs {costs - budgetLubo:f2} lv. more.");
             }
-
         }
     }
 }

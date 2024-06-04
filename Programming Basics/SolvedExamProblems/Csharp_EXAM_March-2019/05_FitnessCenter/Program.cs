@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _05_FitnessCenter
 {
@@ -44,7 +44,6 @@ namespace _05_FitnessCenter
                 {
                     counterBar++;
                 }
-
             }
             double pWorkOut = (counterBack + counterChest + counterLegs + counterAbs) / clients * 100.0;
             double pProtein = (counterShake + counterBar) / clients * 100.0; 
@@ -57,7 +56,6 @@ namespace _05_FitnessCenter
             Console.WriteLine($"{counterBar} - protein bar");
             Console.WriteLine($"{pWorkOut:f2}% - work out");
             Console.WriteLine($"{pProtein:f2}% - protein");
-
         }
     }
 }

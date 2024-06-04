@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CustomLinkedList
 {
@@ -6,7 +6,6 @@ namespace CustomLinkedList
     {
         static void Main(string[] args)
         {
-            
         }
     }
 }

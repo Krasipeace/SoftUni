@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace GamingStore
 {
@@ -106,7 +106,6 @@ namespace GamingStore
                 {
                     Console.WriteLine("Not Found");
                 }
-                
             }
             if (outOfMoney)
             {
@@ -118,7 +117,6 @@ namespace GamingStore
                 spentMoney -= money;
                 Console.WriteLine($"Total spent: ${spentMoney:f2}. Remaining: ${money:f2}");
             }
-
         }
     }
 }

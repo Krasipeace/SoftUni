@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace WeddingSeats
 {
@@ -20,9 +20,7 @@ namespace WeddingSeats
                     {
                         Console.WriteLine($"{i}{j}{k}");
                         counter++;
-                        
                     }
- 
                 }
             }
             Console.WriteLine(counter);

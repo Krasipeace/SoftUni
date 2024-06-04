@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -96,7 +96,6 @@ namespace _1.Cooking
             {
                 Console.WriteLine($"{item.Key}: {item.Value}");
             }
-
         }
     }
 }

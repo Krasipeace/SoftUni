@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _3.LongerLine
 {
@@ -32,9 +32,7 @@ namespace _3.LongerLine
                 else
                 {
                     Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
-
                 }
-
             }
 
             else
@@ -50,7 +48,6 @@ namespace _3.LongerLine
                     Console.WriteLine($"({x4}, {y4})({x3}, {y3})");
                 }
             }
-
         }
 
         static double CheckLineLenght(double x1, double y1, double x2, double y2)

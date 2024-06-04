@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using NUnit.Framework;
 
@@ -58,7 +58,6 @@ public class Remove : BaseTest
 
         Assert.IsFalse(this.Hierarchy.Contains(3));
         Assert.IsFalse(this.Hierarchy.GetChildren(2).Contains(3));
-
     }
 
     [Test]

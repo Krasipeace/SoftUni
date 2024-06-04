@@ -146,7 +146,6 @@ public class ViTubeTests
             {
                 this.viTubeRepository.RegisterUser(GetRandomUser());
             }
-
         }
 
         Stopwatch stopwatch = new Stopwatch(); stopwatch.Start();

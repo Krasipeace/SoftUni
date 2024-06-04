@@ -143,7 +143,6 @@ public class MovieDatabaseTests
             } else {
                 this.movieDatabase.AddActor(GetRandomActor());
             }
-
         }
 
         Stopwatch stopwatch = new Stopwatch(); stopwatch.Start();

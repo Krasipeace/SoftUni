@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _4.ArrayRotation
@@ -22,7 +22,6 @@ namespace _4.ArrayRotation
                     array[j] = array[j + 1];
                 }
                 array[array.Length - 1] = keyElement;
-
             }
 
             Console.WriteLine(string.Join(" ", array));

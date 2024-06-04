@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -44,7 +44,6 @@ namespace _5._Fashion_Boutique
                         sum += stack.Peek();
                         stack.Pop();
                     }
-
                 }
             }
             Console.WriteLine(boxCounter);

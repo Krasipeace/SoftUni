@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _4.TribonacciSequence  //first attempt
 {
@@ -12,7 +12,6 @@ namespace _4.TribonacciSequence  //first attempt
                 System.Environment.Exit(0);
             }
             PrintTribo(number);
-
         }
 
         static int PrintTribReccursion(int number)
@@ -30,7 +29,6 @@ namespace _4.TribonacciSequence  //first attempt
             {
                 return PrintTribReccursion(number - 1) + PrintTribReccursion(number - 2) + PrintTribReccursion(number - 3);
             }
-
         }
 
         static void PrintTribo(int number)

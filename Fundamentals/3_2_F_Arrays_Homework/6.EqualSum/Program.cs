@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _6.EqualSum
@@ -29,7 +29,6 @@ namespace _6.EqualSum
             {
                 Console.WriteLine("no");
             }
-
         }
     }
 }

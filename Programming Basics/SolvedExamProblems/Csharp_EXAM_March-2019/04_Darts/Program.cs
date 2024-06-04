@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04_Darts
 {
@@ -70,7 +70,6 @@ namespace _04_Darts
                     Console.WriteLine($"{playerName} won the leg with {successCounter} shots.");
                     break;
                 }
-
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -10,13 +10,11 @@ namespace SoftUni.Data
     {
         public SoftUniContext()
         {
-
         }
 
         public SoftUniContext(DbContextOptions<SoftUniContext> options)
             : base(options)
         {
-
         }
 
         public virtual DbSet<Address> Addresses { get; set; } = null!;
@@ -116,7 +114,6 @@ namespace SoftUni.Data
                     .WithMany(p => p.InverseManager)
                     .HasForeignKey(d => d.ManagerId)
                     .HasConstraintName("FK_Employees_Employees");
-               
             });
 
             modelBuilder.Entity<Project>(entity =>
@@ -158,7 +155,6 @@ namespace SoftUni.Data
                     .HasOne(e => e.Project)
                     .WithMany(p => p.EmployeesProjects)
                     .HasForeignKey(ep => ep.ProjectId);
-
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _7.MaxSequenceofEqualElements
@@ -38,7 +38,6 @@ namespace _7.MaxSequenceofEqualElements
             {                  
                 Console.Write($"{array[j]} ");
             }
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -39,7 +39,6 @@ namespace _3._Man_O_War //The pirates encounter a huge Man-O-War at sea.
                         Status(pirateShip, maxDeckHealth);
                         break;
                 }
-
             }
             int pirateShipSum = 0;
             int warshipSum = 0;
@@ -74,7 +73,6 @@ namespace _3._Man_O_War //The pirates encounter a huge Man-O-War at sea.
                 if (pirateShip[i] <= 0)
                 {
                     isAnyShipDead = true;
-                    
                 }
             }
             for (int i = 0; i < manowarShip.Count; i++)
@@ -82,7 +80,6 @@ namespace _3._Man_O_War //The pirates encounter a huge Man-O-War at sea.
                 if (manowarShip[i] <= 0)
                 {
                     isAnyShipDead = true;
-                    
                 }
             }
 

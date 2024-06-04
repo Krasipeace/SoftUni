@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace HotelRoom
 {
@@ -56,9 +56,6 @@ namespace HotelRoom
                 Console.WriteLine($"Apartment: {priceAp:f2} lv.");
                 Console.WriteLine($"Studio: {priceStudio:f2} lv.");
             }
-
         }
-
     }
-
 }

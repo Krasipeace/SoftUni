@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -68,7 +68,6 @@ namespace _7.ListManipulationAdvanced
             {
                 Console.WriteLine(string.Join(" ", numbers));
             }
-
         }
 
         private static void UseFilter(string filter, int numberToFilter, List<int> numbers)
@@ -116,7 +115,6 @@ namespace _7.ListManipulationAdvanced
                     Console.WriteLine();
                     break;
             }
-
         }
 
         static void PrintGetSum(List<int> numbers)

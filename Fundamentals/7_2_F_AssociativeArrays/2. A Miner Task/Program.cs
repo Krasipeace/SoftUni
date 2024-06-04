@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _2._A_Miner_Task
@@ -30,7 +30,6 @@ namespace _2._A_Miner_Task
             {
                 Console.WriteLine($"{item.Key} -> {item.Value}");
             }
-
         }
     }
 }

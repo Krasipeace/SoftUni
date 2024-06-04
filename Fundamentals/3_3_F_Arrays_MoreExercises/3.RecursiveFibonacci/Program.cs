@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _3.RecursiveFibonacci
 {
@@ -44,7 +44,6 @@ namespace _3.RecursiveFibonacci
             //    counter++;
             //}
             //Console.WriteLine(counter);
-
         }
     }
 }

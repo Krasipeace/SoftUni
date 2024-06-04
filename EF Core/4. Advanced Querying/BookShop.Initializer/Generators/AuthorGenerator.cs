@@ -1,4 +1,4 @@
-﻿namespace BookShop.Initializer.Generators;
+namespace BookShop.Initializer.Generators;
 
 using BookShop.Models;
 
@@ -46,7 +46,6 @@ internal class AuthorGenerator
             "Jane Ortiz",
             "Randy Morales",
             "Lisa Davis",
-
         };
 
         int authorCount = authorNames.Length;

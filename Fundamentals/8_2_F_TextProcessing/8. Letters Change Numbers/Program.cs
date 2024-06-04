@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _8._Letters_Change_Numbers
 {
@@ -38,7 +38,6 @@ namespace _8._Letters_Change_Numbers
                     int lastLetterPositionInTheAlphabet = lastLetter - 96;
                     sum += result + lastLetterPositionInTheAlphabet;
                 }
-
             }
 
             Console.WriteLine($"{sum:f2}");

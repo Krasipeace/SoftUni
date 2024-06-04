@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -66,6 +66,5 @@ namespace _1._Company_Roster
             TotalSalaries += eSalary;
             Employees.Add(new Employee(eName, eSalary));
         }
-
     }
 }

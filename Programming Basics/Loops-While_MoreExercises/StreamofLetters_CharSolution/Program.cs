@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace StreamofLetters_CharSolution
 {
@@ -24,7 +24,6 @@ namespace StreamofLetters_CharSolution
                         if (currentLetter == 'c' && !(sumSicretCommand.Contains("c")))
                         {
                             sumSicretCommand += char.ToString(currentLetter);
-
                         }
                         else if (currentLetter == 'o' && !(sumSicretCommand.Contains("o")))
                         {
@@ -37,7 +36,6 @@ namespace StreamofLetters_CharSolution
                         else
                         {
                             word += char.ToString(currentLetter);
-
                         }
                         if (sumSicretCommand.Contains("c") && sumSicretCommand.Contains("o") && sumSicretCommand.Contains("n"))
                         {

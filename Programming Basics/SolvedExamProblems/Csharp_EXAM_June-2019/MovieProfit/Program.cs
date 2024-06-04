@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MovieProfit
 {
@@ -16,7 +16,6 @@ namespace MovieProfit
             double incomeCinema = incomeTickets - incomeTickets * pCinema / 100.0;
 
             Console.WriteLine($"The profit from the movie {title} is {incomeCinema:f2} lv.");
-
         }
     }
 }

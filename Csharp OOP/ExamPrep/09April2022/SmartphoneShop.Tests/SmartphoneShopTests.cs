@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using System;
 
 namespace SmartphoneShop.Tests
@@ -21,7 +21,6 @@ namespace SmartphoneShop.Tests
             {
                 Shop shop = new Shop(-100);
             }, "Invalid capacity.");
-
         }
 
         [Test]
@@ -156,6 +155,5 @@ namespace SmartphoneShop.Tests
                 testedShop.ChargePhone(smartphone2.ModelName);
             }, $"The phone model {smartphone2.ModelName} doesn't exist.");
         }
-
     }
 }

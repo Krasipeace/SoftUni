@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PersonInfo
 {
@@ -16,5 +16,4 @@ namespace PersonInfo
         public string Id { get; set; }
         public string Birthdate { get; set; }
     }
-
 }

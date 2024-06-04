@@ -205,6 +205,5 @@ namespace FightingArena.Tests
                 attacker.Attack(defender);
             }, "You are trying to attack too strong enemy");
         }
-
     }
 }

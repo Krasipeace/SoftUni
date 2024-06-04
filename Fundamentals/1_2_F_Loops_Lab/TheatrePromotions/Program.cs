@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TheatrePromotions
 {
@@ -24,7 +24,6 @@ namespace TheatrePromotions
                 {
                     price = 12;
                 }
-
             }
             else if (day == "Weekend")
             {
@@ -40,7 +39,6 @@ namespace TheatrePromotions
                 {
                     price = 15;
                 }
-
             }
             else if (day == "Holiday")
             {
@@ -56,7 +54,6 @@ namespace TheatrePromotions
                 {
                     price = 10;
                 }
-
             }
             if (age >= 0 && age <= 122)
             {

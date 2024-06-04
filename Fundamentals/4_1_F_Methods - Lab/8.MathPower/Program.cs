@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _8.MathPower
 {
@@ -22,7 +22,6 @@ namespace _8.MathPower
             }
 
             return result;
-
         }
     }
 }

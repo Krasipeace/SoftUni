@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _5._Count_Symbols
@@ -17,7 +17,6 @@ namespace _5._Count_Symbols
                     dictionary.Add(input[i], 0);
                 }
                 dictionary[input[i]]++;
-
             }
 
             foreach (var symbol in dictionary)

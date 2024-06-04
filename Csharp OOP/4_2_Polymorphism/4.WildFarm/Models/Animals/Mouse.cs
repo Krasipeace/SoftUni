@@ -1,4 +1,4 @@
-﻿namespace WildFarm.Models.Animals
+namespace WildFarm.Models.Animals
 {
     using System;
     using System.Collections.Generic;
@@ -15,6 +15,5 @@
         public override string ProduceSound() => $"Squeak";
         public override string ToString()
             => base.ToString() + $"{Weight}, {LivingRegion}, {FoodEaten}]";
-
     }
 }

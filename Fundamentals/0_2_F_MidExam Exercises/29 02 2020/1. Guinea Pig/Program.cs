@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _1._Guinea_Pig
 {
@@ -38,7 +38,6 @@ namespace _1._Guinea_Pig
             {
                 Console.WriteLine("Merry must go to the pet store!");
             }
-            
         }
     }
 }

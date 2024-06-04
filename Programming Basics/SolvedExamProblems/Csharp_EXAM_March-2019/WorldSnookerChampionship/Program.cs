@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace WorldSnookerChampionship
 {
@@ -58,7 +58,6 @@ namespace WorldSnookerChampionship
                 {
                     ticketPrice = tickets * 400.0;
                 }
-
             }
             if (ticketPrice > 4000)
             {
@@ -76,7 +75,6 @@ namespace WorldSnookerChampionship
             }             
             
             Console.WriteLine($"{ticketPrice:f2}");
-
         }
     }
 }

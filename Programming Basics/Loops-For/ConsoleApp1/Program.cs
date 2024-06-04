@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace LeftRightSum
 {
@@ -27,7 +27,6 @@ namespace LeftRightSum
                 diff = Math.Abs(secondSum - firstSum);
                 Console.WriteLine("No, diff = " + diff);
             }
-            
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace BorderControl.Models
+namespace BorderControl.Models
 {
     using Interfaces;
     public class Citizen : IIdentify, IBirthdate, IBuyer
@@ -22,5 +22,4 @@
             Food += CITIZEN_BUYER;
         }
     }
-
 }

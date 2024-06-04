@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CatWalking
 {
@@ -22,7 +22,6 @@ namespace CatWalking
             {
                 Console.WriteLine($"No, the walk for your cat is not enough. Burned calories per day: {burnCal}.");
             }
-            
         }
     }
 }

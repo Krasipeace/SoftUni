@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -46,14 +46,12 @@ namespace _04._Star_Enigma
                         destroyedPlanets.Add(name);
                     }
                 }
-
             }
 
             Console.WriteLine($"Attacked planets: {attackedPlanets.Count}");
             attackedPlanets.OrderBy(x => x).ToList().ForEach(planetName => Console.WriteLine($"-> {planetName}"));
             Console.WriteLine($"Destroyed planets: {destroyedPlanets.Count}");
             destroyedPlanets.OrderBy(x => x).ToList().ForEach(planetName => Console.WriteLine($"-> {planetName}"));
-
         }
     }
 }

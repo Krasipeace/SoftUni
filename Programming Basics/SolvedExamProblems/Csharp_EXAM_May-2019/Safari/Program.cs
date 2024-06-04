@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Safari
 {
@@ -30,7 +30,6 @@ namespace Safari
             {
                 Console.WriteLine($"Not enough money! Money needed: {all - budget:f2} lv.");
             }
-
         }
     }
 }

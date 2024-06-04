@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _05_DivisionWithoutRemainder
 {
@@ -28,7 +28,6 @@ namespace _05_DivisionWithoutRemainder
                 {
                     counterFour++;
                 }
-
             }
             double pTwo = counterTwo / numbers * 100.0;
             double pThree = counterThree / numbers * 100.0;
@@ -36,7 +35,6 @@ namespace _05_DivisionWithoutRemainder
             Console.WriteLine($"{pTwo:f2}%");
             Console.WriteLine($"{pThree:f2}%");
             Console.WriteLine($"{pFour:f2}%");
-
         }
     }
 }

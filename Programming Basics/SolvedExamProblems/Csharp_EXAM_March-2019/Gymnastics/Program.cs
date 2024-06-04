@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Gymnastics
 {
@@ -25,7 +25,6 @@ namespace Gymnastics
                 {
                     grade = 9.6 + 9.0;
                 }
-
             }
             else if (country == "Bulgaria")
             {
@@ -41,7 +40,6 @@ namespace Gymnastics
                 {
                     grade = 9.5 + 9.4;
                 }
-
             }
             else if (country == "Italy")
             {
@@ -57,13 +55,11 @@ namespace Gymnastics
                 {
                     grade = 9.700 + 9.150;
                 }
-
             }
             double pNumber = 20.0 - grade;
             double pGrade = pNumber / 20 * 100;
             Console.WriteLine($"The team of {country} get {grade:f3} on {equipment}.");
             Console.WriteLine($"{pGrade:f2}%");
-
         }
     }
 }

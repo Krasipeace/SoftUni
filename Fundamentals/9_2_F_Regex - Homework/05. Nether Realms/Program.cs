@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -51,7 +51,6 @@ namespace _05._Nether_Realms
                 }
 
                 Console.WriteLine($"{currentDemon} - {health} health, {damage:f2} damage");
-
             }
         }
     }

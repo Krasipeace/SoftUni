@@ -96,5 +96,4 @@ public class BinarySearchTreeTests
         int[] expectedNodes = new int[] { 1, 3, 4, 5, 8, 9 };
         CollectionAssert.AreEqual(expectedNodes, nodes);
     }
-
 }

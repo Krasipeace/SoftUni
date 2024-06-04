@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -116,9 +116,7 @@ namespace _3._P_rates
             {
                 Console.WriteLine("Ahoy, Captain! All targets have been plundered and destroyed!");
             }
-
         }
-
     }
     public class Town
     {

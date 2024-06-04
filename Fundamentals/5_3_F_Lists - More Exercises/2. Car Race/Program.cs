@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -66,6 +66,5 @@ namespace _2._Car_Race
             }
             return leftRacer;
         }
-
     }
 }

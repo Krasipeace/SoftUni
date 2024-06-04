@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ClassBoxData
 {
@@ -19,7 +19,6 @@ namespace ClassBoxData
                 box.Volume();
 
                 Console.WriteLine(box.ToString()); 
-                
             }
             catch (Exception ex)
             {

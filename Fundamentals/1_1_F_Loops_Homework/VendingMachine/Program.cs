@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace VendingMachine
 {
@@ -50,7 +50,6 @@ namespace VendingMachine
                     }
                     cash -= 2.0;
                     Console.WriteLine($"Purchased {product.ToLower()}");
-
                 }
                 else if (product == "Water")
                 {
@@ -61,7 +60,6 @@ namespace VendingMachine
                     }
                     cash -= 0.7;
                     Console.WriteLine($"Purchased {product.ToLower()}");
-
                 }
                 else if (product == "Crisps")
                 {
@@ -72,7 +70,6 @@ namespace VendingMachine
                     }
                     cash -= 1.5;
                     Console.WriteLine($"Purchased {product.ToLower()}");
-
                 }
                 else if (product == "Soda")
                 {
@@ -83,7 +80,6 @@ namespace VendingMachine
                     }
                     cash -= 0.8;
                     Console.WriteLine($"Purchased {product.ToLower()}");
-
                 }
                 else if (product == "Coke")
                 {
@@ -94,7 +90,6 @@ namespace VendingMachine
                     }
                     cash -= 1.0;
                     Console.WriteLine($"Purchased {product.ToLower()}");
-
                 }
                 else
                 {

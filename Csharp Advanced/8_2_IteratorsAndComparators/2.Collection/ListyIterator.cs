@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -57,7 +57,6 @@ namespace _2.Collection
             {
                 Console.WriteLine(this.data[index]);
             }
-
         }
         public void PrintAll()
         {

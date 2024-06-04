@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -86,7 +86,6 @@ namespace _11.ArrayManipulator
             }
 
             Console.WriteLine(index > -1 ? index.ToString() : "No matches");
-
         }
 
         private static void FindNumbers(int[] array, string position, int countNumbers, string evenOrOdd)

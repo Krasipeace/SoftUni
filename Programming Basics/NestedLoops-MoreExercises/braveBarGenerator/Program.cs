@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04._Balls
 {
@@ -36,7 +36,6 @@ namespace _04._Balls
                     }
                 }
                 count = 0;
-
             }
         }
     }

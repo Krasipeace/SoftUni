@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace BestPlayer
 {
@@ -28,7 +28,6 @@ namespace BestPlayer
                     break;
                 }                
                 goals = int.Parse(Console.ReadLine());
-
             }
             if (maxGoals >= 3)
             {
@@ -40,7 +39,6 @@ namespace BestPlayer
                 Console.WriteLine($"{hatTricker} is the best player!");
                 Console.WriteLine($"He has scored {maxGoals} goals.");
             }
-           
         }
     }
 }

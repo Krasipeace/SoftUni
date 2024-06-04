@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _3.ImplementingCustomQueueClass
 {
@@ -18,7 +18,6 @@ namespace _3.ImplementingCustomQueueClass
             Console.WriteLine(customQueue.ToString());
             customQueue.Enqueue(5);
             Console.WriteLine(customQueue.ToString());
-
         }
     }
 }

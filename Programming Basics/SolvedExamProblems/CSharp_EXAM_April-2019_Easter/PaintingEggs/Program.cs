@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PaintingEggs
 {
@@ -25,7 +25,6 @@ namespace PaintingEggs
                 {
                     price = eggsQ * 9;
                 }
-
             }
             else if (eggSize == "Medium")
             {
@@ -41,7 +40,6 @@ namespace PaintingEggs
                 {
                     price = eggsQ * 7;
                 }
-
             }
             else if (eggSize == "Small")
             {
@@ -57,13 +55,11 @@ namespace PaintingEggs
                 {
                     price = eggsQ * 5;
                 }
-
             }
 
             double production = price * 0.35;
             double finalCost = price - production;
             Console.WriteLine($"{finalCost:f2} leva.");
-
         }
     }
 }

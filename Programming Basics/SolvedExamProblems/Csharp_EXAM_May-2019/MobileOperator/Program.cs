@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MobileOperator
 {
@@ -109,7 +109,6 @@ namespace MobileOperator
             }
 
             Console.WriteLine($"{price:f2} lv.");
-
         }
     }
 }

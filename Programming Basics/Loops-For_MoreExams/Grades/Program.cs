@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Grades
 {
@@ -44,7 +44,6 @@ namespace Grades
             Console.WriteLine($"Between 3.00 and 3.99: {peStudent:f2}%");
             Console.WriteLine($"Fail: {pfStudent:f2}%");
             Console.WriteLine($"Average: {averageOfGrades:f2}");
-
         }
     }
 }
