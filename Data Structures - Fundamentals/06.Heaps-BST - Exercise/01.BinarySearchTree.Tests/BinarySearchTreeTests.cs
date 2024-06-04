@@ -117,7 +117,7 @@ public class Tests
         bst.EachInOrder(nodes.Add);
 
         // Assert
-        int[] expectedNodes = new int[] { };
+        int[] expectedNodes = Array.Empty<int>();
         CollectionAssert.AreEqual(expectedNodes, nodes);
     }
 
