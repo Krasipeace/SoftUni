@@ -71,13 +71,11 @@ namespace _01.Inventory.Tests
             Assert.AreEqual(this._savedWeapon, weaponById);
         }
 
-
         [Test]
         public void ContainsFindsEntity()
         {
             Assert.IsTrue(this._inventory.Contains(this._savedWeapon));
         }
-
 
         [Test]
         public void RefillAmmunitionWorksCorrectly()
@@ -164,7 +162,6 @@ namespace _01.Inventory.Tests
             Assert.AreEqual(0, this._inventory.Capacity);
         }
 
-
         [Test]
         public void RetrieveInRangeWorksCorrectly()
         {
@@ -179,7 +176,7 @@ namespace _01.Inventory.Tests
             List<IWeapon> actualWeapons = this._inventory
                 .RetriveInRange(Category.Medium, Category.Heavy)
                 .OrderBy(w => w.Id)
-                .ToList(); ;
+                .ToList();
 
             Assert.AreEqual(weaponsInRange.Capacity, actualWeapons.Capacity);
 

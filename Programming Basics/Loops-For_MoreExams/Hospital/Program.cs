@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Hospital
 {
@@ -26,13 +26,10 @@ namespace Hospital
                 else
                 {                    
                     treated += patients;
-                    
                 }
             }
             Console.WriteLine($"Treated patients: {treated}.");
             Console.WriteLine($"Untreated patients: {untreated}.");
-            
-
         }
     }
 }

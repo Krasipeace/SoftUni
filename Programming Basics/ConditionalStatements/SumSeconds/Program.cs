@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SumSeconds
 {
@@ -20,7 +20,6 @@ namespace SumSeconds
             {
                 Console.WriteLine($"{minutes}:{seconds}");
             }    
-
         }
     }
 }

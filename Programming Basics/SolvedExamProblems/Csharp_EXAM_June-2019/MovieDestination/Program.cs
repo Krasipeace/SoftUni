@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MovieDestination
 {
@@ -57,7 +57,6 @@ namespace MovieDestination
             {
                 Console.WriteLine($"The director needs {price - budget:f2} leva more!");
             }
-
         }
     }
 }

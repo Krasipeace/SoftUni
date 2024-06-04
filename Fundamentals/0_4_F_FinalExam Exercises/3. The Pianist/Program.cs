@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _03The_Pianist
@@ -7,7 +7,6 @@ namespace _03The_Pianist
     {
         static void Main(string[] args)
         {
-
             var music = new Dictionary<string, KeyValuePair<string, string>>();
             var order = new List<string>();
 

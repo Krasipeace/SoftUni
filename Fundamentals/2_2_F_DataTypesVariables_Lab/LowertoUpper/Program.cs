@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace LowerorUpper
 {
@@ -16,7 +16,6 @@ namespace LowerorUpper
             {
                 Console.WriteLine($"lower-case");
             }
-            
         }
     }
 }

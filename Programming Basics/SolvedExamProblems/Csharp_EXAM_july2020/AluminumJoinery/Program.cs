@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace AluminumJoinery
 {
@@ -91,7 +91,6 @@ namespace AluminumJoinery
             {
                 Console.WriteLine($"{finalPrice:f2} BGN");
             }
-
         }
     }
 }

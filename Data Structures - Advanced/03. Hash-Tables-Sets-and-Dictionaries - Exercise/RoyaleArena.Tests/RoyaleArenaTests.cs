@@ -310,7 +310,6 @@ public class RoyaleArenaTests
         CollectionAssert.AreEquivalent(expected, actual);
     }
 
-
     [Test]
     public void GetByCardTypeAndMaximumDamage_FewElements_ShouldWorkCorrectly()
     {
@@ -441,8 +440,6 @@ public class RoyaleArenaTests
             RA.GetById(5);
         });
     }
-
-
 
     [Test]
     public void ChangeCardType_OnMultipleBattleCards_ShouldWorkCorrectly()
@@ -697,7 +694,6 @@ public class RoyaleArenaTests
         {
             RA.GetByNameOrderedBySwagDescending("pesho");
         });
-
     }
 
     [Test]
@@ -769,7 +765,6 @@ public class RoyaleArenaTests
         {
             RA.GetByCardTypeAndMaximumDamage(CardType.MELEE, 5);
         });
-
     }
 
     [Test]

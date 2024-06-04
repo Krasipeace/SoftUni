@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2.CommonElements
@@ -16,7 +16,6 @@ namespace _2.CommonElements
             {
                 Console.Write($"{element} ");
             }  
-            
         }
     }
 }

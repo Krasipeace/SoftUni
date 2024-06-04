@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _3.LongerLine
 {
@@ -28,15 +28,11 @@ namespace _3.LongerLine
                 {
                     Console.WriteLine($"({x1}, {y1})({x2}, {y2})");
                 }
-
                 else
                 {
                     Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
-
                 }
-
             }
-
             else
             {
                 bool isClosest = CloseToCenterPoint(x3, y3, x4, y4);
@@ -44,13 +40,11 @@ namespace _3.LongerLine
                 {
                     Console.WriteLine($"({x3}, {y3})({x4}, {y4})");
                 }
-
                 else
                 {
                     Console.WriteLine($"({x4}, {y4})({x3}, {y3})");
                 }
             }
-
         }
 
         static double CheckLineLenght(double x1, double y1, double x2, double y2)

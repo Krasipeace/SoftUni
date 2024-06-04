@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04_EasterEggsBattle
 {
@@ -13,7 +13,6 @@ namespace _04_EasterEggsBattle
 
             while (input != "End of battle")
             {
-
                 if (input == "one")
                 {                    
                     pTwoEggs--;
@@ -34,7 +33,6 @@ namespace _04_EasterEggsBattle
                     break;
                 }
                 input = Console.ReadLine();
-
             }
             if (input == "End of battle")
             {

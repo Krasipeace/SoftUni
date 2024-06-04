@@ -1,4 +1,4 @@
-﻿using SoftUni.Data;
+using SoftUni.Data;
 using SoftUni.Models;
 using System.Text;
 
@@ -28,7 +28,6 @@ namespace SoftUni
                 .OrderBy(e => e.Salary)
                 .ThenByDescending(e => e.FirstName)
                 .ToArray();
-
 
             StringBuilder sb = new StringBuilder();
 

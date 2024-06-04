@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 using Eventmi.Core.Contracts;
 using Eventmi.Core.Models;
@@ -63,7 +63,6 @@ namespace Eventmi.Controllers
             }
             catch (Exception ex)
             {
-
                 logger.LogError("EventController/Add", ex);
 
                 ViewBag.ErrorMessage = "Unknown Error!";

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PadawanEquipment
 {
@@ -38,8 +38,6 @@ namespace PadawanEquipment
             {
                 Console.WriteLine($"John will need {Math.Abs(allCost - money):f2}lv more.");
             }
-
-
         }
     }
 }

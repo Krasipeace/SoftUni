@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FoodForPets
 {
@@ -37,7 +37,6 @@ namespace FoodForPets
             Console.WriteLine($"{foodPercent:f2}% of the food has been eaten.");
             Console.WriteLine($"{dogPercent:f2}% eaten from the dog.");
             Console.WriteLine($"{catPercent:f2}% eaten from the cat.");
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PasswordGenerator
 {
@@ -19,7 +19,6 @@ namespace PasswordGenerator
                         {
                             for (int i5 = 2; i5 <= n_Number; i5++)
                             {
-
                                 if (i5 <= i1 || i5 <= i2)
                                 {
                                     i5++;

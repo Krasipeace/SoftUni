@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace WeekendOrWorkingDay
 {
@@ -23,7 +23,6 @@ namespace WeekendOrWorkingDay
                 default: Console.WriteLine("Error");
                     break;
             }
-                
         }
     }
 }

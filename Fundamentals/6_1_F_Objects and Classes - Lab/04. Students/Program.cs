@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -42,7 +42,6 @@ namespace _04._Students
             {
                 Console.WriteLine($"{student.FirstName} {student.LastName} is {student.Age} years old.");
             }
-
         }
     }
 }

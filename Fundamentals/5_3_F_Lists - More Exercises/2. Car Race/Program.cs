@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -6,7 +6,6 @@ namespace _2._Car_Race
 {
     internal class Program
     {
-
 //Напишете програма за изчисляване на победителя в автомобилно състезание.
 //Ще получите масив от числа. Всеки елемент от масива представлява времето,
 //необходимо за преминаване през тази стъпка (индекса). Ще има две коли.
@@ -66,6 +65,5 @@ namespace _2._Car_Race
             }
             return leftRacer;
         }
-
     }
 }

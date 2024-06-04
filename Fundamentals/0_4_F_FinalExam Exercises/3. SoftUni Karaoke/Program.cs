@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _3._SoftUni_Karaoke
@@ -47,9 +47,7 @@ namespace _3._SoftUni_Karaoke
                 }
                 else
                 {
-
                 }
-                
             }
         }
     }

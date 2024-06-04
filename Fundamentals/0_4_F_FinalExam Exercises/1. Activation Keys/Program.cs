@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace _1._Activation_Keys
@@ -35,8 +35,6 @@ namespace _1._Activation_Keys
 
             Console.WriteLine($"Your activation key is: {input}");
         }
-
-
 
         private static void Contains(string[] action, string input, StringBuilder activationKey)
         {

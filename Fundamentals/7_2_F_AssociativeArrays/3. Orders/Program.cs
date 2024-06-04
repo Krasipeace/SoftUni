@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _3._Orders
@@ -42,7 +42,6 @@ namespace _3._Orders
                     }
                 }
             }
-
         }
     }
 }

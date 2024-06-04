@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PCGameShop
 {
@@ -41,7 +41,6 @@ namespace PCGameShop
             Console.WriteLine($"Fornite - {pFornite:f2}%");
             Console.WriteLine($"Overwatch - {pOverwatch:f2}%");
             Console.WriteLine($"Others - {pOthers:f2}%");
-
         }
     }
 }

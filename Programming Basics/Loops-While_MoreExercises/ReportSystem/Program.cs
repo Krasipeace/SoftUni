@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ReportSystem
 {
@@ -31,14 +31,12 @@ namespace ReportSystem
                     if (money < 10)
                     {
                         Console.WriteLine("Error in transaction!");
-                        
                     }
                     else
                     {
                         counterCc++;
                         cc += money;
                         Console.WriteLine("Product sold!");
-                        
                     }
                 }
                 else
@@ -46,14 +44,12 @@ namespace ReportSystem
                     if (money > 100)
                     {
                         Console.WriteLine("Error in transaction!");
-                        
                     }
                     else
                     {
                         counterCs++;
                         cs += money;
                         Console.WriteLine("Product sold!");
-                        
                     }
                 }
                 allMoney = cc + cs;

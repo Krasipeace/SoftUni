@@ -61,7 +61,6 @@ public class BinarySearchTreeTests
         Assert.IsFalse(contains);
     }
 
-
     [Test]
     public void Search_NonExistingElement_ShouldReturnNull()
     {
@@ -71,7 +70,6 @@ public class BinarySearchTreeTests
 
         Assert.IsNull(result);
     }
-
 
     [Test]
     public void Search_ExistingElement_ShouldReturnSubTree()
@@ -96,5 +94,4 @@ public class BinarySearchTreeTests
         int[] expectedNodes = new int[] { 1, 3, 4, 5, 8, 9 };
         CollectionAssert.AreEqual(expectedNodes, nodes);
     }
-
 }

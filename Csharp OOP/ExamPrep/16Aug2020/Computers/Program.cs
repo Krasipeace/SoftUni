@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Computers
 {
@@ -6,7 +6,6 @@ namespace Computers
     {
         static void Main(string[] args)
         {
-          
         }
     }
 }

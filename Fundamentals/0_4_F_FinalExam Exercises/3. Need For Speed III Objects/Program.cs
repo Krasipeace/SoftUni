@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -77,7 +77,6 @@ namespace _3._Need_For_Speed_III_Objects
                 cars.Remove(car);
                 Console.WriteLine($"Time to sell the {name}!");
             }
-
         }
 
         private static void Refuel(string[] tokens, List<Car> cars)

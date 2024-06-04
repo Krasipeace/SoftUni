@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -65,7 +65,6 @@ namespace _3._Plant_Discovery_Objects
                 {
                     Console.WriteLine("error");                    
                 }
-
             }
 
             Console.WriteLine("Plants for the exhibition:");
@@ -99,7 +98,6 @@ namespace _3._Plant_Discovery_Objects
             plant.TotalRating = 0.0;
             plant.RateCounter = 0;
         }
-
     }
     public class Plant
     {

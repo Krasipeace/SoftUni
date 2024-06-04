@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ChristmasTree
 {
@@ -13,7 +13,6 @@ namespace ChristmasTree
             int choice = int.Parse(Console.ReadLine());
             for (int i = 1; i <= choice; i++)
             {
-
             }
         }
     }

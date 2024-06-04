@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _4.PrintingTriangle
 {
@@ -17,7 +17,6 @@ namespace _4.PrintingTriangle
             {
                 PrintLine(1, i);
             }
-
         }
 
         static void PrintLine(int start, int end)

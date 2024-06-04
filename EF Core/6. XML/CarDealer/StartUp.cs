@@ -1,4 +1,4 @@
-﻿namespace CarDealer;
+namespace CarDealer;
 
 using System.Text;
 using System.Xml.Serialization;
@@ -310,11 +310,9 @@ public class StartUp
                         .Sum(pc => Math.Round(pc.Part.Price * 0.95m, 2))
                     : s.Car.PartsCars
                         .Sum(pc => Math.Round(pc.Part.Price, 2))
-
             })
             .OrderByDescending(pc => pc.SpentMoney)
             .ToArray();
-
 
         XmlRootAttribute xmlRoot = new("customers");
         XmlSerializerNamespaces namespaces = new();
@@ -347,7 +345,6 @@ public class StartUp
                     .Sum(pc => pc.Part.Price),
                 PriceWithDiscount = (double)(s.Car.PartsCars
                     .Sum(pc => pc.Part.Price) * (1 - (s.Discount / 100)))
-
             })
             .ToArray();
 

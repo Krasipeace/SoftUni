@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -37,7 +37,6 @@ namespace _2._Emoji_Detector
                     Console.WriteLine(matchEmoji.Value);
                 }
             }
-
         }
     }
 }

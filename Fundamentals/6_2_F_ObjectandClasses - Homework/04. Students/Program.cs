@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -29,7 +29,6 @@ namespace _04._Students
                 double grade = double.Parse(studentInput[2]);
 
                 students.Add(new Student(firstName, lastName, grade));
-
             }
 
             List<Student> sortedByGrade = students.OrderByDescending(descendingGrade => descendingGrade.Grade).ToList();
@@ -38,7 +37,6 @@ namespace _04._Students
             {
                 Console.WriteLine($"{eachStudent.FirstName} {eachStudent.LastName}: {eachStudent.Grade:f2}");
             }
-
         }
     }
 }

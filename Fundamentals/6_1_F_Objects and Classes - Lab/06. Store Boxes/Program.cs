@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,7 +14,6 @@ namespace _06._Store_Boxes
     }
     internal class Program
     {
-
         static void Main(string[] args)
         {
             List<Box> boxes = new List<Box>();
@@ -47,7 +46,6 @@ namespace _06._Store_Boxes
                 Console.WriteLine($"-- {eachBox.Name} - ${eachBox.PriceItem:f2}: {eachBox.BoxQuantity}");
                 Console.WriteLine($"-- ${eachBox.BoxPrice:f2}");
             }
-
         }
     }
 }

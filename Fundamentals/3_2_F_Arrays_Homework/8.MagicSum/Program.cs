@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _8.MagicSum
@@ -19,7 +19,6 @@ namespace _8.MagicSum
 
                 for (int j = i + 1; j < array.Length; j++)
                 {
-
                     if (currentNumber + array[j] == key)
                     {
                         Console.WriteLine($"{currentNumber} {array[j]}");

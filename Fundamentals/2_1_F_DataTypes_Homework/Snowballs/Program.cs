@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 namespace Snowballs
@@ -31,7 +31,6 @@ namespace Snowballs
                 }
             }
             Console.WriteLine($"{bestSnow} : {bestTime} = {bestValue} ({bestQ})");
-
         }
     }
 }

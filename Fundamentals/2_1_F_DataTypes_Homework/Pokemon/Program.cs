@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Pokemon
 {
@@ -25,7 +25,6 @@ namespace Pokemon
 
             Console.WriteLine(pokePower);
             Console.WriteLine(pokeTarget);
-
         }
     }
 }

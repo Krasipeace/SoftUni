@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -52,6 +52,5 @@ namespace CarManufacturer
         public double FuelConsumption { get { return this.fuelConsumption; } private set { this.fuelConsumption = value; } }
         public Engine Engine { get { return this.engine; } private set { this.engine = value; } }
         public Tire[] Tires { get { return this.tires; } private set { this.tires = value; } }
-
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04_GameNumberWars
 {
@@ -40,7 +40,6 @@ namespace _04_GameNumberWars
                         Console.WriteLine($"{playerTwo} is winner with {pTwoPoints} points");
                         break;
                     }
-
                 }
                 cardPlayerOne = Console.ReadLine();
             }
@@ -49,7 +48,6 @@ namespace _04_GameNumberWars
                 Console.WriteLine($"{playerOne} has {pOnePoints} points");
                 Console.WriteLine($"{playerTwo} has {pTwoPoints} points");
             }
-
         }
     }
 }

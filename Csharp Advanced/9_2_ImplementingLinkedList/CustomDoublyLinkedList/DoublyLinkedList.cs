@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -119,7 +119,5 @@ namespace CustomDoublyLinkedList  // https://en.wikipedia.org/wiki/Doubly_linked
 
             return array;
         }
-
     }
-
 }

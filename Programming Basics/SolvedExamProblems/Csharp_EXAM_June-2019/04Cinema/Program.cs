@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04Cinema
 {
@@ -46,7 +46,6 @@ namespace _04Cinema
                 }                                                 
                 Console.WriteLine($"Cinema income - {allIncome} lv.");
             }
-
         }
     }
 }

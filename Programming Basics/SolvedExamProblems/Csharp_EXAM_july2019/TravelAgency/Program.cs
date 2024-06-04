@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TravelAgency
 {
@@ -45,7 +45,6 @@ namespace TravelAgency
                     return;
                 }
             }
-
             else if (city == "Varna" || city == "Burgas")
             {
                 if (pack == "noBreakfast")

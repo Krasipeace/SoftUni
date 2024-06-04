@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -33,7 +33,6 @@ namespace _3._Moving_Target
                         StrikeTarget(int.Parse(tokens[1]), int.Parse(tokens[2]), targets);
                         break;
                 }
-
             }
             Console.WriteLine(string.Join("|", targets));
         }

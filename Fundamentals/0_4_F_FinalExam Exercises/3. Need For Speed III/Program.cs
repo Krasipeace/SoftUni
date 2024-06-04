@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _3._Need_For_Speed_III
@@ -56,7 +56,6 @@ namespace _3._Need_For_Speed_III
             {
                 Console.WriteLine($"{car.Key} -> Mileage: {car.Value[0]} kms, Fuel in the tank: {car.Value[1]} lt.");
             }
-
         }
 
         private static void Drive(string car, int distance, int dFuel, Dictionary<string, List<int>> cars, int MAX_MILEAGE)
@@ -79,7 +78,6 @@ namespace _3._Need_For_Speed_III
                     cars.Remove(car);
                 }
             }
-
         }
 
         private static void Refuel(string car, int fuel, Dictionary<string, List<int>> cars, int MAX_FUEL)

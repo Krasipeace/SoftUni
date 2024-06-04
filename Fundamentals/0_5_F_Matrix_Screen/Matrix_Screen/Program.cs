@@ -1,4 +1,4 @@
-﻿// F5 to reset, F6 to pause and play
+// F5 to reset, F6 to pause and play
 using System;
 
 namespace matrix
@@ -61,7 +61,6 @@ namespace matrix
             Console.CursorVisible = false;
         }
 
-
         private static void ResetMatrixPlay(out int width, out int height, out int[] y)
         {
             height = Console.WindowHeight;
@@ -75,7 +74,6 @@ namespace matrix
                 y[x] = random.Next(height);
             }
         }
-
 
         private static void FallingSymbols(int width, int height, int[] y)
         {

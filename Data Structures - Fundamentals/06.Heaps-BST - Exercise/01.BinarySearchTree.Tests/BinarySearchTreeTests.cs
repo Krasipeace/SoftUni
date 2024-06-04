@@ -92,7 +92,6 @@ public class Tests
         CollectionAssert.AreEqual(expectedNodes, nodes);
     }
 
-
     [Test]
     public void DeleteMin_EmptyTree_ShouldThrow()
     {
@@ -369,7 +368,6 @@ public class Tests
         int[] expectedNodes = new int[] { };
         CollectionAssert.AreEqual(expectedNodes, nodes);
     }
-
 
     [Test]
     public void Search_ExistingElement_ShouldReturnSubTree()

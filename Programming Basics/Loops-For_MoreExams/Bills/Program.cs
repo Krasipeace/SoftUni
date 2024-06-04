@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Bills
 {
@@ -26,7 +26,6 @@ namespace Bills
             Console.WriteLine($"Internet: {internet:f2} lv");
             Console.WriteLine($"Other: {sumOther:f2} lv");
             Console.WriteLine($"Average: {average:f2} lv");
-                        
         }
     }
 }

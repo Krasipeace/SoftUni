@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -26,7 +26,6 @@ namespace _05._Students_2._0
 
                 if (IsStudentExist(students, firstName, lastName))
                 {
-
                     Student student = GetStudent(students, firstName, lastName, age);
                 }
                 else
@@ -37,7 +36,6 @@ namespace _05._Students_2._0
                         LastName = lastName,
                         Age = age,
                         City = city,
-
                     };
 
                     students.Add(student);
@@ -53,7 +51,6 @@ namespace _05._Students_2._0
             {
                 Console.WriteLine($"{student.FirstName} {student.LastName} is {student.Age} years old.");
             }
-
         }
 
         static Student GetStudent(List<Student> students, string firstName, string lastName, int age)

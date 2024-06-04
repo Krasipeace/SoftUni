@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2.Warships 
@@ -20,7 +20,6 @@ namespace _2.Warships
             int secondPlayerAliveShips = 0;  //------ ----- -----
 
             string[] playersCommands = Console.ReadLine().Split(",", StringSplitOptions.RemoveEmptyEntries);
-
 
             //--> initializing battlefield
             for (int row = 0; row < fieldSize; row++)

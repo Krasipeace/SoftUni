@@ -1,4 +1,4 @@
-﻿namespace ChristmasPastryShop.Core
+namespace ChristmasPastryShop.Core
 {
     using System;
     using ChristmasPastryShop.Core.Contracts;
@@ -83,7 +83,6 @@
                 }
                 catch (Exception ex)
                 {
-
                     writer.WriteLine(ex.Message);
                 }
             }

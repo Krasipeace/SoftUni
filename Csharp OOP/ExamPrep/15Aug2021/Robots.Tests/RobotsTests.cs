@@ -1,4 +1,4 @@
-﻿namespace Robots.Tests
+namespace Robots.Tests
 {
     using NUnit.Framework;
     using System;
@@ -43,7 +43,6 @@
                 defaultRobotManager.Add(new Robot("R2D2", 77));
             }, $"There is already a robot with name {defaultRobot.Name}!");
         }
-
 
         [Test]
         public void AddRobotAfterCapacityIsReached_ShouldThrowExceptiion()

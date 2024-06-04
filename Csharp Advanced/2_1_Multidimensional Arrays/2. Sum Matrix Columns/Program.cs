@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2._Sum_Matrix_Columns
@@ -11,7 +11,6 @@ namespace _2._Sum_Matrix_Columns
             int rows = inputSize[0];
             int cols = inputSize[1];
             int[,] matrix = new int[rows, cols];
-           
 
             for (int row = 0; row < matrix.GetLength(0); row++)
             {

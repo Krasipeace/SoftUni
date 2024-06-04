@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MovieStars
 {
@@ -25,7 +25,6 @@ namespace MovieStars
                 budget -= salary;
                 if (budget <= 0)
                 {
-
                     Console.WriteLine($"We need {Math.Abs(budget):f2} leva for our actors.");
                     endBudget = true;
                     break;
@@ -37,7 +36,6 @@ namespace MovieStars
             {
                 Console.WriteLine($"We are left with {budget:F2} leva.");
             }
-
         }
     }
 }

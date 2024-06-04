@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TriplesOfLatinLetters
 {
@@ -16,7 +16,6 @@ namespace TriplesOfLatinLetters
                     {
                         Console.WriteLine($"{i}{j}{k}");
                     }
-
                 }
             }
         }

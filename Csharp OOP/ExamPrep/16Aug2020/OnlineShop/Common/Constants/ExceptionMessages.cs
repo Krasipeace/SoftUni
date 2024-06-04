@@ -1,4 +1,4 @@
-﻿namespace OnlineShop.Common.Constants
+namespace OnlineShop.Common.Constants
 {
     public static class ExceptionMessages
     {
@@ -37,6 +37,5 @@
         public const string ExistingComponentId = "Component with this id already exists.";
 
         public const string CanNotBuyComputer = "Can't buy a computer with a budget of ${0}.";
-
     }
 }

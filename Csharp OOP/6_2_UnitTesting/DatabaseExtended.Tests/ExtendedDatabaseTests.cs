@@ -27,7 +27,6 @@ namespace Tests
             }
         }
 
-
         [Test]
         public void Test_ConstructorSetDataCorrectly()
         {
@@ -92,8 +91,6 @@ namespace Tests
             });
         }
 
-
-
         [Test]
         public void Test_RemoveMethodWorksCorrectly()
         {
@@ -108,7 +105,5 @@ namespace Tests
                 }
             }, Throws.InvalidOperationException);
         }
-
-
     }
 }

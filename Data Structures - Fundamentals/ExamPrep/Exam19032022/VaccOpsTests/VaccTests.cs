@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -93,7 +93,6 @@ public class Tests
 
         Assert.True(this.vaccOps.GetPatients().Count() == 1000);
     }
-
 
     [Test]
     public void TestAddingPatientWithNonExistentDoctorThrowException()
@@ -435,7 +434,7 @@ public class Tests
 
         for (int i = 0; i < 10000; i++)
         {
-            this.vaccOps.AddPatient(d1, new Patient(i.ToString(), i, i, i.ToString())); ;
+            this.vaccOps.AddPatient(d1, new Patient(i.ToString(), i, i, i.ToString()));
         }
 
         sw.Stop();
@@ -483,7 +482,7 @@ public class Tests
 
         for (int i = 0; i < 10000; i++)
         {
-            this.vaccOps.AddPatient(d1, new Patient(i.ToString(), i, i, i.ToString())); ;
+            this.vaccOps.AddPatient(d1, new Patient(i.ToString(), i, i, i.ToString()));
         }
 
         sw.Start();
@@ -514,10 +513,9 @@ public class Tests
 
         for (int i = 0; i < 10000; i++)
         {
-
             var d = new Doctor(i.ToString(), i);
             this.vaccOps.AddDoctor(d);
-            this.vaccOps.AddPatient(d, new Patient(i.ToString(), i, i, i.ToString())); ;
+            this.vaccOps.AddPatient(d, new Patient(i.ToString(), i, i, i.ToString()));
         }
 
         sw.Start();

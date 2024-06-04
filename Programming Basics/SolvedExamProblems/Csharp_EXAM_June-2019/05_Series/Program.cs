@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _05_Series
 {
@@ -14,7 +14,6 @@ namespace _05_Series
             {
                 string tvName = Console.ReadLine();
                 double tvPrice = double.Parse(Console.ReadLine());
-                
 
                 if (tvName == "Thrones")
                 {
@@ -40,7 +39,6 @@ namespace _05_Series
                 {
                     allPrice += tvPrice;
                 }
-
             }
 
             if (allPrice <= budget)

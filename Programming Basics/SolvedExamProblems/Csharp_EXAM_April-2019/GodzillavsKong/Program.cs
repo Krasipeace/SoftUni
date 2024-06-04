@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace GodzillavsKong
 {
@@ -29,7 +29,6 @@ namespace GodzillavsKong
                 Console.WriteLine($"Action!");
                 Console.WriteLine($"Wingard starts filming with {budgetMovie - allExpense:f2} leva left.");
             }
-            
         }
     }
 }

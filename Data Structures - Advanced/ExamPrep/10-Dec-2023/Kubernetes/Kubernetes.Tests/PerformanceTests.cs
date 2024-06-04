@@ -48,7 +48,6 @@ namespace Kubernetes.Tests
 
             sw.Stop();
 
-
             // Assert
             Assert.That(sw.ElapsedMilliseconds, Is.LessThanOrEqualTo(10));
             Assert.That(this.controller.Size(), Is.EqualTo(100_001));
@@ -58,7 +57,7 @@ namespace Kubernetes.Tests
         public void GetPod_ShouldPassQuickly_With100000Pods()
         {
             // Arrange
-            var target = null as Pod; ;
+            var target = null as Pod;
             for (int i = 0; i < 100_000; i++)
             {
                 var pod = new Pod
@@ -85,7 +84,6 @@ namespace Kubernetes.Tests
             var result = this.controller.GetPod(target.Id);
 
             sw.Stop();
-
 
             // Assert
             Assert.That(sw.ElapsedMilliseconds, Is.LessThanOrEqualTo(10));
@@ -123,7 +121,6 @@ namespace Kubernetes.Tests
             var result = this.controller.Contains(target);
 
             sw.Stop();
-
 
             // Assert
             Assert.That(sw.ElapsedMilliseconds, Is.LessThanOrEqualTo(10));
@@ -163,7 +160,6 @@ namespace Kubernetes.Tests
             this.controller.Uninstall(target);
 
             sw.Stop();
-
 
             // Assert
             Assert.That(sw.ElapsedMilliseconds, Is.LessThanOrEqualTo(10));
@@ -213,7 +209,6 @@ namespace Kubernetes.Tests
 
             sw.Stop();
 
-
             // Assert
             Assert.That(sw.ElapsedMilliseconds, Is.LessThanOrEqualTo(10));
             Assert.That(this.controller.Size(), Is.EqualTo(podsCounter));
@@ -253,7 +248,6 @@ namespace Kubernetes.Tests
                     }
                 }
             }
-
 
             // Act
             var sw = new Stopwatch();

@@ -1,4 +1,4 @@
-﻿namespace RotateMatrix
+namespace RotateMatrix
 {
     class Program
     {
@@ -13,7 +13,6 @@
 
             PrintRotatedMatrix(size, rotatedMatrix);
         }
-
 
         private static void ReadInitialMatrix(int size, int[,] matrix)
         {

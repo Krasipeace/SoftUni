@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Skeleton
 {
@@ -24,7 +24,6 @@ namespace Skeleton
             {
                 Console.WriteLine($"No, Marin failed! He was {Math.Abs(controlTime - marinTime):f3} second slower.");
             }
-
         }
     }
 }

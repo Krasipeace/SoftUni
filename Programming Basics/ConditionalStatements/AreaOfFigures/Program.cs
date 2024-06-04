@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace AreaOfFigures
 {
@@ -23,7 +23,6 @@ namespace AreaOfFigures
             {
                 double r = double.Parse(Console.ReadLine());
                 area = r * r * Math.PI;
-                
             }
             else if (figure == "triangle")
             {

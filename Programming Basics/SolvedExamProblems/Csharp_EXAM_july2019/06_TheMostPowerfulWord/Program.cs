@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _06_TheMostPowerfulWord
 {
@@ -32,7 +32,6 @@ namespace _06_TheMostPowerfulWord
                     result = Math.Floor(charSum / word.Length);
                 }
 
-
                 if (result > maxResult)
                 {
                     maxResult = result;
@@ -46,7 +45,6 @@ namespace _06_TheMostPowerfulWord
             if (word == "End of words")
             {
                 Console.WriteLine($"The most powerful word is {mostPowerfulWord}-{maxResult}");
-
             }
         }
     }

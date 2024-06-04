@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _06_BasketballTournament
 {
@@ -42,7 +42,6 @@ namespace _06_BasketballTournament
             {
                 Console.WriteLine($"{pLose:f2}% matches lost");
             }
-                       
         }
     }
 }

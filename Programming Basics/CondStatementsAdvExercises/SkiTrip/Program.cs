@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SkiTrip
 {
@@ -49,7 +49,6 @@ namespace SkiTrip
                                 Console.WriteLine($"{pricePres:f2}");
                                 break;
                         }
-
                     }
                     break;
                 case >= 10 and <= 15:

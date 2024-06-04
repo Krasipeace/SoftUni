@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace IteratorsAndComparators
 {
@@ -12,7 +12,6 @@ namespace IteratorsAndComparators
 
             Library libraryOne = new Library();
             Library libraryTwo = new Library(bookOne, bookTwo, bookThree);
-           
         }
     }
 }

@@ -47,7 +47,6 @@ namespace Problem01.CircularQueue.Tests
         [TestCaseSource(nameof(RandomCollections))]
         public void Enqueue_MultipleElements_ShouldOrderElementsCorrectly(int[] expected)
         {
-
             foreach (var num in expected)
             {
                 this.queue.Enqueue(num);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FavoriteMovie
 {
@@ -21,7 +21,6 @@ namespace FavoriteMovie
                     if (currentLetter >= 97 && currentLetter <= 122)
                     {
                         sum += (currentLetter - 2 * movie.Length);
-
                     }
                     else if (currentLetter >= 65 && currentLetter <= 90)
                     {
@@ -31,7 +30,6 @@ namespace FavoriteMovie
                     {
                         sum += currentLetter;
                     }
-
                 }
                 if (sum > maxSum)
                 {

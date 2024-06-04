@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _5.AddAndSubtract
 {
@@ -18,7 +18,6 @@ namespace _5.AddAndSubtract
             SubstractThree(addResult, inputThree);
 
             PrintResult(finalResult);
-
         }
 
         private static void PrintResult(int result) => Console.WriteLine(result);

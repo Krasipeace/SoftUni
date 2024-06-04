@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -359,7 +359,6 @@ public class CouponTests
         CollectionAssert.AreEqual(res, expected);
     }
 
-
     [Test]
     public void RegisterSitePerf()
     {
@@ -392,7 +391,6 @@ public class CouponTests
         sw.Stop();
         Assert.IsTrue(sw.ElapsedMilliseconds <= 20);
     }
-
 
     [Test]
     public void RemoveWebsitePef()

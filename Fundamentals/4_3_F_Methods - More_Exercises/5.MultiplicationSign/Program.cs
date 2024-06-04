@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _5.MultiplicationSign
 {
@@ -40,7 +40,6 @@ namespace _5.MultiplicationSign
                 return false;
             }
             return true;
-
         }
 
         static void Result(int numberOne, int numberTwo, int numberThree)
@@ -58,6 +57,5 @@ namespace _5.MultiplicationSign
                 Console.WriteLine("positive");
             }
         }
-
     }
 }

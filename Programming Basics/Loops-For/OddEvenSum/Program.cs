@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace OddEvenSum
 {
@@ -24,7 +24,7 @@ namespace OddEvenSum
                 if (evenSum % 2 == 0)
                 {
                     Console.WriteLine("Yes");
-                    Console.WriteLine($"Sum =" {evenSum});
+                    Console.WriteLine($"Sum =" {evenSum})
                 }
                 else
                 {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -25,7 +25,6 @@ namespace _07._Vehicle_Catalogue
         }
         public List<Car> Cars { get; set; }
         public List<Truck> Trucks { get; set; }
-
     }
     internal class Program
     {
@@ -73,7 +72,6 @@ namespace _07._Vehicle_Catalogue
                     Console.WriteLine($"{truck.Brand}: {truck.Model} - {truck.Weight}kg");
                 }
             }
-
         }
 
         private static void GetTruck(Catalog catalog, string brand, string model, double weightOrHorsePower)

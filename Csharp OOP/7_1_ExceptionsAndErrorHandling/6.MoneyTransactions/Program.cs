@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -55,14 +55,11 @@ namespace _6.MoneyTransactions
                 }
                 catch (Exception ex)
                 {
-
                     Console.WriteLine(ex.Message);
                 }
                 finally
                 {
-
                     Console.WriteLine("Enter another command");
-
                 }
 
                 command = Console.ReadLine();
@@ -89,7 +86,6 @@ namespace _6.MoneyTransactions
             if (!accounts.ContainsKey(accountID))
             {
                 throw new ArgumentException("Invalid account!");
-
             }
 
             return true;

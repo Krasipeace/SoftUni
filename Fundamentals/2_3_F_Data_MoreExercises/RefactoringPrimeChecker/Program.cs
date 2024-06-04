@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Refactoring_PrimeChecker
 {
@@ -26,7 +26,6 @@ namespace Refactoring_PrimeChecker
                 {
                     Console.WriteLine($"{currentNumber} -> true");
                 }
-                
             }
         }
     }

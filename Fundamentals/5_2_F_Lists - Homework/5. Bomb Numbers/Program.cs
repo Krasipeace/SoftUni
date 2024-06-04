@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -35,6 +35,5 @@ namespace _5._Bomb_Numbers
                 numbers[i] = 0;
             }
         }
-
     }
 }

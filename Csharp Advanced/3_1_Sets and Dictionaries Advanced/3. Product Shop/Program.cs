@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -26,7 +26,6 @@ namespace _4._Product_Shop
                     shops.Add(shop, new Dictionary<string, double>());
                 }
                 shops[shop].Add(product, price);
-
 
                 command = Console.ReadLine();
             }

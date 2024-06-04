@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,7 +22,6 @@ namespace _3._The_Pianist_Objects
                     Key = musicInfo[2],
                 };
                 pieces.Add(piece);
-
             }
 
             string command = Console.ReadLine();
@@ -115,6 +114,5 @@ namespace _3._The_Pianist_Objects
         public string Name { get; set; }
         public string Composer { get; set; }
         public string Key { get; set; }
-
     }
 }

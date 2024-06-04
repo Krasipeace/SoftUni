@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace BackIn30Minutes
 {
@@ -28,8 +28,6 @@ namespace BackIn30Minutes
             {
                 Console.WriteLine($"{hours}:{minutes}");
             }
-
-
         }
     }
 }

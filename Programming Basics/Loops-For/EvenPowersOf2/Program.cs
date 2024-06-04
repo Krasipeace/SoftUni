@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 
 namespace EvenPowersOf2
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CustomListClass
 {
@@ -20,8 +20,6 @@ namespace CustomListClass
 
             list.Contains(3);
             Console.WriteLine(list.ToString());
-
-
         }
     }
 }

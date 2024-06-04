@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _2.PascalTriangle
 {
@@ -19,7 +19,6 @@ namespace _2.PascalTriangle
             for (int row = 0; row < height - 1; row++)
             {
                 for (int col = 0; col <= row; col++)
-
                 {
                     triangle[row + 1][col] += triangle[row][col];
                     triangle[row + 1][col + 1] += triangle[row][col];

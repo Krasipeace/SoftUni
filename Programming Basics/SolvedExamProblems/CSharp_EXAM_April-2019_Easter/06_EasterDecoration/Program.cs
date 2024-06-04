@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _06_EasterDecoration
 {
@@ -40,7 +40,6 @@ namespace _06_EasterDecoration
                 totalPrice += price;
             }
             Console.WriteLine($"Average bill per client is: {totalPrice / clients:F2} leva.");
-
         }
     }
 }

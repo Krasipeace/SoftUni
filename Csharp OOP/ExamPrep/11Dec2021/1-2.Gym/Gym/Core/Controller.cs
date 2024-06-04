@@ -1,4 +1,4 @@
-﻿using Gym.Core.Contracts;
+using Gym.Core.Contracts;
 using Gym.Models.Athletes;
 using Gym.Models.Athletes.Contracts;
 using Gym.Models.Equipment;
@@ -24,7 +24,6 @@ namespace Gym.Core
             gyms = new List<IGym>();
         }
 
-
         public string AddGym(string gymType, string gymName)
         {
             if (gymType != "BoxingGym" && gymType != "WeightliftingGym")
@@ -45,7 +44,6 @@ namespace Gym.Core
 
             return string.Format(OutputMessages.SuccessfullyAdded, gymName);
         }
-
 
         public string AddEquipment(string equipmentType)
         {
@@ -82,7 +80,6 @@ namespace Gym.Core
             return string.Format(OutputMessages.EntityAddedToGym, equipmentType, gymName);
         }
 
-
         public string AddAthlete(string gymName, string athleteType, string athleteName, string motivation, int numberOfMedals)
         {
             if (athleteType != "Boxer" && athleteType != "Weightlifter")
@@ -114,7 +111,6 @@ namespace Gym.Core
             return string.Format(OutputMessages.EntityAddedToGym, athleteType, gymName);
         }
 
-
         public string TrainAthletes(string gymName)
         {
             IGym gym = gyms.Find(x => x.Name == gymName);
@@ -123,14 +119,12 @@ namespace Gym.Core
             return string.Format(OutputMessages.AthleteExercise, gym.Athletes.Count);
         }
 
-
         public string EquipmentWeight(string gymName)
         {
             IGym gym = gyms.First(x => x.Name == gymName);
 
             return string.Format(OutputMessages.EquipmentTotalWeight, gymName, gym.EquipmentWeight);
         }
-
 
         public string Report()
         {

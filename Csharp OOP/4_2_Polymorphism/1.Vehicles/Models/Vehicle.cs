@@ -1,4 +1,4 @@
-﻿
+
 namespace Vehicles.Models
 {
     using Contracts;
@@ -36,6 +36,5 @@ namespace Vehicles.Models
 
         public override string ToString()      
             => $"{this.GetType().Name}: {this.FuelQuantity:f2}";
-        
     }
 }

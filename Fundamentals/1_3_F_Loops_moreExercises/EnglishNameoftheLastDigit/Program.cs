@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace EnglishNameoftheLastDigit
 {
@@ -40,7 +40,6 @@ namespace EnglishNameoftheLastDigit
                     Console.WriteLine("nine");
                     break;
             }
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace DirectoryTraversal
+namespace DirectoryTraversal
 {
     using System;
     using System.Collections.Generic;
@@ -30,7 +30,6 @@
                 FileInfo fileInfo = new FileInfo(file);
                 if (dictionary.ContainsKey(fileInfo.Extension))
                 {
-
                     dictionary.Add(fileInfo.Extension, new List<FileInfo>());
                 }
                 dictionary[fileInfo.Extension].Add(fileInfo);

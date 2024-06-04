@@ -50,7 +50,6 @@ public class MovieDatabaseTests
     }
 
     // Correctness Tests
-    
 
     [Test]
     public void TestContains_WithExistentActor_ShouldReturnTrue() {
@@ -121,7 +120,6 @@ public class MovieDatabaseTests
         Assert.That(set.Count, Is.EqualTo(0));
     }
 
-   
     // Performance Tests
 
     [Test]
@@ -143,7 +141,6 @@ public class MovieDatabaseTests
             } else {
                 this.movieDatabase.AddActor(GetRandomActor());
             }
-
         }
 
         Stopwatch stopwatch = new Stopwatch(); stopwatch.Start();
@@ -168,7 +165,6 @@ public class MovieDatabaseTests
 
         Actor actorToDo = GetRandomActor();
         this.movieDatabase.AddActor(actorToDo);
-
 
         for (int i = 0; i < count; i++)
         {

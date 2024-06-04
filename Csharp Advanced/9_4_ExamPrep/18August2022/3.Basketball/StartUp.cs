@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Basketball //86/100
@@ -46,7 +46,6 @@ namespace Basketball //86/100
             Player fifthPlayer = new Player("Vasil", "Power forward", 86.9, 10);
             Player sixthPlayer = new Player("Stefan", "Center", 95.6, 25);
             Player seventhPlayer = new Player("Ivan", " Small forward ", 98.5, 89);
-
 
             // Add players
             Console.WriteLine(team.AddPlayer(secondPlayer));

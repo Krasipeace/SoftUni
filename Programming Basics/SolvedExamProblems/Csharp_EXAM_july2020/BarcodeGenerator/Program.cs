@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace BarcodeGenerator
 {
@@ -38,7 +38,6 @@ namespace BarcodeGenerator
                         }
                     }
                 }
-
             }
         }
     }

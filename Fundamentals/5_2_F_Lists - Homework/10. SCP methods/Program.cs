@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -25,7 +25,6 @@ namespace _10._SCP_methods
         }
 
         static List<string> SoftUniCoursePlanning(List<string> lessons, string[] command)
-
         {
             switch (command[0])
             {
@@ -49,7 +48,6 @@ namespace _10._SCP_methods
         }
 
         static List<string> ExerciseAdd(List<string> lessons, string[] command)
-
         {
             string lessonTitle = command[1];
 
@@ -59,7 +57,6 @@ namespace _10._SCP_methods
 
                 lessons.Insert(index + 1, lessonTitle + "-Exercise");
             }
-
             else if (!lessons.Contains(lessonTitle))
             {
                 lessons.Add(lessonTitle);
@@ -69,7 +66,6 @@ namespace _10._SCP_methods
         }
 
         static List<string> LessonSwap(List<string> lessons, string[] command)
-
         {
             string lessonOne = command[1];
             string lessonTwo = command[2];

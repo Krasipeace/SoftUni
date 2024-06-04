@@ -1,4 +1,4 @@
-﻿namespace FightingArena.Tests
+namespace FightingArena.Tests
 {
     using NUnit.Framework;
     using System;
@@ -131,6 +131,5 @@
             Assert.AreEqual(attackerExpectedHp, attackerActualHp);
             Assert.AreEqual(defenderExpectedHp, defenderActualHp);
         }
-
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Invoices.DataProcessor
+namespace Invoices.DataProcessor
 {
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
@@ -40,10 +40,8 @@
             return sb.ToString().TrimEnd();
         }
 
-
         public static string ExportProductsWithMostClients(InvoicesContext context, int nameLength)
         {
-
             var products = context
                 .Products
                 .Where(p => p.ProductsClients

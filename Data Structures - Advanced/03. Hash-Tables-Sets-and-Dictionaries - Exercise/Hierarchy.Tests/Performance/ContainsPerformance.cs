@@ -1,4 +1,4 @@
-﻿using Hierarchy;
+using Hierarchy;
 using NUnit.Framework;
 using System.Diagnostics;
 
@@ -24,7 +24,6 @@ public class ContainsPerformance
         timer.Stop();
         Assert.IsTrue(timer.ElapsedMilliseconds < 50);
     }
-
 
     [Test]
     public void PerformanceContains_With25000ExistingAnd25000NonexistentElements()

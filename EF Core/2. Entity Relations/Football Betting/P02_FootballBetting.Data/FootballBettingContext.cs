@@ -1,4 +1,4 @@
-﻿namespace P02_FootballBetting.Data;
+namespace P02_FootballBetting.Data;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -9,7 +9,6 @@ public class FootballBettingContext : DbContext
 {
     public FootballBettingContext()
     {
-
     }
 
     // used by judge
@@ -34,7 +33,6 @@ public class FootballBettingContext : DbContext
     public DbSet<Bet> Bets { get; set; }
 
     public DbSet<User> Users { get; set; }
-
 
     // connection configuration
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

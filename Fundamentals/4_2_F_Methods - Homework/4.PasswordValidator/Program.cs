@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _4.PasswordValidator
 {
@@ -30,7 +30,6 @@ namespace _4.PasswordValidator
             {
                 Console.WriteLine($"Password is valid");
             }
-
         }
         private static bool ValidatePasswordDigit(string password)
         {
@@ -59,6 +58,5 @@ namespace _4.PasswordValidator
         {
             return password.Length >= 6 && password.Length <= 10;
         }
-
     }
 }

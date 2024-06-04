@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using SoftUni.Data;
 using SoftUni.Models;
 
@@ -10,7 +10,6 @@ namespace SoftUni
         {
             SoftUniContext dbContext = new SoftUniContext();
             string result = GetEmployeesWithSalaryOver50000(dbContext);
-
 
             Console.WriteLine(result);
         }

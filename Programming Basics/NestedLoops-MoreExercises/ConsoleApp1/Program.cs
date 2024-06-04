@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace LuckyNumbers
 {
@@ -23,7 +23,6 @@ namespace LuckyNumbers
                                     Console.Write("" + i + j + k + l + " ");
                                 }
                             }
-
                         }
                     }
                 }

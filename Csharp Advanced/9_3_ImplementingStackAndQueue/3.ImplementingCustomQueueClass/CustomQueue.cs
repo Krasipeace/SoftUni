@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -65,14 +65,11 @@ namespace _3.ImplementingCustomQueueClass
 
         public void Clear()
         {
-            
         }
 
         public override string ToString()
         {
             return $"{string.Join(" ", elements)}";
         }
-
-        
     }
 }

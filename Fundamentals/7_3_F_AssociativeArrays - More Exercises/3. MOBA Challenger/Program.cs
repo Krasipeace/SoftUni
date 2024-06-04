@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -88,7 +88,6 @@ namespace _3._MOBA_Challenger
                 {
                     Console.WriteLine($"- {x.Key} <::> {x.Value}");
                 }
-
             }
         }
     }

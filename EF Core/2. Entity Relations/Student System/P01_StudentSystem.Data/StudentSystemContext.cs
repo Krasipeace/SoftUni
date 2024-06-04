@@ -1,4 +1,4 @@
-﻿namespace P01_StudentSystem.Data;
+namespace P01_StudentSystem.Data;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -78,7 +78,6 @@ public class StudentSystemContext : DbContext
 				.HasOne(r => r.Course)
 				.WithMany(r => r.Resources)
 				.HasForeignKey(r => r.CourseId);
-
 		});
 
 		modelBuilder.Entity<Homework>(entity =>

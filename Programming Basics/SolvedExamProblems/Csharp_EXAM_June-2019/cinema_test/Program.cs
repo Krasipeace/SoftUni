@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace cinema_test
 {
@@ -6,7 +6,6 @@ namespace cinema_test
     {
         static void Main(string[] args)
         {
-
             int capacity = int.Parse(Console.ReadLine());
 
             string command = Console.ReadLine();
@@ -17,7 +16,6 @@ namespace cinema_test
             {
                 int people = int.Parse(command);
                 capacity -= people;
-
 
                 if (capacity < 0)
                 {

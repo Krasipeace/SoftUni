@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace EasterTrip
 {
@@ -25,7 +25,6 @@ namespace EasterTrip
                 {
                     price = nights * 40;
                 }
-
             }
             else if (destination == "Italy")
             {
@@ -42,7 +41,6 @@ namespace EasterTrip
                     price = nights * 39;
                 }
             }
-
             else if (destination == "Germany")
             {
                 if (dates == "21-23")

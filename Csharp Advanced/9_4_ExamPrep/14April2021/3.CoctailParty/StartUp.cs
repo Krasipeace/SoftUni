@@ -1,4 +1,4 @@
-﻿namespace CocktailParty
+namespace CocktailParty
 {
     using System;
 
@@ -53,7 +53,6 @@
             //Ingredient: Milk
             //Quantity: 5
             //Alcohol: 0
-
         }
     }
 }

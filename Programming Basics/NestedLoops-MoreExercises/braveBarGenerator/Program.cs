@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04._Balls
 {
@@ -11,7 +11,6 @@ namespace _04._Balls
             int number;
             int count = 0;
             int digit;
-
 
             for (int i = numberOne; i <= numberTwo; i++)
             {
@@ -36,7 +35,6 @@ namespace _04._Balls
                     }
                 }
                 count = 0;
-
             }
         }
     }

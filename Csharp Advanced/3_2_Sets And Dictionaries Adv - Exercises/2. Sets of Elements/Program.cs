@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,7 +15,6 @@ namespace _2._Sets_of_Elements
             HashSet<int> setOne = new HashSet<int>();
             HashSet<int> setTwo = new HashSet<int>();
             HashSet<int> setFinal = new HashSet<int>();
-            
 
             for (int i = 0; i < sequenceOne; i++)
             {

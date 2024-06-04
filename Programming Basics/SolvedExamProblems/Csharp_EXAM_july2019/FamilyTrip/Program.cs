@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FamilyTrip
 {
@@ -35,7 +35,6 @@ namespace FamilyTrip
             {
                 Console.WriteLine($"{Math.Abs(result - budget):f2} leva needed.");
             }
-
         }
     }
 }

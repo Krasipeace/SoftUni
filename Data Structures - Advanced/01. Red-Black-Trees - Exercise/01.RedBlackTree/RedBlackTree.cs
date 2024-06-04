@@ -1,4 +1,4 @@
-﻿namespace _01.RedBlackTree
+namespace _01.RedBlackTree
 {
     using System;
     using System.Collections.Generic;
@@ -148,7 +148,6 @@
 
         public T Ceiling(T element)
         {
-
             return this.Select(this.Rank(element) + 1);
         }
 
@@ -169,7 +168,6 @@
 
             return node;
         }
-
 
         private Node FindElement(T element)
         {
@@ -322,7 +320,6 @@
                 node = this.FindMin(temp.Right);
                 node.Right = this.DeleteMin(temp.Right);
                 node.Left = temp.Left;
-
             }
             node.Count = this.Count(node.Left) + this.Count(node.Right) + 1;
 
@@ -351,7 +348,6 @@
 
             return node;
         }
-
 
         private int Rank(T element, Node node)
         {

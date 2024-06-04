@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _9.GreaterOfTwoValues
 {
@@ -25,7 +25,6 @@ namespace _9.GreaterOfTwoValues
                     string secondString = Console.ReadLine();
                     Console.WriteLine(GetMax(firstString, secondString));
                     break;
-
             }
         }
 
@@ -54,6 +53,5 @@ namespace _9.GreaterOfTwoValues
             }
             return secondString;
         }
-
     }
 }

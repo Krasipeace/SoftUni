@@ -99,7 +99,6 @@ namespace _01._BrowserHistory.Tests
             Assert.AreEqual(this._firstVisitedLink.Url, removedLink.Url);
         }
 
-
         [Test]
         public void DeleteLastRemovesCorrectLink()
         {
@@ -120,7 +119,6 @@ namespace _01._BrowserHistory.Tests
             history.Open(new Link("https://www.google.com/watch?sdgdfdf", 100));
             history.Open(new Link("https://www.youtube.com/watch?sdgdfdf", 100));
             history.Open(new Link("https://www.google.com/watch?sdgdfdf", 100));
-
 
             int actualCount = history.RemoveLinks("youtube");
             ILink[] actualLinks = history.ToArray();

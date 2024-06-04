@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 namespace _4._2.TribonacciSequence //3rd attempt
@@ -48,10 +48,6 @@ namespace _4._2.TribonacciSequence //3rd attempt
 
                 Console.Write($"{number} ");
             }
-
         }
-
-
-
     }
 }

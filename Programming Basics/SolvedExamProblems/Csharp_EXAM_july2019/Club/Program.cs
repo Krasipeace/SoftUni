@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Club
 {
@@ -15,7 +15,6 @@ namespace Club
 
             while (coctailName != "Party!")
             {
-
                 coctailPrice = coctailName.Length;
                 coctailAmount = int.Parse(Console.ReadLine());
                 profitCoctail = coctailPrice * coctailAmount;
@@ -39,7 +38,6 @@ namespace Club
                     break;
                 }
             }
-
         }
     }
 }

@@ -6,7 +6,6 @@ namespace FightingArena.Tests
     [TestFixture]
     public class WarriorTests
     {
-
         [Test]
         public void Test_ConstructorShouldInitializeWarriorName()
         {
@@ -205,6 +204,5 @@ namespace FightingArena.Tests
                 attacker.Attack(defender);
             }, "You are trying to attack too strong enemy");
         }
-
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -36,7 +36,6 @@ namespace _2._Shopping_List
                         Rearrange(tokens[1], list);                      //remove item from current position and add it to the end of the list
                         break;
                 }
-
             }
             Console.WriteLine(string.Join(", ", list));
         }
@@ -48,7 +47,6 @@ namespace _2._Shopping_List
                 list.Remove(item);
                 list.Add(item);
             }
-                                 
         }
 
         private static void Correct(string oldItemName, string newItemName, List<string> list)
@@ -59,7 +57,6 @@ namespace _2._Shopping_List
                 list.Insert(positionOfItem, newItemName);
                 list.Remove(oldItemName);
             }
-           
         }
 
         private static void Unnecessary(string item, List<string> list)
@@ -68,7 +65,6 @@ namespace _2._Shopping_List
             {
                 list.Remove(item);
             }
-            
         }
 
         private static void Urgent(string item, List<string> list)
@@ -77,7 +73,6 @@ namespace _2._Shopping_List
             {
                 list.Insert(0, item);
             }
-            
         }
     }
 }

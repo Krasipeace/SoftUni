@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _2.Selling //80/100 
 {
@@ -65,7 +65,6 @@ namespace _2.Selling //80/100
                     int moneyOnPos = int.Parse(symbol.ToString());
                     money += moneyOnPos;
                 }
-
 
                 //searching for second pillar and teleporting to it.
                 if (matrix[currentRow, currentCol] == PILLAR_POS)

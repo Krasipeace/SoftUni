@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FruitShop
 {
@@ -23,7 +23,6 @@ namespace FruitShop
 
             double result = raspberryPrice + bananaPrice + orangePrice + strawberryPrice;
             Console.WriteLine($"{result:f2}");
-
         }
     }
 }
