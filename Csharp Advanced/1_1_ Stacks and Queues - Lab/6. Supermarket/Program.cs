@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -19,7 +19,7 @@ namespace _6._Supermarket
                 }
                 else if (input == "Paid")
                 {
-                    while (queue.Any())
+                    while (queue.Count != 0)
                     {
                         Console.WriteLine($"{queue.Dequeue()}");
                     }

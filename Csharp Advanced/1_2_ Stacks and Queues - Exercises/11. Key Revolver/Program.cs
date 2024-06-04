@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -18,7 +18,7 @@ namespace _11._Key_Revolver
             Queue<int> queue = new Queue<int>(locks);
 
             int counter = 0;
-            while (stack.Any() && queue.Any())
+            while (stack.Count != 0 && queue.Count != 0)
             {
                 int bulletSize = stack.Pop();
                 int lockSize = queue.Peek();
@@ -34,13 +34,13 @@ namespace _11._Key_Revolver
                     Console.WriteLine("Ping!");
                 }
 
-                if (counter % gunBarrel == 0 && stack.Any())
+                if (counter % gunBarrel == 0 && stack.Count != 0)
                 {
                     Console.WriteLine("Reloading!");
                 }
             }
 
-            if (queue.Any())
+            if (queue.Count != 0)
             {
                 Console.WriteLine($"Couldn't get through. Locks left: {queue.Count()}");
             }

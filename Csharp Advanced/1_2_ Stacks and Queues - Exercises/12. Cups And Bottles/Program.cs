@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -16,7 +16,7 @@ namespace _12._Cups_And_Bottles
 
             int wastedLittersOfWater = 0;
 
-            while (queue.Any() && stack.Any())
+            while (queue.Count != 0 && stack.Count != 0)
             {
                 wastedLittersOfWater = CalculateWaterSpace(queue, stack, wastedLittersOfWater);
             }
@@ -36,7 +36,7 @@ namespace _12._Cups_And_Bottles
                 {
                     break;
                 }
-                if (stack.Any())
+                if (stack.Count != 0)
                 {
                     bottle = stack.Pop();
                 }
@@ -51,11 +51,11 @@ namespace _12._Cups_And_Bottles
 
         private static void PrintResult(Queue<int> queue, Stack<int> stack, int wastedLittersOfWater)
         {
-            if (queue.Any())
+            if (queue.Count != 0)
             {
                 Console.WriteLine($"Cups: {string.Join(" ", queue)}");
             }
-            else if (stack.Any())
+            else if (stack.Count != 0)
             {
                 Console.WriteLine($"Bottles: {string.Join(" ", stack)}");
             }

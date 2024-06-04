@@ -1,4 +1,4 @@
-﻿namespace NavalVessels.Models
+namespace NavalVessels.Models
 {
     using System;
     using System.Collections.Generic;
@@ -93,7 +93,7 @@
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            string targetsOutput = Targets.Any() ?
+            string targetsOutput = Targets.Count != 0 ?
                 String.Join(", ", Targets) : "None";
 
             sb

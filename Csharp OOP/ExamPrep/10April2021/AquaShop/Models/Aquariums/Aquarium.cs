@@ -1,4 +1,4 @@
-﻿namespace AquaShop.Models.Aquariums
+namespace AquaShop.Models.Aquariums
 {
     using AquaShop.Models.Aquariums.Contracts;
     using AquaShop.Models.Decorations.Contracts;
@@ -74,7 +74,7 @@
         public string GetInfo()
         {
             StringBuilder sb = new StringBuilder();
-            string fishesOrEmpty = fishes.Any() ? string.Join(", ", fishes.Select(x => x.Name)) : "none";
+            string fishesOrEmpty = fishes.Count != 0 ? string.Join(", ", fishes.Select(x => x.Name)) : "none";
 
             sb 
                 .AppendLine($"{Name} ({GetType().Name}):")

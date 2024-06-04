@@ -1,4 +1,4 @@
-﻿namespace _01._Energy_Drinks
+namespace _01._Energy_Drinks
 {
     internal class Program
     {
@@ -12,7 +12,7 @@
 
             while (true)
             {
-                if (caffeine.Any() && drinks.Any())
+                if (caffeine.Count != 0 && drinks.Count != 0)
                 {
                     int mgs = caffeine.Pop();
                     int currEnergy = drinks.Dequeue();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _3._Custom_Min_Function
@@ -9,7 +9,7 @@ namespace _3._Custom_Min_Function
         {
             int[] numbers = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(n => int.Parse(n)).ToArray();
 
-            if (numbers.Any())
+            if (numbers.Length != 0)
             {
                 Console.WriteLine(((Func<int[], int>)(array =>
                 {

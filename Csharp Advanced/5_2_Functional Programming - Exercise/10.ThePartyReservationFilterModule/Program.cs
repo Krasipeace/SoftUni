@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -73,7 +73,7 @@ namespace _10.ThePartyReservationFilterModule
         }
         static void PrintResult(List<string> names)
         {
-            if (names.Any())
+            if (names.Count != 0)
             {
                 Console.WriteLine(string.Join(" ", names));
             }

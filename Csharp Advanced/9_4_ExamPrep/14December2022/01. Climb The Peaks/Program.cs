@@ -21,7 +21,7 @@ namespace _01._Climb_The_Peaks
 
             Queue<string> conqueredPeaks = new();
 
-            while (foodPortions.Any() && stamina.Any())
+            while (foodPortions.Count != 0 && stamina.Count != 0)
             {
                 int sum = foodPortions.Pop() + stamina.Dequeue();
 
@@ -35,19 +35,19 @@ namespace _01._Climb_The_Peaks
                 conqueredPeaks.Enqueue(currentPeak.Key);
                 peaks.Remove(currentPeak.Key);
 
-                if (!peaks.Any())
+                if (peaks.Count == 0)
                 {
                     Console.WriteLine("Alex did it! He climbed all top five Pirin peaks in one week -> @FIVEinAWEEK");
                     break;
                 }
             }
 
-            if (peaks.Any())
+            if (peaks.Count != 0)
             {
                 Console.WriteLine("Alex failed! He has to organize his journey better next time -> @PIRINWINS");
             }
 
-            if (conqueredPeaks.Any())
+            if (conqueredPeaks.Count != 0)
             {
                 Console.WriteLine("Conquered peaks:");
                 Console.WriteLine(string.Join(Environment.NewLine, conqueredPeaks));
