@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _04_ReverseArrayofStrings
@@ -16,7 +16,6 @@ namespace _04_ReverseArrayofStrings
             {
 
                 reversedArray[arrayLength - index - 1] = input[index];
-
             }
 
             for (int index = 0; index < arrayLength; index++)

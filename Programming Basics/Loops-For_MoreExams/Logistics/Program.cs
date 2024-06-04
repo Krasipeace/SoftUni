@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Logistics
 {
@@ -40,7 +40,6 @@ namespace Logistics
             Console.WriteLine($"{pMinibus:f2}%");
             Console.WriteLine($"{pTruck:f2}%");
             Console.WriteLine($"{pTrain:f2}%");
-            
         }
     }
 }

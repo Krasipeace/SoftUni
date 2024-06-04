@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _06_EasterCompetition
 {
@@ -20,7 +20,6 @@ namespace _06_EasterCompetition
                 {
                     chefScore += int.Parse(input);
                     input = Console.ReadLine();
-                                       
                 }
                 Console.WriteLine($"{chef} has {chefScore} points.");
 
@@ -29,9 +28,7 @@ namespace _06_EasterCompetition
                     maxScore = chefScore;
                     bestChef = chef;
                     Console.WriteLine($"{chef} is the new number 1!");
-                    
                 }                                                 
-                
             }
             Console.WriteLine($"{bestChef} won competition with {maxScore} points!");
         }

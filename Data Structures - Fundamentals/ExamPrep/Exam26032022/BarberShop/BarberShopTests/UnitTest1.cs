@@ -1,4 +1,4 @@
-﻿using BarberShop;
+using BarberShop;
 using NUnit.Framework;
 
 using System.Diagnostics;
@@ -63,5 +63,4 @@ public class Test_01
         sw.Stop();
         Assert.IsTrue(sw.ElapsedMilliseconds <= 20);
     }
-
 }

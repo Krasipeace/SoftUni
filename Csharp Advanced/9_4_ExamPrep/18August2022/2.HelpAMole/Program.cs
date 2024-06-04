@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _2.HelpAMole
 {
@@ -118,7 +118,6 @@ namespace _2.HelpAMole
                     collectedPoints -= TELEPORTER_PENALTY;
                     matrix[currentRow, currentCol] = EMPTY_POS;
                 }
-
             }
             matrix[currentRow, currentCol] = MOLE_POS;
 

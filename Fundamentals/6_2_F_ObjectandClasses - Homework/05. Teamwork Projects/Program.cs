@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -29,7 +29,6 @@ namespace _05._Teamwork_Projects
             PrintValidTeams(validTeam);
 
             PrintDisbandedTeams(disbandTeam);
-
         }
 
         private static void PrintDisbandedTeams(IEnumerable<Team> disbandTeam)

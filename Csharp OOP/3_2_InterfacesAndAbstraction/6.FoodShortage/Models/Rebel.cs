@@ -1,4 +1,4 @@
-﻿namespace BorderControl.Models
+namespace BorderControl.Models
 {
     using Interfaces;
 
@@ -21,5 +21,4 @@
             Food += REBEL_BUYER;
         }
     }
-
 }

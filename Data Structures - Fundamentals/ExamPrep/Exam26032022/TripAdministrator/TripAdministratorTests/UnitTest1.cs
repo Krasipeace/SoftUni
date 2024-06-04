@@ -1,4 +1,4 @@
-﻿using TripAdministrations;
+using TripAdministrations;
 using NUnit.Framework;
 using System.Diagnostics;
 
@@ -64,5 +64,4 @@ class Test_01
         sw.Stop();
         Assert.IsTrue(sw.ElapsedMilliseconds <= 20);
     }
-
 }

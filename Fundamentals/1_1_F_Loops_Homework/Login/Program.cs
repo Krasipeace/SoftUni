@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace Login
@@ -28,7 +28,6 @@ namespace Login
                     Console.WriteLine("Incorrect password. Try again.");
                 }
             }
-
         }
     }
 }

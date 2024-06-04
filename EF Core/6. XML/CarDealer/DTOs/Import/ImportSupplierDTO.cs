@@ -1,4 +1,4 @@
-﻿using System.Xml.Serialization;
+using System.Xml.Serialization;
 
 namespace CarDealer.DTOs.Import;
 
@@ -10,5 +10,4 @@ public class ImportSupplierDTO
 
     [XmlElement("isImporter")]
     public bool IsImporter { get; set; }
-
 }

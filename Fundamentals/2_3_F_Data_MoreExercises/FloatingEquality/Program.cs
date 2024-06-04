@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FloatingEquality
 {
@@ -34,7 +34,6 @@ namespace FloatingEquality
                     Console.WriteLine("False");
                 }
             }
-
         }
     }
 }

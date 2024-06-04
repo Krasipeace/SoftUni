@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FootballTournament
 {
@@ -26,20 +26,16 @@ namespace FootballTournament
                 {
                     points += 3;
                     counterW++;
-
                 }
                 else if (result == 'D')
                 {
                     points += 1;
                     counterD++;
-
                 }
                 else if (result == 'L')
                 {
                     counterL++;
-
                 }
-
             }
 
             double winrate = counterW / games * 100.0;

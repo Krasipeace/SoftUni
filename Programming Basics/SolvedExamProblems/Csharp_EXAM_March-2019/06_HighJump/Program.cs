@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _06_HighJump
 {
@@ -38,7 +38,6 @@ namespace _06_HighJump
             {
                 Console.WriteLine($"Tihomir succeeded, he jumped over {aim}cm after {counterJ} jumps.");
             }
-
         }
     }
 }

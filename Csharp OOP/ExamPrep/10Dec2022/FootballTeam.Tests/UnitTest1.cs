@@ -37,7 +37,6 @@ namespace FootballTeam.Tests
             Assert.AreEqual(playerPosition, player.Position);
             Assert.AreEqual(playerPosition, player.Position);
             Assert.AreEqual(scoredGoals, player.ScoredGoals);
-
         }
 
         [Test]

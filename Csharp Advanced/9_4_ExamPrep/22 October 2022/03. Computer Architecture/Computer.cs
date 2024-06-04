@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -71,7 +71,5 @@ namespace ComputerArchitecture
 
             return sb.ToString().TrimEnd();
         }
-
-
     }
 }

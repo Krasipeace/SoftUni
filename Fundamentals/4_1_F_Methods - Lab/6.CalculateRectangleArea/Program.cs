@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _6.CalculateRectangleArea
 {
@@ -11,7 +11,6 @@ namespace _6.CalculateRectangleArea
 
             double area = GetRectangleArea(width, height);
             Console.WriteLine(area);
-
         }
 
         static double GetRectangleArea(double width, double height)

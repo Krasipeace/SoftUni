@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -72,7 +72,6 @@ namespace CarSalesman
                         if (isNumber)
                         {
                             OptionOne = input[2];
-
                         }
                         else
                         {

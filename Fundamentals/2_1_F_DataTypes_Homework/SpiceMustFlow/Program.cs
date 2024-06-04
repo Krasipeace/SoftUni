@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SpiceMustFlow
 {
@@ -27,7 +27,6 @@ namespace SpiceMustFlow
                 Console.WriteLine(days);
                 Console.WriteLine(spiceExtracted);
             }
-
         }
     }
 }

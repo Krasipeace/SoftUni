@@ -1,4 +1,4 @@
-﻿namespace NavalVessels.Core.Contracts
+namespace NavalVessels.Core.Contracts
 {
     public interface IController
     {
@@ -10,6 +10,5 @@
         string ToggleSpecialMode(string vesselName);
         string AttackVessels(string attackingVesselName, string defendingVesselName);
         string ServiceVessel(string vesselName);
-
     }
 }

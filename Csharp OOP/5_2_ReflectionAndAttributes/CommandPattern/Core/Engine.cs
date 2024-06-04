@@ -1,4 +1,4 @@
-﻿namespace CommandPattern.Core
+namespace CommandPattern.Core
 {
     using System;
 
@@ -21,7 +21,6 @@
 
                 Console.WriteLine(result);
             }
-            
         }
     }
 }

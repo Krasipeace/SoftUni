@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -43,7 +43,6 @@ namespace _01._Furniture
                 Console.WriteLine(item);
             }
             Console.WriteLine($"Total money spend: {sum:f2}");                            
-
         }
     }
 }

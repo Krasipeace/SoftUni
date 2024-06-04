@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -49,7 +49,6 @@ namespace _03._Articles_2._0
             }
 
             Console.WriteLine(string.Join(Environment.NewLine, articles));
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Drones
@@ -72,7 +72,6 @@ namespace Drones
             Manufactured by: DEERC
             Range: 6 kilometers
             */
-
         }
     }
 }

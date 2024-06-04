@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _3.CharactersInRange
 {
@@ -21,8 +21,6 @@ namespace _3.CharactersInRange
             {
                 Console.Write($"{(char)i} ");
             }
-
         }
-
     }
 }

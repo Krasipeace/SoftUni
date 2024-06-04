@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FitnessCard
 {
@@ -90,7 +90,6 @@ namespace FitnessCard
             {
                 Console.WriteLine($"You don't have enough money! You need ${Math.Abs(price - cash):f2} more.");
             }
-
         }
     }
 }

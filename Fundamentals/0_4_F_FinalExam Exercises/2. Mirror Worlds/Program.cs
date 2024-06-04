@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -50,8 +50,6 @@ namespace _2._Mirror_Worlds
                 stringBuilder.Length = stringBuilder.Length - 2;  //removing the last ", " from the line
                 Console.WriteLine(stringBuilder);
             }
-
-
         }
 
         private static string ReversingWord(string wordTwo)

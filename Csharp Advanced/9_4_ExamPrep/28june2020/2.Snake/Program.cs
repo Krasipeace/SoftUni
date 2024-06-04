@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _2.Snake
 {
@@ -154,6 +154,5 @@ namespace _2.Snake
                 Console.WriteLine();
             }
         }
-
     }
 }

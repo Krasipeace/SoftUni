@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _05_EasterEggs
 {
@@ -34,7 +34,6 @@ namespace _05_EasterEggs
                 {
                     counterG++;
                 }
-
             }
             if (counterR > counterO && counterR > counterB && counterR > counterG)
             {
@@ -62,7 +61,6 @@ namespace _05_EasterEggs
             Console.WriteLine($"Blue eggs: {counterB}");
             Console.WriteLine($"Green eggs: {counterG}");
             Console.WriteLine($"Max eggs: {maxColor} -> {colorMax}");
-
         }
     }
 }

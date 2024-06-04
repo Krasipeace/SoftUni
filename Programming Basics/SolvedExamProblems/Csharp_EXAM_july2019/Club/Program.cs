@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Club
 {
@@ -39,7 +39,6 @@ namespace Club
                     break;
                 }
             }
-
         }
     }
 }

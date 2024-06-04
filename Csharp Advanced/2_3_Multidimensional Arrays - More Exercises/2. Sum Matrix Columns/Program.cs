@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2._Sum_Matrix_Columns
@@ -32,7 +32,6 @@ namespace _2._Sum_Matrix_Columns
                 Console.WriteLine(sum);
                 sum = 0;
             }
-            
         }
     }
 }

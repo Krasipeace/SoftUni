@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace DefiningClasses
 {
@@ -23,7 +23,6 @@ namespace DefiningClasses
             Console.WriteLine($"{person.Name} {person.Age}");
             Console.WriteLine($"{person2.Name} {person2.Age}");
             Console.WriteLine($"{person3.Name} {person3.Age}");
-
         }
     }
 

@@ -1,4 +1,4 @@
-﻿namespace NeedForSpeed
+namespace NeedForSpeed
 {
     public class StartUp
     {
@@ -12,7 +12,6 @@
 
             SportCar sportCar = new SportCar(300, 70);
             sportCar.Drive(10);
-           
         }
     }
 }

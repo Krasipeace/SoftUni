@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace AverageNumber
 {
@@ -18,7 +18,6 @@ namespace AverageNumber
                     num = int.Parse(Console.ReadLine());
                     numbers += num;
                     numNum--;
-                    
                 }
                 else
                 {
@@ -28,6 +27,5 @@ namespace AverageNumber
             average = numbers / numQ;
             Console.WriteLine($"{average:f2}");
         }
-        
     }
 }

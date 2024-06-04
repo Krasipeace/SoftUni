@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MovieStars
 {
@@ -37,7 +37,6 @@ namespace MovieStars
             {
                 Console.WriteLine($"We are left with {budget:F2} leva.");
             }
-
         }
     }
 }

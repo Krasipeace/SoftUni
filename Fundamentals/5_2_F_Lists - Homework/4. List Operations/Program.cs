@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -71,7 +71,5 @@ namespace _4._List_Operations
             }
             Console.WriteLine(string.Join(" ", numbers));
         }
-
-
     }
 }

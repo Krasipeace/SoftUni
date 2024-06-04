@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace EasterBakery
 {
@@ -23,7 +23,6 @@ namespace EasterBakery
 
             double allCost = flour + sugarSum + eggsSum + yeastSum;
             Console.WriteLine($"{allCost:f2}");
-
         }
     }
 }

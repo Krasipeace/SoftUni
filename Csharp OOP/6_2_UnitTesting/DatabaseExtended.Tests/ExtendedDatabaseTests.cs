@@ -108,7 +108,5 @@ namespace Tests
                 }
             }, Throws.InvalidOperationException);
         }
-
-
     }
 }

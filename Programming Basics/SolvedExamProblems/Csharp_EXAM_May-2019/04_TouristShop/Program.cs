@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04_TouristShop
 {
@@ -34,7 +34,6 @@ namespace _04_TouristShop
             if (input == "Stop")
             {
                 Console.WriteLine($"You bought {counter} products for {allCashNeed:f2} leva.");
-                
             }
         }
     }

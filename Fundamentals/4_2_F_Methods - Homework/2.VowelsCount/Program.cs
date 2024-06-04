@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2.VowelsCount
@@ -23,8 +23,6 @@ namespace _2.VowelsCount
                 }
             }
             Console.WriteLine(counter);
-            
         }
-
     }
 }

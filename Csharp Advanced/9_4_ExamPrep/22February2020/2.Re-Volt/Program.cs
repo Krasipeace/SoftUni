@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _2.Re_Volt
@@ -62,11 +62,9 @@ namespace _2.Re_Volt
 
                     break;
                 }
-
             }
 
             PrintResults(matrixSize, matrix, isFinished, currentRow, currentCol, PLAYER);
-
         }
 
         static void GetPos(int matrixSize, char[,] matrix, ref int currentRow, ref int currentCol, string direction)

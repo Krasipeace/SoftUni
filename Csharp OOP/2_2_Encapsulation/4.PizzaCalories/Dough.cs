@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PizzaCalories
 {
@@ -111,6 +111,5 @@ namespace PizzaCalories
 
             return bakingTechniqueModifier;
         }
-
     }
 }

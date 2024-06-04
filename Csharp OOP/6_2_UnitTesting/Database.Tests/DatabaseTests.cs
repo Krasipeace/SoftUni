@@ -34,7 +34,6 @@ namespace Database.Tests
             {
                 Database database = new Database(data);
             }, "Array capacity must be exactly 16 integers!");
-
         }
         [TestCase(new int[] { })]
         [TestCase(new[] { 1, 2, 3, 4, 5 })]
@@ -168,8 +167,5 @@ namespace Database.Tests
 
             CollectionAssert.AreEqual(expectedData, actualData);
         }
-
-
-
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace UniquePINCodes
 {
@@ -6,7 +6,6 @@ namespace UniquePINCodes
     {
         static void Main(string[] args)
         {
-            
         }
     }
 }

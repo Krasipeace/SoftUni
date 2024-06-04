@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -68,7 +68,6 @@ namespace _1._Ranking
                     {
                         contestResults[studentName][contest] = points;
                     }
-
                 }
                 input = Console.ReadLine();
             }

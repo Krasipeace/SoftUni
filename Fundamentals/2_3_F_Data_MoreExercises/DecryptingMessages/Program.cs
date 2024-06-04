@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace DecryptingMessages
 {
@@ -29,7 +29,6 @@ namespace DecryptingMessages
             }
 
             Console.Write(decryptedWord);
-
         }
     }
 }

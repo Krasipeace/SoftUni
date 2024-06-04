@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _04_EasterEggsBattle
 {
@@ -34,7 +34,6 @@ namespace _04_EasterEggsBattle
                     break;
                 }
                 input = Console.ReadLine();
-
             }
             if (input == "End of battle")
             {

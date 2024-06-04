@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _05_Series
 {
@@ -40,7 +40,6 @@ namespace _05_Series
                 {
                     allPrice += tvPrice;
                 }
-
             }
 
             if (allPrice <= budget)

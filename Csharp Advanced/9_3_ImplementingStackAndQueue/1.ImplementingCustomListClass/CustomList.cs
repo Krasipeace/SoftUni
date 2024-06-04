@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -149,7 +149,6 @@ namespace CustomListClass
             {
                 throw new InvalidOperationException($"One or both index(es) are invalid!");
             }
-            
         }
 
         public override string ToString()

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -56,7 +56,6 @@ namespace _1.Bombs
             GetBombsData(FILLED_POUCH_QUANTITY, daturaBombsCounter, cherryBombsCounter, smokeBombsCounter, bombEffects, bombCasings);
 
             PrintBombs(daturaBombsCounter, cherryBombsCounter, smokeBombsCounter);
-
         }
 
         static void GetBombsData(int FILLED_POUCH_QUANTITY, int daturaBombsCounter, int cherryBombsCounter, int smokeBombsCounter, Queue<int> bombEffects, Stack<int> bombCasings)

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TennisRanklist
 {
@@ -31,7 +31,6 @@ namespace TennisRanklist
                     points += 720;
                     counterSF++;
                 }
-
             }
             double finalPoints = points + rankPoints;
             double averageP = points / tournaments;
@@ -40,7 +39,6 @@ namespace TennisRanklist
             Console.WriteLine($"Final points: {finalPoints}");
             Console.WriteLine($"Average points: {Math.Floor(averageP)}");
             Console.WriteLine($"{wonT:f2}%");
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace _01.RedBlackTree
+namespace _01.RedBlackTree
 {
     using System;
     using System.Collections.Generic;
@@ -322,7 +322,6 @@
                 node = this.FindMin(temp.Right);
                 node.Right = this.DeleteMin(temp.Right);
                 node.Left = temp.Left;
-
             }
             node.Count = this.Count(node.Left) + this.Count(node.Right) + 1;
 

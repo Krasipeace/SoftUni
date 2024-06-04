@@ -1,4 +1,4 @@
-﻿namespace OnlineShop.Models.Products
+namespace OnlineShop.Models.Products
 {
     public interface IProduct
     {
@@ -11,6 +11,5 @@
         decimal Price { get; }
 
         double OverallPerformance { get; }
-
     }
 }

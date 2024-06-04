@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CenturiesToMinutes
 {
@@ -14,7 +14,6 @@ namespace CenturiesToMinutes
             long minutes = hours * 60;
 
             Console.WriteLine($"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes");
-
         }
     }
 }

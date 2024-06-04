@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CarManufacturer
 {
@@ -17,7 +17,6 @@ namespace CarManufacturer
             Engine engine = new Engine(560, 6300);        
 
             Car car = new Car("Lamborghini", "Urus", 2010, 250, 9, engine, tires);
-          
         }
     }
 }

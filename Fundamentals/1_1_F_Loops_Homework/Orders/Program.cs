@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Orders
 {
@@ -19,7 +19,6 @@ namespace Orders
                 pricePerOrder = (countCapsule * days) * priceCapsule;
                 Console.WriteLine($"The price for the coffee is: ${pricePerOrder:f2}");
                 allExpense += pricePerOrder;
-
             }
             Console.WriteLine($"Total: ${allExpense:f2}");
         }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FruitShop
 {
@@ -167,7 +167,6 @@ namespace FruitShop
             {
                 Console.WriteLine("error");
             }
-
         }
     }
 }

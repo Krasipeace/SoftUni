@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -39,7 +39,6 @@ namespace _3._Inventory
                         Combine(item, items);
                         break;
                 }
-
             }
             Console.WriteLine(string.Join(", ", items));
         }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Shopping
 {
@@ -29,7 +29,6 @@ namespace Shopping
             {
                 Console.WriteLine($"Not enough money! You need {totalPrice - budget:F2} leva more!");
             }
-
         }
     }
 }

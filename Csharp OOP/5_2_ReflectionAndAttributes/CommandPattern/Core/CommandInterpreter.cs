@@ -1,4 +1,4 @@
-﻿namespace CommandPattern.Core
+namespace CommandPattern.Core
 {
     using System;
     using System.Linq;
@@ -32,6 +32,5 @@
 
             return result;
         }
-
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace NumberInRange
 {
@@ -15,7 +15,6 @@ namespace NumberInRange
             {
                 Console.WriteLine("No");
             } 
-                
         }
     }
 }

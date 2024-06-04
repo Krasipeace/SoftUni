@@ -697,7 +697,6 @@ public class RoyaleArenaTests
         {
             RA.GetByNameOrderedBySwagDescending("pesho");
         });
-
     }
 
     [Test]
@@ -769,7 +768,6 @@ public class RoyaleArenaTests
         {
             RA.GetByCardTypeAndMaximumDamage(CardType.MELEE, 5);
         });
-
     }
 
     [Test]

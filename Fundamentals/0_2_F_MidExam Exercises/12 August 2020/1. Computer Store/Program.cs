@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _1._Computer_Store
 {
@@ -34,7 +34,6 @@ namespace _1._Computer_Store
             }
 
             priceFinal = GetFinalPrice(input, pricesNoTax, allTaxes, priceFinal);
-
         }
 
         static double GetFinalPrice(string input, double pricesNoTax, double allTaxes, double priceFinal)

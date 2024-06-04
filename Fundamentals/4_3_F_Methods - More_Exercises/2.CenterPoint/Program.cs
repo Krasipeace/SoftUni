@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 namespace _2.CenterPoint
@@ -20,7 +20,6 @@ namespace _2.CenterPoint
             {
                 Console.WriteLine($"({x2}, {y2})");
             }
-
         }
 
         static double CloseToCenterPoint(double x, double y)
@@ -29,7 +28,6 @@ namespace _2.CenterPoint
             double checkY = y;
 
             return Math.Sqrt(Math.Abs((Math.Pow(checkX, 2)) + Math.Pow(checkY, 2)));    //хипотенуза
-
         }
     }
 }

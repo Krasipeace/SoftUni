@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _06_VetParking
 {
@@ -39,7 +39,6 @@ namespace _06_VetParking
                         }
                     }
                     dayPrice += price;
-                    
                 }
                 finalPrice += dayPrice;
                 Console.WriteLine($"Day: {currentDay} - {dayPrice:f2} leva");

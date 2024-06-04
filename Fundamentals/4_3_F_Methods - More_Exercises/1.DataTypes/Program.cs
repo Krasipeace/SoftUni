@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _1.DataTypes
 {
@@ -23,7 +23,6 @@ namespace _1.DataTypes
                     Console.WriteLine(GetType($"{inputString}"));
                     break;
             }
-
         }
 
         static int GetType(int inputInt)

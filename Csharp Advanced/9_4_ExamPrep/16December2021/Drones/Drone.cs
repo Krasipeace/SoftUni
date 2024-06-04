@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Drones
 {
@@ -22,6 +22,5 @@ namespace Drones
                 $"Manufactured by: {Brand}" + Environment.NewLine +
                 $"Range: {Range} kilometers";
         }
-
     }
 }

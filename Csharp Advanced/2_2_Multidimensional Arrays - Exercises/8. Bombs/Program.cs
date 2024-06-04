@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _8._Bombs
@@ -38,7 +38,6 @@ namespace _8._Bombs
             CalculateCellsData(matrixSize, matrix, ref aliveCells, ref sumOfCells);
 
             PrintResults(matrixSize, matrix, aliveCells, sumOfCells);
-
         }
 
         static void BombExplosion(int[,] matrix, int row, int col)

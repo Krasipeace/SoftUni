@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -35,7 +35,6 @@ namespace _2._Destination_Mapper
                 Console.WriteLine($"Destinations: {output}");
                 Console.WriteLine($"Travel Points: {lengthCounter}");
             }
-
         }
     }
 }

@@ -126,7 +126,6 @@ public class Tests
             {
                 this.deliveriesManager.AddDeliverer(GetRandomDeliverer());
             }
-
         }
 
         Stopwatch stopwatch = new Stopwatch(); stopwatch.Start();
@@ -164,7 +163,6 @@ public class Tests
             {
                 this.deliveriesManager.AddPackage(GetRandomPackage());
             }
-
         }
 
         Stopwatch stopwatch = new Stopwatch(); stopwatch.Start();

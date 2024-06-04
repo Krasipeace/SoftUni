@@ -1,4 +1,4 @@
-﻿namespace Formula1.Core
+namespace Formula1.Core
 {
     using System;
     using System.Collections.Generic;
@@ -175,6 +175,5 @@
 
             return sb.ToString().Trim();
         }
-
     }
 }

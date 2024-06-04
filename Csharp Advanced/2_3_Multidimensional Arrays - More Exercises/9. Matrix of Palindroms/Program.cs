@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _9._Matrix_of_Palindroms
@@ -34,7 +34,6 @@ namespace _9._Matrix_of_Palindroms
                 }
                 Console.WriteLine();
             }
-
         }
     }
 }

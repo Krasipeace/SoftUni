@@ -1,4 +1,4 @@
-﻿namespace Formula1.Utilities
+namespace Formula1.Utilities
 {
     public static class ExceptionMessages
     {
@@ -22,6 +22,5 @@
         public const string RaceDoesNotExistErrorMessage = "Race {0} does not exist.";
         public const string InvalidRaceParticipants = "Race {0} cannot start with less than three participants.";
         public const string RaceTookPlaceErrorMessage = "Can not execute race {0}.";
-
     }
 }

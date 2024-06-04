@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _3._Heroes_of_Code_and_Logic_VII_Objects
@@ -74,7 +74,6 @@ namespace _3._Heroes_of_Code_and_Logic_VII_Objects
             {
                 Console.WriteLine($"{heroName} does not have enough MP to cast {spellName}!");
             }
-
         }
 
         private static void TakeDamage(string heroName, int damage, string attacker, List<Hero> heroes)

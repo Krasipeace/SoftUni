@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FootballResults
 {
@@ -62,7 +62,6 @@ namespace FootballResults
             Console.WriteLine($"Team won {matchesWon} games.");
             Console.WriteLine($"Team lost {matchesLost} games.");
             Console.WriteLine($"Drawn games: {matchesEqual}");
-
         }
     }
 }
