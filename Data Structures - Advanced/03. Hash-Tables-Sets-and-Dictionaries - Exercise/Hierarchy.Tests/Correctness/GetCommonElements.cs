@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Hierarchy;
 using NUnit.Framework;
 
@@ -11,7 +11,7 @@ public class GetCommonElements : BaseTest
 
         var result = this.Hierarchy.GetCommonElements(otherHierarchy).ToArray();
 
-        CollectionAssert.AreEquivalent(result, new int[0], "GetCommonElements returned an incorrect collection!");
+        CollectionAssert.AreEquivalent(result, System.Array.Empty<int>(), "GetCommonElements returned an incorrect collection!");
     }
 
     [Test]

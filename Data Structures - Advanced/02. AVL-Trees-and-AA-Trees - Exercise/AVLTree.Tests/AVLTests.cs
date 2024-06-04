@@ -374,7 +374,7 @@ public class AVLTests
         avl.EachInOrder(nodes.Add);
 
         // Assert
-        int[] expectedNodes = new int[] { };
+        int[] expectedNodes = System.Array.Empty<int>();
         CollectionAssert.AreEqual(expectedNodes, nodes);
     }
 
@@ -391,7 +391,7 @@ public class AVLTests
         avl.EachInOrder(nodes.Add);
 
         // Assert
-        int[] expectedNodes = new int[] { };
+        int[] expectedNodes = System.Array.Empty<int>();
         CollectionAssert.AreEqual(expectedNodes, nodes);
     }
 
@@ -539,7 +539,7 @@ public class AVLTests
         avl.EachInOrder(result.Add);
 
         // Assert
-        int[] expectedNodes = new int[] { };
+        int[] expectedNodes = System.Array.Empty<int>();
         CollectionAssert.AreEqual(expectedNodes, result.ToArray());
     }
 
@@ -555,7 +555,7 @@ public class AVLTests
         avl.EachInOrder(result.Add);
 
         // Assert
-        int[] expectedNodes = new int[] { };
+        int[] expectedNodes = System.Array.Empty<int>();
         CollectionAssert.AreEqual(expectedNodes, result.ToArray());
     }
 }

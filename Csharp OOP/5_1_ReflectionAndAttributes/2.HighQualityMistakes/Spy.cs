@@ -1,4 +1,4 @@
-﻿namespace Stealer
+namespace Stealer
 {
     using System;
     using System.Linq;
@@ -36,7 +36,7 @@
             Type classType = Type.GetType(investigatedClass);
             FieldInfo[] classFields = classType.GetFields(BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public);
             StringBuilder sb = new StringBuilder();
-            var classInstance = Activator.CreateInstance(classType, new object[] { });
+            var classInstance = Activator.CreateInstance(classType, Array.Empty<object>());
 
             sb.AppendLine($"Class under investigation: {investigatedClass}");
 

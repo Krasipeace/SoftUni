@@ -1,4 +1,4 @@
-﻿using Hierarchy;
+using Hierarchy;
 using NUnit.Framework;
 using System.Diagnostics;
 using System.Linq;
@@ -22,7 +22,7 @@ public class GetCommonElementsPerformance
         Stopwatch timer = new Stopwatch();
         timer.Start();
 
-        CollectionAssert.AreEqual(new int[0], hierarchy.GetCommonElements(hierarchy2).ToArray(), "GetCommonElements method returned incorrect collection!");
+        CollectionAssert.AreEqual(System.Array.Empty<int>(), hierarchy.GetCommonElements(hierarchy2).ToArray(), "GetCommonElements method returned incorrect collection!");
 
         timer.Stop();
         Assert.IsTrue(timer.ElapsedMilliseconds < 200);

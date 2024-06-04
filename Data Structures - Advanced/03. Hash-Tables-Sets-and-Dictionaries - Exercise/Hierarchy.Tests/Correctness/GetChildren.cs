@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using NUnit.Framework;
 
@@ -23,7 +23,7 @@ public class GetChildren : BaseTest
 
         var result = this.Hierarchy.GetChildren(-666).ToArray();
 
-        CollectionAssert.AreEqual(result, new int[0], "Incorrect amount of children returned!");
+        CollectionAssert.AreEqual(result, Array.Empty<int>(), "Incorrect amount of children returned!");
     }
 
     [Test]

@@ -34,7 +34,7 @@ public class RemovePerformance
 
         Assert.AreEqual(1, hierarchy.Count, "Incorrect count after removal!");
         Assert.IsTrue(hierarchy.Contains(-1));
-        CollectionAssert.AreEqual(new int[0], hierarchy.GetChildren(-1).ToArray(), "Children were not deleted correcly after removal!");
+        CollectionAssert.AreEqual(System.Array.Empty<int>(), hierarchy.GetChildren(-1).ToArray(), "Children were not deleted correcly after removal!");
     }
 
     [Test]
