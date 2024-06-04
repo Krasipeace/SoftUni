@@ -22,7 +22,7 @@ namespace _1.Bombs
             Queue<int> bombEffects = new Queue<int>(Console.ReadLine().Split(", ").Select(e => int.Parse(e)).ToArray());
             Stack<int> bombCasings = new Stack<int>(Console.ReadLine().Split(", ").Select(c => int.Parse(c)).ToArray());
 
-            while (bombEffects.Any() && bombCasings.Any())
+            while (bombEffects.Count != 0 && bombCasings.Count != 0)
             {
                 if (daturaBombsCounter >= FILLED_POUCH_QUANTITY && cherryBombsCounter >= FILLED_POUCH_QUANTITY && smokeBombsCounter >= FILLED_POUCH_QUANTITY)
                 {
@@ -69,7 +69,7 @@ namespace _1.Bombs
                 Console.WriteLine("You don't have enough materials to fill the bomb pouch.");
             }
 
-            if (bombEffects.Any())
+            if (bombEffects.Count != 0)
             {
                 Console.WriteLine($"Bomb Effects: {string.Join(", ", bombEffects)}");
             }
@@ -78,7 +78,7 @@ namespace _1.Bombs
                 Console.WriteLine("Bomb Effects: empty");
             }
 
-            if (bombCasings.Any())
+            if (bombCasings.Count != 0)
             {
                 Console.WriteLine($"Bomb Casings: {string.Join(", ", bombCasings)}");
             }

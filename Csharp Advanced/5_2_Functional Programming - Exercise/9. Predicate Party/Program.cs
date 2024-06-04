@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -89,7 +89,7 @@ namespace _9._Predicate_Party
         {
             Action<List<string>> print = list => Console.WriteLine($"{string.Join(", ", list)} are going to the party!");
 
-            if (names.Any())
+            if (names.Count != 0)
             {
                 print(names);
             }

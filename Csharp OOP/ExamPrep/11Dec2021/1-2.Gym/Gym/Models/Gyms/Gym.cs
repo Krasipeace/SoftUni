@@ -1,4 +1,4 @@
-﻿using Gym.Models.Athletes.Contracts;
+using Gym.Models.Athletes.Contracts;
 using Gym.Models.Equipment.Contracts;
 using Gym.Models.Gyms.Contracts;
 using Gym.Utilities.Messages;
@@ -88,7 +88,7 @@ namespace Gym.Models.Gyms
         public string GymInfo()
         {
             StringBuilder sb = new StringBuilder();
-            string output = athletes.Any() ? string.Join(", ", athletes.Select(x => x.FullName)) : "No athletes";
+            string output = athletes.Count != 0 ? string.Join(", ", athletes.Select(x => x.FullName)) : "No athletes";
 
             sb
                 .AppendLine($"{Name} is a {GetType().Name}:")

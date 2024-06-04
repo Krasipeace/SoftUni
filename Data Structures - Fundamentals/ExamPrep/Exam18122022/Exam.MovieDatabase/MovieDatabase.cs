@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -57,7 +57,7 @@ namespace Exam.MovieDatabase
 
         public IEnumerable<Actor> GetNewbieActors()
             => this.actorMovies
-                .Where(a => !a.Value.Any())
+                .Where(a => a.Value.Count == 0)
                 .Select(a => a.Key);
     }
 }
