@@ -6,7 +6,6 @@ namespace cinema_test
     {
         static void Main(string[] args)
         {
-
             int capacity = int.Parse(Console.ReadLine());
 
             string command = Console.ReadLine();

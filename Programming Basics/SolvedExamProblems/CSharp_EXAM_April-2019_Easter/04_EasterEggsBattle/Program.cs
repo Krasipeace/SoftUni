@@ -13,7 +13,6 @@ namespace _04_EasterEggsBattle
 
             while (input != "End of battle")
             {
-
                 if (input == "one")
                 {                    
                     pTwoEggs--;

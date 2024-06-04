@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using ChristmasPastryShop.Models.Cocktails.Contracts;
@@ -6,7 +6,6 @@ using ChristmasPastryShop.Repositories.Contracts;
 
 namespace ChristmasPastryShop.Repositories
 {
-
     public class CocktailRepository : IRepository<ICocktail>
     {
         private readonly List<ICocktail> models;

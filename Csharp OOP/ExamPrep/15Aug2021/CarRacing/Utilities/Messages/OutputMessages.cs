@@ -1,6 +1,5 @@
-﻿namespace CarRacing.Utilities.Messages
+namespace CarRacing.Utilities.Messages
 {
-
     public static class OutputMessages
     {
         public const string RaceCannotBeCompleted = "Race cannot be completed because both racers are not available!";

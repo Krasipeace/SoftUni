@@ -513,7 +513,6 @@ public class Tests
 
         for (int i = 0; i < 10000; i++)
         {
-
             var d = new Doctor(i.ToString(), i);
             this.vaccOps.AddDoctor(d);
             this.vaccOps.AddPatient(d, new Patient(i.ToString(), i, i, i.ToString())); ;

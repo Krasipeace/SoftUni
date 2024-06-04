@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Coins
 {
@@ -18,7 +18,6 @@ namespace Coins
                 }
                 else if (changeToReturn >= 100)
                 {
-
                     changeToReturn -= 100;
                     count++;
                 }

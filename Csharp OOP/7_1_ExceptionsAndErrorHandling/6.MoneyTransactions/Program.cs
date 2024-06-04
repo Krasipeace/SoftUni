@@ -55,12 +55,10 @@ namespace _6.MoneyTransactions
                 }
                 catch (Exception ex)
                 {
-
                     Console.WriteLine(ex.Message);
                 }
                 finally
                 {
-
                     Console.WriteLine("Enter another command");
                 }
 

@@ -1,4 +1,4 @@
-﻿namespace _02.BinarySearchTree
+namespace _02.BinarySearchTree
 {
     using System;
     using System.Collections.Generic;
@@ -293,7 +293,6 @@
 
         public IEnumerable<T> Range(T startRange, T endRange)
         {
-
             List<T> result = new List<T>();
             this.GetElements(this.root, startRange, endRange, result);
 

@@ -42,7 +42,6 @@ namespace Invoices.DataProcessor
 
         public static string ExportProductsWithMostClients(InvoicesContext context, int nameLength)
         {
-
             var products = context
                 .Products
                 .Where(p => p.ProductsClients

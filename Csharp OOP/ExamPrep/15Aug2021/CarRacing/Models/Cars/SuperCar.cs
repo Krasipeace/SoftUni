@@ -1,6 +1,5 @@
-﻿namespace CarRacing.Models.Cars
+namespace CarRacing.Models.Cars
 {
-
     public class SuperCar : Car
     {
         private const double FUEL_AVAILABLE = 80;

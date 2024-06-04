@@ -1,4 +1,4 @@
-﻿namespace _01._Climb_The_Peaks
+namespace _01._Climb_The_Peaks
 {
     using System.Collections.Generic;
 
@@ -15,7 +15,6 @@
 
         static void Main(string[] args)
         {
-
             Stack<int> foodPortions = new(Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray());
 
             Queue<int> stamina = new(Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray());

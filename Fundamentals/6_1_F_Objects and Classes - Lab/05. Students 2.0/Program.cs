@@ -26,7 +26,6 @@ namespace _05._Students_2._0
 
                 if (IsStudentExist(students, firstName, lastName))
                 {
-
                     Student student = GetStudent(students, firstName, lastName, age);
                 }
                 else

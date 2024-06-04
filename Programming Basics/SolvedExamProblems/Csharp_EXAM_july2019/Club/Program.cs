@@ -15,7 +15,6 @@ namespace Club
 
             while (coctailName != "Party!")
             {
-
                 coctailPrice = coctailName.Length;
                 coctailAmount = int.Parse(Console.ReadLine());
                 profitCoctail = coctailPrice * coctailAmount;

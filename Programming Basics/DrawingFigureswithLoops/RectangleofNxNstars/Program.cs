@@ -1,8 +1,7 @@
-﻿using System;
+using System;
 
 namespace RectangleofNxNstars
 {
- 
         internal class Program
         {
             static void Main(string[] args)
