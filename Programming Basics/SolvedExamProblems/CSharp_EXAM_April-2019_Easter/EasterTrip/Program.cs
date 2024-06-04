@@ -41,7 +41,6 @@ namespace EasterTrip
                     price = nights * 39;
                 }
             }
-
             else if (destination == "Germany")
             {
                 if (dates == "21-23")

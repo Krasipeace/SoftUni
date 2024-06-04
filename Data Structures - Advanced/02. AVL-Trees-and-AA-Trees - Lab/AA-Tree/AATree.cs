@@ -163,7 +163,6 @@ namespace AA_Tree
                 {
                     node.Right.Level = node.Level - 1;
                 }
-
                 else if (node.Right != null && node.Right.Level == node.Level)
                 {
                     node.Right.Level--;
