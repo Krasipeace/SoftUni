@@ -111,7 +111,6 @@ public class Tests
         this.moovIt.AddRoute(route4);
 
         List<Route> routes = this.moovIt.SearchRoutes("Plovdiv", "Burgas").ToList();
-        ;
 
         Assert.AreEqual(3, routes.Count);
         Assert.AreEqual(route, routes[0]);

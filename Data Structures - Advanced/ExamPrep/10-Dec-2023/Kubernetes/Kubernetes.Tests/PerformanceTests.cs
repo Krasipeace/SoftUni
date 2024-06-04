@@ -57,7 +57,7 @@ namespace Kubernetes.Tests
         public void GetPod_ShouldPassQuickly_With100000Pods()
         {
             // Arrange
-            var target = null as Pod; ;
+            var target = null as Pod;
             for (int i = 0; i < 100_000; i++)
             {
                 var pod = new Pod

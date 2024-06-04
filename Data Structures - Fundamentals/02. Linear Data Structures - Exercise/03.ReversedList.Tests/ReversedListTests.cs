@@ -132,7 +132,7 @@ namespace Problem03.ReversedList.Tests
         {
             this.list.Add(10);
 
-            Assert.Throws<IndexOutOfRangeException>(() => { this.list[index] = 5; ; });
+            Assert.Throws<IndexOutOfRangeException>(() => { this.list[index] = 5; });
         }
 
         [Test]
