@@ -15,11 +15,11 @@ namespace Safari
 
             if (day == "Saturday")
             {
-                all = all - all * 0.10;
+                all = all - (all * 0.10);
             }
             else if (day == "Sunday")
             {
-                all = all - all * 0.20;
+                all = all - (all * 0.20);
             }
             
             if (budget >= all)

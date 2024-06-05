@@ -28,7 +28,7 @@ namespace TravelAgency
                     price = 80.0;
                     if (vip == "yes")
                     {
-                        price = price - price * 0.05;
+                        price = price - (price * 0.05);
                     }
                 }
                 else if (pack == "withEquipment")
@@ -36,7 +36,7 @@ namespace TravelAgency
                     price = 100.0;
                     if (vip == "yes")
                     {
-                        price = price - price * 0.10;
+                        price = price - (price * 0.10);
                     }
                 }
                 else
@@ -52,7 +52,7 @@ namespace TravelAgency
                     price = 100.0;
                     if (vip == "yes")
                     {
-                        price = price - price * 0.07;
+                        price = price - (price * 0.07);
                     }
                 }
                 else if (pack == "withBreakfast")
@@ -60,7 +60,7 @@ namespace TravelAgency
                     price = 130.0;
                     if (vip == "yes")
                     {
-                        price = price - price * 0.12;
+                        price = price - (price * 0.12);
                     }
                 }
                 else

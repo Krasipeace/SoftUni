@@ -80,7 +80,7 @@ namespace FitnessCard
             }
             if (age <= 19)
             {
-                price = price - price * 0.20;
+                price = price - (price * 0.20);
             }
             if (cash >= price)
             {

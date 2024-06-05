@@ -14,8 +14,8 @@ namespace OnTimeForTheExam
             int arrivalMin = int.Parse(Console.ReadLine());
 
             //преобразуваме часовете в минути
-            examMin = examMin + examHour * 60;
-            arrivalMin = arrivalMin + arrivalHour * 60;
+            examMin = examMin + (examHour * 60);
+            arrivalMin = arrivalMin + (arrivalHour * 60);
 
             //намираме разликата във времето на пристигане
             int difference = Math.Abs(arrivalMin - examMin);

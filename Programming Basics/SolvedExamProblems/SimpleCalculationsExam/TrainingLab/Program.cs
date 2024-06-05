@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TrainingLab
 {
@@ -10,7 +10,7 @@ namespace TrainingLab
             double width = double.Parse(Console.ReadLine());
 
             double rows = length * 100 / 120;
-            double columns = (width * 100 - 100) / 70;
+            double columns = ((width * 100) - 100) / 70;
             double row = Math.Truncate(rows); 
             double col = Math.Truncate(columns); 
             Console.WriteLine((row * col) - 3);

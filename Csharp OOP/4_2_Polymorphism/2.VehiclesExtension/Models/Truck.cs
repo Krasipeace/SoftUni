@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Vehicles.Exceptions;
 
 namespace Vehicles.Models
@@ -21,7 +21,7 @@ namespace Vehicles.Models
                 throw new InvalidAmountOfRefuelFuelException(ExceptionMessages.InvalidAmountOfFuel);
             }
 
-            if (this.FuelQuantity + liters * DamagedFuelTankModifier <= this.TankCapacity)
+            if (this.FuelQuantity + (liters * DamagedFuelTankModifier) <= this.TankCapacity)
             {
                 this.FuelQuantity += liters * DamagedFuelTankModifier;
             }

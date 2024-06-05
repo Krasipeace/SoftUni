@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CleverLily
 {
@@ -14,7 +14,7 @@ namespace CleverLily
             {
                 if (i % 2 == 0)
                 {
-                    sum += i * 5 - 1;                  
+                    sum += (i * 5) - 1;                  
                 }
                 else 
                 {

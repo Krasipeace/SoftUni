@@ -16,7 +16,7 @@ namespace FamilyTrip
             
             if (nights > 7)
             {
-                discount = pricePerNight - pricePerNight * 0.05; 
+                discount = pricePerNight - (pricePerNight * 0.05); 
                 priceNights = nights * discount;
             }
             else

@@ -1,4 +1,4 @@
-﻿namespace NeedForSpeed
+namespace NeedForSpeed
 {
     public class Vehicle
     {
@@ -14,7 +14,7 @@
         
         public virtual void Drive(double kilometers)
         {
-            double fuelLeft = Fuel - FuelConsumption * kilometers;
+            double fuelLeft = Fuel - (FuelConsumption * kilometers);
 
             if (fuelLeft >= 0)
             {

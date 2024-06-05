@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ChangeBureau
 {
@@ -14,7 +14,7 @@ namespace ChangeBureau
             double yuansDollars = yuans * 0.15;
             double yuansLev = yuansDollars * 1.76;
             double euros = (bitcoinLev + yuansLev) / 1.95;
-            double cash = euros - euros * commission / 100;
+            double cash = euros - (euros * commission / 100);
 
             Console.WriteLine($"{cash:f2}");
         }

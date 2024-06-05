@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Sequence2k_1
 {
@@ -11,7 +11,7 @@ namespace Sequence2k_1
             while (counter <= number)
             {
                 Console.WriteLine(counter);
-                counter = counter * 2 + 1;
+                counter = (counter * 2) + 1;
             }
         }
     }

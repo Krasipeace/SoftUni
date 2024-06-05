@@ -1,4 +1,4 @@
-﻿namespace Vehicles.Models
+namespace Vehicles.Models
 {
     public class Bus : Vehicle
     {
@@ -12,7 +12,7 @@
 
         public string DriveEmpty(double distance)
         {
-            if (this.FuelQuantity - (this.FuelConsumption - FuelConsumptionIncrement) * distance >= 0)
+            if (this.FuelQuantity - ((this.FuelConsumption - FuelConsumptionIncrement) * distance) >= 0)
             {
                 this.FuelQuantity -= (this.FuelConsumption - FuelConsumptionIncrement) * distance;
 

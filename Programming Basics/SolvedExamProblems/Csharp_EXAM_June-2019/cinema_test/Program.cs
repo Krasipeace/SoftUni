@@ -26,7 +26,7 @@ namespace cinema_test
 
                 if (people % 3 == 0)
                 {
-                    profit += (people * 5 - 5);
+                    profit += ((people * 5) - 5);
                 }
                 else
                 {

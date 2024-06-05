@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SuppliesForSchool
 {
@@ -18,7 +18,7 @@ namespace SuppliesForSchool
             //общата сума
             double sum = pencilPrice + markersPrice + preparationPrice;
             //от общата сума - изваждаме процента намаление
-            double totalSum = sum - sum * (percent / 100.0);
+            double totalSum = sum - (sum * (percent / 100.0));
             //отпечатване на резултата
             Console.WriteLine(totalSum);
         }

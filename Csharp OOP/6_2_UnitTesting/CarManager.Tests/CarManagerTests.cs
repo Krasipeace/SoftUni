@@ -70,7 +70,7 @@ namespace CarManager.Tests
         public void Test_Drive_ShouldWorkCorrectly(double distance)
         {
             simulatedCar.Refuel(70);
-            double expectedSpentFuel = simulatedCar.FuelAmount - (distance / 100) * simulatedCar.FuelConsumption;
+            double expectedSpentFuel = simulatedCar.FuelAmount - ((distance / 100) * simulatedCar.FuelConsumption);
             simulatedCar.Drive(distance);
 
             Assert.AreEqual(expectedSpentFuel, simulatedCar.FuelAmount, "Drive does not decrease Fuel Amount properly");

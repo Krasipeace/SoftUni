@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _06_MovieTickets
 {
@@ -14,7 +14,7 @@ namespace _06_MovieTickets
             {
                 for (int symbol2 = 1; symbol2 <= n - 1; symbol2++)
                 {
-                    for (int symbol3 = 1; symbol3 <= n / 2 - 1; symbol3++)
+                    for (int symbol3 = 1; symbol3 <= (n / 2) - 1; symbol3++)
                     {
                         if (symbol1 % 2 == 1 && (symbol2 + symbol3 + symbol1) % 2 == 1)
                         {

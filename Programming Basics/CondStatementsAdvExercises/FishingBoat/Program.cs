@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FishingBoat
 {
@@ -23,11 +23,11 @@ namespace FishingBoat
             }
             if (fishermen <= 6)
             {
-                price = price - price * 0.10;
+                price = price - (price * 0.10);
             }
             else if (fishermen <= 11)
             {
-                price = price - price * 0.15;
+                price = price - (price * 0.15);
             }
             else
             {

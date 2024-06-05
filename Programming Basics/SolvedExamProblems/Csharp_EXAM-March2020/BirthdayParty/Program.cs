@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace BirthdayParty
 {
@@ -9,7 +9,7 @@ namespace BirthdayParty
             double rent = int.Parse(Console.ReadLine());
 
             double cake = rent * 0.20;
-            double drinks = cake - cake * 0.45;
+            double drinks = cake - (cake * 0.45);
             double animator = rent / 3;
             double spend = rent + cake + drinks + animator;
 

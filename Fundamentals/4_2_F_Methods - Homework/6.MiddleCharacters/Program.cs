@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _6.MiddleCharacters
 {
@@ -15,7 +15,7 @@ namespace _6.MiddleCharacters
         {
             if (input.Length % 2 == 0)
             {
-                Console.Write(input[input.Length / 2 - 1]);
+                Console.Write(input[(input.Length / 2) - 1]);
                 Console.WriteLine(input[input.Length / 2]);
             }
             else

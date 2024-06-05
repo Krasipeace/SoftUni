@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Money
 {
@@ -14,7 +14,7 @@ namespace Money
             double bitcoinBgn = bitcoins * 1168;
             double yuansBgn = (yuans * 0.15) * 1.76;
             double cashEuro = (bitcoinBgn + yuansBgn) / 1.95;
-            double cashResult = cashEuro - cashEuro * commission;
+            double cashResult = cashEuro - (cashEuro * commission);
             Console.WriteLine(cashResult);
         }
     }

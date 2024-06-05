@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _4.FoldAndSum
@@ -19,7 +19,7 @@ namespace _4.FoldAndSum
             {
                 sumArray[i] = inputArray[fold - (i + 1)] + inputArray[fold + i];
                 sumArray[sumArray.Length - 1 - i] = inputArray[sumArray.Length - 1 - i + fold] + 
-                                                    inputArray[sumArray.Length - 1 - i + fold + 2 * i + 1];
+                                                    inputArray[sumArray.Length - 1 - i + fold + (2 * i) + 1];
             }
             Console.WriteLine(string.Join(" ", sumArray));
         }

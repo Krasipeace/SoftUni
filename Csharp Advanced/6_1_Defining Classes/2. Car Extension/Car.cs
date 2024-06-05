@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -20,7 +20,7 @@ namespace CarManufacturer
 
         public void Drive(double distance)
         {
-            if (fuelQuantity - distance * fuelConsumption > 0)
+            if (fuelQuantity - (distance * fuelConsumption) > 0)
             {
                 fuelQuantity -= distance * fuelConsumption;
             }

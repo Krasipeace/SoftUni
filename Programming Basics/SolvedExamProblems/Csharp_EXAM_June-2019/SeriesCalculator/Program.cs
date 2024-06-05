@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SeriesCalculator
 {
@@ -11,9 +11,9 @@ namespace SeriesCalculator
             int episodes = int.Parse(Console.ReadLine());
             double epNoAds = double.Parse(Console.ReadLine());
 
-            double epWithAds = epNoAds + epNoAds * 0.20;
+            double epWithAds = epNoAds + (epNoAds * 0.20);
             double specialEps = seasons * 10;
-            double allTime = Math.Floor(epWithAds * episodes * seasons + specialEps);
+            double allTime = Math.Floor((epWithAds * episodes * seasons) + specialEps);
 
             Console.WriteLine($"Total time needed to watch the {movieTitle} series is {allTime} minutes.");
         }

@@ -21,7 +21,7 @@ namespace Club
 
                 if (profitCoctail % 2 != 0)
                 {
-                    profitCoctail = profitCoctail - profitCoctail * 0.25;
+                    profitCoctail = profitCoctail - (profitCoctail * 0.25);
                 }
                 income += profitCoctail;
                 if (income >= money)

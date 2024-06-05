@@ -47,7 +47,7 @@ namespace _3._Moving_Target
             }
             else
             {
-                targets.RemoveRange(index - radiusPower, radiusPower * 2 + 1);
+                targets.RemoveRange(index - radiusPower, (radiusPower * 2) + 1);
             }
         }
 

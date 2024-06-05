@@ -29,7 +29,7 @@ namespace _04Cinema
 
                 if (peopleInHall % 3 == 0)
                 {
-                    income += (peopleInHall * 5 - 5);
+                    income += ((peopleInHall * 5) - 5);
                 }
                 else
                 {
