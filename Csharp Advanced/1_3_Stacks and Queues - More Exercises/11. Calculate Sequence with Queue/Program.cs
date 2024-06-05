@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -21,7 +21,7 @@ namespace _11._Calculate_Sequence_with_Queue
             {
                 int current = sequence.Dequeue();
                 int first = current + 1;
-                int second = MAGIC_NUMBER * current + 1;
+                int second = (MAGIC_NUMBER * current) + 1;
                 int third = MAGIC_NUMBER + current;
 
                 sequence.Enqueue(first);

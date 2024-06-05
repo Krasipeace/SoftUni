@@ -32,7 +32,7 @@ namespace Logistics
                     tTrain += weightOfCarriage;
                 }
             }
-            double tonsOfCarriage = (tMiniBus * 200 + tTruck * 175 + tTrain * 120)/sumOfCarriage;
+            double tonsOfCarriage = ((tMiniBus * 200) + (tTruck * 175) + (tTrain * 120))/sumOfCarriage;
             pMinibus = tMiniBus / sumOfCarriage * 100.0;
             pTruck = tTruck / sumOfCarriage * 100.0;
             pTrain = tTrain / sumOfCarriage * 100.0;

@@ -30,11 +30,11 @@ namespace AluminumJoinery
                 finalPrice = numOrders * 110.0;
                 if (numOrders >= 60)
                 {                    
-                    finalPrice = finalPrice - finalPrice * 0.08;
+                    finalPrice = finalPrice - (finalPrice * 0.08);
                 }
                 else if (numOrders >= 30)
                 {
-                    finalPrice = finalPrice - finalPrice * 0.05;
+                    finalPrice = finalPrice - (finalPrice * 0.05);
                 }                
             }
             else if (typeOfOrder == "100X150")
@@ -42,11 +42,11 @@ namespace AluminumJoinery
                 finalPrice = numOrders * 140.0;
                 if (numOrders >= 80)
                 {
-                    finalPrice = finalPrice - finalPrice * 0.10;
+                    finalPrice = finalPrice - (finalPrice * 0.10);
                 }
                 else if (numOrders >= 40)
                 {
-                    finalPrice = finalPrice - finalPrice * 0.06;
+                    finalPrice = finalPrice - (finalPrice * 0.06);
                 }                
             }
             else if (typeOfOrder == "130X180")
@@ -54,11 +54,11 @@ namespace AluminumJoinery
                 finalPrice = numOrders * 190.0;
                 if (numOrders >= 50)
                 {
-                    finalPrice = finalPrice - finalPrice * 0.12;
+                    finalPrice = finalPrice - (finalPrice * 0.12);
                 }
                 else if (numOrders >= 20)
                 {
-                    finalPrice = finalPrice - finalPrice * 0.07;
+                    finalPrice = finalPrice - (finalPrice * 0.07);
                 }                
             }
             else if (typeOfOrder == "200X300")
@@ -66,11 +66,11 @@ namespace AluminumJoinery
                 finalPrice = numOrders * 250.0;
                 if (numOrders >= 50)
                 {
-                    finalPrice = finalPrice - finalPrice * 0.14;
+                    finalPrice = finalPrice - (finalPrice * 0.14);
                 }
                 else if (numOrders >= 25)
                 {
-                    finalPrice = finalPrice - finalPrice * 0.09;
+                    finalPrice = finalPrice - (finalPrice * 0.09);
                 }                
             }
             if (delivery == "With delivery")
@@ -84,7 +84,7 @@ namespace AluminumJoinery
             }
             else if (numOrders > 99)
             {
-                finalPrice = finalPrice - finalPrice * 0.04;
+                finalPrice = finalPrice - (finalPrice * 0.04);
                 Console.WriteLine($"{finalPrice:f2} BGN");
             }
             else

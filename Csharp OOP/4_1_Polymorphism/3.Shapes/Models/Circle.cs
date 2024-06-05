@@ -34,7 +34,7 @@ namespace Shapes.Models
             {
                 for (double x = -Radius; x < rOut; x += 0.5)
                 {
-                    double value = x * x + y * y;
+                    double value = (x * x) + (y * y);
 
                     if (value >= rIn * rIn && value <= rOut * rOut)
                     {

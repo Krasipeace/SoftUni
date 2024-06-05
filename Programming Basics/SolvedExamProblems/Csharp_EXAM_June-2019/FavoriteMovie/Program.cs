@@ -20,7 +20,7 @@ namespace FavoriteMovie
 
                     if (currentLetter >= 97 && currentLetter <= 122)
                     {
-                        sum += (currentLetter - 2 * movie.Length);
+                        sum += (currentLetter - (2 * movie.Length));
                     }
                     else if (currentLetter >= 65 && currentLetter <= 90)
                     {

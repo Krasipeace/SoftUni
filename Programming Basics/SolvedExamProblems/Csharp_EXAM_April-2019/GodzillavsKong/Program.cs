@@ -15,7 +15,7 @@ namespace GodzillavsKong
 
             if (extraActors > 150)
             {
-                allDress = allDress - allDress * 0.10;
+                allDress = allDress - (allDress * 0.10);
             }
             double allExpense = allDress + movieDecor;
 

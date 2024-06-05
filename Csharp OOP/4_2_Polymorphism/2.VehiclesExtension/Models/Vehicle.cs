@@ -59,7 +59,7 @@ namespace Vehicles.Models
 
         public virtual string Drive(double distance)
         {
-            if (this.FuelQuantity - this.FuelConsumption * distance >= 0)
+            if (this.FuelQuantity - (this.FuelConsumption * distance) >= 0)
             {
                 this.FuelQuantity -= this.FuelConsumption * distance;
 

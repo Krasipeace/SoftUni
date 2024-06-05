@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace AgencyProfit
 {
@@ -13,11 +13,11 @@ namespace AgencyProfit
             double tax = double.Parse(Console.ReadLine());
             double profit = 0;
 
-            double priceKids = ticketPrice - ticketPrice * 0.70;
+            double priceKids = ticketPrice - (ticketPrice * 0.70);
             ticketPrice = ticketPrice + tax;
             priceKids = priceKids + tax;
             double finalPrice = (ticketPrice * ticketsAdult) + (priceKids * ticketsKids);
-            profit = finalPrice - finalPrice * 0.80;
+            profit = finalPrice - (finalPrice * 0.80);
             Console.WriteLine($"The profit of your agency from {companyName} tickets is {profit:f2} lv.");
         }
     }

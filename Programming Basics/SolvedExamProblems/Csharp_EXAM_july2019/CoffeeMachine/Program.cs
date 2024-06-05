@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CoffeeMachine
 {
@@ -28,7 +28,7 @@ namespace CoffeeMachine
                 }
                 if (amount >= 5)
                 {
-                    price = price - price * 0.25;
+                    price = price - (price * 0.25);
                 }
             }
             else if (type == "Cappuccino")
@@ -65,7 +65,7 @@ namespace CoffeeMachine
 
             if (finalPrice > 15)
             {
-                finalPrice = finalPrice - finalPrice * 0.20;
+                finalPrice = finalPrice - (finalPrice * 0.20);
             }
             
             Console.WriteLine($"You bought {amount} cups of {type} for {finalPrice:f2} lv.");

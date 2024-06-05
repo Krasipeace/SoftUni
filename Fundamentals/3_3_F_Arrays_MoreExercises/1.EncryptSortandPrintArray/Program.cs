@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _1.EncryptSortandPrintArray
 {
@@ -30,11 +30,11 @@ namespace _1.EncryptSortandPrintArray
 
                     if (isVowel)
                     {
-                        sum = sum + (int)input[j] * inputLength;
+                        sum = sum + ((int)input[j] * inputLength);
                     }
                     else
                     {
-                        sum = sum + (int)input[j] / inputLength;
+                        sum = sum + ((int)input[j] / inputLength);
                     }
                 }
                 result[i] = sum;

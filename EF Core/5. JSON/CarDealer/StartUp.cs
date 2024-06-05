@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 using Newtonsoft.Json;
 
@@ -257,7 +257,7 @@ public class StartUp
                     customerName = s.Customer.Name,
                     discount = $"{s.Discount:f2}",
                     price = $"{s.Car.PartsCars.Sum(p => p.Part.Price):f2}",
-                    priceWithDiscount = $"{s.Car.PartsCars.Sum(p => p.Part.Price) * (1 - s.Discount / 100):f2}"
+                    priceWithDiscount = $"{s.Car.PartsCars.Sum(p => p.Part.Price) * (1 - (s.Discount / 100)):f2}"
                 })                
                 .ToArray();
 

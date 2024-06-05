@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Journey
 {
@@ -16,12 +16,12 @@ namespace Journey
             {
                 if (season == "summer")
                 {
-                    spendCash = budget - budget * 0.30;
+                    spendCash = budget - (budget * 0.30);
                     place = "Camp";
                 }
                 else if (season == "winter")
                 {
-                    spendCash = budget - budget * 0.70;
+                    spendCash = budget - (budget * 0.70);
                     place = "Hotel";
                 }
                 destination = "Bulgaria";
@@ -30,19 +30,19 @@ namespace Journey
             {
                 if (season == "summer")
                 {
-                    spendCash = budget - budget * 0.40;
+                    spendCash = budget - (budget * 0.40);
                     place = "Camp";
                 }
                 else if (season == "winter")
                 {
-                    spendCash = budget - budget * 0.80;
+                    spendCash = budget - (budget * 0.80);
                     place = "Hotel";
                 }
                 destination = "Balkans";
             }
             else
             {
-                spendCash = budget - budget * 0.90;
+                spendCash = budget - (budget * 0.90);
                 destination = "Europe";
                 place = "Hotel"; 
             }

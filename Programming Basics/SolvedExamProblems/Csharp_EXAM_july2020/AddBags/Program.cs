@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace AddBags
 {
@@ -13,23 +13,23 @@ namespace AddBags
 
             if (baggageWeight < 10)
             {
-                baggage = baggage - baggage * 0.80;
+                baggage = baggage - (baggage * 0.80);
             }
             else if (baggageWeight <= 20)
             {
-                baggage = baggage - baggage * 0.50;
+                baggage = baggage - (baggage * 0.50);
             }
             if (daysToJourney < 7)
             {
-                baggage = baggage + baggage * 0.40;
+                baggage = baggage + (baggage * 0.40);
             }
             else if (daysToJourney <= 30)
             {
-                baggage = baggage + baggage * 0.15;
+                baggage = baggage + (baggage * 0.15);
             }
             else
             {
-                baggage = baggage + baggage * 0.10;
+                baggage = baggage + (baggage * 0.10);
             }
 
             double priceBaggage = baggage * baggageBags;

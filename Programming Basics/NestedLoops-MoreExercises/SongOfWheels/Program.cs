@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SongOfWheels
 {
@@ -22,7 +22,7 @@ namespace SongOfWheels
                     {
                         for (int d = 1; d <= 9; d++)
                         {
-                            magicNumber = a * b + c * d;
+                            magicNumber = (a * b) + (c * d);
                             if (b > a && c > d && magicNumber == controlNumberM)
                             {
                                 counter++;

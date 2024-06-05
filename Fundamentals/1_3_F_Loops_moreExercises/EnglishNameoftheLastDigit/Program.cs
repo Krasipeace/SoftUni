@@ -7,7 +7,7 @@ namespace EnglishNameoftheLastDigit
         static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
-            int lastDigit = number / 1 % 10;
+            int lastDigit = (number / 1) % 10;
 
             switch (lastDigit)
             {

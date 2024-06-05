@@ -9,15 +9,15 @@ namespace BarcodeGenerator
             int intervalOne = int.Parse(Console.ReadLine());
             int intervalTwo = int.Parse(Console.ReadLine());
 
-            int iOne = intervalOne / 1000 % 10;
-            int jOne = intervalOne / 100 % 10;
-            int kOne = intervalOne / 10 % 10;
-            int lOne = intervalOne / 1 % 10;
+            int iOne = (intervalOne / 1000) % 10;
+            int jOne = (intervalOne / 100) % 10;
+            int kOne = (intervalOne / 10) % 10;
+            int lOne = (intervalOne / 1) % 10;
 
-            int iTwo = intervalTwo / 1000 % 10;
-            int jTwo = intervalTwo / 100 % 10;
-            int kTwo = intervalTwo / 10 % 10;
-            int lTwo = intervalTwo / 1 % 10;
+            int iTwo = (intervalTwo / 1000) % 10;
+            int jTwo = (intervalTwo / 100) % 10;
+            int kTwo = (intervalTwo / 10) % 10;
+            int lTwo = (intervalTwo / 1) % 10;
 
             for (int i = iOne; i <= iTwo; i++)
             {

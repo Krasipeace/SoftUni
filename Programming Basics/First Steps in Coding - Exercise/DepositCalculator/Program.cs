@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace DepositCalculator
 {
@@ -18,7 +18,7 @@ namespace DepositCalculator
             //изчисляваме лихвата за 1 месец - НЛ / 12
             double monthInterest = allInterest / 12 /100;
             // изчисление на общата сума
-            double allSum = deposit + monthDeposit * monthInterest;
+            double allSum = deposit + (monthDeposit * monthInterest);
             //отпечатваме общата сума - ДС + СнД * (лихва_за_месец)
             Console.WriteLine(allSum);        
         }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace GodzillaVSKong
 {
@@ -12,7 +12,7 @@ namespace GodzillaVSKong
             double decorMovie = budgetMovie * 0.10;  
             if (walkerNumber > 150)
             {
-                walkerApparel = walkerApparel - walkerApparel / 10;
+                walkerApparel = walkerApparel - (walkerApparel / 10);
             }
             double costMovie = decorMovie + (walkerApparel * walkerNumber);
             double moneyNeed = budgetMovie - costMovie;

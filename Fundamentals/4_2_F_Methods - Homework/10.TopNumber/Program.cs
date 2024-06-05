@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _10.TopNumber
 {
@@ -21,7 +21,7 @@ namespace _10.TopNumber
         {
             while (topNumber > 0)
             {
-                if (topNumber % 10 % 2 != 0)
+                if ((topNumber % 10) % 2 != 0)
                 {
                     return true;
                 }

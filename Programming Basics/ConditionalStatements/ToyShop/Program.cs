@@ -15,14 +15,14 @@ namespace ToyShop
 
             int toysQ = puzzleQ + dollsQ + bearsQ + minionsQ + trucksQ;
 
-            double totalPrice = puzzleQ * 2.6 + dollsQ * 3 + bearsQ*4.1 + minionsQ*8.2 + trucksQ*2;
+            double totalPrice = (puzzleQ * 2.6) + (dollsQ * 3) + (bearsQ*4.1) + (minionsQ*8.2) + (trucksQ*2);
 
             if (toysQ >= 50)
             {
-                totalPrice = totalPrice - totalPrice * 0.25; //отстъпка
+                totalPrice = totalPrice - (totalPrice * 0.25); //отстъпка
             }
 
-            totalPrice = totalPrice - totalPrice * 0.10; //изваждаме наема
+            totalPrice = totalPrice - (totalPrice * 0.10); //изваждаме наема
 
             double difference = totalPrice - priceTrip; //разликата между цена на наема и цена на екс.
             if (difference >= 0)

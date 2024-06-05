@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace _5._Multiply_Big_Numbers
@@ -25,7 +25,7 @@ namespace _5._Multiply_Big_Numbers
                 char lastNum = reallyBigNum[i];
                 int lastNumAsDigit = int.Parse(lastNum.ToString());
 
-                int result = lastNumAsDigit * num + remainder;
+                int result = (lastNumAsDigit * num) + remainder;
 
                 sb.Append(result % 10);
 

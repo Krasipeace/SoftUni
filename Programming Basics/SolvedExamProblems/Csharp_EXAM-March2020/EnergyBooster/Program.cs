@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace EnergyBooster
 {
@@ -63,11 +63,11 @@ namespace EnergyBooster
             }
             if (money >= 400 && money <= 1000)
             {
-                money = money - money * 0.15;
+                money = money - (money * 0.15);
             }
             else if (money > 1000)
             {
-                money = money - money * 0.50;
+                money = money - (money * 0.50);
             }
             Console.WriteLine($"{money:f2} lv.");
         }

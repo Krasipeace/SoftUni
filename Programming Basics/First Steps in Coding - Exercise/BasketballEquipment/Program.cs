@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace BasketballEquipment
 {
@@ -12,8 +12,8 @@ namespace BasketballEquipment
             //екип – цената му е 20 % по - евтина от тази на кецовете
             //топка – цената ѝ е 1 / 4 от цената на баскетболния екип
             //аксесоари – цената им е 1 / 5 от цената на баскетболната топка
-            double shoesPrice = taxPerYear - taxPerYear * (40 / 100.0);
-            double outfitPrice = shoesPrice - shoesPrice * (20 / 100.0);
+            double shoesPrice = taxPerYear - (taxPerYear * (40 / 100.0));
+            double outfitPrice = shoesPrice - (shoesPrice * (20 / 100.0));
             double ballPrice = outfitPrice / 4;
             double accPrice = ballPrice / 5;
             //обща сума: таксата + кецове + екип + топка + аксесоари

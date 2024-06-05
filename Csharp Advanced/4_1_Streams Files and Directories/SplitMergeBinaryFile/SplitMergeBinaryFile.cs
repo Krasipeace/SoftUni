@@ -1,4 +1,4 @@
-﻿namespace SplitMergeBinaryFile
+namespace SplitMergeBinaryFile
 {
     using System;
     using System.IO;
@@ -40,7 +40,7 @@
             }
             else
             {
-                byte[] dataPartOne = new byte[fileDataSize.Length / 2 + 1];
+                byte[] dataPartOne = new byte[(fileDataSize.Length / 2) + 1];
                 byte[] dataPartTwo = new byte[fileDataSize.Length / 2];
 
                 for (int i = 0; i < dataPartOne.Length; i++)
@@ -48,7 +48,7 @@
                     dataPartOne[i] = fileDataSize[i];
                 }
 
-                for (int j = fileDataSize.Length / 2 + 1; j < fileDataSize.Length; j++)
+                for (int j = (fileDataSize.Length / 2) + 1; j < fileDataSize.Length; j++)
                 {
                     dataPartTwo[j] = fileDataSize[j];
                 }
