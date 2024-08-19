@@ -14,7 +14,9 @@
 
 ## Diploma
 
-* [C# Web Developer](https://softuni.bg/certificates/details/215879/bd51ee79)
+<a href="https://softuni.bg/certificates/details/215879/bd51ee79" target="_blank">
+    <img width="50%" height="50%" src="/diploma-cover.PNG" alt="C# Web Developer"/> 
+</a>
 
 ### [Software Engineering ](https://softuni.bg/curriculum)
 
