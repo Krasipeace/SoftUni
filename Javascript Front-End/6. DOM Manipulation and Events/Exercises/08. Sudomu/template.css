@@ -36,7 +36,7 @@ main:after {
 button {
     padding: 0.3rem 0.5rem;
     font-size: 0.7em;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
     border: none;
     color: white;
     background: #234465;
@@ -52,7 +52,6 @@ table {
 
 td {
     width: 10%;
-    border: 2px solid gray;
     height: 5vh;
     color: #234465;
     font-size: 22px;

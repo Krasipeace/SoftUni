@@ -84,7 +84,6 @@ label {
   border: 1px solid black;
   border-radius: 50px;
   color: rgb(0, 0, 0);
-  font-weight: 400;
   font-size: 12pt;
   margin-top: 10px;
   box-shadow: 5px 4px 8px rgb(0, 0, 0), 10px 10px 10px rgba(0, 0, 0, 0.22);
@@ -121,7 +120,6 @@ label {
   border: 1px solid black;
   border-radius: 50px;
   color: rgb(0, 0, 0);
-  font-weight: 600;
   font-size: 14px;
   margin: 10px;
   margin-bottom: 5px;
@@ -156,7 +154,6 @@ button {
   border: none;
   border-radius: 50px;
   color: rgb(0, 0, 0);
-  font-weight: 600;
   font-size: 18px;
   margin-top: 1em;
   box-shadow: 5px 4px 8px rgb(0, 0, 0), 10px 10px 10px rgba(0, 0, 0, 0.22);
@@ -243,7 +240,6 @@ h2 {
   padding: 3.5px;
   font-weight: 700;
   margin-bottom: -0.7em;
-  margin-top: 0.25em;
   background-color: rgba(255, 255, 255, 0.692);
   border-radius: 10px;
   margin-top: 30px;

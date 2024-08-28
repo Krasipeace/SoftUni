@@ -43,9 +43,8 @@ h1, h2, p {
 }
 #quizzie ul {
   list-style: none;
-  display: block;
   width: auto;
-  margin: 2% 2%;
+  margin: 2%;
   padding: 2%;
   overflow: auto;
   display: none;

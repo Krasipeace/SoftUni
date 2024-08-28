@@ -52,11 +52,9 @@ main input[type="text"] {
 }
 
 main input[type="button"] {
-  border: 1px solid;
   background: #eeeeee;
 
   font-size: 14px;
-  border-radius: 14px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
