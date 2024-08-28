@@ -14,7 +14,7 @@ namespace _06_EasterDecoration
                 string command = Console.ReadLine();
                 double price = 0.0;
                 int productCount = 0;
-                while ("Finish" != command)
+                while (command != "Finish")
                 {
                     productCount++;
                     switch (command)

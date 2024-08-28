@@ -16,7 +16,7 @@ namespace _06_EasterCompetition
                 string chef = Console.ReadLine();
                 string input = Console.ReadLine();
 
-                while ("Stop" != input)
+                while (input != "Stop")
                 {
                     chefScore += int.Parse(input);
                     input = Console.ReadLine();
