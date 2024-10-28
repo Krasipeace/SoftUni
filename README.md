@@ -53,7 +53,7 @@ SoftUni's professional program in software engineering aims to build all the fun
 | [C# Advanced][3]                         | [WordPress For Developers][7]        | [Software Engineering and DevOps][55] |
 | [C# Object Oriented Programming][4]      | [Data Structures - Fundamentals][12] |
 | [MS SQL][5]                              | [Data Structures - Advanced][13]     |
-| [Entity Framework Core][6]               |                                      |
+| [Entity Framework Core][6]               | [Algorithms with Python][14]         |
 | [ASP.NET Fundamentals][8]                |                                      |
 | [ASP.NET Advanced][9]                    |                                      |
 | [HTML & CSS][10]                         |                                      |
@@ -72,6 +72,7 @@ SoftUni's professional program in software engineering aims to build all the fun
 [11]: https://github.com/Krasipeace/SoftUni/blob/main/Javascript%20Front-End/README.md
 [12]: https://github.com/Krasipeace/SoftUni/tree/main/Data%20Structures%20-%20Fundamentals/README.md
 [13]: https://github.com/Krasipeace/SoftUni/blob/main/Data%20Structures%20-%20Advanced/README.md
+[14]: https://github.com/Krasipeace/SoftUni/blob/main/Algorithms%20with%20Python/README.md
 
 [42]: https://softuni.bg/professions/csharp
 
